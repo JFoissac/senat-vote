@@ -17,22 +17,54 @@ const filtersOpen = ref(false);
 const themes = computed(() => data.themesSorted);
 const totalCount = computed(() => data.scrutinsArray.length);
 
+const themeRank = computed(() => {
+  const map = {};
+  data.themesSorted.forEach((t, i) => {
+    map[t.id] = i;
+  });
+  return map;
+});
+
+function majority(g) {
+  if (!g) return null;
+  if (g.pour >= g.contre && g.pour >= g.abstention) return "pour";
+  if (g.contre >= g.pour && g.contre >= g.abstention) return "contre";
+  return "abs";
+}
+
+const SORTS = [
+  { value: "recents", label: "Plus récents d'abord" },
+  { value: "anciens", label: "Plus anciens d'abord" },
+  { value: "pour", label: "Plus de votes « pour »" },
+  { value: "contre", label: "Plus de votes « contre »" },
+  { value: "votants", label: "Plus de votants" },
+  { value: "sujet", label: "Par sujet" }
+];
+
 const filtered = computed(() => {
   const v = prefs.votes;
   const sel = Object.keys(v.themes).filter((k) => v.themes[k]);
-  return data.scrutinsArray
-    .filter((s) => {
-      if (sel.length && sel.indexOf(s.theme) === -1) return false;
-      if (v.withAn && !s.an) return false;
-      if (v.origin && s.origin !== v.origin) return false;
-      if (v.group && !s.groups.some((g) => g.key === v.group)) return false;
-      if (v.q) {
-        const q = v.q.toLowerCase();
-        if ((s.title + " " + (s.resume || "") + " " + s.text).toLowerCase().indexOf(q) === -1) return false;
-      }
-      return true;
-    })
-    .sort(byDateDesc);
+  const list = data.scrutinsArray.filter((s) => {
+    if (sel.length && sel.indexOf(s.theme) === -1) return false;
+    if (v.withAn && !s.an) return false;
+    if (v.origin && s.origin !== v.origin) return false;
+    if (v.group && v.position) {
+      const g = s.groups.find((x) => x.key === v.group);
+      if (!g || majority(g) !== v.position) return false;
+    }
+    if (v.q) {
+      const q = v.q.toLowerCase();
+      if ((s.title + " " + (s.resume || "") + " " + s.text).toLowerCase().indexOf(q) === -1) return false;
+    }
+    return true;
+  });
+  if (v.sort === "anciens") list.sort((a, b) => (a.date || "").localeCompare(b.date || ""));
+  else if (v.sort === "pour") list.sort((a, b) => b.totals.pour - a.totals.pour || byDateDesc(a, b));
+  else if (v.sort === "contre") list.sort((a, b) => b.totals.contre - a.totals.contre || byDateDesc(a, b));
+  else if (v.sort === "votants") list.sort((a, b) => (b.totals.votants || 0) - (a.totals.votants || 0));
+  else if (v.sort === "sujet") list.sort((a, b) => (themeRank.value[a.theme] || 0) - (themeRank.value[b.theme] || 0) || byDateDesc(a, b));
+  else list.sort(byDateDesc);
+  return list;
 });
 
 const pages = computed(() => Math.max(1, Math.ceil(filtered.value.length / PAGE_SIZE)));
@@ -115,11 +147,27 @@ watch(pages, (p) => {
           </label>
         </div>
         <div class="filters__group">
-          <p class="filters__label">Groupe politique</p>
+          <p class="filters__label">Position d'un groupe</p>
           <select v-model="prefs.votes.group" aria-label="Groupe politique" @change="resetPage">
             <option value="">Tous les groupes (Sénat)</option>
             <option v-for="g in data.senateGroups" :key="g.key" :value="g.key">{{ g.short }} — {{ g.label }}</option>
           </select>
+          <select
+            v-model="prefs.votes.position"
+            aria-label="Position majoritaire du groupe"
+            :disabled="!prefs.votes.group"
+            style="margin-top: 8px"
+            @change="resetPage"
+          >
+            <option value="">Toutes les positions</option>
+            <option value="pour">A voté majoritairement pour</option>
+            <option value="contre">A voté majoritairement contre</option>
+            <option value="abs">S'est majoritairement abstenu</option>
+          </select>
+          <p class="note" style="margin: 6px 0 0">
+            Chaque scrutin liste les 9 groupes du Sénat. Choisissez un groupe, puis la position majoritaire
+            (pour, contre, abstention) pour ne garder que les scrutins correspondants.
+          </p>
         </div>
         <div class="filters__group">
           <label class="switch">
@@ -130,7 +178,15 @@ watch(pages, (p) => {
         </div>
       </aside>
       <div id="votelist">
-        <p class="result-count" aria-live="polite">{{ n(filtered.length) }} vote{{ filtered.length > 1 ? "s" : "" }}</p>
+        <div class="listbar">
+          <p class="result-count" aria-live="polite">{{ n(filtered.length) }} vote{{ filtered.length > 1 ? "s" : "" }}</p>
+          <label class="listbar__sort">
+            <span>Trier</span>
+            <select v-model="prefs.votes.sort" aria-label="Trier les votes" @change="resetPage">
+              <option v-for="o in SORTS" :key="o.value" :value="o.value">{{ o.label }}</option>
+            </select>
+          </label>
+        </div>
         <Pager :page="page" :pages="pages" @update:page="setPage" />
         <div v-if="slice.length" class="vlist">
           <VoteCard v-for="s in slice" :key="s.id" :scrutin="s" />

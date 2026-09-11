@@ -547,3 +547,9 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   .filters.is-open .filters__body, .compare__side.is-open .compare__side-body { display: block; }
   .filters.is-open .filters__chev, .compare__side.is-open .filters__chev { transform: rotate(180deg); }
 }
+
+/* Barre de tri de la liste des votes */
+.listbar { display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap; margin-bottom: 10px; }
+.listbar .result-count { margin: 0; }
+.listbar__sort { display: inline-flex; align-items: center; gap: 8px; font-size: 0.78rem; font-weight: 700; color: var(--muted); }
+.listbar__sort select { min-height: 36px; border: 1px solid var(--line); border-radius: 10px; padding: 0 10px; font: inherit; font-size: 0.8rem; background: var(--surface); }

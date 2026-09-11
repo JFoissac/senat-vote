@@ -6,7 +6,7 @@ export function defaultPrefs() {
   return {
     overlay: false,
     chamber: "senat",
-    votes: { q: "", origin: "", group: "", withAn: false, themes: {}, page: 1 },
+    votes: { q: "", origin: "", group: "", position: "", sort: "recents", withAn: false, themes: {}, page: 1 },
     comparer: { a: "LR", b: "SER", excludeAbs: false, subjects: {} }
   };
 }
