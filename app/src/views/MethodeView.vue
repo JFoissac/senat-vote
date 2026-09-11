@@ -133,6 +133,14 @@ const anSource = computed(() => (data.raw ? data.raw.anSource : null));
         Les pourcentages ne portent jamais sur l'ensemble des sièges : les non-votants sont exclus du calcul du <b>% P</b>.
       </p>
 
+      <p>
+        Dans la page <b>Votes</b>, vous pouvez <b>trier</b> les scrutins (plus récents, plus anciens, plus de « pour »,
+        plus de « contre », plus de votants, par sujet) et filtrer par <b>position d'un groupe</b> : sélectionnez un
+        groupe puis « a voté majoritairement pour / contre » ou « s'est majoritairement abstenu » pour ne garder que les
+        scrutins correspondants. Le filtre par simple groupe n'existe pas, car chaque scrutin du Sénat liste les neuf
+        groupes : il ne restreindrait rien.
+      </p>
+
       <h2>4. La superposition Sénat / Assemblée</h2>
       <p>
         Dans chaque fiche, l'interrupteur <b>« Superposer Sénat et Assemblée »</b> remplace les deux blocs séparés par un
