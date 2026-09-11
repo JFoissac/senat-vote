@@ -153,8 +153,10 @@ function toggleAll() {
           <tbody>
             <tr v-for="row in rows" :key="row.t.id">
               <td class="tname">
-                <span class="tile" :style="{ background: row.t.pastel }"><Icon :name="row.t.icon" /></span>
-                <span class="tname__txt">{{ row.t.name }}<small>{{ row.tl.length }} vote{{ row.tl.length > 1 ? "s" : "" }}</small></span>
+                <span class="tname__inner">
+                  <span class="tile" :style="{ background: row.t.pastel }"><Icon :name="row.t.icon" /></span>
+                  <span class="tname__txt">{{ row.t.name }}<small>{{ row.tl.length }} vote{{ row.tl.length > 1 ? "s" : "" }}</small></span>
+                </span>
               </td>
               <td class="n" :title="(ga ? ga.short : '') + ' : ' + fmt(row.A.pour) + ' pour, ' + fmt(row.A.contre) + ' contre'">
                 <span class="cmp-pct" :style="{ color: ga ? ga.color : 'inherit' }">{{ fmt(row.A.pour) }}</span>
