@@ -173,7 +173,7 @@ const anSource = computed(() => (data.raw ? data.raw.anSource : null));
       <p>Répartition actuelle ({{ n(sujetsCount) }} sujets principaux) :</p>
       <ul>
         <li v-for="t in sujets" :key="t.id">
-          <b>{{ t.name }}</b> — {{ n(t.count) }} vote{{ t.count > 1 ? "s" : "" }}
+          <b>{{ t.name }}</b> — {{ n(data.scrutinsOfTheme(t.id).length) }} vote{{ data.scrutinsOfTheme(t.id).length > 1 ? "s" : "" }}
         </li>
       </ul>
 

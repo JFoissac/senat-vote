@@ -9,9 +9,7 @@ const prefs = usePrefsStore();
 const themes = computed(() => data.themesSorted);
 const groups = computed(() => data.senateGroups);
 
-const selectedThemes = computed(() =>
-  themes.value.filter((t) => prefs.comparer.subjects[t.id])
-);
+const selectedThemes = computed(() => themes.value.filter((t) => prefs.comparer.subjects[t.id]));
 const selectedCount = computed(() => selectedThemes.value.length);
 
 const selectedScrutins = computed(() => {
@@ -26,8 +24,6 @@ function statsOver(list, key, excludeAbs) {
   let pour = 0;
   let contre = 0;
   let abs = 0;
-  let votants = 0;
-  let possible = 0;
   let nb = 0;
   list.forEach((s) => {
     const g = s.groups.find((x) => x.key === key);
@@ -36,43 +32,22 @@ function statsOver(list, key, excludeAbs) {
     pour += g.pour;
     contre += g.contre;
     abs += g.abstention;
-    votants += g.pour + g.contre + g.abstention;
-    possible += g.size;
   });
   const d = excludeAbs ? pour + contre : pour + contre + abs;
   return {
     nb,
-    presence: possible ? Math.round((100 * votants) / possible) : null,
     pour: d ? Math.round((100 * pour) / d) : null,
-    contre: d ? Math.round((100 * contre) / d) : null
+    contre: d ? Math.round((100 * contre) / d) : null,
+    abs: !excludeAbs && d ? Math.round((100 * abs) / d) : 0
   };
 }
 
-function agreementBetween(aKey, bKey, list) {
-  let common = 0;
-  let same = 0;
-  list.forEach((s) => {
-    const ga = s.groups.find((x) => x.key === aKey);
-    const gb = s.groups.find((x) => x.key === bKey);
-    if (!ga || !gb || !ga.size || !gb.size) return;
-    function maj(g) {
-      return g.pour >= g.contre && g.pour >= g.abstention ? "pour" : g.contre >= g.pour && g.contre >= g.abstention ? "contre" : "abs";
-    }
-    common++;
-    if (maj(ga) === maj(gb)) same++;
-  });
-  return { pct: common ? Math.round((100 * same) / common) : null, common, same };
-}
-
-function fmtPct(v) {
+function fmt(v) {
   return v == null ? "—" : v + " %";
 }
 
 const ga = computed(() => data.groupMap[prefs.comparer.a]);
 const gb = computed(() => data.groupMap[prefs.comparer.b]);
-const agreement = computed(() =>
-  agreementBetween(prefs.comparer.a, prefs.comparer.b, selectedScrutins.value)
-);
 const totA = computed(() => statsOver(selectedScrutins.value, prefs.comparer.a, prefs.comparer.excludeAbs));
 const totB = computed(() => statsOver(selectedScrutins.value, prefs.comparer.b, prefs.comparer.excludeAbs));
 
@@ -105,7 +80,7 @@ function toggleAll() {
   <div class="wrap">
     <div class="page-head">
       <h1 class="page-title">Comparer deux groupes</h1>
-      <p class="page-lede">Comparaison factuelle de deux groupes du Sénat : taux d'accord, participation et part de votes pour ou contre, sujet par sujet. Aucune appréciation sur le sens des textes.</p>
+      <p class="page-lede">Part des votes <b>pour</b> et <b>contre</b> de deux groupes du Sénat, sujet par sujet. Aucune appréciation sur le sens des textes.</p>
     </div>
     <div class="compare">
       <aside class="compare__side">
@@ -125,64 +100,66 @@ function toggleAll() {
           </label>
         </div>
         <div class="filters__group" style="border-top: 1px solid var(--line); padding-top: 12px; margin-top: 14px">
-          <p class="filters__label">Sujets pris en compte <span id="cmp-count">{{ selectedCount }}/{{ themes.length }}</span></p>
+          <p class="filters__label">Sujets pris en compte <span>{{ selectedCount }}/{{ themes.length }}</span></p>
           <label v-for="t in themes" :key="t.id" class="checkline">
             <input v-model="prefs.comparer.subjects[t.id]" type="checkbox">
-            <span class="dot" :style="{ background: t.pastel }"></span>{{ t.name }} <small>({{ t.count }})</small>
+            <span class="dot" :style="{ background: t.pastel }"></span>{{ t.name }} <small>({{ data.scrutinsOfTheme(t.id).length }})</small>
           </label>
           <button class="btn btn--small" type="button" style="margin-top: 8px" @click="toggleAll">Tout cocher / décocher</button>
         </div>
-        <p class="note" style="margin-top: 12px">« Pour » et « contre » portent sur les votes émis (pour + contre + abstentions) ; les non-votants sont exclus. La participation rapporte les votes émis aux sièges du groupe au jour de chaque vote.</p>
+        <p class="note" style="margin-top: 12px">
+          Les pourcentages portent sur les <b>votes émis</b> (pour + contre + abstentions) ; les non-votants sont exclus.
+          Cochez « Exclure l'abstention » pour ne compter que les votes pour et contre.
+        </p>
       </aside>
       <div class="compare__main">
-        <h2 class="compare__title">Taux d'accord : {{ agreement.pct == null ? "—" : agreement.pct + " %" }}</h2>
-        <p class="note">Part des scrutins où les deux groupes ont voté majoritairement de la même façon ({{ agreement.same }} sur {{ agreement.common }} scrutins où ils ont tous deux participé), pour les sujets cochés. Une même position peut correspondre à un vote pour comme à un vote contre.</p>
         <div class="compare__nums">
           <span class="compare__num">
-            <b :style="{ color: ga ? ga.color : 'inherit' }">{{ fmtPct(totA.presence) }}</b>
-            <span>{{ ga ? ga.short : "" }} · participation</span>
+            <b :style="{ color: ga ? ga.color : 'inherit' }">{{ fmt(totA.pour) }}</b>
+            <span>{{ ga ? ga.short : "" }} · pour</span>
           </span>
           <span class="compare__vs">vs</span>
           <span class="compare__num">
-            <b :style="{ color: gb ? gb.color : 'inherit' }">{{ fmtPct(totB.presence) }}</b>
-            <span>{{ gb ? gb.short : "" }} · participation</span>
+            <b :style="{ color: gb ? gb.color : 'inherit' }">{{ fmt(totB.pour) }}</b>
+            <span>{{ gb ? gb.short : "" }} · pour</span>
           </span>
         </div>
+        <p class="note" style="margin: 0 0 14px">
+          {{ ga ? ga.short : "—" }} : {{ fmt(totA.contre) }} contre · {{ gb ? gb.short : "—" }} : {{ fmt(totB.contre) }} contre
+          — sur les scrutins des sujets cochés.
+        </p>
         <div class="table-wrap">
           <table class="ctable">
             <thead>
               <tr>
-                <th rowspan="2">Sujet</th>
-                <th colspan="3" :style="{ color: ga ? ga.color : 'inherit' }">{{ ga ? ga.short : "—" }}</th>
-                <th colspan="3" :style="{ color: gb ? gb.color : 'inherit' }">{{ gb ? gb.short : "—" }}</th>
-              </tr>
-              <tr>
-                <th>Partic.</th>
-                <th>Pour</th>
-                <th>Contre</th>
-                <th>Partic.</th>
-                <th>Pour</th>
-                <th>Contre</th>
+                <th>Sujet</th>
+                <th :style="{ color: ga ? ga.color : 'inherit' }">{{ ga ? ga.short : "—" }}</th>
+                <th :style="{ color: gb ? gb.color : 'inherit' }">{{ gb ? gb.short : "—" }}</th>
               </tr>
             </thead>
             <tbody>
               <tr v-for="row in rows" :key="row.t.id">
                 <td class="tname">{{ row.t.name }}<small>{{ row.tl.length }} scrutin{{ row.tl.length > 1 ? "s" : "" }}</small></td>
-                <td>{{ fmtPct(row.A.presence) }}</td>
-                <td class="n" :style="{ color: ga ? ga.color : 'inherit' }">{{ fmtPct(row.A.pour) }}</td>
-                <td>{{ fmtPct(row.A.contre) }}</td>
-                <td>{{ fmtPct(row.B.presence) }}</td>
-                <td class="n" :style="{ color: gb ? gb.color : 'inherit' }">{{ fmtPct(row.B.pour) }}</td>
-                <td>{{ fmtPct(row.B.contre) }}</td>
-              </tr>
-              <tr class="is-total">
-                <td>Tous les scrutins cochés</td>
-                <td>{{ fmtPct(totA.presence) }}</td>
-                <td>{{ fmtPct(totA.pour) }}</td>
-                <td>{{ fmtPct(totA.contre) }}</td>
-                <td>{{ fmtPct(totB.presence) }}</td>
-                <td>{{ fmtPct(totB.pour) }}</td>
-                <td>{{ fmtPct(totB.contre) }}</td>
+                <td>
+                  <div class="cmpcell">
+                    <div class="cmpbar" :title="ga ? ga.short + ' : ' + fmt(row.A.pour) + ' pour, ' + fmt(row.A.contre) + ' contre' : ''">
+                      <span v-if="row.A.pour" class="cmpbar__seg cmpbar__seg--pour" :style="{ width: row.A.pour + '%' }"></span>
+                      <span v-if="row.A.contre" class="cmpbar__seg cmpbar__seg--contre" :style="{ width: row.A.contre + '%' }"></span>
+                      <span v-if="row.A.abs" class="cmpbar__seg cmpbar__seg--abs" :style="{ width: row.A.abs + '%' }"></span>
+                    </div>
+                    <span class="cmpcell__vals"><b :style="{ color: ga ? ga.color : 'inherit' }">{{ fmt(row.A.pour) }}</b> pour · {{ fmt(row.A.contre) }} contre</span>
+                  </div>
+                </td>
+                <td>
+                  <div class="cmpcell">
+                    <div class="cmpbar" :title="gb ? gb.short + ' : ' + fmt(row.B.pour) + ' pour, ' + fmt(row.B.contre) + ' contre' : ''">
+                      <span v-if="row.B.pour" class="cmpbar__seg cmpbar__seg--pour" :style="{ width: row.B.pour + '%' }"></span>
+                      <span v-if="row.B.contre" class="cmpbar__seg cmpbar__seg--contre" :style="{ width: row.B.contre + '%' }"></span>
+                      <span v-if="row.B.abs" class="cmpbar__seg cmpbar__seg--abs" :style="{ width: row.B.abs + '%' }"></span>
+                    </div>
+                    <span class="cmpcell__vals"><b :style="{ color: gb ? gb.color : 'inherit' }">{{ fmt(row.B.pour) }}</b> pour · {{ fmt(row.B.contre) }} contre</span>
+                  </div>
+                </td>
               </tr>
             </tbody>
           </table>

@@ -7,6 +7,9 @@ export const useDataStore = defineStore("data", {
     error: null
   }),
   getters: {
+    generatedAt(state) {
+      return state.raw ? state.raw.generatedAt : "";
+    },
     scrutins(state) {
       return state.raw ? state.raw.scrutins : {};
     },
