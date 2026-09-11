@@ -2,6 +2,7 @@
 import { computed } from "vue";
 import { useDataStore } from "../stores/data.js";
 import { usePrefsStore } from "../stores/prefs.js";
+import Icon from "../components/Icon.vue";
 
 const data = useDataStore();
 const prefs = usePrefsStore();
@@ -37,8 +38,7 @@ function statsOver(list, key, excludeAbs) {
   return {
     nb,
     pour: d ? Math.round((100 * pour) / d) : null,
-    contre: d ? Math.round((100 * contre) / d) : null,
-    abs: !excludeAbs && d ? Math.round((100 * abs) / d) : 0
+    contre: d ? Math.round((100 * contre) / d) : null
   };
 }
 
@@ -79,8 +79,8 @@ function toggleAll() {
 <template>
   <div class="wrap">
     <div class="page-head">
-      <h1 class="page-title">Comparer deux groupes</h1>
-      <p class="page-lede">Part des votes <b>pour</b> et <b>contre</b> de deux groupes du Sénat, sujet par sujet. Aucune appréciation sur le sens des textes.</p>
+      <h1 class="page-title">Comparer les votes</h1>
+      <p class="page-lede">Choisissez deux groupes du Sénat pour comparer la part de leurs votes <b>« pour »</b> et <b>« contre »</b>, sujet par sujet.</p>
     </div>
     <div class="compare">
       <aside class="compare__side">
@@ -98,72 +98,66 @@ function toggleAll() {
             <input v-model="prefs.comparer.excludeAbs" type="checkbox">
             Exclure l'abstention
           </label>
+          <p class="note" style="margin: 6px 0 0">
+            Par défaut, l'abstention compte dans le total : « pour » et « contre » sont calculés sur les votes émis.
+          </p>
         </div>
         <div class="filters__group" style="border-top: 1px solid var(--line); padding-top: 12px; margin-top: 14px">
-          <p class="filters__label">Sujets pris en compte <span>{{ selectedCount }}/{{ themes.length }}</span></p>
-          <label v-for="t in themes" :key="t.id" class="checkline">
+          <p class="filters__label">Sujets pris en compte {{ selectedCount }}/{{ themes.length }}</p>
+          <label v-for="t in themes" :key="t.id" class="checkline checkline--icon">
             <input v-model="prefs.comparer.subjects[t.id]" type="checkbox">
-            <span class="dot" :style="{ background: t.pastel }"></span>{{ t.name }} <small>({{ data.scrutinsOfTheme(t.id).length }})</small>
+            <span class="tile" :style="{ background: t.pastel }"><Icon :name="t.icon" /></span>
+            <span>{{ t.name }} <small>({{ data.scrutinsOfTheme(t.id).length }})</small></span>
           </label>
           <button class="btn btn--small" type="button" style="margin-top: 8px" @click="toggleAll">Tout cocher / décocher</button>
         </div>
-        <p class="note" style="margin-top: 12px">
-          Les pourcentages portent sur les <b>votes émis</b> (pour + contre + abstentions) ; les non-votants sont exclus.
-          Cochez « Exclure l'abstention » pour ne compter que les votes pour et contre.
-        </p>
       </aside>
+
       <div class="compare__main">
-        <div class="compare__nums">
-          <span class="compare__num">
+        <div class="cmp-vs">
+          <div class="cmp-vs__g">
+            <span class="cmp-mono" :style="{ background: ga ? ga.color : '#999' }">{{ ga ? ga.short : "?" }}</span>
             <b :style="{ color: ga ? ga.color : 'inherit' }">{{ fmt(totA.pour) }}</b>
-            <span>{{ ga ? ga.short : "" }} · pour</span>
-          </span>
-          <span class="compare__vs">vs</span>
-          <span class="compare__num">
+            <small>pour<template v-if="totA.contre != null"> · {{ fmt(totA.contre) }} contre</template></small>
+          </div>
+          <span class="cmp-vs__word">VS</span>
+          <div class="cmp-vs__g">
+            <span class="cmp-mono" :style="{ background: gb ? gb.color : '#999' }">{{ gb ? gb.short : "?" }}</span>
             <b :style="{ color: gb ? gb.color : 'inherit' }">{{ fmt(totB.pour) }}</b>
-            <span>{{ gb ? gb.short : "" }} · pour</span>
-          </span>
+            <small>pour<template v-if="totB.contre != null"> · {{ fmt(totB.contre) }} contre</template></small>
+          </div>
         </div>
-        <p class="note" style="margin: 0 0 14px">
-          {{ ga ? ga.short : "—" }} : {{ fmt(totA.contre) }} contre · {{ gb ? gb.short : "—" }} : {{ fmt(totB.contre) }} contre
-          — sur les scrutins des sujets cochés.
+        <p class="note cmp-vs__note">
+          Part des votes « pour » et « contre » de chaque groupe, sur les scrutins des sujets cochés.
+          <template v-if="prefs.comparer.excludeAbs">Abstentions exclues.</template>
+          <template v-else>Votes émis (pour + contre + abstentions) ; non-votants exclus.</template>
         </p>
-        <div class="table-wrap">
-          <table class="ctable">
-            <thead>
-              <tr>
-                <th>Sujet</th>
-                <th :style="{ color: ga ? ga.color : 'inherit' }">{{ ga ? ga.short : "—" }}</th>
-                <th :style="{ color: gb ? gb.color : 'inherit' }">{{ gb ? gb.short : "—" }}</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr v-for="row in rows" :key="row.t.id">
-                <td class="tname">{{ row.t.name }}<small>{{ row.tl.length }} scrutin{{ row.tl.length > 1 ? "s" : "" }}</small></td>
-                <td>
-                  <div class="cmpcell">
-                    <div class="cmpbar" :title="ga ? ga.short + ' : ' + fmt(row.A.pour) + ' pour, ' + fmt(row.A.contre) + ' contre' : ''">
-                      <span v-if="row.A.pour" class="cmpbar__seg cmpbar__seg--pour" :style="{ width: row.A.pour + '%' }"></span>
-                      <span v-if="row.A.contre" class="cmpbar__seg cmpbar__seg--contre" :style="{ width: row.A.contre + '%' }"></span>
-                      <span v-if="row.A.abs" class="cmpbar__seg cmpbar__seg--abs" :style="{ width: row.A.abs + '%' }"></span>
-                    </div>
-                    <span class="cmpcell__vals"><b :style="{ color: ga ? ga.color : 'inherit' }">{{ fmt(row.A.pour) }}</b> pour · {{ fmt(row.A.contre) }} contre</span>
-                  </div>
-                </td>
-                <td>
-                  <div class="cmpcell">
-                    <div class="cmpbar" :title="gb ? gb.short + ' : ' + fmt(row.B.pour) + ' pour, ' + fmt(row.B.contre) + ' contre' : ''">
-                      <span v-if="row.B.pour" class="cmpbar__seg cmpbar__seg--pour" :style="{ width: row.B.pour + '%' }"></span>
-                      <span v-if="row.B.contre" class="cmpbar__seg cmpbar__seg--contre" :style="{ width: row.B.contre + '%' }"></span>
-                      <span v-if="row.B.abs" class="cmpbar__seg cmpbar__seg--abs" :style="{ width: row.B.abs + '%' }"></span>
-                    </div>
-                    <span class="cmpcell__vals"><b :style="{ color: gb ? gb.color : 'inherit' }">{{ fmt(row.B.pour) }}</b> pour · {{ fmt(row.B.contre) }} contre</span>
-                  </div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+
+        <table class="ctable ctable--cmp">
+          <thead>
+            <tr>
+              <th>Sujet</th>
+              <th><span class="cmp-dot" :style="{ background: ga ? ga.color : '#999' }"></span>{{ ga ? ga.short : "—" }} · pour / contre</th>
+              <th><span class="cmp-dot" :style="{ background: gb ? gb.color : '#999' }"></span>{{ gb ? gb.short : "—" }} · pour / contre</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr v-for="row in rows" :key="row.t.id">
+              <td class="tname">
+                <span class="tile" :style="{ background: row.t.pastel }"><Icon :name="row.t.icon" /></span>
+                <span class="tname__txt">{{ row.t.name }}<small>{{ row.tl.length }} vote{{ row.tl.length > 1 ? "s" : "" }}</small></span>
+              </td>
+              <td class="n" :title="(ga ? ga.short : '') + ' : ' + fmt(row.A.pour) + ' pour, ' + fmt(row.A.contre) + ' contre'">
+                <span class="cmp-pct" :style="{ color: ga ? ga.color : 'inherit' }">{{ fmt(row.A.pour) }}</span>
+                <small class="cmp-pct__sub">{{ fmt(row.A.contre) }} contre</small>
+              </td>
+              <td class="n" :title="(gb ? gb.short : '') + ' : ' + fmt(row.B.pour) + ' pour, ' + fmt(row.B.contre) + ' contre'">
+                <span class="cmp-pct" :style="{ color: gb ? gb.color : 'inherit' }">{{ fmt(row.B.pour) }}</span>
+                <small class="cmp-pct__sub">{{ fmt(row.B.contre) }} contre</small>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </div>

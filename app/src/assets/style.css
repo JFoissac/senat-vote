@@ -496,3 +496,25 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 .cmpbar__seg--abs { background: #d7d9dc; }
 .cmpcell__vals { font-size: 0.74rem; font-weight: 700; color: var(--muted); white-space: nowrap; }
 .ctable td { vertical-align: middle; }
+
+/* Comparer : VS + tableau à icônes */
+.checkline--icon { gap: 9px; }
+.tile { display: inline-grid; place-items: center; width: 30px; height: 30px; border-radius: 9px; flex: none; border: 1px solid rgba(14,16,19,.06); }
+.tile svg { width: 16px; height: 16px; }
+.cmp-vs { display: flex; align-items: center; justify-content: center; gap: 18px; flex-wrap: wrap; padding: 6px 0 10px; }
+.cmp-vs__g { display: flex; flex-direction: column; align-items: center; gap: 6px; text-align: center; }
+.cmp-mono { display: grid; place-items: center; width: 46px; height: 46px; border-radius: 14px; color: #fff; font-weight: 800; font-size: 0.86rem; box-shadow: var(--shadow-s); }
+.cmp-vs__g b { font-family: var(--font-display); font-size: clamp(2.2rem, 9vw, 3.4rem); font-weight: 700; line-height: 0.95; letter-spacing: -1.5px; }
+.cmp-vs__g small { color: var(--muted); font-size: 0.76rem; font-weight: 700; }
+.cmp-vs__word { font-family: var(--font-display); color: var(--faint); font-size: 1.1rem; letter-spacing: 0.05em; }
+.cmp-vs__note { text-align: center; margin: 0 auto 18px; max-width: 70ch; }
+.ctable--cmp td.n { white-space: nowrap; }
+.ctable--cmp .tname { display: flex; align-items: center; gap: 10px; font-weight: 700; }
+.ctable--cmp .tname__txt { display: flex; flex-direction: column; }
+.ctable--cmp .tname__txt small { color: var(--muted); font-weight: 600; }
+.ctable--cmp .cmp-dot { display: inline-block; width: 8px; height: 8px; border-radius: 2px; margin-right: 6px; }
+.cmp-pct { font-family: var(--font-display); font-size: 1.3rem; font-weight: 700; letter-spacing: -0.5px; }
+.cmp-pct__sub { display: block; color: var(--muted); font-size: 0.7rem; font-weight: 700; }
+@media (min-width: 720px) {
+  .cmp-vs { gap: 40px; }
+}
