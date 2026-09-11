@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#F1F3F6">
+<title>Sénat·Vote — les votes du Sénat et de l'Assemblée, sujet par sujet</title>
+<meta name="description" content="Comment le Sénat et l'Assemblée nationale votent sur les sujets qui préoccupent les Français : votes en faveur ou en défaveur de chaque objectif, par groupe politique. Données officielles.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230E1013'/%3E%3Cpath d='M8 11a2 2 0 0 1 2-2h4l2 2h6a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2z' fill='%23F6E7BC'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<a class="skip-link" href="#app">Aller au contenu</a>
+
+<header class="siteheader">
+  <div class="siteheader__inner">
+    <a class="brand" href="#/" aria-label="Sénat·Vote, accueil">
+      <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#0E1013"/><path d="M8 11a2 2 0 0 1 2-2h4l2 2h6a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2z" fill="#F6E7BC"/></svg>
+      <span class="brand__text">Sénat<span class="brand__dot">·</span>Vote</span>
+    </a>
+    <nav class="tabs" aria-label="Navigation principale">
+      <a class="tab tab--sujets" data-tab="home" href="#/">Sujets</a>
+      <a class="tab tab--groupes" data-tab="groupes" href="#/groupes">Groupes</a>
+      <a class="tab tab--votes" data-tab="votes" href="#/votes">Votes</a>
+      <a class="tab tab--comparer" data-tab="comparer" href="#/comparer">Comparer</a>
+    </nav>
+    <a class="btn btn--black siteheader__cta" href="#/methode">Méthode</a>
+  </div>
+</header>
+
+<main id="app" tabindex="-1"></main>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__cols">
+      <div class="footer__col footer__col--brand">
+        <p class="footer__title">Sénat·Vote</p>
+        <p class="footer__text">Comment le Sénat et l'Assemblée nationale votent sur les sujets qui préoccupent les Français. Un outil citoyen indépendant, sans publicité et sans traceur.</p>
+      </div>
+      <div class="footer__col">
+        <p class="footer__heading">Le projet</p>
+        <a href="#/methode">Méthodologie et sources</a>
+        <a href="#/votes">Tous les votes</a>
+        <a href="#/comparer">Comparer les groupes</a>
+      </div>
+      <div class="footer__col">
+        <p class="footer__heading">Données</p>
+        <a href="https://www.senat.fr/scrutin-public/scr2025.html" target="_blank" rel="noopener">Scrutins du Sénat (senat.fr)</a>
+        <a href="https://data.assemblee-nationale.fr/travaux-parlementaires/votes" target="_blank" rel="noopener">Scrutins de l'Assemblée (open data)</a>
+        <a href="https://elabe.fr/rentree-2026/" target="_blank" rel="noopener">Baromètre Elabe (août 2026)</a>
+      </div>
+      <div class="footer__col">
+        <p class="footer__heading">Indépendance</p>
+        <p class="footer__text footer__text--small">Aucune affiliation avec le Sénat, l'Assemblée nationale, Elabe, Ipsos ou un parti politique. Licence Ouverte 2.0 (Etalab) pour les données publiques.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="data.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

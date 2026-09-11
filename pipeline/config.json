@@ -1,0 +1,182 @@
+{
+  "generatedNote": "Données générées par pipeline/build_data.py à partir des pages officielles senat.fr et des données ouvertes de l'Assemblée nationale. Ne pas éditer à la main.",
+  "opinion": {
+    "primary": {
+      "label": "Elabe — L'état d'esprit des Français pour la rentrée 2026",
+      "date": "26 août 2026",
+      "url": "https://elabe.fr/rentree-2026/",
+      "question": "Priorités d'action pour le gouvernement (réponses citées)"
+    },
+    "secondary": {
+      "label": "Ipsos — Ce qui préoccupe les Français (What Worries the World)",
+      "date": "juillet 2026",
+      "url": "https://www.ipsos.com/fr-fr/ce-qui-preoccupe-les-francais-juillet-2026",
+      "question": "Principales préoccupations citées"
+    }
+  },
+  "themes": [
+    {
+      "id": "pouvoir-achat",
+      "name": "Augmenter le pouvoir d'achat",
+      "icon": "euro",
+      "pastel": "#F6E7BC",
+      "primaryScore": 48,
+      "secondaryScore": 33,
+      "secondaryLabel": "Inflation (Ipsos)",
+      "goal": "Objectif de référence : augmenter le pouvoir d'achat des ménages (prix, revenus, dépenses contraintes).",
+      "description": "Prix, salaires, impôts : première priorité d'action citée par les Français (48 %, Elabe, août 2026) ; 33 % d'inquiétude liée à l'inflation (Ipsos, juillet 2026).",
+      "scrutins": ["2023-5", "2023-19", "2023-30", "2023-100"]
+    },
+    {
+      "id": "securite",
+      "name": "Renforcer la sécurité",
+      "icon": "shield",
+      "pastel": "#DCE4FF",
+      "primaryScore": 32,
+      "secondaryScore": 41,
+      "secondaryLabel": "Criminalité et violence (Ipsos)",
+      "goal": "Objectif de référence : renforcer la sécurité publique et la lutte contre la délinquance.",
+      "description": "Délinquance, violences et ordre public : 41 % des Français se déclarent préoccupés par la criminalité et la violence (Ipsos, juillet 2026) et 32 % en font une priorité d'action (Elabe, août 2026).",
+      "scrutins": ["2024-243", "2024-262", "2025-184", "2025-338"]
+    },
+    {
+      "id": "dette",
+      "name": "Réduire la dette et les déficits",
+      "icon": "scale",
+      "pastel": "#CFEAF6",
+      "primaryScore": 29,
+      "secondaryScore": null,
+      "secondaryLabel": null,
+      "goal": "Objectif de référence : réduire la dette et les déficits publics.",
+      "description": "Dette et déficits publics : 29 % des Français en font une priorité d'action pour le gouvernement (Elabe, août 2026). Ce thème ne figure pas dans la liste des préoccupations mesurées par Ipsos en juillet 2026.",
+      "scrutins": ["2023-4", "2024-35", "2024-147", "2025-72", "2025-125"]
+    },
+    {
+      "id": "sante",
+      "name": "Améliorer l'accès aux soins",
+      "icon": "heart",
+      "pastel": "#F9D9E3",
+      "primaryScore": 28,
+      "secondaryScore": 31,
+      "secondaryLabel": "Système de santé (Ipsos)",
+      "goal": "Objectif de référence : améliorer l'accès aux soins et la prise en charge des patients.",
+      "description": "Accès aux soins, hôpital, prise en charge : la santé est une priorité d'action pour 28 % des Français (Elabe, août 2026) et 31 % se déclarent préoccupés par le système de santé (Ipsos, juillet 2026).",
+      "scrutins": ["2023-106", "2024-277", "2025-169", "2025-170"]
+    },
+    {
+      "id": "immigration",
+      "name": "Maîtriser l'immigration",
+      "icon": "globe",
+      "pastel": "#E4DBF9",
+      "primaryScore": 27,
+      "secondaryScore": 25,
+      "secondaryLabel": "Flux migratoires (Ipsos)",
+      "goal": "Objectif de référence : contrôler l'immigration et améliorer l'intégration (formulation du projet de loi de 2023).",
+      "description": "Immigration, intégration, asile : 27 % des Français en font une priorité d'action (Elabe, août 2026) et 25 % citent les flux migratoires parmi leurs préoccupations (Ipsos, juillet 2026).",
+      "scrutins": ["2023-43", "2023-109", "2024-248", "2024-268", "2025-308"]
+    },
+    {
+      "id": "climat",
+      "name": "Protéger le climat et l'environnement",
+      "icon": "leaf",
+      "pastel": "#CFEEDB",
+      "primaryScore": 24,
+      "secondaryScore": 33,
+      "secondaryLabel": "Changement climatique (Ipsos)",
+      "goal": "Objectif de référence : réduire les émissions et protéger les écosystèmes.",
+      "description": "Climat, énergie, biodiversité : après les canicules de l'été 2026, 33 % des Français se déclarent préoccupés par le changement climatique (Ipsos, juillet 2026) et 24 % en font une priorité d'action (Elabe, août 2026).",
+      "scrutins": ["2023-174", "2024-10", "2024-303", "2024-347", "2025-339"]
+    },
+    {
+      "id": "inegalites",
+      "name": "Réduire les inégalités",
+      "icon": "balance",
+      "pastel": "#FFE0C7",
+      "primaryScore": 21,
+      "secondaryScore": 22,
+      "secondaryLabel": "Pauvreté et inégalités (Ipsos)",
+      "goal": "Objectif de référence : réduire les inégalités sociales et les discriminations.",
+      "description": "Pauvreté, justice sociale, discriminations : 22 % des Français se déclarent préoccupés par la pauvreté et les inégalités sociales (Ipsos, juillet 2026) et 21 % en font une priorité d'action (Elabe, août 2026).",
+      "scrutins": ["2024-7", "2024-322", "2024-327", "2025-250"]
+    }
+  ],
+  "groups": [
+    { "key": "LR",   "short": "LR",    "label": "Les Républicains", "color": "#4C6FFF", "senatLabel": "Groupe Les Républicains" },
+    { "key": "SER",  "short": "SER",   "label": "Socialiste, Écologiste et Républicain", "color": "#FF5C8A", "senatLabel": "Groupe Socialiste, Écologiste et Républicain" },
+    { "key": "UC",   "short": "UC",    "label": "Union Centriste", "color": "#31C4F3", "senatLabel": "Groupe Union Centriste" },
+    { "key": "LIRT", "short": "LIRT",  "label": "Les Indépendants – République et Territoires", "color": "#A78BFA", "senatLabel": "Groupe Les Indépendants - République et Territoires" },
+    { "key": "RDPI", "short": "RDPI",  "label": "Rassemblement des démocrates, progressistes et indépendants", "color": "#FF9350", "senatLabel": "Groupe Rassemblement des démocrates, progressistes et indépendants" },
+    { "key": "CRCE", "short": "CRCE-K","label": "Communiste Républicain Citoyen et Écologiste – Kanaky", "color": "#E5484D", "senatLabel": "Groupe Communiste Républicain Citoyen et Écologiste - Kanaky" },
+    { "key": "RDSE", "short": "RDSE",  "label": "Rassemblement Démocratique et Social Européen", "color": "#FFC53D", "senatLabel": "Groupe du Rassemblement Démocratique et Social Européen" },
+    { "key": "GEST", "short": "GEST",  "label": "Écologiste – Solidarité et Territoires", "color": "#35D07F", "senatLabel": "Groupe Écologiste - Solidarité et Territoires" },
+    { "key": "NI",   "short": "NI",    "label": "Non-inscrits", "color": "#8B95A9", "senatLabel": "Sénateurs ne figurant sur la liste d'aucun groupe", "senatorFileLabel": "NI" }
+  ],
+  "senatorGroupMapping": {
+    "Les Républicains": "LR",
+    "SER": "SER",
+    "UC": "UC",
+    "Les Indépendants": "LIRT",
+    "RDPI": "RDPI",
+    "CRCE-K": "CRCE",
+    "RDSE": "RDSE",
+    "GEST": "GEST",
+    "NI": "NI"
+  },
+  "anGroupColors": {
+    "EPR": "#FF8A00",
+    "RE": "#FF8A00",
+    "RN": "#22315B",
+    "LFI-NFP": "#CC2443",
+    "LFI - NUPES": "#CC2443",
+    "SOC": "#E7536C",
+    "DR": "#3B5BA5",
+    "LR": "#3B5BA5",
+    "Dem": "#F2C14E",
+    "HOR": "#4FC3F7",
+    "LIOT": "#A78BFA",
+    "GDR": "#B03030",
+    "GDR - NUPES": "#B03030",
+    "EcoS": "#35D07F",
+    "Ecolo - NUPES": "#35D07F",
+    "UDR": "#5B6B9E",
+    "AD": "#5B6B9E",
+    "NI": "#8B95A9"
+  },
+  "anGroupNormalize": {
+    "RE": "EPR",
+    "LFI - NUPES": "LFI-NFP",
+    "Ecolo - NUPES": "EcoS",
+    "GDR - NUPES": "GDR",
+    "LR": "DR"
+  },
+  "anDeputeGroupNormalize": {
+    "ECOS": "EcoS",
+    "DEM": "Dem",
+    "UDDPLR": "UDR"
+  },
+  "anGroupLabels": {
+    "EPR": "Ensemble pour la République (Renaissance)",
+    "RE": "Renaissance",
+    "RN": "Rassemblement National",
+    "LFI-NFP": "La France insoumise – Nouveau Front Populaire",
+    "LFI - NUPES": "La France insoumise – NUPES",
+    "SOC": "Socialistes et apparentés",
+    "DR": "Droite Républicaine",
+    "LR": "Les Républicains",
+    "Dem": "Les Démocrates (MoDem)",
+    "HOR": "Horizons & Indépendants",
+    "LIOT": "Libertés, Indépendants, Outre-mer et Territoires",
+    "GDR": "Gauche Démocrate et Républicaine",
+    "GDR - NUPES": "Gauche démocrate et républicaine – NUPES",
+    "EcoS": "Écologiste et Social",
+    "Ecolo - NUPES": "Écologiste – NUPES",
+    "UDR": "Union des droites pour la République",
+    "AD": "À Droite",
+    "NI": "Non inscrits"
+  },
+  "anSource": {
+    "label": "Assemblée nationale — données ouvertes officielles",
+    "url": "https://data.assemblee-nationale.fr/travaux-parlementaires/votes",
+    "license": "Licence Ouverte 2.0 (Etalab)"
+  }
+}

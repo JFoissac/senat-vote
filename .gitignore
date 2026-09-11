@@ -1,0 +1,17 @@
+# Dépendances et outils locaux
+.qa/
+node_modules/
+
+# Caches de données (re-téléchargeables)
+opendata/an16/
+opendata/an17/
+opendata/amo30/
+opendata/pages/
+opendata/shots/
+opendata/ref/
+opendata/*.zip
+opendata/an_group_labels.json
+
+# Vercel / OS
+.vercel/
+.DS_Store

@@ -1,0 +1,8342 @@
+{
+ "generatedAt": "2026-09-11T10:37:21+00:00",
+ "period": {
+  "from": "2023-10-16",
+  "to": "2026-07-21"
+ },
+ "senatorCount": 348,
+ "deputeCount": 577,
+ "opinion": {
+  "primary": {
+   "label": "Elabe — L'état d'esprit des Français pour la rentrée 2026",
+   "date": "26 août 2026",
+   "url": "https://elabe.fr/rentree-2026/",
+   "question": "Priorités d'action pour le gouvernement (réponses citées)"
+  },
+  "secondary": {
+   "label": "Ipsos — Ce qui préoccupe les Français (What Worries the World)",
+   "date": "juillet 2026",
+   "url": "https://www.ipsos.com/fr-fr/ce-qui-preoccupe-les-francais-juillet-2026",
+   "question": "Principales préoccupations citées"
+  }
+ },
+ "anSource": {
+  "label": "Assemblée nationale — données ouvertes officielles",
+  "url": "https://data.assemblee-nationale.fr/travaux-parlementaires/votes",
+  "license": "Licence Ouverte 2.0 (Etalab)"
+ },
+ "groups": [
+  {
+   "key": "LR",
+   "short": "LR",
+   "label": "Les Républicains",
+   "color": "#4C6FFF",
+   "seats": 131,
+   "members": [
+    {
+     "name": "Agnès Canayer",
+     "department": "Seine-Maritime"
+    },
+    {
+     "name": "Agnès Evren",
+     "department": "Paris"
+    },
+    {
+     "name": "Alain Cadec",
+     "department": "Côtes-d'Armor"
+    },
+    {
+     "name": "Alain Chatillon",
+     "department": "Haute-Garonne"
+    },
+    {
+     "name": "Alain Houpert",
+     "department": "Côte-d'Or"
+    },
+    {
+     "name": "Alain Joyandet",
+     "department": "Haute-Saône"
+    },
+    {
+     "name": "Alain Milon",
+     "department": "Vaucluse"
+    },
+    {
+     "name": "Albéric de Montgolfier",
+     "department": "Eure-et-Loir"
+    },
+    {
+     "name": "Alexandra Borchio Fontimp",
+     "department": "Alpes-Maritimes"
+    },
+    {
+     "name": "Anne Chain-Larché",
+     "department": "Seine-et-Marne"
+    },
+    {
+     "name": "Anne Ventalon",
+     "department": "Ardèche"
+    },
+    {
+     "name": "Anne-Marie Nédélec",
+     "department": "Haute-Marne"
+    },
+    {
+     "name": "Annick Petrus",
+     "department": "Saint-Martin"
+    },
+    {
+     "name": "Antoine Lefèvre",
+     "department": "Aisne"
+    },
+    {
+     "name": "Arnaud Bazin",
+     "department": "Val-d'Oise"
+    },
+    {
+     "name": "Brigitte Micouleau",
+     "department": "Haute-Garonne"
+    },
+    {
+     "name": "Bruno Belin",
+     "department": "Vienne"
+    },
+    {
+     "name": "Bruno Retailleau",
+     "department": "Vendée"
+    },
+    {
+     "name": "Bruno Rojouan",
+     "department": "Allier"
+    },
+    {
+     "name": "Bruno Sido",
+     "department": "Haute-Marne"
+    },
+    {
+     "name": "Béatrice Gosselin",
+     "department": "Manche"
+    },
+    {
+     "name": "Catherine Belrhiti",
+     "department": "Moselle"
+    },
+    {
+     "name": "Catherine Di Folco",
+     "department": "Rhône"
+    },
+    {
+     "name": "Catherine Dumas",
+     "department": "Paris"
+    },
+    {
+     "name": "Chantal Deseyne",
+     "department": "Eure-et-Loir"
+    },
+    {
+     "name": "Christian Bruyen",
+     "department": "Marne"
+    },
+    {
+     "name": "Christian Cambon",
+     "department": "Val-de-Marne"
+    },
+    {
+     "name": "Christian Klinger",
+     "department": "Haut-Rhin"
+    },
+    {
+     "name": "Christine Bonfanti-Dossat",
+     "department": "Lot-et-Garonne"
+    },
+    {
+     "name": "Christine Lavarde",
+     "department": "Hauts-de-Seine"
+    },
+    {
+     "name": "Christophe-André Frassa",
+     "department": "Français établis hors de France (Série 2)"
+    },
+    {
+     "name": "Claude Nougein",
+     "department": "Corrèze"
+    },
+    {
+     "name": "Clément Pernot",
+     "department": "Jura"
+    },
+    {
+     "name": "Corinne Imbert",
+     "department": "Charente-Maritime"
+    },
+    {
+     "name": "Cédric Perrin",
+     "department": "Territoire de Belfort"
+    },
+    {
+     "name": "Cédric Vial",
+     "department": "Savoie"
+    },
+    {
+     "name": "Damien Michallet",
+     "department": "Isère"
+    },
+    {
+     "name": "Daniel Gremillet",
+     "department": "Vosges"
+    },
+    {
+     "name": "Daniel Gueret",
+     "department": "Eure-et-Loir"
+    },
+    {
+     "name": "Daniel Laurent",
+     "department": "Charente-Maritime"
+    },
+    {
+     "name": "David Margueritte",
+     "department": "Manche"
+    },
+    {
+     "name": "Didier Mandelli",
+     "department": "Vendée"
+    },
+    {
+     "name": "Dominique Estrosi Sassone",
+     "department": "Alpes-Maritimes"
+    },
+    {
+     "name": "Dominique de Legge",
+     "department": "Ille-et-Vilaine"
+    },
+    {
+     "name": "Elsa Schalck",
+     "department": "Bas-Rhin"
+    },
+    {
+     "name": "Else Joseph",
+     "department": "Ardennes"
+    },
+    {
+     "name": "Fabien Genet",
+     "department": "Saône-et-Loire"
+    },
+    {
+     "name": "Florence Lassarade",
+     "department": "Gironde"
+    },
+    {
+     "name": "Francis Szpiner",
+     "department": "Paris"
+    },
+    {
+     "name": "François Bonhomme",
+     "department": "Tarn-et-Garonne"
+    },
+    {
+     "name": "Françoise Dumont",
+     "department": "Var"
+    },
+    {
+     "name": "Frédérique Gerbaud",
+     "department": "Indre"
+    },
+    {
+     "name": "Frédérique Puissat",
+     "department": "Isère"
+    },
+    {
+     "name": "Georges Naturel",
+     "department": "Nouvelle-Calédonie"
+    },
+    {
+     "name": "Gilbert Favreau",
+     "department": "Deux-Sèvres"
+    },
+    {
+     "name": "Guillaume Chevrollier",
+     "department": "Mayenne"
+    },
+    {
+     "name": "Gérard Larcher",
+     "department": "Yvelines"
+    },
+    {
+     "name": "Henri Leroy",
+     "department": "Alpes-Maritimes"
+    },
+    {
+     "name": "Hervé Reynaud",
+     "department": "Loire"
+    },
+    {
+     "name": "Hugues Saury",
+     "department": "Loiret"
+    },
+    {
+     "name": "Jacqueline Eustache-Brinio",
+     "department": "Val-d'Oise"
+    },
+    {
+     "name": "Jacques Grosperrin",
+     "department": "Doubs"
+    },
+    {
+     "name": "Jean Bacci",
+     "department": "Var"
+    },
+    {
+     "name": "Jean Pierre Vogel",
+     "department": "Sarthe"
+    },
+    {
+     "name": "Jean Sol",
+     "department": "Pyrénées-Orientales"
+    },
+    {
+     "name": "Jean-Baptiste Blanc",
+     "department": "Vaucluse"
+    },
+    {
+     "name": "Jean-Claude Anglars",
+     "department": "Aveyron"
+    },
+    {
+     "name": "Jean-François Husson",
+     "department": "Meurthe-et-Moselle"
+    },
+    {
+     "name": "Jean-François Rapin",
+     "department": "Pas-de-Calais"
+    },
+    {
+     "name": "Jean-Gérard Paumier",
+     "department": "Indre-et-Loire"
+    },
+    {
+     "name": "Jean-Jacques Panunzi",
+     "department": "Corse-du-Sud"
+    },
+    {
+     "name": "Jean-Luc Ruelle",
+     "department": "Français établis hors de France (Série 1)"
+    },
+    {
+     "name": "Jean-Marc Boyer",
+     "department": "Puy-de-Dôme"
+    },
+    {
+     "name": "Jean-Raymond Hugonet",
+     "department": "Essonne"
+    },
+    {
+     "name": "Khalifé Khalifé",
+     "department": "Moselle"
+    },
+    {
+     "name": "Kristina Pluchet",
+     "department": "Eure"
+    },
+    {
+     "name": "Laurence Garnier",
+     "department": "Loire-Atlantique"
+    },
+    {
+     "name": "Laurence Muller-Bronn",
+     "department": "Bas-Rhin"
+    },
+    {
+     "name": "Laurent Burgoa",
+     "department": "Gard"
+    },
+    {
+     "name": "Laurent Duplomb",
+     "department": "Haute-Loire"
+    },
+    {
+     "name": "Laurent Somon",
+     "department": "Somme"
+    },
+    {
+     "name": "Lauriane Josende",
+     "department": "Pyrénées-Orientales"
+    },
+    {
+     "name": "Louis-Jean de Nicolaÿ",
+     "department": "Sarthe"
+    },
+    {
+     "name": "Marc Séné",
+     "department": "Bas-Rhin"
+    },
+    {
+     "name": "Marc-Philippe Daubresse",
+     "department": "Nord"
+    },
+    {
+     "name": "Marie Mercier",
+     "department": "Saône-et-Loire"
+    },
+    {
+     "name": "Marie-Carole Ciuntu",
+     "department": "Val-de-Marne"
+    },
+    {
+     "name": "Marie-Claire Carrère-Gée",
+     "department": "Paris"
+    },
+    {
+     "name": "Marie-Do Aeschlimann",
+     "department": "Hauts-de-Seine"
+    },
+    {
+     "name": "Marie-Jeanne Bellamy",
+     "department": "Vienne"
+    },
+    {
+     "name": "Marie-Pierre Mouton",
+     "department": "Drôme"
+    },
+    {
+     "name": "Marie-Pierre Richer",
+     "department": "Cher"
+    },
+    {
+     "name": "Marta de Cidrac",
+     "department": "Yvelines"
+    },
+    {
+     "name": "Martine Berthet",
+     "department": "Savoie"
+    },
+    {
+     "name": "Mathieu Darnaud",
+     "department": "Ardèche"
+    },
+    {
+     "name": "Max Brisson",
+     "department": "Pyrénées-Atlantiques"
+    },
+    {
+     "name": "Michel Bonnus",
+     "department": "Var"
+    },
+    {
+     "name": "Michel Savin",
+     "department": "Isère"
+    },
+    {
+     "name": "Micheline Jacques",
+     "department": "Saint-Barthélemy"
+    },
+    {
+     "name": "Muriel Jourda",
+     "department": "Morbihan"
+    },
+    {
+     "name": "Nadine Bellurot",
+     "department": "Indre"
+    },
+    {
+     "name": "Olivier Paccaud",
+     "department": "Oise"
+    },
+    {
+     "name": "Olivier Rietmann",
+     "department": "Haute-Saône"
+    },
+    {
+     "name": "Pascal Allizard",
+     "department": "Calvados"
+    },
+    {
+     "name": "Pascale Gruny",
+     "department": "Aisne"
+    },
+    {
+     "name": "Patricia Demas",
+     "department": "Alpes-Maritimes"
+    },
+    {
+     "name": "Patrick Chaize",
+     "department": "Ain"
+    },
+    {
+     "name": "Paul Vidal",
+     "department": "Rhône"
+    },
+    {
+     "name": "Pauline Martin",
+     "department": "Loiret"
+    },
+    {
+     "name": "Philippe Mouiller",
+     "department": "Deux-Sèvres"
+    },
+    {
+     "name": "Philippe Paul",
+     "department": "Finistère"
+    },
+    {
+     "name": "Pierre Boileau",
+     "department": "Meurthe-et-Moselle"
+    },
+    {
+     "name": "Pierre Cuypers",
+     "department": "Seine-et-Marne"
+    },
+    {
+     "name": "Roger Karoutchi",
+     "department": "Hauts-de-Seine"
+    },
+    {
+     "name": "Ronan Le Gleut",
+     "department": "Français établis hors de France (Série 1)"
+    },
+    {
+     "name": "Rémy Pointereau",
+     "department": "Cher"
+    },
+    {
+     "name": "Sabine Drexler",
+     "department": "Haut-Rhin"
+    },
+    {
+     "name": "Sandra Paire",
+     "department": "Alpes-Maritimes"
+    },
+    {
+     "name": "Sophie Primas",
+     "department": "Yvelines"
+    },
+    {
+     "name": "Stéphane Le Rudulier",
+     "department": "Bouches-du-Rhône"
+    },
+    {
+     "name": "Stéphane Piednoir",
+     "department": "Maine-et-Loire"
+    },
+    {
+     "name": "Stéphane Sautarel",
+     "department": "Cantal"
+    },
+    {
+     "name": "Sylviane Noël",
+     "department": "Haute-Savoie"
+    },
+    {
+     "name": "Sylvie Goy-Chavent",
+     "department": "Ain"
+    },
+    {
+     "name": "Sylvie Valente Le Hir",
+     "department": "Oise"
+    },
+    {
+     "name": "Thierry Meignen",
+     "department": "Seine-Saint-Denis"
+    },
+    {
+     "name": "Valérie Boyer",
+     "department": "Bouches-du-Rhône"
+    },
+    {
+     "name": "Vivette Lopez",
+     "department": "Gard"
+    },
+    {
+     "name": "Viviane Malet",
+     "department": "La Réunion"
+    },
+    {
+     "name": "Étienne Blanc",
+     "department": "Rhône"
+    },
+    {
+     "name": "Évelyne Renaud-Garabedian",
+     "department": "Français établis hors de France (Série 1)"
+    }
+   ],
+   "profile": {
+    "presencePct": 98.5,
+    "pourPct": 86.0,
+    "contrePct": 14.0,
+    "nbVotes": 3953
+   }
+  },
+  {
+   "key": "SER",
+   "short": "SER",
+   "label": "Socialiste, Écologiste et Républicain",
+   "color": "#FF5C8A",
+   "seats": 64,
+   "members": [
+    {
+     "name": "Adel Ziane",
+     "department": "Seine-Saint-Denis"
+    },
+    {
+     "name": "Alexandre Ouizille",
+     "department": "Oise"
+    },
+    {
+     "name": "Annie Le Houerou",
+     "department": "Côtes-d'Armor"
+    },
+    {
+     "name": "Audrey Bélim",
+     "department": "La Réunion"
+    },
+    {
+     "name": "Audrey Linkenheld",
+     "department": "Nord"
+    },
+    {
+     "name": "Bernard Jomier",
+     "department": "Paris"
+    },
+    {
+     "name": "Catherine Conconne",
+     "department": "Martinique"
+    },
+    {
+     "name": "Christian Redon-Sarrazy",
+     "department": "Haute-Vienne"
+    },
+    {
+     "name": "Christophe Chaillou",
+     "department": "Loiret"
+    },
+    {
+     "name": "Claude Raynal",
+     "department": "Haute-Garonne"
+    },
+    {
+     "name": "Colombe Brossel",
+     "department": "Paris"
+    },
+    {
+     "name": "Corinne Féret",
+     "department": "Calvados"
+    },
+    {
+     "name": "Corinne Narassiguin",
+     "department": "Seine-Saint-Denis"
+    },
+    {
+     "name": "David Ros",
+     "department": "Essonne"
+    },
+    {
+     "name": "Denis Bouad",
+     "department": "Gard"
+    },
+    {
+     "name": "Didier Marie",
+     "department": "Seine-Maritime"
+    },
+    {
+     "name": "Florence Blatrix Contat",
+     "department": "Ain"
+    },
+    {
+     "name": "Franck Montaugé",
+     "department": "Gers"
+    },
+    {
+     "name": "Frédérique Espagnac",
+     "department": "Pyrénées-Atlantiques"
+    },
+    {
+     "name": "Gisèle Jourda",
+     "department": "Aude"
+    },
+    {
+     "name": "Hervé Gillé",
+     "department": "Gironde"
+    },
+    {
+     "name": "Hussein Bourgi",
+     "department": "Hérault"
+    },
+    {
+     "name": "Hélène Conway-Mouret",
+     "department": "Français établis hors de France (Série 1)"
+    },
+    {
+     "name": "Isabelle Briquet",
+     "department": "Haute-Vienne"
+    },
+    {
+     "name": "Jean-Claude Tissot",
+     "department": "Loire"
+    },
+    {
+     "name": "Jean-Jacques Lozach",
+     "department": "Creuse"
+    },
+    {
+     "name": "Jean-Jacques Michau",
+     "department": "Ariège"
+    },
+    {
+     "name": "Jean-Luc Fichet",
+     "department": "Finistère"
+    },
+    {
+     "name": "Jean-Marc Vayssouze-Faure",
+     "department": "Lot"
+    },
+    {
+     "name": "Jérôme Darras",
+     "department": "Pas-de-Calais"
+    },
+    {
+     "name": "Karine Daniel",
+     "department": "Loire-Atlantique"
+    },
+    {
+     "name": "Laurence Harribey",
+     "department": "Gironde"
+    },
+    {
+     "name": "Laurence Rossignol",
+     "department": "Val-de-Marne"
+    },
+    {
+     "name": "Lucien Stanzione",
+     "department": "Vaucluse"
+    },
+    {
+     "name": "Marie-Arlette Carlotti",
+     "department": "Bouches-du-Rhône"
+    },
+    {
+     "name": "Marie-Pierre Monier",
+     "department": "Drôme"
+    },
+    {
+     "name": "Marie-Pierre de La Gontrie",
+     "department": "Paris"
+    },
+    {
+     "name": "Marion Canalès",
+     "department": "Puy-de-Dôme"
+    },
+    {
+     "name": "Michaël Weber",
+     "department": "Moselle"
+    },
+    {
+     "name": "Mickaël Vallet",
+     "department": "Charente-Maritime"
+    },
+    {
+     "name": "Monique Lubin",
+     "department": "Landes"
+    },
+    {
+     "name": "Nicole Bonnefoy",
+     "department": "Charente"
+    },
+    {
+     "name": "Olivier Jacquin",
+     "department": "Meurthe-et-Moselle"
+    },
+    {
+     "name": "Patrice Joly",
+     "department": "Nièvre"
+    },
+    {
+     "name": "Patrick Kanner",
+     "department": "Nord"
+    },
+    {
+     "name": "Paulette Matray",
+     "department": "Saône-et-Loire"
+    },
+    {
+     "name": "Pierre-Alain Roiron",
+     "department": "Indre-et-Loire"
+    },
+    {
+     "name": "Rachid Temal",
+     "department": "Val-d'Oise"
+    },
+    {
+     "name": "Rémi Cardon",
+     "department": "Somme"
+    },
+    {
+     "name": "Rémi Féraud",
+     "department": "Paris"
+    },
+    {
+     "name": "Saïd Omar Oili",
+     "department": "Mayotte"
+    },
+    {
+     "name": "Sebastien Pla",
+     "department": "Aude"
+    },
+    {
+     "name": "Serge Mérillou",
+     "department": "Dordogne"
+    },
+    {
+     "name": "Simon Uzenat",
+     "department": "Morbihan"
+    },
+    {
+     "name": "Sylvie Robert",
+     "department": "Ille-et-Vilaine"
+    },
+    {
+     "name": "Sébastien Fagnen",
+     "department": "Manche"
+    },
+    {
+     "name": "Thierry Cozic",
+     "department": "Sarthe"
+    },
+    {
+     "name": "Victorin Lurel",
+     "department": "Guadeloupe"
+    },
+    {
+     "name": "Vincent Éblé",
+     "department": "Seine-et-Marne"
+    },
+    {
+     "name": "Viviane Artigalas",
+     "department": "Hautes-Pyrénées"
+    },
+    {
+     "name": "Yan Chantrel",
+     "department": "Français établis hors de France (Série 2)"
+    },
+    {
+     "name": "Émilienne Poumirol",
+     "department": "Haute-Garonne"
+    },
+    {
+     "name": "Éric Jeansannetas",
+     "department": "Creuse"
+    },
+    {
+     "name": "Éric Kerrouche",
+     "department": "Landes"
+    }
+   ],
+   "profile": {
+    "presencePct": 98.4,
+    "pourPct": 36.8,
+    "contrePct": 63.2,
+    "nbVotes": 1518
+   }
+  },
+  {
+   "key": "UC",
+   "short": "UC",
+   "label": "Union Centriste",
+   "color": "#31C4F3",
+   "seats": 59,
+   "members": [
+    {
+     "name": "Alain Cazabonne",
+     "department": "Gironde"
+    },
+    {
+     "name": "Alain Duffourg",
+     "department": "Gers"
+    },
+    {
+     "name": "Amel Gacquerre",
+     "department": "Pas-de-Calais"
+    },
+    {
+     "name": "Anne-Catherine Loisier",
+     "department": "Côte-d'Or"
+    },
+    {
+     "name": "Anne-Sophie Patru",
+     "department": "Ille-et-Vilaine"
+    },
+    {
+     "name": "Anne-Sophie Romagny",
+     "department": "Marne"
+    },
+    {
+     "name": "Annick Billon",
+     "department": "Vendée"
+    },
+    {
+     "name": "Annick Jacquemet",
+     "department": "Doubs"
+    },
+    {
+     "name": "Bernard Delcros",
+     "department": "Cantal"
+    },
+    {
+     "name": "Bernard Pillefer",
+     "department": "Loir-et-Cher"
+    },
+    {
+     "name": "Brigitte Bourguignon",
+     "department": "Pas-de-Calais"
+    },
+    {
+     "name": "Brigitte Devésa",
+     "department": "Bouches-du-Rhône"
+    },
+    {
+     "name": "Catherine Morin-Desailly",
+     "department": "Seine-Maritime"
+    },
+    {
+     "name": "Christine Herzog",
+     "department": "Moselle"
+    },
+    {
+     "name": "Claude Kern",
+     "department": "Bas-Rhin"
+    },
+    {
+     "name": "Daniel Fargeot",
+     "department": "Val-d'Oise"
+    },
+    {
+     "name": "Denise Saint-Pé",
+     "department": "Pyrénées-Atlantiques"
+    },
+    {
+     "name": "Dominique Vérien",
+     "department": "Yonne"
+    },
+    {
+     "name": "Franck Dhersin",
+     "department": "Nord"
+    },
+    {
+     "name": "Franck Menonville",
+     "department": "Meuse"
+    },
+    {
+     "name": "François Bonneau",
+     "department": "Charente"
+    },
+    {
+     "name": "Guislain Cambier",
+     "department": "Nord"
+    },
+    {
+     "name": "Hervé Marseille",
+     "department": "Hauts-de-Seine"
+    },
+    {
+     "name": "Hervé Maurey",
+     "department": "Eure"
+    },
+    {
+     "name": "Isabelle Florennes",
+     "department": "Hauts-de-Seine"
+    },
+    {
+     "name": "Jean Hingray",
+     "department": "Vosges"
+    },
+    {
+     "name": "Jean-François Longeot",
+     "department": "Doubs"
+    },
+    {
+     "name": "Jean-Marie Mizzon",
+     "department": "Moselle"
+    },
+    {
+     "name": "Jean-Michel Arnaud",
+     "department": "Hautes-Alpes"
+    },
+    {
+     "name": "Jocelyne Antoine",
+     "department": "Meuse"
+    },
+    {
+     "name": "Jocelyne Guidez",
+     "department": "Essonne"
+    },
+    {
+     "name": "Lana Tetuanui",
+     "department": "Polynésie française"
+    },
+    {
+     "name": "Laurent Lafon",
+     "department": "Val-de-Marne"
+    },
+    {
+     "name": "Loïc Hervé",
+     "department": "Haute-Savoie"
+    },
+    {
+     "name": "Ludovic Haye",
+     "department": "Haut-Rhin"
+    },
+    {
+     "name": "Marie-Lise Housseau",
+     "department": "Tarn"
+    },
+    {
+     "name": "Michel Canévet",
+     "department": "Finistère"
+    },
+    {
+     "name": "Michel Laugier",
+     "department": "Yvelines"
+    },
+    {
+     "name": "Nadia Sollogoub",
+     "department": "Nièvre"
+    },
+    {
+     "name": "Nathalie Goulet",
+     "department": "Orne"
+    },
+    {
+     "name": "Olivia Richard",
+     "department": "Français établis hors de France (Série 1)"
+    },
+    {
+     "name": "Olivier Bitz",
+     "department": "Orne"
+    },
+    {
+     "name": "Olivier Cadic",
+     "department": "Français établis hors de France (Série 2)"
+    },
+    {
+     "name": "Olivier Cigolotti",
+     "department": "Haute-Loire"
+    },
+    {
+     "name": "Olivier Henno",
+     "department": "Nord"
+    },
+    {
+     "name": "Pascal Martin",
+     "department": "Seine-Maritime"
+    },
+    {
+     "name": "Patrick Chauvet",
+     "department": "Seine-Maritime"
+    },
+    {
+     "name": "Paul Toussaint Parigi",
+     "department": "Haute-Corse"
+    },
+    {
+     "name": "Philippe Folliot",
+     "department": "Tarn"
+    },
+    {
+     "name": "Pierre-Antoine Levi",
+     "department": "Tarn-et-Garonne"
+    },
+    {
+     "name": "Sonia de La Provôté",
+     "department": "Calvados"
+    },
+    {
+     "name": "Stéphane Demilly",
+     "department": "Somme"
+    },
+    {
+     "name": "Sylvie Vermeillet",
+     "department": "Jura"
+    },
+    {
+     "name": "Vincent Capo-Canellas",
+     "department": "Seine-Saint-Denis"
+    },
+    {
+     "name": "Vincent Delahaye",
+     "department": "Essonne"
+    },
+    {
+     "name": "Yves Bleunven",
+     "department": "Morbihan"
+    },
+    {
+     "name": "Édouard Courtial",
+     "department": "Oise"
+    },
+    {
+     "name": "Élisabeth Doineau",
+     "department": "Mayenne"
+    },
+    {
+     "name": "Évelyne Perrot",
+     "department": "Aube"
+    }
+   ],
+   "profile": {
+    "presencePct": 98.8,
+    "pourPct": 85.5,
+    "contrePct": 14.5,
+    "nbVotes": 1712
+   }
+  },
+  {
+   "key": "LIRT",
+   "short": "LIRT",
+   "label": "Les Indépendants – République et Territoires",
+   "color": "#A78BFA",
+   "seats": 20,
+   "members": [
+    {
+     "name": "Alain Marc",
+     "department": "Aveyron"
+    },
+    {
+     "name": "Anne Camerac",
+     "department": "Aisne"
+    },
+    {
+     "name": "Claude Malhuret",
+     "department": "Allier"
+    },
+    {
+     "name": "Corinne Bourcier",
+     "department": "Maine-et-Loire"
+    },
+    {
+     "name": "Cyril Pellevat",
+     "department": "Haute-Savoie"
+    },
+    {
+     "name": "Cédric Chevalier",
+     "department": "Marne"
+    },
+    {
+     "name": "Daniel Chasseing",
+     "department": "Corrèze"
+    },
+    {
+     "name": "Dany Wattebled",
+     "department": "Nord"
+    },
+    {
+     "name": "Emmanuel Capus",
+     "department": "Maine-et-Loire"
+    },
+    {
+     "name": "Jean-Luc Brault",
+     "department": "Loir-et-Cher"
+    },
+    {
+     "name": "Jean-Pierre Grand",
+     "department": "Hérault"
+    },
+    {
+     "name": "Laure Darcos",
+     "department": "Essonne"
+    },
+    {
+     "name": "Louis Vogel",
+     "department": "Seine-et-Marne"
+    },
+    {
+     "name": "Marc Laménie",
+     "department": "Ardennes"
+    },
+    {
+     "name": "Marie-Claude Lermytte",
+     "department": "Nord"
+    },
+    {
+     "name": "Marie-Pierre Bessin-Guérin",
+     "department": "Loire-Atlantique"
+    },
+    {
+     "name": "Pierre Jean Rochette",
+     "department": "Loire"
+    },
+    {
+     "name": "Pierre Médevielle",
+     "department": "Haute-Garonne"
+    },
+    {
+     "name": "Vanina Paoli-Gagin",
+     "department": "Aube"
+    },
+    {
+     "name": "Vincent Louault",
+     "department": "Indre-et-Loire"
+    }
+   ],
+   "profile": {
+    "presencePct": 96.0,
+    "pourPct": 89.1,
+    "contrePct": 10.9,
+    "nbVotes": 514
+   }
+  },
+  {
+   "key": "RDPI",
+   "short": "RDPI",
+   "label": "Rassemblement des démocrates, progressistes et indépendants",
+   "color": "#FF9350",
+   "seats": 19,
+   "members": [
+    {
+     "name": "Bernard Buis",
+     "department": "Drôme"
+    },
+    {
+     "name": "Didier Maingault",
+     "department": "Côte-d'Or"
+    },
+    {
+     "name": "Didier Rambaud",
+     "department": "Isère"
+    },
+    {
+     "name": "Dominique Théophile",
+     "department": "Guadeloupe"
+    },
+    {
+     "name": "Frédéric Buval",
+     "department": "Martinique"
+    },
+    {
+     "name": "Georges Patient",
+     "department": "Guyane"
+    },
+    {
+     "name": "Jean-Baptiste Lemoyne",
+     "department": "Yonne"
+    },
+    {
+     "name": "Marie-Laure Phinera-Horth",
+     "department": "Guyane"
+    },
+    {
+     "name": "Martin Lévrier",
+     "department": "Yvelines"
+    },
+    {
+     "name": "Mikaele Kulimoetoke",
+     "department": "Iles Wallis et Futuna"
+    },
+    {
+     "name": "Nadège Havet",
+     "department": "Finistère"
+    },
+    {
+     "name": "Nicole Duranton",
+     "department": "Eure"
+    },
+    {
+     "name": "Patricia Schillinger",
+     "department": "Haut-Rhin"
+    },
+    {
+     "name": "Samantha Cazebonne",
+     "department": "Français établis hors de France (Série 2)"
+    },
+    {
+     "name": "Solanges Nadille",
+     "department": "Guadeloupe"
+    },
+    {
+     "name": "Stéphane Fouassin",
+     "department": "La Réunion"
+    },
+    {
+     "name": "Teva Rohfritsch",
+     "department": "Polynésie française"
+    },
+    {
+     "name": "Thani Mohamed Soilihi",
+     "department": "Mayotte"
+    },
+    {
+     "name": "Xavier Iacovelli",
+     "department": "Hauts-de-Seine"
+    }
+   ],
+   "profile": {
+    "presencePct": 98.7,
+    "pourPct": 83.9,
+    "contrePct": 16.1,
+    "nbVotes": 572
+   }
+  },
+  {
+   "key": "CRCE",
+   "short": "CRCE-K",
+   "label": "Communiste Républicain Citoyen et Écologiste – Kanaky",
+   "color": "#E5484D",
+   "seats": 18,
+   "members": [
+    {
+     "name": "Alexandre Basquin",
+     "department": "Nord"
+    },
+    {
+     "name": "Cathy Apourceau-Poly",
+     "department": "Pas-de-Calais"
+    },
+    {
+     "name": "Cécile Cukierman",
+     "department": "Loire"
+    },
+    {
+     "name": "Céline Brulin",
+     "department": "Seine-Maritime"
+    },
+    {
+     "name": "Evelyne Corbière Naminzo",
+     "department": "La Réunion"
+    },
+    {
+     "name": "Fabien Gay",
+     "department": "Seine-Saint-Denis"
+    },
+    {
+     "name": "Gérard Lahellec",
+     "department": "Côtes-d'Armor"
+    },
+    {
+     "name": "Ian Brossat",
+     "department": "Paris"
+    },
+    {
+     "name": "Jean-Pierre Corbisez",
+     "department": "Pas-de-Calais"
+    },
+    {
+     "name": "Jérémy Bacchi",
+     "department": "Bouches-du-Rhône"
+    },
+    {
+     "name": "Marianne Margaté",
+     "department": "Seine-et-Marne"
+    },
+    {
+     "name": "Marie-Claude Varaillas",
+     "department": "Dordogne"
+    },
+    {
+     "name": "Michelle Gréaume",
+     "department": "Nord"
+    },
+    {
+     "name": "Pascal Savoldelli",
+     "department": "Val-de-Marne"
+    },
+    {
+     "name": "Pierre Barros",
+     "department": "Val-d'Oise"
+    },
+    {
+     "name": "Pierre Ouzoulias",
+     "department": "Hauts-de-Seine"
+    },
+    {
+     "name": "Robert Wienie Xowie",
+     "department": "Nouvelle-Calédonie"
+    },
+    {
+     "name": "Silvana Silvani",
+     "department": "Meurthe-et-Moselle"
+    }
+   ],
+   "profile": {
+    "presencePct": 99.3,
+    "pourPct": 23.9,
+    "contrePct": 76.1,
+    "nbVotes": 532
+   }
+  },
+  {
+   "key": "RDSE",
+   "short": "RDSE",
+   "label": "Rassemblement Démocratique et Social Européen",
+   "color": "#FFC53D",
+   "seats": 17,
+   "members": [
+    {
+     "name": "Ahmed Laouedj",
+     "department": "Seine-Saint-Denis"
+    },
+    {
+     "name": "André Guiol",
+     "department": "Var"
+    },
+    {
+     "name": "Annick Girardin",
+     "department": "Saint-Pierre-et-Miquelon"
+    },
+    {
+     "name": "Bernard Fialaire",
+     "department": "Rhône"
+    },
+    {
+     "name": "Christian Bilhac",
+     "department": "Hérault"
+    },
+    {
+     "name": "Gilbert-Luc Devinaz",
+     "department": "Rhône"
+    },
+    {
+     "name": "Guylène Pantel",
+     "department": "Lozère"
+    },
+    {
+     "name": "Henri Cabanel",
+     "department": "Hérault"
+    },
+    {
+     "name": "Jean-Yves Roux",
+     "department": "Alpes de Haute-Provence"
+    },
+    {
+     "name": "Maryse Carrère",
+     "department": "Hautes-Pyrénées"
+    },
+    {
+     "name": "Michel Masset",
+     "department": "Lot-et-Garonne"
+    },
+    {
+     "name": "Mireille Jouve",
+     "department": "Bouches-du-Rhône"
+    },
+    {
+     "name": "Nathalie Delattre",
+     "department": "Gironde"
+    },
+    {
+     "name": "Philippe Grosvalet",
+     "department": "Loire-Atlantique"
+    },
+    {
+     "name": "Raphaël Daubet",
+     "department": "Lot"
+    },
+    {
+     "name": "Sophie Briante Guillemont",
+     "department": "Français établis hors de France (Série 2)"
+    },
+    {
+     "name": "Éric Gold",
+     "department": "Puy-de-Dôme"
+    }
+   ],
+   "profile": {
+    "presencePct": 99.0,
+    "pourPct": 71.4,
+    "contrePct": 28.6,
+    "nbVotes": 374
+   }
+  },
+  {
+   "key": "GEST",
+   "short": "GEST",
+   "label": "Écologiste – Solidarité et Territoires",
+   "color": "#35D07F",
+   "seats": 16,
+   "members": [
+    {
+     "name": "Akli Mellouli",
+     "department": "Val-de-Marne"
+    },
+    {
+     "name": "Anne Souyris",
+     "department": "Paris"
+    },
+    {
+     "name": "Antoinette Guhl",
+     "department": "Paris"
+    },
+    {
+     "name": "Daniel Salmon",
+     "department": "Ille-et-Vilaine"
+    },
+    {
+     "name": "Ghislaine Senée",
+     "department": "Yvelines"
+    },
+    {
+     "name": "Grégory Blanc",
+     "department": "Maine-et-Loire"
+    },
+    {
+     "name": "Guillaume Gontard",
+     "department": "Isère"
+    },
+    {
+     "name": "Guy Benarroche",
+     "department": "Bouches-du-Rhône"
+    },
+    {
+     "name": "Jacques Fernique",
+     "department": "Bas-Rhin"
+    },
+    {
+     "name": "Mathilde Ollivier",
+     "department": "Français établis hors de France (Série 1)"
+    },
+    {
+     "name": "Monique de Marco",
+     "department": "Gironde"
+    },
+    {
+     "name": "Mélanie Vogel",
+     "department": "Français établis hors de France (Série 2)"
+    },
+    {
+     "name": "Raymonde Poncet Monge",
+     "department": "Rhône"
+    },
+    {
+     "name": "Ronan Dantec",
+     "department": "Loire-Atlantique"
+    },
+    {
+     "name": "Thomas Dossus",
+     "department": "Rhône"
+    },
+    {
+     "name": "Yannick Jadot",
+     "department": "Paris"
+    }
+   ],
+   "profile": {
+    "presencePct": 100.0,
+    "pourPct": 16.6,
+    "contrePct": 83.4,
+    "nbVotes": 397
+   }
+  },
+  {
+   "key": "NI",
+   "short": "NI",
+   "label": "Non-inscrits",
+   "color": "#8B95A9",
+   "seats": 4,
+   "members": [
+    {
+     "name": "Aymeric Durox",
+     "department": "Seine-et-Marne"
+    },
+    {
+     "name": "Christopher Szczurek",
+     "department": "Pas-de-Calais"
+    },
+    {
+     "name": "Joshua Hochart",
+     "department": "Nord"
+    },
+    {
+     "name": "Stéphane Ravier",
+     "department": "Bouches-du-Rhône"
+    }
+   ],
+   "profile": {
+    "presencePct": 46.0,
+    "pourPct": 67.9,
+    "contrePct": 32.1,
+    "nbVotes": 53
+   }
+  }
+ ],
+ "anGroups": [
+  {
+   "key": "RN",
+   "short": "RN",
+   "label": "Rassemblement National",
+   "color": "#22315B",
+   "seats": 122
+  },
+  {
+   "key": "EPR",
+   "short": "EPR",
+   "label": "Ensemble pour la République (Renaissance)",
+   "color": "#FF8A00",
+   "seats": 90
+  },
+  {
+   "key": "LFI-NFP",
+   "short": "LFI-NFP",
+   "label": "La France insoumise – Nouveau Front Populaire",
+   "color": "#CC2443",
+   "seats": 71
+  },
+  {
+   "key": "SOC",
+   "short": "SOC",
+   "label": "Socialistes et apparentés",
+   "color": "#E7536C",
+   "seats": 68
+  },
+  {
+   "key": "DR",
+   "short": "DR",
+   "label": "Droite Républicaine",
+   "color": "#3B5BA5",
+   "seats": 48
+  },
+  {
+   "key": "EcoS",
+   "short": "EcoS",
+   "label": "Écologiste et Social",
+   "color": "#35D07F",
+   "seats": 38
+  },
+  {
+   "key": "Dem",
+   "short": "Dem",
+   "label": "Les Démocrates (MoDem)",
+   "color": "#F2C14E",
+   "seats": 37
+  },
+  {
+   "key": "HOR",
+   "short": "HOR",
+   "label": "Horizons & Indépendants",
+   "color": "#4FC3F7",
+   "seats": 36
+  },
+  {
+   "key": "LIOT",
+   "short": "LIOT",
+   "label": "Libertés, Indépendants, Outre-mer et Territoires",
+   "color": "#A78BFA",
+   "seats": 22
+  },
+  {
+   "key": "UDR",
+   "short": "UDR",
+   "label": "Union des droites pour la République",
+   "color": "#5B6B9E",
+   "seats": 17
+  },
+  {
+   "key": "GDR",
+   "short": "GDR",
+   "label": "Gauche Démocrate et Républicaine",
+   "color": "#B03030",
+   "seats": 17
+  },
+  {
+   "key": "NI",
+   "short": "NI",
+   "label": "Non inscrits",
+   "color": "#8B95A9",
+   "seats": 11
+  }
+ ],
+ "themes": [
+  {
+   "id": "pouvoir-achat",
+   "name": "Augmenter le pouvoir d'achat",
+   "icon": "euro",
+   "pastel": "#F6E7BC",
+   "primaryScore": 48,
+   "secondaryScore": 33,
+   "secondaryLabel": "Inflation (Ipsos)",
+   "goal": "Objectif de référence : augmenter le pouvoir d'achat des ménages (prix, revenus, dépenses contraintes).",
+   "description": "Prix, salaires, impôts : première priorité d'action citée par les Français (48 %, Elabe, août 2026) ; 33 % d'inquiétude liée à l'inflation (Ipsos, juillet 2026).",
+   "scrutins": [
+    "2023-5",
+    "2023-19",
+    "2023-30",
+    "2023-100"
+   ]
+  },
+  {
+   "id": "securite",
+   "name": "Renforcer la sécurité",
+   "icon": "shield",
+   "pastel": "#DCE4FF",
+   "primaryScore": 32,
+   "secondaryScore": 41,
+   "secondaryLabel": "Criminalité et violence (Ipsos)",
+   "goal": "Objectif de référence : renforcer la sécurité publique et la lutte contre la délinquance.",
+   "description": "Délinquance, violences et ordre public : 41 % des Français se déclarent préoccupés par la criminalité et la violence (Ipsos, juillet 2026) et 32 % en font une priorité d'action (Elabe, août 2026).",
+   "scrutins": [
+    "2024-243",
+    "2024-262",
+    "2025-184",
+    "2025-338"
+   ]
+  },
+  {
+   "id": "dette",
+   "name": "Réduire la dette et les déficits",
+   "icon": "scale",
+   "pastel": "#CFEAF6",
+   "primaryScore": 29,
+   "secondaryScore": null,
+   "secondaryLabel": null,
+   "goal": "Objectif de référence : réduire la dette et les déficits publics.",
+   "description": "Dette et déficits publics : 29 % des Français en font une priorité d'action pour le gouvernement (Elabe, août 2026). Ce thème ne figure pas dans la liste des préoccupations mesurées par Ipsos en juillet 2026.",
+   "scrutins": [
+    "2023-4",
+    "2024-35",
+    "2024-147",
+    "2025-72",
+    "2025-125"
+   ]
+  },
+  {
+   "id": "sante",
+   "name": "Améliorer l'accès aux soins",
+   "icon": "heart",
+   "pastel": "#F9D9E3",
+   "primaryScore": 28,
+   "secondaryScore": 31,
+   "secondaryLabel": "Système de santé (Ipsos)",
+   "goal": "Objectif de référence : améliorer l'accès aux soins et la prise en charge des patients.",
+   "description": "Accès aux soins, hôpital, prise en charge : la santé est une priorité d'action pour 28 % des Français (Elabe, août 2026) et 31 % se déclarent préoccupés par le système de santé (Ipsos, juillet 2026).",
+   "scrutins": [
+    "2023-106",
+    "2024-277",
+    "2025-169",
+    "2025-170"
+   ]
+  },
+  {
+   "id": "immigration",
+   "name": "Maîtriser l'immigration",
+   "icon": "globe",
+   "pastel": "#E4DBF9",
+   "primaryScore": 27,
+   "secondaryScore": 25,
+   "secondaryLabel": "Flux migratoires (Ipsos)",
+   "goal": "Objectif de référence : contrôler l'immigration et améliorer l'intégration (formulation du projet de loi de 2023).",
+   "description": "Immigration, intégration, asile : 27 % des Français en font une priorité d'action (Elabe, août 2026) et 25 % citent les flux migratoires parmi leurs préoccupations (Ipsos, juillet 2026).",
+   "scrutins": [
+    "2023-43",
+    "2023-109",
+    "2024-248",
+    "2024-268",
+    "2025-308"
+   ]
+  },
+  {
+   "id": "climat",
+   "name": "Protéger le climat et l'environnement",
+   "icon": "leaf",
+   "pastel": "#CFEEDB",
+   "primaryScore": 24,
+   "secondaryScore": 33,
+   "secondaryLabel": "Changement climatique (Ipsos)",
+   "goal": "Objectif de référence : réduire les émissions et protéger les écosystèmes.",
+   "description": "Climat, énergie, biodiversité : après les canicules de l'été 2026, 33 % des Français se déclarent préoccupés par le changement climatique (Ipsos, juillet 2026) et 24 % en font une priorité d'action (Elabe, août 2026).",
+   "scrutins": [
+    "2023-174",
+    "2024-10",
+    "2024-303",
+    "2024-347",
+    "2025-339"
+   ]
+  },
+  {
+   "id": "inegalites",
+   "name": "Réduire les inégalités",
+   "icon": "balance",
+   "pastel": "#FFE0C7",
+   "primaryScore": 21,
+   "secondaryScore": 22,
+   "secondaryLabel": "Pauvreté et inégalités (Ipsos)",
+   "goal": "Objectif de référence : réduire les inégalités sociales et les discriminations.",
+   "description": "Pauvreté, justice sociale, discriminations : 22 % des Français se déclarent préoccupés par la pauvreté et les inégalités sociales (Ipsos, juillet 2026) et 21 % en font une priorité d'action (Elabe, août 2026).",
+   "scrutins": [
+    "2024-7",
+    "2024-322",
+    "2024-327",
+    "2025-250"
+   ]
+  }
+ ],
+ "scrutins": {
+  "2023-5": {
+   "id": "2023-5",
+   "date": "2023-10-17",
+   "title": "sur l'ensemble du projet de loi portant transposition de l'accord national interprofessionnel relatif au partage de la valeur au sein de l'entreprise.",
+   "url": "https://www.senat.fr/scrutin-public/2023/scr2023-5.html",
+   "theme": "pouvoir-achat",
+   "result": "Adoption",
+   "dossierUrl": "https://www.senat.fr/dossier-legislatif/pjl22-816.html",
+   "totals": {
+    "votants": 342,
+    "exprimes": 262,
+    "pour": 244,
+    "contre": 18,
+    "abstention": 80,
+    "nonVotants": 6
+   },
+   "groups": [
+    {
+     "key": "LR",
+     "label": "Groupe Les Républicains",
+     "size": 133,
+     "pour": 132,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 1
+    },
+    {
+     "key": "SER",
+     "label": "Groupe Socialiste, Écologiste et Républicain",
+     "size": 64,
+     "pour": 0,
+     "contre": 0,
+     "abstention": 63,
+     "nonVotants": 1
+    },
+    {
+     "key": "UC",
+     "label": "Groupe Union Centriste",
+     "size": 56,
+     "pour": 56,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "RDPI",
+     "label": "Groupe Rassemblement des démocrates, progressistes et indépendants",
+     "size": 22,
+     "pour": 22,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "CRCE",
+     "label": "Groupe Communiste Républicain Citoyen et Écologiste - Kanaky",
+     "size": 18,
+     "pour": 0,
+     "contre": 18,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "LIRT",
+     "label": "Groupe Les Indépendants - République et Territoires",
+     "size": 18,
+     "pour": 18,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "GEST",
+     "label": "Groupe Écologiste - Solidarité et Territoires",
+     "size": 17,
+     "pour": 0,
+     "contre": 0,
+     "abstention": 17,
+     "nonVotants": 0
+    },
+    {
+     "key": "RDSE",
+     "label": "Groupe du Rassemblement Démocratique et Social Européen",
+     "size": 16,
+     "pour": 16,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "NI",
+     "label": "Sénateurs ne figurant sur la liste d'aucun groupe",
+     "size": 4,
+     "pour": 0,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 4
+    }
+   ],
+   "qualification": {
+    "direction": "favorable",
+    "note": "Le texte étend le partage de la valeur (intéressement, primes de partage) aux salariés des petites entreprises : un dispositif de revenus supplémentaires."
+   },
+   "resultEffect": "favorable",
+   "an": {
+    "uid": "VTANR5L16V3009",
+    "legislature": 16,
+    "numero": 3009,
+    "date": "2023-11-22",
+    "title": "l'ensemble du projet de loi portant transposition de l'accord national interprofessionnel relatif au partage de la valeur au sein de l'entreprise (texte de la commission paritaire).",
+    "stage": "Vote public",
+    "result": "Adoption",
+    "resultLabel": "l'Assemblée nationale a adopté",
+    "url": "https://www.assemblee-nationale.fr/dyn/16/scrutins/3009",
+    "totals": {
+     "votants": 205,
+     "exprimes": 194,
+     "pour": 158,
+     "contre": 36,
+     "abstention": 11,
+     "nonVotants": 1
+    },
+    "groups": [
+     {
+      "key": "EPR",
+      "label": "Ensemble pour la République (Renaissance)",
+      "short": "EPR",
+      "color": "#FF8A00",
+      "size": 170,
+      "pour": 67,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "RN",
+      "label": "Rassemblement National",
+      "short": "RN",
+      "color": "#22315B",
+      "size": 88,
+      "pour": 33,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "LFI-NFP",
+      "label": "La France insoumise – Nouveau Front Populaire",
+      "short": "LFI-NFP",
+      "color": "#CC2443",
+      "size": 75,
+      "pour": 1,
+      "contre": 31,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "DR",
+      "label": "Droite Républicaine",
+      "short": "DR",
+      "color": "#3B5BA5",
+      "size": 62,
+      "pour": 10,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "Dem",
+      "label": "Les Démocrates (MoDem)",
+      "short": "Dem",
+      "color": "#F2C14E",
+      "size": 51,
+      "pour": 20,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 1
+     },
+     {
+      "key": "SOC",
+      "label": "Socialistes et apparentés",
+      "short": "SOC",
+      "color": "#E7536C",
+      "size": 31,
+      "pour": 9,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "HOR",
+      "label": "Horizons & Indépendants",
+      "short": "HOR",
+      "color": "#4FC3F7",
+      "size": 30,
+      "pour": 11,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "EcoS",
+      "label": "Écologiste et Social",
+      "short": "EcoS",
+      "color": "#35D07F",
+      "size": 23,
+      "pour": 0,
+      "contre": 0,
+      "abstention": 11,
+      "nonVotants": 0
+     },
+     {
+      "key": "GDR",
+      "label": "Gauche Démocrate et Républicaine",
+      "short": "GDR",
+      "color": "#B03030",
+      "size": 22,
+      "pour": 0,
+      "contre": 5,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "LIOT",
+      "label": "Libertés, Indépendants, Outre-mer et Territoires",
+      "short": "LIOT",
+      "color": "#A78BFA",
+      "size": 21,
+      "pour": 7,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "NI",
+      "label": "Non inscrits",
+      "short": "NI",
+      "color": "#8B95A9",
+      "size": 4,
+      "pour": 0,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     }
+    ]
+   },
+   "anNote": null
+  },
+  "2023-19": {
+   "id": "2023-19",
+   "date": "2023-10-26",
+   "title": "sur l'ensemble du projet de loi portant mesures d'urgence pour lutter contre l'inflation concernant les produits de grande consommation.",
+   "url": "https://www.senat.fr/scrutin-public/2023/scr2023-19.html",
+   "theme": "pouvoir-achat",
+   "result": "Adoption",
+   "dossierUrl": "https://www.senat.fr/dossier-legislatif/pjl23-020.html",
+   "totals": {
+    "votants": 341,
+    "exprimes": 244,
+    "pour": 209,
+    "contre": 35,
+    "abstention": 97,
+    "nonVotants": 7
+   },
+   "groups": [
+    {
+     "key": "LR",
+     "label": "Groupe Les Républicains",
+     "size": 133,
+     "pour": 131,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 2
+    },
+    {
+     "key": "SER",
+     "label": "Groupe Socialiste, Écologiste et Républicain",
+     "size": 64,
+     "pour": 0,
+     "contre": 0,
+     "abstention": 64,
+     "nonVotants": 0
+    },
+    {
+     "key": "UC",
+     "label": "Groupe Union Centriste",
+     "size": 56,
+     "pour": 56,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "RDPI",
+     "label": "Groupe Rassemblement des démocrates, progressistes et indépendants",
+     "size": 22,
+     "pour": 22,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "CRCE",
+     "label": "Groupe Communiste Républicain Citoyen et Écologiste - Kanaky",
+     "size": 18,
+     "pour": 0,
+     "contre": 18,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "LIRT",
+     "label": "Groupe Les Indépendants - République et Territoires",
+     "size": 18,
+     "pour": 0,
+     "contre": 0,
+     "abstention": 17,
+     "nonVotants": 1
+    },
+    {
+     "key": "GEST",
+     "label": "Groupe Écologiste - Solidarité et Territoires",
+     "size": 17,
+     "pour": 0,
+     "contre": 17,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "RDSE",
+     "label": "Groupe du Rassemblement Démocratique et Social Européen",
+     "size": 16,
+     "pour": 0,
+     "contre": 0,
+     "abstention": 16,
+     "nonVotants": 0
+    },
+    {
+     "key": "NI",
+     "label": "Sénateurs ne figurant sur la liste d'aucun groupe",
+     "size": 4,
+     "pour": 0,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 4
+    }
+   ],
+   "qualification": {
+    "direction": "favorable",
+    "note": "Le texte encadre les négociations commerciales et renforce le contrôle des marges pour faire baisser les prix des produits de grande consommation."
+   },
+   "resultEffect": "favorable",
+   "an": {
+    "uid": "VTANR5L16V2967",
+    "legislature": 16,
+    "numero": 2967,
+    "date": "2023-11-14",
+    "title": "l'ensemble du projet de loi portant mesures d'urgence pour lutter contre l'inflation concernant les produits de grande consommation (texte de la commission mixte paritaire).",
+    "stage": "Texte de la CMP",
+    "result": "Adoption",
+    "resultLabel": "l'Assemblée nationale a adopté",
+    "url": "https://www.assemblee-nationale.fr/dyn/16/scrutins/2967",
+    "totals": {
+     "votants": 230,
+     "exprimes": 164,
+     "pour": 97,
+     "contre": 67,
+     "abstention": 66,
+     "nonVotants": 1
+    },
+    "groups": [
+     {
+      "key": "EPR",
+      "label": "Ensemble pour la République (Renaissance)",
+      "short": "EPR",
+      "color": "#FF8A00",
+      "size": 170,
+      "pour": 71,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "RN",
+      "label": "Rassemblement National",
+      "short": "RN",
+      "color": "#22315B",
+      "size": 88,
+      "pour": 0,
+      "contre": 0,
+      "abstention": 35,
+      "nonVotants": 0
+     },
+     {
+      "key": "LFI-NFP",
+      "label": "La France insoumise – Nouveau Front Populaire",
+      "short": "LFI-NFP",
+      "color": "#CC2443",
+      "size": 75,
+      "pour": 0,
+      "contre": 45,
+      "abstention": 0,
+      "nonVotants": 1
+     },
+     {
+      "key": "DR",
+      "label": "Droite Républicaine",
+      "short": "DR",
+      "color": "#3B5BA5",
+      "size": 62,
+      "pour": 1,
+      "contre": 2,
+      "abstention": 20,
+      "nonVotants": 0
+     },
+     {
+      "key": "Dem",
+      "label": "Les Démocrates (MoDem)",
+      "short": "Dem",
+      "color": "#F2C14E",
+      "size": 51,
+      "pour": 16,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "SOC",
+      "label": "Socialistes et apparentés",
+      "short": "SOC",
+      "color": "#E7536C",
+      "size": 31,
+      "pour": 0,
+      "contre": 10,
+      "abstention": 3,
+      "nonVotants": 0
+     },
+     {
+      "key": "HOR",
+      "label": "Horizons & Indépendants",
+      "short": "HOR",
+      "color": "#4FC3F7",
+      "size": 30,
+      "pour": 9,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "EcoS",
+      "label": "Écologiste et Social",
+      "short": "EcoS",
+      "color": "#35D07F",
+      "size": 23,
+      "pour": 0,
+      "contre": 8,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "GDR",
+      "label": "Gauche Démocrate et Républicaine",
+      "short": "GDR",
+      "color": "#B03030",
+      "size": 22,
+      "pour": 0,
+      "contre": 1,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "LIOT",
+      "label": "Libertés, Indépendants, Outre-mer et Territoires",
+      "short": "LIOT",
+      "color": "#A78BFA",
+      "size": 21,
+      "pour": 0,
+      "contre": 1,
+      "abstention": 8,
+      "nonVotants": 0
+     },
+     {
+      "key": "NI",
+      "label": "Non inscrits",
+      "short": "NI",
+      "color": "#8B95A9",
+      "size": 4,
+      "pour": 0,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     }
+    ]
+   },
+   "anNote": null
+  },
+  "2023-30": {
+   "id": "2023-30",
+   "date": "2023-11-09",
+   "title": "sur l'ensemble du texte élaboré par la commission mixte paritaire sur le projet de loi portant mesures d'urgence pour lutter contre l'inflation concernant les produits de grande consommation.",
+   "url": "https://www.senat.fr/scrutin-public/2023/scr2023-30.html",
+   "theme": "pouvoir-achat",
+   "result": "Adoption",
+   "dossierUrl": "https://www.senat.fr/dossier-legislatif/pjl23-020.html",
+   "totals": {
+    "votants": 342,
+    "exprimes": 260,
+    "pour": 225,
+    "contre": 35,
+    "abstention": 82,
+    "nonVotants": 6
+   },
+   "groups": [
+    {
+     "key": "LR",
+     "label": "Groupe Les Républicains",
+     "size": 133,
+     "pour": 132,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 1
+    },
+    {
+     "key": "SER",
+     "label": "Groupe Socialiste, Écologiste et Républicain",
+     "size": 64,
+     "pour": 0,
+     "contre": 0,
+     "abstention": 64,
+     "nonVotants": 0
+    },
+    {
+     "key": "UC",
+     "label": "Groupe Union Centriste",
+     "size": 56,
+     "pour": 55,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 1
+    },
+    {
+     "key": "RDPI",
+     "label": "Groupe Rassemblement des démocrates, progressistes et indépendants",
+     "size": 22,
+     "pour": 22,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "CRCE",
+     "label": "Groupe Communiste Républicain Citoyen et Écologiste - Kanaky",
+     "size": 18,
+     "pour": 0,
+     "contre": 18,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "LIRT",
+     "label": "Groupe Les Indépendants - République et Territoires",
+     "size": 18,
+     "pour": 0,
+     "contre": 0,
+     "abstention": 18,
+     "nonVotants": 0
+    },
+    {
+     "key": "GEST",
+     "label": "Groupe Écologiste - Solidarité et Territoires",
+     "size": 17,
+     "pour": 0,
+     "contre": 17,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "RDSE",
+     "label": "Groupe du Rassemblement Démocratique et Social Européen",
+     "size": 16,
+     "pour": 16,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "NI",
+     "label": "Sénateurs ne figurant sur la liste d'aucun groupe",
+     "size": 4,
+     "pour": 0,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 4
+    }
+   ],
+   "qualification": {
+    "direction": "favorable",
+    "note": "Version issue de la commission mixte paritaire du dispositif d'encadrement des prix de grande consommation."
+   },
+   "resultEffect": "favorable",
+   "an": {
+    "uid": "VTANR5L16V2967",
+    "legislature": 16,
+    "numero": 2967,
+    "date": "2023-11-14",
+    "title": "l'ensemble du projet de loi portant mesures d'urgence pour lutter contre l'inflation concernant les produits de grande consommation (texte de la commission mixte paritaire).",
+    "stage": "Texte de la CMP",
+    "result": "Adoption",
+    "resultLabel": "l'Assemblée nationale a adopté",
+    "url": "https://www.assemblee-nationale.fr/dyn/16/scrutins/2967",
+    "totals": {
+     "votants": 230,
+     "exprimes": 164,
+     "pour": 97,
+     "contre": 67,
+     "abstention": 66,
+     "nonVotants": 1
+    },
+    "groups": [
+     {
+      "key": "EPR",
+      "label": "Ensemble pour la République (Renaissance)",
+      "short": "EPR",
+      "color": "#FF8A00",
+      "size": 170,
+      "pour": 71,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "RN",
+      "label": "Rassemblement National",
+      "short": "RN",
+      "color": "#22315B",
+      "size": 88,
+      "pour": 0,
+      "contre": 0,
+      "abstention": 35,
+      "nonVotants": 0
+     },
+     {
+      "key": "LFI-NFP",
+      "label": "La France insoumise – Nouveau Front Populaire",
+      "short": "LFI-NFP",
+      "color": "#CC2443",
+      "size": 75,
+      "pour": 0,
+      "contre": 45,
+      "abstention": 0,
+      "nonVotants": 1
+     },
+     {
+      "key": "DR",
+      "label": "Droite Républicaine",
+      "short": "DR",
+      "color": "#3B5BA5",
+      "size": 62,
+      "pour": 1,
+      "contre": 2,
+      "abstention": 20,
+      "nonVotants": 0
+     },
+     {
+      "key": "Dem",
+      "label": "Les Démocrates (MoDem)",
+      "short": "Dem",
+      "color": "#F2C14E",
+      "size": 51,
+      "pour": 16,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "SOC",
+      "label": "Socialistes et apparentés",
+      "short": "SOC",
+      "color": "#E7536C",
+      "size": 31,
+      "pour": 0,
+      "contre": 10,
+      "abstention": 3,
+      "nonVotants": 0
+     },
+     {
+      "key": "HOR",
+      "label": "Horizons & Indépendants",
+      "short": "HOR",
+      "color": "#4FC3F7",
+      "size": 30,
+      "pour": 9,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "EcoS",
+      "label": "Écologiste et Social",
+      "short": "EcoS",
+      "color": "#35D07F",
+      "size": 23,
+      "pour": 0,
+      "contre": 8,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "GDR",
+      "label": "Gauche Démocrate et Républicaine",
+      "short": "GDR",
+      "color": "#B03030",
+      "size": 22,
+      "pour": 0,
+      "contre": 1,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "LIOT",
+      "label": "Libertés, Indépendants, Outre-mer et Territoires",
+      "short": "LIOT",
+      "color": "#A78BFA",
+      "size": 21,
+      "pour": 0,
+      "contre": 1,
+      "abstention": 8,
+      "nonVotants": 0
+     },
+     {
+      "key": "NI",
+      "label": "Non inscrits",
+      "short": "NI",
+      "color": "#8B95A9",
+      "size": 4,
+      "pour": 0,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     }
+    ]
+   },
+   "anNote": null
+  },
+  "2023-100": {
+   "id": "2023-100",
+   "date": "2023-12-13",
+   "title": "sur l'article unique constituant l'ensemble de la proposition de loi visant à lutter contre la précarité de la jeunesse par l'instauration d'une allocation autonomie universelle d'études.",
+   "url": "https://www.senat.fr/scrutin-public/2023/scr2023-100.html",
+   "theme": "pouvoir-achat",
+   "result": "Rejet",
+   "dossierUrl": "https://www.senat.fr/dossier-legislatif/ppl23-015.html",
+   "totals": {
+    "votants": 341,
+    "exprimes": 331,
+    "pour": 103,
+    "contre": 228,
+    "abstention": 10,
+    "nonVotants": 7
+   },
+   "groups": [
+    {
+     "key": "LR",
+     "label": "Groupe Les Républicains",
+     "size": 133,
+     "pour": 0,
+     "contre": 131,
+     "abstention": 0,
+     "nonVotants": 2
+    },
+    {
+     "key": "SER",
+     "label": "Groupe Socialiste, Écologiste et Républicain",
+     "size": 64,
+     "pour": 64,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "UC",
+     "label": "Groupe Union Centriste",
+     "size": 56,
+     "pour": 0,
+     "contre": 56,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "RDPI",
+     "label": "Groupe Rassemblement des démocrates, progressistes et indépendants",
+     "size": 22,
+     "pour": 0,
+     "contre": 22,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "CRCE",
+     "label": "Groupe Communiste Républicain Citoyen et Écologiste - Kanaky",
+     "size": 18,
+     "pour": 18,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "LIRT",
+     "label": "Groupe Les Indépendants - République et Territoires",
+     "size": 18,
+     "pour": 0,
+     "contre": 17,
+     "abstention": 0,
+     "nonVotants": 1
+    },
+    {
+     "key": "GEST",
+     "label": "Groupe Écologiste - Solidarité et Territoires",
+     "size": 17,
+     "pour": 17,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "RDSE",
+     "label": "Groupe du Rassemblement Démocratique et Social Européen",
+     "size": 16,
+     "pour": 4,
+     "contre": 2,
+     "abstention": 10,
+     "nonVotants": 0
+    },
+    {
+     "key": "NI",
+     "label": "Sénateurs ne figurant sur la liste d'aucun groupe",
+     "size": 4,
+     "pour": 0,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 4
+    }
+   ],
+   "qualification": {
+    "direction": "favorable",
+    "note": "La proposition créait une allocation d'autonomie pour les étudiants afin de garantir un revenu minimal ; le Sénat l'a rejetée."
+   },
+   "resultEffect": "defavorable",
+   "an": null,
+   "anNote": null
+  },
+  "2024-243": {
+   "id": "2024-243",
+   "date": "2025-03-26",
+   "title": "sur l'ensemble de la proposition de loi visant à restaurer l'autorité de la justice à l'égard des mineurs délinquants et de leurs parents.",
+   "url": "https://www.senat.fr/scrutin-public/2024/scr2024-243.html",
+   "theme": "securite",
+   "result": "Adoption",
+   "dossierUrl": "https://www.senat.fr/dossier-legislatif/ppl24-343.html",
+   "totals": {
+    "votants": 344,
+    "exprimes": 340,
+    "pour": 227,
+    "contre": 113,
+    "abstention": 4,
+    "nonVotants": 4
+   },
+   "groups": [
+    {
+     "key": "LR",
+     "label": "Groupe Les Républicains",
+     "size": 131,
+     "pour": 129,
+     "contre": 0,
+     "abstention": 1,
+     "nonVotants": 1
+    },
+    {
+     "key": "SER",
+     "label": "Groupe Socialiste, Écologiste et Républicain",
+     "size": 65,
+     "pour": 0,
+     "contre": 64,
+     "abstention": 0,
+     "nonVotants": 1
+    },
+    {
+     "key": "UC",
+     "label": "Groupe Union Centriste",
+     "size": 59,
+     "pour": 57,
+     "contre": 1,
+     "abstention": 1,
+     "nonVotants": 0
+    },
+    {
+     "key": "LIRT",
+     "label": "Groupe Les Indépendants - République et Territoires",
+     "size": 19,
+     "pour": 17,
+     "contre": 1,
+     "abstention": 0,
+     "nonVotants": 1
+    },
+    {
+     "key": "RDPI",
+     "label": "Groupe Rassemblement des démocrates, progressistes et indépendants",
+     "size": 19,
+     "pour": 18,
+     "contre": 0,
+     "abstention": 1,
+     "nonVotants": 0
+    },
+    {
+     "key": "CRCE",
+     "label": "Groupe Communiste Républicain Citoyen et Écologiste - Kanaky",
+     "size": 18,
+     "pour": 0,
+     "contre": 18,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "RDSE",
+     "label": "Groupe du Rassemblement Démocratique et Social Européen",
+     "size": 17,
+     "pour": 3,
+     "contre": 13,
+     "abstention": 1,
+     "nonVotants": 0
+    },
+    {
+     "key": "GEST",
+     "label": "Groupe Écologiste - Solidarité et Territoires",
+     "size": 16,
+     "pour": 0,
+     "contre": 16,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "NI",
+     "label": "Sénateurs ne figurant sur la liste d'aucun groupe",
+     "size": 4,
+     "pour": 3,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 1
+    }
+   ],
+   "qualification": {
+    "direction": "favorable",
+    "note": "Le texte durcit la réponse judiciaire aux mineurs délinquants et responsabilise leurs parents."
+   },
+   "resultEffect": "favorable",
+   "an": {
+    "uid": "VTANR5L17V1624",
+    "legislature": 17,
+    "numero": 1624,
+    "date": "2025-05-13",
+    "title": "l'ensemble de la proposition de loi visant à renforcer l'autorité de la justice à l'égard des mineurs délinquants et de leurs parents (texte de la commission mixte paritaire).",
+    "stage": "Texte de la CMP",
+    "result": "Adoption",
+    "resultLabel": "l'Assemblée nationale a adopté",
+    "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/1624",
+    "totals": {
+     "votants": 536,
+     "exprimes": 528,
+     "pour": 341,
+     "contre": 187,
+     "abstention": 8,
+     "nonVotants": 1
+    },
+    "groups": [
+     {
+      "key": "RN",
+      "label": "Rassemblement National",
+      "short": "RN",
+      "color": "#22315B",
+      "size": 123,
+      "pour": 119,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "EPR",
+      "label": "Ensemble pour la République (Renaissance)",
+      "short": "EPR",
+      "color": "#FF8A00",
+      "size": 94,
+      "pour": 80,
+      "contre": 1,
+      "abstention": 4,
+      "nonVotants": 1
+     },
+     {
+      "key": "LFI-NFP",
+      "label": "La France insoumise – Nouveau Front Populaire",
+      "short": "LFI-NFP",
+      "color": "#CC2443",
+      "size": 71,
+      "pour": 0,
+      "contre": 67,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "SOC",
+      "label": "Socialistes et apparentés",
+      "short": "SOC",
+      "color": "#E7536C",
+      "size": 66,
+      "pour": 0,
+      "contre": 62,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "DR",
+      "label": "Droite Républicaine",
+      "short": "DR",
+      "color": "#3B5BA5",
+      "size": 48,
+      "pour": 45,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "EcoS",
+      "label": "Écologiste et Social",
+      "short": "EcoS",
+      "color": "#35D07F",
+      "size": 38,
+      "pour": 0,
+      "contre": 36,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "Dem",
+      "label": "Les Démocrates (MoDem)",
+      "short": "Dem",
+      "color": "#F2C14E",
+      "size": 36,
+      "pour": 31,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "HOR",
+      "label": "Horizons & Indépendants",
+      "short": "HOR",
+      "color": "#4FC3F7",
+      "size": 33,
+      "pour": 32,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "LIOT",
+      "label": "Libertés, Indépendants, Outre-mer et Territoires",
+      "short": "LIOT",
+      "color": "#A78BFA",
+      "size": 23,
+      "pour": 14,
+      "contre": 6,
+      "abstention": 3,
+      "nonVotants": 0
+     },
+     {
+      "key": "GDR",
+      "label": "Gauche Démocrate et Républicaine",
+      "short": "GDR",
+      "color": "#B03030",
+      "size": 17,
+      "pour": 0,
+      "contre": 13,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "UDR",
+      "label": "Union des droites pour la République",
+      "short": "UDR",
+      "color": "#5B6B9E",
+      "size": 16,
+      "pour": 16,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "NI",
+      "label": "Non inscrits",
+      "short": "NI",
+      "color": "#8B95A9",
+      "size": 11,
+      "pour": 4,
+      "contre": 2,
+      "abstention": 1,
+      "nonVotants": 0
+     }
+    ]
+   },
+   "anNote": null
+  },
+  "2024-262": {
+   "id": "2024-262",
+   "date": "2025-04-28",
+   "title": "sur l'ensemble du texte élaboré par la commission mixte paritaire sur la proposition de loi visant à sortir la France du piège du narcotrafic.",
+   "url": "https://www.senat.fr/scrutin-public/2024/scr2024-262.html",
+   "theme": "securite",
+   "result": "Adoption",
+   "dossierUrl": "https://www.senat.fr/dossier-legislatif/ppl23-735.html",
+   "totals": {
+    "votants": 341,
+    "exprimes": 325,
+    "pour": 325,
+    "contre": 0,
+    "abstention": 16,
+    "nonVotants": 7
+   },
+   "groups": [
+    {
+     "key": "LR",
+     "label": "Groupe Les Républicains",
+     "size": 130,
+     "pour": 128,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 2
+    },
+    {
+     "key": "SER",
+     "label": "Groupe Socialiste, Écologiste et Républicain",
+     "size": 65,
+     "pour": 65,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "UC",
+     "label": "Groupe Union Centriste",
+     "size": 59,
+     "pour": 59,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "LIRT",
+     "label": "Groupe Les Indépendants - République et Territoires",
+     "size": 20,
+     "pour": 19,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 1
+    },
+    {
+     "key": "RDPI",
+     "label": "Groupe Rassemblement des démocrates, progressistes et indépendants",
+     "size": 19,
+     "pour": 19,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "CRCE",
+     "label": "Groupe Communiste Républicain Citoyen et Écologiste - Kanaky",
+     "size": 18,
+     "pour": 18,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "RDSE",
+     "label": "Groupe du Rassemblement Démocratique et Social Européen",
+     "size": 17,
+     "pour": 17,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "GEST",
+     "label": "Groupe Écologiste - Solidarité et Territoires",
+     "size": 16,
+     "pour": 0,
+     "contre": 0,
+     "abstention": 16,
+     "nonVotants": 0
+    },
+    {
+     "key": "NI",
+     "label": "Sénateurs ne figurant sur la liste d'aucun groupe",
+     "size": 4,
+     "pour": 0,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 4
+    }
+   ],
+   "qualification": {
+    "direction": "favorable",
+    "note": "Le texte crée un parquet national anti-stupéfiants et élargit les outils d'enquête contre le narcotrafic."
+   },
+   "resultEffect": "favorable",
+   "an": {
+    "uid": "VTANR5L17V1473",
+    "legislature": 17,
+    "numero": 1473,
+    "date": "2025-04-29",
+    "title": "l'ensemble de la proposition de loi visant à sortir la France du piège du narcotrafic (texte de la commission mixte paritaire).",
+    "stage": "Texte de la CMP",
+    "result": "Adoption",
+    "resultLabel": "l'Assemblée nationale a adopté",
+    "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/1473",
+    "totals": {
+     "votants": 498,
+     "exprimes": 464,
+     "pour": 396,
+     "contre": 68,
+     "abstention": 34,
+     "nonVotants": 1
+    },
+    "groups": [
+     {
+      "key": "RN",
+      "label": "Rassemblement National",
+      "short": "RN",
+      "color": "#22315B",
+      "size": 123,
+      "pour": 109,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "EPR",
+      "label": "Ensemble pour la République (Renaissance)",
+      "short": "EPR",
+      "color": "#FF8A00",
+      "size": 94,
+      "pour": 73,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 1
+     },
+     {
+      "key": "LFI-NFP",
+      "label": "La France insoumise – Nouveau Front Populaire",
+      "short": "LFI-NFP",
+      "color": "#CC2443",
+      "size": 71,
+      "pour": 0,
+      "contre": 60,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "SOC",
+      "label": "Socialistes et apparentés",
+      "short": "SOC",
+      "color": "#E7536C",
+      "size": 66,
+      "pour": 63,
+      "contre": 0,
+      "abstention": 1,
+      "nonVotants": 0
+     },
+     {
+      "key": "DR",
+      "label": "Droite Républicaine",
+      "short": "DR",
+      "color": "#3B5BA5",
+      "size": 48,
+      "pour": 38,
+      "contre": 0,
+      "abstention": 1,
+      "nonVotants": 0
+     },
+     {
+      "key": "EcoS",
+      "label": "Écologiste et Social",
+      "short": "EcoS",
+      "color": "#35D07F",
+      "size": 38,
+      "pour": 0,
+      "contre": 4,
+      "abstention": 25,
+      "nonVotants": 0
+     },
+     {
+      "key": "Dem",
+      "label": "Les Démocrates (MoDem)",
+      "short": "Dem",
+      "color": "#F2C14E",
+      "size": 36,
+      "pour": 36,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "HOR",
+      "label": "Horizons & Indépendants",
+      "short": "HOR",
+      "color": "#4FC3F7",
+      "size": 33,
+      "pour": 33,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "LIOT",
+      "label": "Libertés, Indépendants, Outre-mer et Territoires",
+      "short": "LIOT",
+      "color": "#A78BFA",
+      "size": 23,
+      "pour": 22,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "GDR",
+      "label": "Gauche Démocrate et Républicaine",
+      "short": "GDR",
+      "color": "#B03030",
+      "size": 17,
+      "pour": 1,
+      "contre": 4,
+      "abstention": 7,
+      "nonVotants": 0
+     },
+     {
+      "key": "UDR",
+      "label": "Union des droites pour la République",
+      "short": "UDR",
+      "color": "#5B6B9E",
+      "size": 16,
+      "pour": 13,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "NI",
+      "label": "Non inscrits",
+      "short": "NI",
+      "color": "#8B95A9",
+      "size": 11,
+      "pour": 8,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     }
+    ]
+   },
+   "anNote": null
+  },
+  "2025-184": {
+   "id": "2025-184",
+   "date": "2026-02-10",
+   "title": "sur l'ensemble du projet de loi relatif à l'extension des prérogatives, des moyens, de l'organisation et du contrôle des polices municipales et des gardes champêtres.",
+   "url": "https://www.senat.fr/scrutin-public/2025/scr2025-184.html",
+   "theme": "securite",
+   "result": "Adoption",
+   "dossierUrl": "https://www.senat.fr/dossier-legislatif/pjl25-097.html",
+   "totals": {
+    "votants": 324,
+    "exprimes": 314,
+    "pour": 290,
+    "contre": 24,
+    "abstention": 10,
+    "nonVotants": 24
+   },
+   "groups": [
+    {
+     "key": "LR",
+     "label": "Groupe Les Républicains",
+     "size": 130,
+     "pour": 127,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 3
+    },
+    {
+     "key": "SER",
+     "label": "Groupe Socialiste, Écologiste et Républicain",
+     "size": 65,
+     "pour": 47,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 18
+    },
+    {
+     "key": "UC",
+     "label": "Groupe Union Centriste",
+     "size": 59,
+     "pour": 59,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "LIRT",
+     "label": "Groupe Les Indépendants - République et Territoires",
+     "size": 20,
+     "pour": 18,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 2
+    },
+    {
+     "key": "RDPI",
+     "label": "Groupe Rassemblement des démocrates, progressistes et indépendants",
+     "size": 19,
+     "pour": 19,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "CRCE",
+     "label": "Groupe Communiste Républicain Citoyen et Écologiste - Kanaky",
+     "size": 18,
+     "pour": 0,
+     "contre": 17,
+     "abstention": 0,
+     "nonVotants": 1
+    },
+    {
+     "key": "RDSE",
+     "label": "Groupe du Rassemblement Démocratique et Social Européen",
+     "size": 17,
+     "pour": 15,
+     "contre": 0,
+     "abstention": 2,
+     "nonVotants": 0
+    },
+    {
+     "key": "GEST",
+     "label": "Groupe Écologiste - Solidarité et Territoires",
+     "size": 16,
+     "pour": 1,
+     "contre": 7,
+     "abstention": 8,
+     "nonVotants": 0
+    },
+    {
+     "key": "NI",
+     "label": "Sénateurs ne figurant sur la liste d'aucun groupe",
+     "size": 4,
+     "pour": 4,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 0
+    }
+   ],
+   "qualification": {
+    "direction": "favorable",
+    "note": "Le texte élargit les prérogatives et les moyens des polices municipales et des gardes champêtres."
+   },
+   "resultEffect": "favorable",
+   "an": null,
+   "anNote": null
+  },
+  "2025-338": {
+   "id": "2025-338",
+   "date": "2026-07-21",
+   "title": "sur l'ensemble du projet de loi visant à offrir des réponses immédiates aux phénomènes troublant l'ordre public, la sécurité et la tranquillité de nos concitoyens.",
+   "url": "https://www.senat.fr/scrutin-public/2025/scr2025-338.html",
+   "theme": "securite",
+   "result": "Adoption",
+   "dossierUrl": "https://www.senat.fr/dossier-legislatif/pjl25-472.html",
+   "totals": {
+    "votants": 345,
+    "exprimes": 269,
+    "pour": 235,
+    "contre": 34,
+    "abstention": 76,
+    "nonVotants": 3
+   },
+   "groups": [
+    {
+     "key": "LR",
+     "label": "Groupe Les Républicains",
+     "size": 131,
+     "pour": 129,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 2
+    },
+    {
+     "key": "SER",
+     "label": "Groupe Socialiste, Écologiste et Républicain",
+     "size": 64,
+     "pour": 0,
+     "contre": 0,
+     "abstention": 64,
+     "nonVotants": 0
+    },
+    {
+     "key": "UC",
+     "label": "Groupe Union Centriste",
+     "size": 59,
+     "pour": 58,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 1
+    },
+    {
+     "key": "LIRT",
+     "label": "Groupe Les Indépendants - République et Territoires",
+     "size": 20,
+     "pour": 19,
+     "contre": 0,
+     "abstention": 1,
+     "nonVotants": 0
+    },
+    {
+     "key": "RDPI",
+     "label": "Groupe Rassemblement des démocrates, progressistes et indépendants",
+     "size": 19,
+     "pour": 18,
+     "contre": 0,
+     "abstention": 1,
+     "nonVotants": 0
+    },
+    {
+     "key": "CRCE",
+     "label": "Groupe Communiste Républicain Citoyen et Écologiste - Kanaky",
+     "size": 18,
+     "pour": 0,
+     "contre": 18,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "RDSE",
+     "label": "Groupe du Rassemblement Démocratique et Social Européen",
+     "size": 17,
+     "pour": 7,
+     "contre": 0,
+     "abstention": 10,
+     "nonVotants": 0
+    },
+    {
+     "key": "GEST",
+     "label": "Groupe Écologiste - Solidarité et Territoires",
+     "size": 16,
+     "pour": 0,
+     "contre": 16,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "NI",
+     "label": "Sénateurs ne figurant sur la liste d'aucun groupe",
+     "size": 4,
+     "pour": 4,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 0
+    }
+   ],
+   "qualification": {
+    "direction": "favorable",
+    "note": "Le texte renforce les moyens et procédures face aux troubles à l'ordre public et à la tranquillité."
+   },
+   "resultEffect": "favorable",
+   "an": {
+    "uid": "VTANR5L17V8433",
+    "legislature": 17,
+    "numero": 8433,
+    "date": "2026-07-21",
+    "title": "l'ensemble du projet de loi visant à offrir des réponses immédiates aux phénomènes troublant l'ordre public, la sécurité et la tranquilité de nos concitoyens (texte de la commission mixte paritaire).",
+    "stage": "Texte de la CMP",
+    "result": "Adoption",
+    "resultLabel": "l'Assemblée nationale a adopté",
+    "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/8433",
+    "totals": {
+     "votants": 537,
+     "exprimes": 530,
+     "pour": 351,
+     "contre": 179,
+     "abstention": 7,
+     "nonVotants": 2
+    },
+    "groups": [
+     {
+      "key": "RN",
+      "label": "Rassemblement National",
+      "short": "RN",
+      "color": "#22315B",
+      "size": 122,
+      "pour": 114,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "EPR",
+      "label": "Ensemble pour la République (Renaissance)",
+      "short": "EPR",
+      "color": "#FF8A00",
+      "size": 91,
+      "pour": 84,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 1
+     },
+     {
+      "key": "LFI-NFP",
+      "label": "La France insoumise – Nouveau Front Populaire",
+      "short": "LFI-NFP",
+      "color": "#CC2443",
+      "size": 71,
+      "pour": 0,
+      "contre": 71,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "SOC",
+      "label": "Socialistes et apparentés",
+      "short": "SOC",
+      "color": "#E7536C",
+      "size": 68,
+      "pour": 0,
+      "contre": 56,
+      "abstention": 1,
+      "nonVotants": 0
+     },
+     {
+      "key": "DR",
+      "label": "Droite Républicaine",
+      "short": "DR",
+      "color": "#3B5BA5",
+      "size": 48,
+      "pour": 46,
+      "contre": 0,
+      "abstention": 1,
+      "nonVotants": 0
+     },
+     {
+      "key": "EcoS",
+      "label": "Écologiste et Social",
+      "short": "EcoS",
+      "color": "#35D07F",
+      "size": 38,
+      "pour": 0,
+      "contre": 36,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "Dem",
+      "label": "Les Démocrates (MoDem)",
+      "short": "Dem",
+      "color": "#F2C14E",
+      "size": 37,
+      "pour": 33,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "HOR",
+      "label": "Horizons & Indépendants",
+      "short": "HOR",
+      "color": "#4FC3F7",
+      "size": 35,
+      "pour": 32,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 1
+     },
+     {
+      "key": "LIOT",
+      "label": "Libertés, Indépendants, Outre-mer et Territoires",
+      "short": "LIOT",
+      "color": "#A78BFA",
+      "size": 23,
+      "pour": 18,
+      "contre": 1,
+      "abstention": 4,
+      "nonVotants": 0
+     },
+     {
+      "key": "UDR",
+      "label": "Union des droites pour la République",
+      "short": "UDR",
+      "color": "#5B6B9E",
+      "size": 17,
+      "pour": 17,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "GDR",
+      "label": "Gauche Démocrate et Républicaine",
+      "short": "GDR",
+      "color": "#B03030",
+      "size": 17,
+      "pour": 0,
+      "contre": 15,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "NI",
+      "label": "Non inscrits",
+      "short": "NI",
+      "color": "#8B95A9",
+      "size": 10,
+      "pour": 7,
+      "contre": 0,
+      "abstention": 1,
+      "nonVotants": 0
+     }
+    ]
+   },
+   "anNote": null
+  },
+  "2023-4": {
+   "id": "2023-4",
+   "date": "2023-10-16",
+   "title": "sur l'ensemble du projet de loi de programmation des finances publiques pour les années 2023 à 2027 (nouvelle lecture).",
+   "url": "https://www.senat.fr/scrutin-public/2023/scr2023-4.html",
+   "theme": "dette",
+   "result": "Adoption",
+   "dossierUrl": "https://www.senat.fr/dossier-legislatif/pjl22-071.html",
+   "totals": {
+    "votants": 344,
+    "exprimes": 306,
+    "pour": 204,
+    "contre": 102,
+    "abstention": 38,
+    "nonVotants": 4
+   },
+   "groups": [
+    {
+     "key": "LR",
+     "label": "Groupe Les Républicains",
+     "size": 133,
+     "pour": 132,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 1
+    },
+    {
+     "key": "SER",
+     "label": "Groupe Socialiste, Écologiste et Républicain",
+     "size": 64,
+     "pour": 0,
+     "contre": 64,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "UC",
+     "label": "Groupe Union Centriste",
+     "size": 56,
+     "pour": 55,
+     "contre": 1,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "RDPI",
+     "label": "Groupe Rassemblement des démocrates, progressistes et indépendants",
+     "size": 22,
+     "pour": 0,
+     "contre": 0,
+     "abstention": 22,
+     "nonVotants": 0
+    },
+    {
+     "key": "CRCE",
+     "label": "Groupe Communiste Républicain Citoyen et Écologiste - Kanaky",
+     "size": 18,
+     "pour": 0,
+     "contre": 18,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "LIRT",
+     "label": "Groupe Les Indépendants - République et Territoires",
+     "size": 18,
+     "pour": 17,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 1
+    },
+    {
+     "key": "GEST",
+     "label": "Groupe Écologiste - Solidarité et Territoires",
+     "size": 17,
+     "pour": 0,
+     "contre": 17,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "RDSE",
+     "label": "Groupe du Rassemblement Démocratique et Social Européen",
+     "size": 16,
+     "pour": 0,
+     "contre": 0,
+     "abstention": 16,
+     "nonVotants": 0
+    },
+    {
+     "key": "NI",
+     "label": "Sénateurs ne figurant sur la liste d'aucun groupe",
+     "size": 4,
+     "pour": 0,
+     "contre": 2,
+     "abstention": 0,
+     "nonVotants": 2
+    }
+   ],
+   "qualification": {
+    "direction": "favorable",
+    "note": "Loi de programmation fixant une trajectoire pluriannuelle de réduction du déficit et de la dette publics."
+   },
+   "resultEffect": "favorable",
+   "an": {
+    "uid": "VTANR5L16V361",
+    "legislature": 16,
+    "numero": 361,
+    "date": "2022-10-25",
+    "title": "l'ensemble du projet de loi de programmation des finances publiques pour les années 2023 à 2027 (première lecture).",
+    "stage": "1ʳᵉ lecture",
+    "result": "Rejet",
+    "resultLabel": "L'Assemblée nationale n'a pas adopté",
+    "url": "https://www.assemblee-nationale.fr/dyn/16/scrutins/361",
+    "totals": {
+     "votants": 557,
+     "exprimes": 552,
+     "pour": 243,
+     "contre": 309,
+     "abstention": 5,
+     "nonVotants": 0
+    },
+    "groups": [
+     {
+      "key": "EPR",
+      "label": "Ensemble pour la République (Renaissance)",
+      "short": "EPR",
+      "color": "#FF8A00",
+      "size": 170,
+      "pour": 165,
+      "contre": 0,
+      "abstention": 1,
+      "nonVotants": 0
+     },
+     {
+      "key": "RN",
+      "label": "Rassemblement National",
+      "short": "RN",
+      "color": "#22315B",
+      "size": 89,
+      "pour": 1,
+      "contre": 83,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "LFI-NFP",
+      "label": "La France insoumise – Nouveau Front Populaire",
+      "short": "LFI-NFP",
+      "color": "#CC2443",
+      "size": 75,
+      "pour": 0,
+      "contre": 72,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "DR",
+      "label": "Droite Républicaine",
+      "short": "DR",
+      "color": "#3B5BA5",
+      "size": 62,
+      "pour": 0,
+      "contre": 58,
+      "abstention": 3,
+      "nonVotants": 0
+     },
+     {
+      "key": "Dem",
+      "label": "Les Démocrates (MoDem)",
+      "short": "Dem",
+      "color": "#F2C14E",
+      "size": 51,
+      "pour": 49,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "SOC",
+      "label": "Socialistes et apparentés",
+      "short": "SOC",
+      "color": "#E7536C",
+      "size": 31,
+      "pour": 0,
+      "contre": 30,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "HOR",
+      "label": "Horizons & Indépendants",
+      "short": "HOR",
+      "color": "#4FC3F7",
+      "size": 30,
+      "pour": 28,
+      "contre": 0,
+      "abstention": 1,
+      "nonVotants": 0
+     },
+     {
+      "key": "EcoS",
+      "label": "Écologiste et Social",
+      "short": "EcoS",
+      "color": "#35D07F",
+      "size": 23,
+      "pour": 0,
+      "contre": 23,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "GDR",
+      "label": "Gauche Démocrate et Républicaine",
+      "short": "GDR",
+      "color": "#B03030",
+      "size": 22,
+      "pour": 0,
+      "contre": 21,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "LIOT",
+      "label": "Libertés, Indépendants, Outre-mer et Territoires",
+      "short": "LIOT",
+      "color": "#A78BFA",
+      "size": 20,
+      "pour": 0,
+      "contre": 18,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "NI",
+      "label": "Non inscrits",
+      "short": "NI",
+      "color": "#8B95A9",
+      "size": 4,
+      "pour": 0,
+      "contre": 4,
+      "abstention": 0,
+      "nonVotants": 0
+     }
+    ]
+   },
+   "anNote": "Le vote de l'Assemblée nationale sur ce texte est sa première lecture du 25 octobre 2022 : l'Assemblée l'avait alors rejeté. Le Sénat a repris le texte en nouvelle lecture en 2023."
+  },
+  "2024-35": {
+   "id": "2024-35",
+   "date": "2024-11-14",
+   "title": "sur l'article 12 constituant l'ensemble de la proposition de loi constitutionnelle visant à accélérer le redressement des finances publiques.",
+   "url": "https://www.senat.fr/scrutin-public/2024/scr2024-35.html",
+   "theme": "dette",
+   "result": "Rejet",
+   "dossierUrl": "https://www.senat.fr/dossier-legislatif/ppl23-783.html",
+   "totals": {
+    "votants": 340,
+    "exprimes": 339,
+    "pour": 34,
+    "contre": 305,
+    "abstention": 1,
+    "nonVotants": 7
+   },
+   "groups": [
+    {
+     "key": "LR",
+     "label": "Groupe Les Républicains",
+     "size": 130,
+     "pour": 0,
+     "contre": 129,
+     "abstention": 0,
+     "nonVotants": 1
+    },
+    {
+     "key": "SER",
+     "label": "Groupe Socialiste, Écologiste et Républicain",
+     "size": 64,
+     "pour": 0,
+     "contre": 64,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "UC",
+     "label": "Groupe Union Centriste",
+     "size": 60,
+     "pour": 0,
+     "contre": 59,
+     "abstention": 1,
+     "nonVotants": 0
+    },
+    {
+     "key": "RDPI",
+     "label": "Groupe Rassemblement des démocrates, progressistes et indépendants",
+     "size": 20,
+     "pour": 0,
+     "contre": 19,
+     "abstention": 0,
+     "nonVotants": 1
+    },
+    {
+     "key": "LIRT",
+     "label": "Groupe Les Indépendants - République et Territoires",
+     "size": 19,
+     "pour": 18,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 1
+    },
+    {
+     "key": "CRCE",
+     "label": "Groupe Communiste Républicain Citoyen et Écologiste - Kanaky",
+     "size": 18,
+     "pour": 0,
+     "contre": 18,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "RDSE",
+     "label": "Groupe du Rassemblement Démocratique et Social Européen",
+     "size": 16,
+     "pour": 16,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "GEST",
+     "label": "Groupe Écologiste - Solidarité et Territoires",
+     "size": 16,
+     "pour": 0,
+     "contre": 16,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "NI",
+     "label": "Sénateurs ne figurant sur la liste d'aucun groupe",
+     "size": 4,
+     "pour": 0,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 4
+    }
+   ],
+   "qualification": {
+    "direction": "favorable",
+    "note": "La proposition inscrivait dans la Constitution des règles contraignantes de redressement des finances publiques."
+   },
+   "resultEffect": "defavorable",
+   "an": null,
+   "anNote": null
+  },
+  "2024-147": {
+   "id": "2024-147",
+   "date": "2024-12-04",
+   "title": "sur l'ensemble du texte élaboré par la commission mixte paritaire sur le projet de loi de finances de fin de gestion pour 2024.",
+   "url": "https://www.senat.fr/scrutin-public/2024/scr2024-147.html",
+   "theme": "dette",
+   "result": "Adoption",
+   "dossierUrl": "https://www.senat.fr/dossier-legislatif/pjl24-155.html",
+   "totals": {
+    "votants": 340,
+    "exprimes": 340,
+    "pour": 243,
+    "contre": 97,
+    "abstention": 0,
+    "nonVotants": 7
+   },
+   "groups": [
+    {
+     "key": "LR",
+     "label": "Groupe Les Républicains",
+     "size": 130,
+     "pour": 129,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 1
+    },
+    {
+     "key": "SER",
+     "label": "Groupe Socialiste, Écologiste et Républicain",
+     "size": 64,
+     "pour": 0,
+     "contre": 64,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "UC",
+     "label": "Groupe Union Centriste",
+     "size": 60,
+     "pour": 60,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "RDPI",
+     "label": "Groupe Rassemblement des démocrates, progressistes et indépendants",
+     "size": 20,
+     "pour": 19,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 1
+    },
+    {
+     "key": "LIRT",
+     "label": "Groupe Les Indépendants - République et Territoires",
+     "size": 19,
+     "pour": 18,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 1
+    },
+    {
+     "key": "CRCE",
+     "label": "Groupe Communiste Républicain Citoyen et Écologiste - Kanaky",
+     "size": 18,
+     "pour": 1,
+     "contre": 17,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "RDSE",
+     "label": "Groupe du Rassemblement Démocratique et Social Européen",
+     "size": 16,
+     "pour": 16,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "GEST",
+     "label": "Groupe Écologiste - Solidarité et Territoires",
+     "size": 16,
+     "pour": 0,
+     "contre": 16,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "NI",
+     "label": "Sénateurs ne figurant sur la liste d'aucun groupe",
+     "size": 4,
+     "pour": 0,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 4
+    }
+   ],
+   "qualification": {
+    "direction": "favorable",
+    "note": "Loi de fin de gestion ajustant les crédits de l'exercice 2024 pour contenir les dépenses et le déficit."
+   },
+   "resultEffect": "favorable",
+   "an": {
+    "uid": "VTANR5L17V518",
+    "legislature": 17,
+    "numero": 518,
+    "date": "2024-12-04",
+    "title": "l'ensemble du projet de loi de finances de fin de gestion pour 2024 (texte de la commission mixte paritaire).",
+    "stage": "Texte de la CMP",
+    "result": "Adoption",
+    "resultLabel": "l'Assemblée nationale a adopté",
+    "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/518",
+    "totals": {
+     "votants": 476,
+     "exprimes": 421,
+     "pour": 318,
+     "contre": 103,
+     "abstention": 55,
+     "nonVotants": 1
+    },
+    "groups": [
+     {
+      "key": "RN",
+      "label": "Rassemblement National",
+      "short": "RN",
+      "color": "#22315B",
+      "size": 124,
+      "pour": 116,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "EPR",
+      "label": "Ensemble pour la République (Renaissance)",
+      "short": "EPR",
+      "color": "#FF8A00",
+      "size": 93,
+      "pour": 81,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 1
+     },
+     {
+      "key": "LFI-NFP",
+      "label": "La France insoumise – Nouveau Front Populaire",
+      "short": "LFI-NFP",
+      "color": "#CC2443",
+      "size": 71,
+      "pour": 0,
+      "contre": 61,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "SOC",
+      "label": "Socialistes et apparentés",
+      "short": "SOC",
+      "color": "#E7536C",
+      "size": 66,
+      "pour": 0,
+      "contre": 0,
+      "abstention": 51,
+      "nonVotants": 0
+     },
+     {
+      "key": "DR",
+      "label": "Droite Républicaine",
+      "short": "DR",
+      "color": "#3B5BA5",
+      "size": 47,
+      "pour": 38,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "EcoS",
+      "label": "Écologiste et Social",
+      "short": "EcoS",
+      "color": "#35D07F",
+      "size": 38,
+      "pour": 0,
+      "contre": 29,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "Dem",
+      "label": "Les Démocrates (MoDem)",
+      "short": "Dem",
+      "color": "#F2C14E",
+      "size": 36,
+      "pour": 25,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "HOR",
+      "label": "Horizons & Indépendants",
+      "short": "HOR",
+      "color": "#4FC3F7",
+      "size": 34,
+      "pour": 28,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "LIOT",
+      "label": "Libertés, Indépendants, Outre-mer et Territoires",
+      "short": "LIOT",
+      "color": "#A78BFA",
+      "size": 23,
+      "pour": 13,
+      "contre": 0,
+      "abstention": 3,
+      "nonVotants": 0
+     },
+     {
+      "key": "GDR",
+      "label": "Gauche Démocrate et Républicaine",
+      "short": "GDR",
+      "color": "#B03030",
+      "size": 17,
+      "pour": 0,
+      "contre": 13,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "UDR",
+      "label": "Union des droites pour la République",
+      "short": "UDR",
+      "color": "#5B6B9E",
+      "size": 16,
+      "pour": 14,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "NI",
+      "label": "Non inscrits",
+      "short": "NI",
+      "color": "#8B95A9",
+      "size": 9,
+      "pour": 3,
+      "contre": 0,
+      "abstention": 1,
+      "nonVotants": 0
+     }
+    ]
+   },
+   "anNote": null
+  },
+  "2025-72": {
+   "id": "2025-72",
+   "date": "2025-12-03",
+   "title": "sur l'ensemble du texte élaboré par la commission mixte paritaire sur le projet de loi de finances de fin de gestion pour 2025.",
+   "url": "https://www.senat.fr/scrutin-public/2025/scr2025-72.html",
+   "theme": "dette",
+   "result": "Adoption",
+   "dossierUrl": "https://www.senat.fr/dossier-legislatif/pjl25-132.html",
+   "totals": {
+    "votants": 345,
+    "exprimes": 276,
+    "pour": 239,
+    "contre": 37,
+    "abstention": 69,
+    "nonVotants": 3
+   },
+   "groups": [
+    {
+     "key": "LR",
+     "label": "Groupe Les Républicains",
+     "size": 130,
+     "pour": 129,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 1
+    },
+    {
+     "key": "SER",
+     "label": "Groupe Socialiste, Écologiste et Républicain",
+     "size": 65,
+     "pour": 0,
+     "contre": 0,
+     "abstention": 65,
+     "nonVotants": 0
+    },
+    {
+     "key": "UC",
+     "label": "Groupe Union Centriste",
+     "size": 59,
+     "pour": 59,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "LIRT",
+     "label": "Groupe Les Indépendants - République et Territoires",
+     "size": 20,
+     "pour": 19,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 1
+    },
+    {
+     "key": "RDPI",
+     "label": "Groupe Rassemblement des démocrates, progressistes et indépendants",
+     "size": 19,
+     "pour": 19,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "CRCE",
+     "label": "Groupe Communiste Républicain Citoyen et Écologiste - Kanaky",
+     "size": 18,
+     "pour": 0,
+     "contre": 18,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "RDSE",
+     "label": "Groupe du Rassemblement Démocratique et Social Européen",
+     "size": 17,
+     "pour": 13,
+     "contre": 0,
+     "abstention": 4,
+     "nonVotants": 0
+    },
+    {
+     "key": "GEST",
+     "label": "Groupe Écologiste - Solidarité et Territoires",
+     "size": 16,
+     "pour": 0,
+     "contre": 16,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "NI",
+     "label": "Sénateurs ne figurant sur la liste d'aucun groupe",
+     "size": 4,
+     "pour": 0,
+     "contre": 3,
+     "abstention": 0,
+     "nonVotants": 1
+    }
+   ],
+   "qualification": {
+    "direction": "favorable",
+    "note": "Loi de fin de gestion ajustant les crédits de l'exercice 2025 en fin d'année budgétaire."
+   },
+   "resultEffect": "favorable",
+   "an": {
+    "uid": "VTANR5L17V4442",
+    "legislature": 17,
+    "numero": 4442,
+    "date": "2025-12-02",
+    "title": "l'ensemble du projet de loi de fin de gestion pour 2025 (texte de la commission mixte paritaire).",
+    "stage": "Texte de la CMP",
+    "result": "Adoption",
+    "resultLabel": "l'Assemblée nationale a adopté",
+    "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/4442",
+    "totals": {
+     "votants": 514,
+     "exprimes": 430,
+     "pour": 217,
+     "contre": 213,
+     "abstention": 84,
+     "nonVotants": 1
+    },
+    "groups": [
+     {
+      "key": "RN",
+      "label": "Rassemblement National",
+      "short": "RN",
+      "color": "#22315B",
+      "size": 123,
+      "pour": 0,
+      "contre": 118,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "EPR",
+      "label": "Ensemble pour la République (Renaissance)",
+      "short": "EPR",
+      "color": "#FF8A00",
+      "size": 91,
+      "pour": 82,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 1
+     },
+     {
+      "key": "LFI-NFP",
+      "label": "La France insoumise – Nouveau Front Populaire",
+      "short": "LFI-NFP",
+      "color": "#CC2443",
+      "size": 71,
+      "pour": 0,
+      "contre": 67,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "SOC",
+      "label": "Socialistes et apparentés",
+      "short": "SOC",
+      "color": "#E7536C",
+      "size": 69,
+      "pour": 1,
+      "contre": 1,
+      "abstention": 59,
+      "nonVotants": 0
+     },
+     {
+      "key": "DR",
+      "label": "Droite Républicaine",
+      "short": "DR",
+      "color": "#3B5BA5",
+      "size": 49,
+      "pour": 43,
+      "contre": 0,
+      "abstention": 2,
+      "nonVotants": 0
+     },
+     {
+      "key": "EcoS",
+      "label": "Écologiste et Social",
+      "short": "EcoS",
+      "color": "#35D07F",
+      "size": 38,
+      "pour": 0,
+      "contre": 3,
+      "abstention": 20,
+      "nonVotants": 0
+     },
+     {
+      "key": "Dem",
+      "label": "Les Démocrates (MoDem)",
+      "short": "Dem",
+      "color": "#F2C14E",
+      "size": 36,
+      "pour": 35,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "HOR",
+      "label": "Horizons & Indépendants",
+      "short": "HOR",
+      "color": "#4FC3F7",
+      "size": 34,
+      "pour": 32,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "LIOT",
+      "label": "Libertés, Indépendants, Outre-mer et Territoires",
+      "short": "LIOT",
+      "color": "#A78BFA",
+      "size": 22,
+      "pour": 18,
+      "contre": 0,
+      "abstention": 3,
+      "nonVotants": 0
+     },
+     {
+      "key": "GDR",
+      "label": "Gauche Démocrate et Républicaine",
+      "short": "GDR",
+      "color": "#B03030",
+      "size": 17,
+      "pour": 0,
+      "contre": 15,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "UDR",
+      "label": "Union des droites pour la République",
+      "short": "UDR",
+      "color": "#5B6B9E",
+      "size": 16,
+      "pour": 0,
+      "contre": 8,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "NI",
+      "label": "Non inscrits",
+      "short": "NI",
+      "color": "#8B95A9",
+      "size": 9,
+      "pour": 6,
+      "contre": 1,
+      "abstention": 0,
+      "nonVotants": 0
+     }
+    ]
+   },
+   "anNote": null
+  },
+  "2025-125": {
+   "id": "2025-125",
+   "date": "2025-12-15",
+   "title": "sur l'ensemble du projet de loi de finances pour 2026.",
+   "url": "https://www.senat.fr/scrutin-public/2025/scr2025-125.html",
+   "theme": "dette",
+   "result": "Adoption",
+   "dossierUrl": null,
+   "totals": {
+    "votants": 344,
+    "exprimes": 296,
+    "pour": 187,
+    "contre": 109,
+    "abstention": 48,
+    "nonVotants": 4
+   },
+   "groups": [
+    {
+     "key": "LR",
+     "label": "Groupe Les Républicains",
+     "size": 130,
+     "pour": 106,
+     "contre": 3,
+     "abstention": 19,
+     "nonVotants": 2
+    },
+    {
+     "key": "SER",
+     "label": "Groupe Socialiste, Écologiste et Républicain",
+     "size": 65,
+     "pour": 0,
+     "contre": 64,
+     "abstention": 0,
+     "nonVotants": 1
+    },
+    {
+     "key": "UC",
+     "label": "Groupe Union Centriste",
+     "size": 59,
+     "pour": 45,
+     "contre": 1,
+     "abstention": 12,
+     "nonVotants": 1
+    },
+    {
+     "key": "LIRT",
+     "label": "Groupe Les Indépendants - République et Territoires",
+     "size": 20,
+     "pour": 18,
+     "contre": 0,
+     "abstention": 2,
+     "nonVotants": 0
+    },
+    {
+     "key": "RDPI",
+     "label": "Groupe Rassemblement des démocrates, progressistes et indépendants",
+     "size": 19,
+     "pour": 18,
+     "contre": 0,
+     "abstention": 1,
+     "nonVotants": 0
+    },
+    {
+     "key": "CRCE",
+     "label": "Groupe Communiste Républicain Citoyen et Écologiste - Kanaky",
+     "size": 18,
+     "pour": 0,
+     "contre": 18,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "RDSE",
+     "label": "Groupe du Rassemblement Démocratique et Social Européen",
+     "size": 17,
+     "pour": 0,
+     "contre": 3,
+     "abstention": 14,
+     "nonVotants": 0
+    },
+    {
+     "key": "GEST",
+     "label": "Groupe Écologiste - Solidarité et Territoires",
+     "size": 16,
+     "pour": 0,
+     "contre": 16,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "NI",
+     "label": "Sénateurs ne figurant sur la liste d'aucun groupe",
+     "size": 4,
+     "pour": 0,
+     "contre": 4,
+     "abstention": 0,
+     "nonVotants": 0
+    }
+   ],
+   "qualification": {
+    "direction": "favorable",
+    "note": "Le budget de l'État pour 2026 fixe les recettes, les dépenses et la trajectoire de déficit."
+   },
+   "resultEffect": "favorable",
+   "an": null,
+   "anNote": null
+  },
+  "2023-106": {
+   "id": "2023-106",
+   "date": "2023-12-18",
+   "title": "sur l'ensemble du texte élaboré par la commission mixte paritaire sur la proposition de loi visant à améliorer l'accès aux soins par l'engagement territorial des professionnels.",
+   "url": "https://www.senat.fr/scrutin-public/2023/scr2023-106.html",
+   "theme": "sante",
+   "result": "Adoption",
+   "dossierUrl": "https://www.senat.fr/dossier-legislatif/ppl22-747.html",
+   "totals": {
+    "votants": 340,
+    "exprimes": 322,
+    "pour": 241,
+    "contre": 81,
+    "abstention": 18,
+    "nonVotants": 8
+   },
+   "groups": [
+    {
+     "key": "LR",
+     "label": "Groupe Les Républicains",
+     "size": 133,
+     "pour": 132,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 1
+    },
+    {
+     "key": "SER",
+     "label": "Groupe Socialiste, Écologiste et Républicain",
+     "size": 64,
+     "pour": 0,
+     "contre": 64,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "UC",
+     "label": "Groupe Union Centriste",
+     "size": 56,
+     "pour": 54,
+     "contre": 0,
+     "abstention": 2,
+     "nonVotants": 0
+    },
+    {
+     "key": "RDPI",
+     "label": "Groupe Rassemblement des démocrates, progressistes et indépendants",
+     "size": 22,
+     "pour": 22,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "CRCE",
+     "label": "Groupe Communiste Républicain Citoyen et Écologiste - Kanaky",
+     "size": 18,
+     "pour": 0,
+     "contre": 17,
+     "abstention": 0,
+     "nonVotants": 1
+    },
+    {
+     "key": "LIRT",
+     "label": "Groupe Les Indépendants - République et Territoires",
+     "size": 18,
+     "pour": 17,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 1
+    },
+    {
+     "key": "RDSE",
+     "label": "Groupe du Rassemblement Démocratique et Social Européen",
+     "size": 16,
+     "pour": 16,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "GEST",
+     "label": "Groupe Écologiste - Solidarité et Territoires",
+     "size": 16,
+     "pour": 0,
+     "contre": 0,
+     "abstention": 16,
+     "nonVotants": 0
+    },
+    {
+     "key": "NI",
+     "label": "Sénateurs ne figurant sur la liste d'aucun groupe",
+     "size": 5,
+     "pour": 0,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 5
+    }
+   ],
+   "qualification": {
+    "direction": "favorable",
+    "note": "Le texte encadre l'installation des médecins et élargit les compétences des professionnels pour améliorer l'accès aux soins."
+   },
+   "resultEffect": "favorable",
+   "an": {
+    "uid": "VTANR5L16V3206",
+    "legislature": 16,
+    "numero": 3206,
+    "date": "2023-12-12",
+    "title": "l'ensemble de la proposition de loi visant à améliorer l'accès aux soins par l'engagement territorial des professionnels (texte de la commission mixte paritaire).",
+    "stage": "Texte de la CMP",
+    "result": "Adoption",
+    "resultLabel": "l'Assemblée nationale a adopté",
+    "url": "https://www.assemblee-nationale.fr/dyn/16/scrutins/3206",
+    "totals": {
+     "votants": 215,
+     "exprimes": 189,
+     "pour": 165,
+     "contre": 24,
+     "abstention": 26,
+     "nonVotants": 1
+    },
+    "groups": [
+     {
+      "key": "EPR",
+      "label": "Ensemble pour la République (Renaissance)",
+      "short": "EPR",
+      "color": "#FF8A00",
+      "size": 170,
+      "pour": 70,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "RN",
+      "label": "Rassemblement National",
+      "short": "RN",
+      "color": "#22315B",
+      "size": 88,
+      "pour": 40,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "LFI-NFP",
+      "label": "La France insoumise – Nouveau Front Populaire",
+      "short": "LFI-NFP",
+      "color": "#CC2443",
+      "size": 75,
+      "pour": 0,
+      "contre": 21,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "DR",
+      "label": "Droite Républicaine",
+      "short": "DR",
+      "color": "#3B5BA5",
+      "size": 62,
+      "pour": 13,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "Dem",
+      "label": "Les Démocrates (MoDem)",
+      "short": "Dem",
+      "color": "#F2C14E",
+      "size": 51,
+      "pour": 19,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 1
+     },
+     {
+      "key": "SOC",
+      "label": "Socialistes et apparentés",
+      "short": "SOC",
+      "color": "#E7536C",
+      "size": 31,
+      "pour": 0,
+      "contre": 0,
+      "abstention": 8,
+      "nonVotants": 0
+     },
+     {
+      "key": "HOR",
+      "label": "Horizons & Indépendants",
+      "short": "HOR",
+      "color": "#4FC3F7",
+      "size": 30,
+      "pour": 17,
+      "contre": 0,
+      "abstention": 2,
+      "nonVotants": 0
+     },
+     {
+      "key": "EcoS",
+      "label": "Écologiste et Social",
+      "short": "EcoS",
+      "color": "#35D07F",
+      "size": 23,
+      "pour": 0,
+      "contre": 0,
+      "abstention": 13,
+      "nonVotants": 0
+     },
+     {
+      "key": "GDR",
+      "label": "Gauche Démocrate et Républicaine",
+      "short": "GDR",
+      "color": "#B03030",
+      "size": 22,
+      "pour": 0,
+      "contre": 3,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "LIOT",
+      "label": "Libertés, Indépendants, Outre-mer et Territoires",
+      "short": "LIOT",
+      "color": "#A78BFA",
+      "size": 21,
+      "pour": 5,
+      "contre": 0,
+      "abstention": 3,
+      "nonVotants": 0
+     },
+     {
+      "key": "NI",
+      "label": "Non inscrits",
+      "short": "NI",
+      "color": "#8B95A9",
+      "size": 4,
+      "pour": 1,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     }
+    ]
+   },
+   "anNote": null
+  },
+  "2024-277": {
+   "id": "2024-277",
+   "date": "2025-05-13",
+   "title": "sur l'ensemble de la proposition de loi visant à améliorer l'accès aux soins dans les territoires.",
+   "url": "https://www.senat.fr/scrutin-public/2024/scr2024-277.html",
+   "theme": "sante",
+   "result": "Adoption",
+   "dossierUrl": "https://www.senat.fr/dossier-legislatif/ppl24-494.html",
+   "totals": {
+    "votants": 333,
+    "exprimes": 219,
+    "pour": 190,
+    "contre": 29,
+    "abstention": 114,
+    "nonVotants": 15
+   },
+   "groups": [
+    {
+     "key": "LR",
+     "label": "Groupe Les Républicains",
+     "size": 130,
+     "pour": 124,
+     "contre": 1,
+     "abstention": 4,
+     "nonVotants": 1
+    },
+    {
+     "key": "SER",
+     "label": "Groupe Socialiste, Écologiste et Républicain",
+     "size": 65,
+     "pour": 0,
+     "contre": 1,
+     "abstention": 64,
+     "nonVotants": 0
+    },
+    {
+     "key": "UC",
+     "label": "Groupe Union Centriste",
+     "size": 59,
+     "pour": 35,
+     "contre": 9,
+     "abstention": 7,
+     "nonVotants": 8
+    },
+    {
+     "key": "LIRT",
+     "label": "Groupe Les Indépendants - République et Territoires",
+     "size": 20,
+     "pour": 9,
+     "contre": 1,
+     "abstention": 9,
+     "nonVotants": 1
+    },
+    {
+     "key": "RDPI",
+     "label": "Groupe Rassemblement des démocrates, progressistes et indépendants",
+     "size": 19,
+     "pour": 19,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "CRCE",
+     "label": "Groupe Communiste Républicain Citoyen et Écologiste - Kanaky",
+     "size": 18,
+     "pour": 0,
+     "contre": 17,
+     "abstention": 0,
+     "nonVotants": 1
+    },
+    {
+     "key": "RDSE",
+     "label": "Groupe du Rassemblement Démocratique et Social Européen",
+     "size": 17,
+     "pour": 3,
+     "contre": 0,
+     "abstention": 14,
+     "nonVotants": 0
+    },
+    {
+     "key": "GEST",
+     "label": "Groupe Écologiste - Solidarité et Territoires",
+     "size": 16,
+     "pour": 0,
+     "contre": 0,
+     "abstention": 16,
+     "nonVotants": 0
+    },
+    {
+     "key": "NI",
+     "label": "Sénateurs ne figurant sur la liste d'aucun groupe",
+     "size": 4,
+     "pour": 0,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 4
+    }
+   ],
+   "qualification": {
+    "direction": "favorable",
+    "note": "Le texte propose des mesures de territorialisation de l'offre de soins pour les zones sous-dotées."
+   },
+   "resultEffect": "favorable",
+   "an": null,
+   "anNote": null
+  },
+  "2025-169": {
+   "id": "2025-169",
+   "date": "2026-01-28",
+   "title": "sur l'ensemble de la proposition de loi relative au droit à l'aide à mourir.",
+   "url": "https://www.senat.fr/scrutin-public/2025/scr2025-169.html",
+   "theme": "sante",
+   "result": "Rejet",
+   "dossierUrl": "https://www.senat.fr/dossier-legislatif/ppl24-661.html",
+   "totals": {
+    "votants": 341,
+    "exprimes": 303,
+    "pour": 122,
+    "contre": 181,
+    "abstention": 38,
+    "nonVotants": 7
+   },
+   "groups": [
+    {
+     "key": "LR",
+     "label": "Groupe Les Républicains",
+     "size": 130,
+     "pour": 82,
+     "contre": 36,
+     "abstention": 11,
+     "nonVotants": 1
+    },
+    {
+     "key": "SER",
+     "label": "Groupe Socialiste, Écologiste et Républicain",
+     "size": 65,
+     "pour": 0,
+     "contre": 60,
+     "abstention": 0,
+     "nonVotants": 5
+    },
+    {
+     "key": "UC",
+     "label": "Groupe Union Centriste",
+     "size": 59,
+     "pour": 24,
+     "contre": 24,
+     "abstention": 11,
+     "nonVotants": 0
+    },
+    {
+     "key": "LIRT",
+     "label": "Groupe Les Indépendants - République et Territoires",
+     "size": 20,
+     "pour": 8,
+     "contre": 2,
+     "abstention": 10,
+     "nonVotants": 0
+    },
+    {
+     "key": "RDPI",
+     "label": "Groupe Rassemblement des démocrates, progressistes et indépendants",
+     "size": 19,
+     "pour": 2,
+     "contre": 12,
+     "abstention": 5,
+     "nonVotants": 0
+    },
+    {
+     "key": "CRCE",
+     "label": "Groupe Communiste Républicain Citoyen et Écologiste - Kanaky",
+     "size": 18,
+     "pour": 2,
+     "contre": 15,
+     "abstention": 1,
+     "nonVotants": 0
+    },
+    {
+     "key": "RDSE",
+     "label": "Groupe du Rassemblement Démocratique et Social Européen",
+     "size": 17,
+     "pour": 0,
+     "contre": 16,
+     "abstention": 0,
+     "nonVotants": 1
+    },
+    {
+     "key": "GEST",
+     "label": "Groupe Écologiste - Solidarité et Territoires",
+     "size": 16,
+     "pour": 0,
+     "contre": 16,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "NI",
+     "label": "Sénateurs ne figurant sur la liste d'aucun groupe",
+     "size": 4,
+     "pour": 4,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 0
+    }
+   ],
+   "qualification": {
+    "direction": "favorable",
+    "note": "La proposition ouvrait un droit à l'aide à mourir encadré par des conditions strictes ; le Sénat l'a rejetée."
+   },
+   "resultEffect": "defavorable",
+   "an": {
+    "uid": "VTANR5L17V8280",
+    "legislature": 17,
+    "numero": 8280,
+    "date": "2026-07-15",
+    "title": "l'ensemble de la proposition de loi relative au droit à l'aide à mourir (lecture définitive).",
+    "stage": "Lecture définitive",
+    "result": "Adoption",
+    "resultLabel": "l'Assemblée nationale a adopté",
+    "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/8280",
+    "totals": {
+     "votants": 561,
+     "exprimes": 532,
+     "pour": 291,
+     "contre": 241,
+     "abstention": 29,
+     "nonVotants": 0
+    },
+    "groups": [
+     {
+      "key": "RN",
+      "label": "Rassemblement National",
+      "short": "RN",
+      "color": "#22315B",
+      "size": 122,
+      "pour": 12,
+      "contre": 106,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "EPR",
+      "label": "Ensemble pour la République (Renaissance)",
+      "short": "EPR",
+      "color": "#FF8A00",
+      "size": 91,
+      "pour": 64,
+      "contre": 18,
+      "abstention": 9,
+      "nonVotants": 0
+     },
+     {
+      "key": "LFI-NFP",
+      "label": "La France insoumise – Nouveau Front Populaire",
+      "short": "LFI-NFP",
+      "color": "#CC2443",
+      "size": 71,
+      "pour": 61,
+      "contre": 2,
+      "abstention": 3,
+      "nonVotants": 0
+     },
+     {
+      "key": "SOC",
+      "label": "Socialistes et apparentés",
+      "short": "SOC",
+      "color": "#E7536C",
+      "size": 68,
+      "pour": 57,
+      "contre": 4,
+      "abstention": 6,
+      "nonVotants": 0
+     },
+     {
+      "key": "DR",
+      "label": "Droite Républicaine",
+      "short": "DR",
+      "color": "#3B5BA5",
+      "size": 48,
+      "pour": 5,
+      "contre": 41,
+      "abstention": 2,
+      "nonVotants": 0
+     },
+     {
+      "key": "EcoS",
+      "label": "Écologiste et Social",
+      "short": "EcoS",
+      "color": "#35D07F",
+      "size": 38,
+      "pour": 33,
+      "contre": 2,
+      "abstention": 1,
+      "nonVotants": 0
+     },
+     {
+      "key": "Dem",
+      "label": "Les Démocrates (MoDem)",
+      "short": "Dem",
+      "color": "#F2C14E",
+      "size": 37,
+      "pour": 20,
+      "contre": 16,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "HOR",
+      "label": "Horizons & Indépendants",
+      "short": "HOR",
+      "color": "#4FC3F7",
+      "size": 35,
+      "pour": 16,
+      "contre": 18,
+      "abstention": 1,
+      "nonVotants": 0
+     },
+     {
+      "key": "LIOT",
+      "label": "Libertés, Indépendants, Outre-mer et Territoires",
+      "short": "LIOT",
+      "color": "#A78BFA",
+      "size": 23,
+      "pour": 10,
+      "contre": 8,
+      "abstention": 4,
+      "nonVotants": 0
+     },
+     {
+      "key": "GDR",
+      "label": "Gauche Démocrate et Républicaine",
+      "short": "GDR",
+      "color": "#B03030",
+      "size": 17,
+      "pour": 10,
+      "contre": 2,
+      "abstention": 3,
+      "nonVotants": 0
+     },
+     {
+      "key": "UDR",
+      "label": "Union des droites pour la République",
+      "short": "UDR",
+      "color": "#5B6B9E",
+      "size": 17,
+      "pour": 0,
+      "contre": 17,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "NI",
+      "label": "Non inscrits",
+      "short": "NI",
+      "color": "#8B95A9",
+      "size": 10,
+      "pour": 3,
+      "contre": 7,
+      "abstention": 0,
+      "nonVotants": 0
+     }
+    ]
+   },
+   "anNote": null
+  },
+  "2025-170": {
+   "id": "2025-170",
+   "date": "2026-01-28",
+   "title": "sur l'ensemble de la proposition de loi visant à garantir l'égal accès de tous à l'accompagnement et aux soins palliatifs.",
+   "url": "https://www.senat.fr/scrutin-public/2025/scr2025-170.html",
+   "theme": "sante",
+   "result": "Adoption",
+   "dossierUrl": "https://www.senat.fr/dossier-legislatif/ppl24-662.html",
+   "totals": {
+    "votants": 341,
+    "exprimes": 324,
+    "pour": 307,
+    "contre": 17,
+    "abstention": 17,
+    "nonVotants": 7
+   },
+   "groups": [
+    {
+     "key": "LR",
+     "label": "Groupe Les Républicains",
+     "size": 130,
+     "pour": 126,
+     "contre": 1,
+     "abstention": 0,
+     "nonVotants": 3
+    },
+    {
+     "key": "SER",
+     "label": "Groupe Socialiste, Écologiste et Républicain",
+     "size": 65,
+     "pour": 63,
+     "contre": 0,
+     "abstention": 1,
+     "nonVotants": 1
+    },
+    {
+     "key": "UC",
+     "label": "Groupe Union Centriste",
+     "size": 59,
+     "pour": 59,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "LIRT",
+     "label": "Groupe Les Indépendants - République et Territoires",
+     "size": 20,
+     "pour": 20,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "RDPI",
+     "label": "Groupe Rassemblement des démocrates, progressistes et indépendants",
+     "size": 19,
+     "pour": 17,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 2
+    },
+    {
+     "key": "CRCE",
+     "label": "Groupe Communiste Républicain Citoyen et Écologiste - Kanaky",
+     "size": 18,
+     "pour": 2,
+     "contre": 16,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "RDSE",
+     "label": "Groupe du Rassemblement Démocratique et Social Européen",
+     "size": 17,
+     "pour": 16,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 1
+    },
+    {
+     "key": "GEST",
+     "label": "Groupe Écologiste - Solidarité et Territoires",
+     "size": 16,
+     "pour": 0,
+     "contre": 0,
+     "abstention": 16,
+     "nonVotants": 0
+    },
+    {
+     "key": "NI",
+     "label": "Sénateurs ne figurant sur la liste d'aucun groupe",
+     "size": 4,
+     "pour": 4,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 0
+    }
+   ],
+   "qualification": {
+    "direction": "favorable",
+    "note": "Le texte renforce l'accès aux soins palliatifs (financement, formation, présence médicale)."
+   },
+   "resultEffect": "favorable",
+   "an": {
+    "uid": "VTANR5L17V5728",
+    "legislature": 17,
+    "numero": 5728,
+    "date": "2026-02-25",
+    "title": "l'ensemble de la proposition de loi visant à garantir l'égal accès de tous à l'accompagnement et aux soins palliatifs (deuxième lecture).",
+    "stage": "2ᵉ lecture",
+    "result": "Adoption",
+    "resultLabel": "l'Assemblée nationale a adopté",
+    "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/5728",
+    "totals": {
+     "votants": 560,
+     "exprimes": 491,
+     "pour": 491,
+     "contre": 0,
+     "abstention": 69,
+     "nonVotants": 1
+    },
+    "groups": [
+     {
+      "key": "RN",
+      "label": "Rassemblement National",
+      "short": "RN",
+      "color": "#22315B",
+      "size": 122,
+      "pour": 122,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "EPR",
+      "label": "Ensemble pour la République (Renaissance)",
+      "short": "EPR",
+      "color": "#FF8A00",
+      "size": 92,
+      "pour": 88,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 1
+     },
+     {
+      "key": "LFI-NFP",
+      "label": "La France insoumise – Nouveau Front Populaire",
+      "short": "LFI-NFP",
+      "color": "#CC2443",
+      "size": 71,
+      "pour": 2,
+      "contre": 0,
+      "abstention": 67,
+      "nonVotants": 0
+     },
+     {
+      "key": "SOC",
+      "label": "Socialistes et apparentés",
+      "short": "SOC",
+      "color": "#E7536C",
+      "size": 69,
+      "pour": 69,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "DR",
+      "label": "Droite Républicaine",
+      "short": "DR",
+      "color": "#3B5BA5",
+      "size": 49,
+      "pour": 47,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "EcoS",
+      "label": "Écologiste et Social",
+      "short": "EcoS",
+      "color": "#35D07F",
+      "size": 38,
+      "pour": 34,
+      "contre": 0,
+      "abstention": 2,
+      "nonVotants": 0
+     },
+     {
+      "key": "Dem",
+      "label": "Les Démocrates (MoDem)",
+      "short": "Dem",
+      "color": "#F2C14E",
+      "size": 36,
+      "pour": 36,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "HOR",
+      "label": "Horizons & Indépendants",
+      "short": "HOR",
+      "color": "#4FC3F7",
+      "size": 34,
+      "pour": 34,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "LIOT",
+      "label": "Libertés, Indépendants, Outre-mer et Territoires",
+      "short": "LIOT",
+      "color": "#A78BFA",
+      "size": 22,
+      "pour": 22,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "GDR",
+      "label": "Gauche Démocrate et Républicaine",
+      "short": "GDR",
+      "color": "#B03030",
+      "size": 17,
+      "pour": 11,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "UDR",
+      "label": "Union des droites pour la République",
+      "short": "UDR",
+      "color": "#5B6B9E",
+      "size": 17,
+      "pour": 17,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "NI",
+      "label": "Non inscrits",
+      "short": "NI",
+      "color": "#8B95A9",
+      "size": 10,
+      "pour": 9,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     }
+    ]
+   },
+   "anNote": null
+  },
+  "2023-43": {
+   "id": "2023-43",
+   "date": "2023-11-14",
+   "title": "sur l'ensemble du projet de loi pour contrôler l'immigration, améliorer l'intégration.",
+   "url": "https://www.senat.fr/scrutin-public/2023/scr2023-43.html",
+   "theme": "immigration",
+   "result": "Adoption",
+   "dossierUrl": "https://www.senat.fr/dossier-legislatif/pjl22-304.html",
+   "totals": {
+    "votants": 341,
+    "exprimes": 325,
+    "pour": 210,
+    "contre": 115,
+    "abstention": 16,
+    "nonVotants": 7
+   },
+   "groups": [
+    {
+     "key": "LR",
+     "label": "Groupe Les Républicains",
+     "size": 133,
+     "pour": 127,
+     "contre": 0,
+     "abstention": 4,
+     "nonVotants": 2
+    },
+    {
+     "key": "SER",
+     "label": "Groupe Socialiste, Écologiste et Républicain",
+     "size": 64,
+     "pour": 0,
+     "contre": 62,
+     "abstention": 0,
+     "nonVotants": 2
+    },
+    {
+     "key": "UC",
+     "label": "Groupe Union Centriste",
+     "size": 56,
+     "pour": 48,
+     "contre": 1,
+     "abstention": 4,
+     "nonVotants": 3
+    },
+    {
+     "key": "RDPI",
+     "label": "Groupe Rassemblement des démocrates, progressistes et indépendants",
+     "size": 22,
+     "pour": 18,
+     "contre": 2,
+     "abstention": 2,
+     "nonVotants": 0
+    },
+    {
+     "key": "CRCE",
+     "label": "Groupe Communiste Républicain Citoyen et Écologiste - Kanaky",
+     "size": 18,
+     "pour": 0,
+     "contre": 18,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "LIRT",
+     "label": "Groupe Les Indépendants - République et Territoires",
+     "size": 18,
+     "pour": 17,
+     "contre": 0,
+     "abstention": 1,
+     "nonVotants": 0
+    },
+    {
+     "key": "GEST",
+     "label": "Groupe Écologiste - Solidarité et Territoires",
+     "size": 17,
+     "pour": 0,
+     "contre": 17,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "RDSE",
+     "label": "Groupe du Rassemblement Démocratique et Social Européen",
+     "size": 16,
+     "pour": 0,
+     "contre": 12,
+     "abstention": 4,
+     "nonVotants": 0
+    },
+    {
+     "key": "NI",
+     "label": "Sénateurs ne figurant sur la liste d'aucun groupe",
+     "size": 4,
+     "pour": 0,
+     "contre": 3,
+     "abstention": 1,
+     "nonVotants": 0
+    }
+   ],
+   "qualification": {
+    "direction": "favorable",
+    "note": "Le projet de loi durcit les conditions d'entrée et de séjour et réforme l'intégration (titre officiel : contrôler l'immigration, améliorer l'intégration)."
+   },
+   "resultEffect": "favorable",
+   "an": {
+    "uid": "VTANR5L16V3213",
+    "legislature": 16,
+    "numero": 3213,
+    "date": "2023-12-19",
+    "title": "l'ensemble du projet de loi pour contrôler l'immigration, améliorer l'intégration (texte de la commission mixte paritaire).",
+    "stage": "Texte de la CMP",
+    "result": "Adoption",
+    "resultLabel": "l'Assemblée nationale a adopté",
+    "url": "https://www.assemblee-nationale.fr/dyn/16/scrutins/3213",
+    "totals": {
+     "votants": 573,
+     "exprimes": 535,
+     "pour": 349,
+     "contre": 186,
+     "abstention": 38,
+     "nonVotants": 0
+    },
+    "groups": [
+     {
+      "key": "EPR",
+      "label": "Ensemble pour la République (Renaissance)",
+      "short": "EPR",
+      "color": "#FF8A00",
+      "size": 170,
+      "pour": 131,
+      "contre": 20,
+      "abstention": 17,
+      "nonVotants": 0
+     },
+     {
+      "key": "RN",
+      "label": "Rassemblement National",
+      "short": "RN",
+      "color": "#22315B",
+      "size": 88,
+      "pour": 88,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "LFI-NFP",
+      "label": "La France insoumise – Nouveau Front Populaire",
+      "short": "LFI-NFP",
+      "color": "#CC2443",
+      "size": 75,
+      "pour": 0,
+      "contre": 75,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "DR",
+      "label": "Droite Républicaine",
+      "short": "DR",
+      "color": "#3B5BA5",
+      "size": 62,
+      "pour": 62,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "Dem",
+      "label": "Les Démocrates (MoDem)",
+      "short": "Dem",
+      "color": "#F2C14E",
+      "size": 51,
+      "pour": 30,
+      "contre": 5,
+      "abstention": 15,
+      "nonVotants": 0
+     },
+     {
+      "key": "SOC",
+      "label": "Socialistes et apparentés",
+      "short": "SOC",
+      "color": "#E7536C",
+      "size": 31,
+      "pour": 0,
+      "contre": 31,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "HOR",
+      "label": "Horizons & Indépendants",
+      "short": "HOR",
+      "color": "#4FC3F7",
+      "size": 30,
+      "pour": 28,
+      "contre": 2,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "EcoS",
+      "label": "Écologiste et Social",
+      "short": "EcoS",
+      "color": "#35D07F",
+      "size": 23,
+      "pour": 0,
+      "contre": 23,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "GDR",
+      "label": "Gauche Démocrate et Républicaine",
+      "short": "GDR",
+      "color": "#B03030",
+      "size": 22,
+      "pour": 0,
+      "contre": 21,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "LIOT",
+      "label": "Libertés, Indépendants, Outre-mer et Territoires",
+      "short": "LIOT",
+      "color": "#A78BFA",
+      "size": 21,
+      "pour": 8,
+      "contre": 8,
+      "abstention": 5,
+      "nonVotants": 0
+     },
+     {
+      "key": "NI",
+      "label": "Non inscrits",
+      "short": "NI",
+      "color": "#8B95A9",
+      "size": 4,
+      "pour": 2,
+      "contre": 1,
+      "abstention": 1,
+      "nonVotants": 0
+     }
+    ]
+   },
+   "anNote": "L'Assemblée nationale a voté sur le texte issu de la commission mixte paritaire (décembre 2023)."
+  },
+  "2023-109": {
+   "id": "2023-109",
+   "date": "2023-12-19",
+   "title": "sur l'ensemble du texte élaboré par la commission mixte paritaire sur le projet de loi pour contrôler l'immigration, améliorer l'intégration.",
+   "url": "https://www.senat.fr/scrutin-public/2023/scr2023-109.html",
+   "theme": "immigration",
+   "result": "Adoption",
+   "dossierUrl": "https://www.senat.fr/dossier-legislatif/pjl22-304.html",
+   "totals": {
+    "votants": 340,
+    "exprimes": 328,
+    "pour": 214,
+    "contre": 114,
+    "abstention": 12,
+    "nonVotants": 8
+   },
+   "groups": [
+    {
+     "key": "LR",
+     "label": "Groupe Les Républicains",
+     "size": 133,
+     "pour": 128,
+     "contre": 0,
+     "abstention": 1,
+     "nonVotants": 4
+    },
+    {
+     "key": "SER",
+     "label": "Groupe Socialiste, Écologiste et Républicain",
+     "size": 64,
+     "pour": 0,
+     "contre": 64,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "UC",
+     "label": "Groupe Union Centriste",
+     "size": 56,
+     "pour": 50,
+     "contre": 0,
+     "abstention": 5,
+     "nonVotants": 1
+    },
+    {
+     "key": "RDPI",
+     "label": "Groupe Rassemblement des démocrates, progressistes et indépendants",
+     "size": 22,
+     "pour": 15,
+     "contre": 4,
+     "abstention": 2,
+     "nonVotants": 1
+    },
+    {
+     "key": "CRCE",
+     "label": "Groupe Communiste Républicain Citoyen et Écologiste - Kanaky",
+     "size": 18,
+     "pour": 0,
+     "contre": 18,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "LIRT",
+     "label": "Groupe Les Indépendants - République et Territoires",
+     "size": 18,
+     "pour": 17,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 1
+    },
+    {
+     "key": "RDSE",
+     "label": "Groupe du Rassemblement Démocratique et Social Européen",
+     "size": 16,
+     "pour": 1,
+     "contre": 11,
+     "abstention": 4,
+     "nonVotants": 0
+    },
+    {
+     "key": "GEST",
+     "label": "Groupe Écologiste - Solidarité et Territoires",
+     "size": 16,
+     "pour": 0,
+     "contre": 16,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "NI",
+     "label": "Sénateurs ne figurant sur la liste d'aucun groupe",
+     "size": 5,
+     "pour": 3,
+     "contre": 1,
+     "abstention": 0,
+     "nonVotants": 1
+    }
+   ],
+   "qualification": {
+    "direction": "favorable",
+    "note": "Version de la commission mixte paritaire du projet de loi sur l'immigration et l'intégration."
+   },
+   "resultEffect": "favorable",
+   "an": {
+    "uid": "VTANR5L16V3213",
+    "legislature": 16,
+    "numero": 3213,
+    "date": "2023-12-19",
+    "title": "l'ensemble du projet de loi pour contrôler l'immigration, améliorer l'intégration (texte de la commission mixte paritaire).",
+    "stage": "Texte de la CMP",
+    "result": "Adoption",
+    "resultLabel": "l'Assemblée nationale a adopté",
+    "url": "https://www.assemblee-nationale.fr/dyn/16/scrutins/3213",
+    "totals": {
+     "votants": 573,
+     "exprimes": 535,
+     "pour": 349,
+     "contre": 186,
+     "abstention": 38,
+     "nonVotants": 0
+    },
+    "groups": [
+     {
+      "key": "EPR",
+      "label": "Ensemble pour la République (Renaissance)",
+      "short": "EPR",
+      "color": "#FF8A00",
+      "size": 170,
+      "pour": 131,
+      "contre": 20,
+      "abstention": 17,
+      "nonVotants": 0
+     },
+     {
+      "key": "RN",
+      "label": "Rassemblement National",
+      "short": "RN",
+      "color": "#22315B",
+      "size": 88,
+      "pour": 88,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "LFI-NFP",
+      "label": "La France insoumise – Nouveau Front Populaire",
+      "short": "LFI-NFP",
+      "color": "#CC2443",
+      "size": 75,
+      "pour": 0,
+      "contre": 75,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "DR",
+      "label": "Droite Républicaine",
+      "short": "DR",
+      "color": "#3B5BA5",
+      "size": 62,
+      "pour": 62,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "Dem",
+      "label": "Les Démocrates (MoDem)",
+      "short": "Dem",
+      "color": "#F2C14E",
+      "size": 51,
+      "pour": 30,
+      "contre": 5,
+      "abstention": 15,
+      "nonVotants": 0
+     },
+     {
+      "key": "SOC",
+      "label": "Socialistes et apparentés",
+      "short": "SOC",
+      "color": "#E7536C",
+      "size": 31,
+      "pour": 0,
+      "contre": 31,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "HOR",
+      "label": "Horizons & Indépendants",
+      "short": "HOR",
+      "color": "#4FC3F7",
+      "size": 30,
+      "pour": 28,
+      "contre": 2,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "EcoS",
+      "label": "Écologiste et Social",
+      "short": "EcoS",
+      "color": "#35D07F",
+      "size": 23,
+      "pour": 0,
+      "contre": 23,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "GDR",
+      "label": "Gauche Démocrate et Républicaine",
+      "short": "GDR",
+      "color": "#B03030",
+      "size": 22,
+      "pour": 0,
+      "contre": 21,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "LIOT",
+      "label": "Libertés, Indépendants, Outre-mer et Territoires",
+      "short": "LIOT",
+      "color": "#A78BFA",
+      "size": 21,
+      "pour": 8,
+      "contre": 8,
+      "abstention": 5,
+      "nonVotants": 0
+     },
+     {
+      "key": "NI",
+      "label": "Non inscrits",
+      "short": "NI",
+      "color": "#8B95A9",
+      "size": 4,
+      "pour": 2,
+      "contre": 1,
+      "abstention": 1,
+      "nonVotants": 0
+     }
+    ]
+   },
+   "anNote": "Même vote de l'Assemblée nationale que le scrutin sénatorial du 14 novembre 2023 : texte de la CMP."
+  },
+  "2024-248": {
+   "id": "2024-248",
+   "date": "2025-04-03",
+   "title": "sur l'ensemble du texte élaboré par la commission mixte paritaire sur la proposition de loi visant à renforcer les conditions d'accès à la nationalité française à Mayotte.",
+   "url": "https://www.senat.fr/scrutin-public/2024/scr2024-248.html",
+   "theme": "immigration",
+   "result": "Adoption",
+   "dossierUrl": "https://www.senat.fr/dossier-legislatif/ppl24-315.html",
+   "totals": {
+    "votants": 345,
+    "exprimes": 325,
+    "pour": 204,
+    "contre": 121,
+    "abstention": 20,
+    "nonVotants": 3
+   },
+   "groups": [
+    {
+     "key": "LR",
+     "label": "Groupe Les Républicains",
+     "size": 130,
+     "pour": 129,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 1
+    },
+    {
+     "key": "SER",
+     "label": "Groupe Socialiste, Écologiste et Républicain",
+     "size": 65,
+     "pour": 0,
+     "contre": 65,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "UC",
+     "label": "Groupe Union Centriste",
+     "size": 59,
+     "pour": 39,
+     "contre": 6,
+     "abstention": 13,
+     "nonVotants": 1
+    },
+    {
+     "key": "LIRT",
+     "label": "Groupe Les Indépendants - République et Territoires",
+     "size": 20,
+     "pour": 19,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 1
+    },
+    {
+     "key": "RDPI",
+     "label": "Groupe Rassemblement des démocrates, progressistes et indépendants",
+     "size": 19,
+     "pour": 17,
+     "contre": 2,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "CRCE",
+     "label": "Groupe Communiste Républicain Citoyen et Écologiste - Kanaky",
+     "size": 18,
+     "pour": 0,
+     "contre": 18,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "RDSE",
+     "label": "Groupe du Rassemblement Démocratique et Social Européen",
+     "size": 17,
+     "pour": 0,
+     "contre": 14,
+     "abstention": 3,
+     "nonVotants": 0
+    },
+    {
+     "key": "GEST",
+     "label": "Groupe Écologiste - Solidarité et Territoires",
+     "size": 16,
+     "pour": 0,
+     "contre": 16,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "NI",
+     "label": "Sénateurs ne figurant sur la liste d'aucun groupe",
+     "size": 4,
+     "pour": 0,
+     "contre": 0,
+     "abstention": 4,
+     "nonVotants": 0
+    }
+   ],
+   "qualification": {
+    "direction": "favorable",
+    "note": "Le texte restreint le droit du sol à Mayotte et durcit les conditions d'accès à la nationalité française."
+   },
+   "resultEffect": "favorable",
+   "an": {
+    "uid": "VTANR5L17V1308",
+    "legislature": 17,
+    "numero": 1308,
+    "date": "2025-04-08",
+    "title": "l'ensemble de la proposition de loi visant à renforcer les conditions d'accès à la nationalité française à Mayotte (texte de la commission mixte paritaire).",
+    "stage": "Texte de la CMP",
+    "result": "Adoption",
+    "resultLabel": "l'Assemblée nationale a adopté",
+    "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/1308",
+    "totals": {
+     "votants": 524,
+     "exprimes": 513,
+     "pour": 339,
+     "contre": 174,
+     "abstention": 11,
+     "nonVotants": 2
+    },
+    "groups": [
+     {
+      "key": "RN",
+      "label": "Rassemblement National",
+      "short": "RN",
+      "color": "#22315B",
+      "size": 123,
+      "pour": 122,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "EPR",
+      "label": "Ensemble pour la République (Renaissance)",
+      "short": "EPR",
+      "color": "#FF8A00",
+      "size": 94,
+      "pour": 73,
+      "contre": 0,
+      "abstention": 4,
+      "nonVotants": 2
+     },
+     {
+      "key": "LFI-NFP",
+      "label": "La France insoumise – Nouveau Front Populaire",
+      "short": "LFI-NFP",
+      "color": "#CC2443",
+      "size": 71,
+      "pour": 0,
+      "contre": 65,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "SOC",
+      "label": "Socialistes et apparentés",
+      "short": "SOC",
+      "color": "#E7536C",
+      "size": 66,
+      "pour": 0,
+      "contre": 61,
+      "abstention": 3,
+      "nonVotants": 0
+     },
+     {
+      "key": "DR",
+      "label": "Droite Républicaine",
+      "short": "DR",
+      "color": "#3B5BA5",
+      "size": 48,
+      "pour": 47,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "EcoS",
+      "label": "Écologiste et Social",
+      "short": "EcoS",
+      "color": "#35D07F",
+      "size": 38,
+      "pour": 0,
+      "contre": 32,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "Dem",
+      "label": "Les Démocrates (MoDem)",
+      "short": "Dem",
+      "color": "#F2C14E",
+      "size": 36,
+      "pour": 30,
+      "contre": 1,
+      "abstention": 3,
+      "nonVotants": 0
+     },
+     {
+      "key": "HOR",
+      "label": "Horizons & Indépendants",
+      "short": "HOR",
+      "color": "#4FC3F7",
+      "size": 33,
+      "pour": 32,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "LIOT",
+      "label": "Libertés, Indépendants, Outre-mer et Territoires",
+      "short": "LIOT",
+      "color": "#A78BFA",
+      "size": 23,
+      "pour": 13,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "GDR",
+      "label": "Gauche Démocrate et Républicaine",
+      "short": "GDR",
+      "color": "#B03030",
+      "size": 17,
+      "pour": 0,
+      "contre": 13,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "UDR",
+      "label": "Union des droites pour la République",
+      "short": "UDR",
+      "color": "#5B6B9E",
+      "size": 16,
+      "pour": 15,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "NI",
+      "label": "Non inscrits",
+      "short": "NI",
+      "color": "#8B95A9",
+      "size": 11,
+      "pour": 7,
+      "contre": 2,
+      "abstention": 1,
+      "nonVotants": 0
+     }
+    ]
+   },
+   "anNote": null
+  },
+  "2024-268": {
+   "id": "2024-268",
+   "date": "2025-05-12",
+   "title": "sur l'ensemble de la proposition de loi tendant à confier à l'Office français de l'immigration et de l'intégration certaines tâches d'accueil et d'information des personnes retenues.",
+   "url": "https://www.senat.fr/scrutin-public/2024/scr2024-268.html",
+   "theme": "immigration",
+   "result": "Adoption",
+   "dossierUrl": "https://www.senat.fr/dossier-legislatif/ppl24-472.html",
+   "totals": {
+    "votants": 344,
+    "exprimes": 340,
+    "pour": 227,
+    "contre": 113,
+    "abstention": 4,
+    "nonVotants": 4
+   },
+   "groups": [
+    {
+     "key": "LR",
+     "label": "Groupe Les Républicains",
+     "size": 130,
+     "pour": 129,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 1
+    },
+    {
+     "key": "SER",
+     "label": "Groupe Socialiste, Écologiste et Républicain",
+     "size": 65,
+     "pour": 0,
+     "contre": 64,
+     "abstention": 0,
+     "nonVotants": 1
+    },
+    {
+     "key": "UC",
+     "label": "Groupe Union Centriste",
+     "size": 59,
+     "pour": 58,
+     "contre": 1,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "LIRT",
+     "label": "Groupe Les Indépendants - République et Territoires",
+     "size": 20,
+     "pour": 19,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 1
+    },
+    {
+     "key": "RDPI",
+     "label": "Groupe Rassemblement des démocrates, progressistes et indépendants",
+     "size": 19,
+     "pour": 18,
+     "contre": 1,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "CRCE",
+     "label": "Groupe Communiste Républicain Citoyen et Écologiste - Kanaky",
+     "size": 18,
+     "pour": 0,
+     "contre": 18,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "RDSE",
+     "label": "Groupe du Rassemblement Démocratique et Social Européen",
+     "size": 17,
+     "pour": 0,
+     "contre": 13,
+     "abstention": 4,
+     "nonVotants": 0
+    },
+    {
+     "key": "GEST",
+     "label": "Groupe Écologiste - Solidarité et Territoires",
+     "size": 16,
+     "pour": 0,
+     "contre": 16,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "NI",
+     "label": "Sénateurs ne figurant sur la liste d'aucun groupe",
+     "size": 4,
+     "pour": 3,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 1
+    }
+   ],
+   "qualification": {
+    "direction": "neutre",
+    "note": "Le texte confie à l'OFII l'accueil et l'information des personnes retenues en rétention : mesure d'organisation administrative."
+   },
+   "resultEffect": null,
+   "an": null,
+   "anNote": null
+  },
+  "2025-308": {
+   "id": "2025-308",
+   "date": "2026-06-15",
+   "title": "sur l'ensemble du texte élaboré par la commission mixte paritaire sur la proposition de loi visant à renforcer la sécurité, la rétention administrative et la prévention des risques d'attentat.",
+   "url": "https://www.senat.fr/scrutin-public/2025/scr2025-308.html",
+   "theme": "immigration",
+   "result": "Adoption",
+   "dossierUrl": "https://www.senat.fr/dossier-legislatif/ppl25-597.html",
+   "totals": {
+    "votants": 345,
+    "exprimes": 335,
+    "pour": 233,
+    "contre": 102,
+    "abstention": 10,
+    "nonVotants": 3
+   },
+   "groups": [
+    {
+     "key": "LR",
+     "label": "Groupe Les Républicains",
+     "size": 131,
+     "pour": 130,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 1
+    },
+    {
+     "key": "SER",
+     "label": "Groupe Socialiste, Écologiste et Républicain",
+     "size": 65,
+     "pour": 0,
+     "contre": 65,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "UC",
+     "label": "Groupe Union Centriste",
+     "size": 59,
+     "pour": 59,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "LIRT",
+     "label": "Groupe Les Indépendants - République et Territoires",
+     "size": 20,
+     "pour": 19,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 1
+    },
+    {
+     "key": "RDPI",
+     "label": "Groupe Rassemblement des démocrates, progressistes et indépendants",
+     "size": 19,
+     "pour": 19,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "CRCE",
+     "label": "Groupe Communiste Républicain Citoyen et Écologiste - Kanaky",
+     "size": 18,
+     "pour": 0,
+     "contre": 18,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "RDSE",
+     "label": "Groupe du Rassemblement Démocratique et Social Européen",
+     "size": 16,
+     "pour": 3,
+     "contre": 3,
+     "abstention": 10,
+     "nonVotants": 0
+    },
+    {
+     "key": "GEST",
+     "label": "Groupe Écologiste - Solidarité et Territoires",
+     "size": 16,
+     "pour": 0,
+     "contre": 16,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "NI",
+     "label": "Sénateurs ne figurant sur la liste d'aucun groupe",
+     "size": 4,
+     "pour": 3,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 1
+    }
+   ],
+   "qualification": {
+    "direction": "favorable",
+    "note": "Le texte allonge la durée de rétention administrative et renforce la prévention des risques d'attentat."
+   },
+   "resultEffect": "favorable",
+   "an": {
+    "uid": "VTANR5L17V7405",
+    "legislature": 17,
+    "numero": 7405,
+    "date": "2026-06-16",
+    "title": "l'ensemble de la proposition de loi visant à renforcer la sécurité, la rétention administrative et la prévention des risques d’attentat (texte de la commission mixte paritaire).",
+    "stage": "Texte de la CMP",
+    "result": "Adoption",
+    "resultLabel": "l'Assemblée nationale a adopté",
+    "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/7405",
+    "totals": {
+     "votants": 533,
+     "exprimes": 522,
+     "pour": 345,
+     "contre": 177,
+     "abstention": 11,
+     "nonVotants": 1
+    },
+    "groups": [
+     {
+      "key": "RN",
+      "label": "Rassemblement National",
+      "short": "RN",
+      "color": "#22315B",
+      "size": 122,
+      "pour": 117,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "EPR",
+      "label": "Ensemble pour la République (Renaissance)",
+      "short": "EPR",
+      "color": "#FF8A00",
+      "size": 91,
+      "pour": 86,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 1
+     },
+     {
+      "key": "LFI-NFP",
+      "label": "La France insoumise – Nouveau Front Populaire",
+      "short": "LFI-NFP",
+      "color": "#CC2443",
+      "size": 71,
+      "pour": 0,
+      "contre": 67,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "SOC",
+      "label": "Socialistes et apparentés",
+      "short": "SOC",
+      "color": "#E7536C",
+      "size": 68,
+      "pour": 0,
+      "contre": 62,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "DR",
+      "label": "Droite Républicaine",
+      "short": "DR",
+      "color": "#3B5BA5",
+      "size": 48,
+      "pour": 47,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "EcoS",
+      "label": "Écologiste et Social",
+      "short": "EcoS",
+      "color": "#35D07F",
+      "size": 38,
+      "pour": 0,
+      "contre": 35,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "Dem",
+      "label": "Les Démocrates (MoDem)",
+      "short": "Dem",
+      "color": "#F2C14E",
+      "size": 37,
+      "pour": 26,
+      "contre": 0,
+      "abstention": 1,
+      "nonVotants": 0
+     },
+     {
+      "key": "HOR",
+      "label": "Horizons & Indépendants",
+      "short": "HOR",
+      "color": "#4FC3F7",
+      "size": 35,
+      "pour": 33,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "LIOT",
+      "label": "Libertés, Indépendants, Outre-mer et Territoires",
+      "short": "LIOT",
+      "color": "#A78BFA",
+      "size": 23,
+      "pour": 12,
+      "contre": 0,
+      "abstention": 9,
+      "nonVotants": 0
+     },
+     {
+      "key": "GDR",
+      "label": "Gauche Démocrate et Républicaine",
+      "short": "GDR",
+      "color": "#B03030",
+      "size": 17,
+      "pour": 0,
+      "contre": 12,
+      "abstention": 1,
+      "nonVotants": 0
+     },
+     {
+      "key": "UDR",
+      "label": "Union des droites pour la République",
+      "short": "UDR",
+      "color": "#5B6B9E",
+      "size": 17,
+      "pour": 17,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "NI",
+      "label": "Non inscrits",
+      "short": "NI",
+      "color": "#8B95A9",
+      "size": 10,
+      "pour": 7,
+      "contre": 1,
+      "abstention": 0,
+      "nonVotants": 0
+     }
+    ]
+   },
+   "anNote": null
+  },
+  "2023-174": {
+   "id": "2023-174",
+   "date": "2024-04-09",
+   "title": "sur l'ensemble du texte élaboré par la commission mixte paritaire sur le projet de loi relatif à l'organisation de la gouvernance de la sûreté nucléaire et de la radioprotection pour répondre au défi de la relance de la filière nucléaire.",
+   "url": "https://www.senat.fr/scrutin-public/2023/scr2023-174.html",
+   "theme": "climat",
+   "result": "Adoption",
+   "dossierUrl": "https://www.senat.fr/dossier-legislatif/pjl23-229.html",
+   "totals": {
+    "votants": 344,
+    "exprimes": 342,
+    "pour": 233,
+    "contre": 109,
+    "abstention": 2,
+    "nonVotants": 4
+   },
+   "groups": [
+    {
+     "key": "LR",
+     "label": "Groupe Les Républicains",
+     "size": 133,
+     "pour": 131,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 2
+    },
+    {
+     "key": "SER",
+     "label": "Groupe Socialiste, Écologiste et Républicain",
+     "size": 64,
+     "pour": 0,
+     "contre": 64,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "UC",
+     "label": "Groupe Union Centriste",
+     "size": 57,
+     "pour": 57,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "RDPI",
+     "label": "Groupe Rassemblement des démocrates, progressistes et indépendants",
+     "size": 22,
+     "pour": 22,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "CRCE",
+     "label": "Groupe Communiste Républicain Citoyen et Écologiste - Kanaky",
+     "size": 18,
+     "pour": 0,
+     "contre": 18,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "LIRT",
+     "label": "Groupe Les Indépendants - République et Territoires",
+     "size": 18,
+     "pour": 17,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 1
+    },
+    {
+     "key": "RDSE",
+     "label": "Groupe du Rassemblement Démocratique et Social Européen",
+     "size": 16,
+     "pour": 3,
+     "contre": 11,
+     "abstention": 2,
+     "nonVotants": 0
+    },
+    {
+     "key": "GEST",
+     "label": "Groupe Écologiste - Solidarité et Territoires",
+     "size": 16,
+     "pour": 0,
+     "contre": 16,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "NI",
+     "label": "Sénateurs ne figurant sur la liste d'aucun groupe",
+     "size": 4,
+     "pour": 3,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 1
+    }
+   ],
+   "qualification": {
+    "direction": "neutre",
+    "note": "Le texte réorganise la gouvernance de la sûreté nucléaire en vue de la relance de la filière ; son effet sur le climat est débattu selon les acteurs."
+   },
+   "resultEffect": null,
+   "an": {
+    "uid": "VTANR5L16V3662",
+    "legislature": 16,
+    "numero": 3662,
+    "date": "2024-04-09",
+    "title": "l'ensemble du projet de loi relatif à l’organisation de la gouvernance de la sûreté nucléaire et de la radioprotection pour répondre au défi de la relance de la filière nucléaire (texte de la commission paritaire).",
+    "stage": "Vote public",
+    "result": "Adoption",
+    "resultLabel": "l'Assemblée nationale a adopté",
+    "url": "https://www.assemblee-nationale.fr/dyn/16/scrutins/3662",
+    "totals": {
+     "votants": 543,
+     "exprimes": 513,
+     "pour": 340,
+     "contre": 173,
+     "abstention": 30,
+     "nonVotants": 1
+    },
+    "groups": [
+     {
+      "key": "EPR",
+      "label": "Ensemble pour la République (Renaissance)",
+      "short": "EPR",
+      "color": "#FF8A00",
+      "size": 169,
+      "pour": 151,
+      "contre": 2,
+      "abstention": 4,
+      "nonVotants": 0
+     },
+     {
+      "key": "RN",
+      "label": "Rassemblement National",
+      "short": "RN",
+      "color": "#22315B",
+      "size": 88,
+      "pour": 82,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "LFI-NFP",
+      "label": "La France insoumise – Nouveau Front Populaire",
+      "short": "LFI-NFP",
+      "color": "#CC2443",
+      "size": 75,
+      "pour": 0,
+      "contre": 73,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "DR",
+      "label": "Droite Républicaine",
+      "short": "DR",
+      "color": "#3B5BA5",
+      "size": 61,
+      "pour": 43,
+      "contre": 6,
+      "abstention": 11,
+      "nonVotants": 0
+     },
+     {
+      "key": "Dem",
+      "label": "Les Démocrates (MoDem)",
+      "short": "Dem",
+      "color": "#F2C14E",
+      "size": 50,
+      "pour": 37,
+      "contre": 0,
+      "abstention": 7,
+      "nonVotants": 1
+     },
+     {
+      "key": "SOC",
+      "label": "Socialistes et apparentés",
+      "short": "SOC",
+      "color": "#E7536C",
+      "size": 31,
+      "pour": 0,
+      "contre": 31,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "HOR",
+      "label": "Horizons & Indépendants",
+      "short": "HOR",
+      "color": "#4FC3F7",
+      "size": 31,
+      "pour": 23,
+      "contre": 0,
+      "abstention": 3,
+      "nonVotants": 0
+     },
+     {
+      "key": "GDR",
+      "label": "Gauche Démocrate et Républicaine",
+      "short": "GDR",
+      "color": "#B03030",
+      "size": 22,
+      "pour": 0,
+      "contre": 22,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "LIOT",
+      "label": "Libertés, Indépendants, Outre-mer et Territoires",
+      "short": "LIOT",
+      "color": "#A78BFA",
+      "size": 22,
+      "pour": 1,
+      "contre": 15,
+      "abstention": 5,
+      "nonVotants": 0
+     },
+     {
+      "key": "EcoS",
+      "label": "Écologiste et Social",
+      "short": "EcoS",
+      "color": "#35D07F",
+      "size": 21,
+      "pour": 0,
+      "contre": 21,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "NI",
+      "label": "Non inscrits",
+      "short": "NI",
+      "color": "#8B95A9",
+      "size": 7,
+      "pour": 3,
+      "contre": 3,
+      "abstention": 0,
+      "nonVotants": 0
+     }
+    ]
+   },
+   "anNote": null
+  },
+  "2024-10": {
+   "id": "2024-10",
+   "date": "2024-10-16",
+   "title": "sur l'ensemble de la proposition de loi portant programmation nationale et simplification normative dans le secteur économique de l'énergie.",
+   "url": "https://www.senat.fr/scrutin-public/2024/scr2024-10.html",
+   "theme": "climat",
+   "result": "Adoption",
+   "dossierUrl": "https://www.senat.fr/dossier-legislatif/ppl23-555.html",
+   "totals": {
+    "votants": 331,
+    "exprimes": 323,
+    "pour": 220,
+    "contre": 103,
+    "abstention": 8,
+    "nonVotants": 16
+   },
+   "groups": [
+    {
+     "key": "LR",
+     "label": "Groupe Les Républicains",
+     "size": 131,
+     "pour": 124,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 7
+    },
+    {
+     "key": "SER",
+     "label": "Groupe Socialiste, Écologiste et Républicain",
+     "size": 64,
+     "pour": 0,
+     "contre": 64,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "UC",
+     "label": "Groupe Union Centriste",
+     "size": 58,
+     "pour": 56,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 2
+    },
+    {
+     "key": "RDPI",
+     "label": "Groupe Rassemblement des démocrates, progressistes et indépendants",
+     "size": 21,
+     "pour": 20,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 1
+    },
+    {
+     "key": "LIRT",
+     "label": "Groupe Les Indépendants - République et Territoires",
+     "size": 19,
+     "pour": 18,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 1
+    },
+    {
+     "key": "CRCE",
+     "label": "Groupe Communiste Républicain Citoyen et Écologiste - Kanaky",
+     "size": 18,
+     "pour": 0,
+     "contre": 18,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "RDSE",
+     "label": "Groupe du Rassemblement Démocratique et Social Européen",
+     "size": 16,
+     "pour": 2,
+     "contre": 5,
+     "abstention": 8,
+     "nonVotants": 1
+    },
+    {
+     "key": "GEST",
+     "label": "Groupe Écologiste - Solidarité et Territoires",
+     "size": 16,
+     "pour": 0,
+     "contre": 16,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "NI",
+     "label": "Sénateurs ne figurant sur la liste d'aucun groupe",
+     "size": 4,
+     "pour": 0,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 4
+    }
+   ],
+   "qualification": {
+    "direction": "favorable",
+    "note": "La proposition établit une programmation nationale de l'énergie et simplifie les normes du secteur."
+   },
+   "resultEffect": "favorable",
+   "an": null,
+   "anNote": null
+  },
+  "2024-303": {
+   "id": "2024-303",
+   "date": "2025-06-10",
+   "title": "sur l'ensemble de la proposition de loi visant à réduire l'impact environnemental de l'industrie textile.",
+   "url": "https://www.senat.fr/scrutin-public/2024/scr2024-303.html",
+   "theme": "climat",
+   "result": "Adoption",
+   "dossierUrl": "https://www.senat.fr/dossier-legislatif/ppl23-431.html",
+   "totals": {
+    "votants": 341,
+    "exprimes": 338,
+    "pour": 337,
+    "contre": 1,
+    "abstention": 3,
+    "nonVotants": 7
+   },
+   "groups": [
+    {
+     "key": "LR",
+     "label": "Groupe Les Républicains",
+     "size": 130,
+     "pour": 125,
+     "contre": 0,
+     "abstention": 2,
+     "nonVotants": 3
+    },
+    {
+     "key": "SER",
+     "label": "Groupe Socialiste, Écologiste et Républicain",
+     "size": 65,
+     "pour": 63,
+     "contre": 1,
+     "abstention": 0,
+     "nonVotants": 1
+    },
+    {
+     "key": "UC",
+     "label": "Groupe Union Centriste",
+     "size": 59,
+     "pour": 57,
+     "contre": 0,
+     "abstention": 1,
+     "nonVotants": 1
+    },
+    {
+     "key": "LIRT",
+     "label": "Groupe Les Indépendants - République et Territoires",
+     "size": 20,
+     "pour": 19,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 1
+    },
+    {
+     "key": "RDPI",
+     "label": "Groupe Rassemblement des démocrates, progressistes et indépendants",
+     "size": 19,
+     "pour": 19,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "CRCE",
+     "label": "Groupe Communiste Républicain Citoyen et Écologiste - Kanaky",
+     "size": 18,
+     "pour": 18,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "RDSE",
+     "label": "Groupe du Rassemblement Démocratique et Social Européen",
+     "size": 17,
+     "pour": 16,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 1
+    },
+    {
+     "key": "GEST",
+     "label": "Groupe Écologiste - Solidarité et Territoires",
+     "size": 16,
+     "pour": 16,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "NI",
+     "label": "Sénateurs ne figurant sur la liste d'aucun groupe",
+     "size": 4,
+     "pour": 4,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 0
+    }
+   ],
+   "qualification": {
+    "direction": "favorable",
+    "note": "Le texte réduit l'impact environnemental de l'industrie textile (information, filières, écoconception)."
+   },
+   "resultEffect": "favorable",
+   "an": {
+    "uid": "VTANR5L17V7494",
+    "legislature": 17,
+    "numero": 7494,
+    "date": "2026-06-24",
+    "title": "l’ensemble de la proposition de loi visant à réduire l’impact environnemental de l’industrie textile (texte de la commission mixte paritaire).",
+    "stage": "Texte de la CMP",
+    "result": "Adoption",
+    "resultLabel": "l'Assemblée nationale a adopté",
+    "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/7494",
+    "totals": {
+     "votants": 489,
+     "exprimes": 338,
+     "pour": 338,
+     "contre": 0,
+     "abstention": 151,
+     "nonVotants": 1
+    },
+    "groups": [
+     {
+      "key": "RN",
+      "label": "Rassemblement National",
+      "short": "RN",
+      "color": "#22315B",
+      "size": 122,
+      "pour": 98,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "EPR",
+      "label": "Ensemble pour la République (Renaissance)",
+      "short": "EPR",
+      "color": "#FF8A00",
+      "size": 91,
+      "pour": 89,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 1
+     },
+     {
+      "key": "LFI-NFP",
+      "label": "La France insoumise – Nouveau Front Populaire",
+      "short": "LFI-NFP",
+      "color": "#CC2443",
+      "size": 71,
+      "pour": 0,
+      "contre": 0,
+      "abstention": 50,
+      "nonVotants": 0
+     },
+     {
+      "key": "SOC",
+      "label": "Socialistes et apparentés",
+      "short": "SOC",
+      "color": "#E7536C",
+      "size": 68,
+      "pour": 0,
+      "contre": 0,
+      "abstention": 54,
+      "nonVotants": 0
+     },
+     {
+      "key": "DR",
+      "label": "Droite Républicaine",
+      "short": "DR",
+      "color": "#3B5BA5",
+      "size": 48,
+      "pour": 44,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "EcoS",
+      "label": "Écologiste et Social",
+      "short": "EcoS",
+      "color": "#35D07F",
+      "size": 38,
+      "pour": 0,
+      "contre": 0,
+      "abstention": 35,
+      "nonVotants": 0
+     },
+     {
+      "key": "Dem",
+      "label": "Les Démocrates (MoDem)",
+      "short": "Dem",
+      "color": "#F2C14E",
+      "size": 37,
+      "pour": 32,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "HOR",
+      "label": "Horizons & Indépendants",
+      "short": "HOR",
+      "color": "#4FC3F7",
+      "size": 35,
+      "pour": 33,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "LIOT",
+      "label": "Libertés, Indépendants, Outre-mer et Territoires",
+      "short": "LIOT",
+      "color": "#A78BFA",
+      "size": 23,
+      "pour": 16,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "UDR",
+      "label": "Union des droites pour la République",
+      "short": "UDR",
+      "color": "#5B6B9E",
+      "size": 17,
+      "pour": 17,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "GDR",
+      "label": "Gauche Démocrate et Républicaine",
+      "short": "GDR",
+      "color": "#B03030",
+      "size": 17,
+      "pour": 3,
+      "contre": 0,
+      "abstention": 12,
+      "nonVotants": 0
+     },
+     {
+      "key": "NI",
+      "label": "Non inscrits",
+      "short": "NI",
+      "color": "#8B95A9",
+      "size": 10,
+      "pour": 6,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     }
+    ]
+   },
+   "anNote": null
+  },
+  "2024-347": {
+   "id": "2024-347",
+   "date": "2025-07-08",
+   "title": "sur l'ensemble de la proposition de loi portant programmation nationale et simplification normative dans le secteur économique de l'énergie (deuxième lecture).",
+   "url": "https://www.senat.fr/scrutin-public/2024/scr2024-347.html",
+   "theme": "climat",
+   "result": "Adoption",
+   "dossierUrl": "https://www.senat.fr/dossier-legislatif/ppl23-555.html",
+   "totals": {
+    "votants": 345,
+    "exprimes": 245,
+    "pour": 221,
+    "contre": 24,
+    "abstention": 100,
+    "nonVotants": 3
+   },
+   "groups": [
+    {
+     "key": "LR",
+     "label": "Groupe Les Républicains",
+     "size": 130,
+     "pour": 122,
+     "contre": 0,
+     "abstention": 7,
+     "nonVotants": 1
+    },
+    {
+     "key": "SER",
+     "label": "Groupe Socialiste, Écologiste et Républicain",
+     "size": 65,
+     "pour": 0,
+     "contre": 0,
+     "abstention": 65,
+     "nonVotants": 0
+    },
+    {
+     "key": "UC",
+     "label": "Groupe Union Centriste",
+     "size": 59,
+     "pour": 58,
+     "contre": 0,
+     "abstention": 1,
+     "nonVotants": 0
+    },
+    {
+     "key": "LIRT",
+     "label": "Groupe Les Indépendants - République et Territoires",
+     "size": 20,
+     "pour": 19,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 1
+    },
+    {
+     "key": "RDPI",
+     "label": "Groupe Rassemblement des démocrates, progressistes et indépendants",
+     "size": 19,
+     "pour": 18,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 1
+    },
+    {
+     "key": "CRCE",
+     "label": "Groupe Communiste Républicain Citoyen et Écologiste - Kanaky",
+     "size": 18,
+     "pour": 0,
+     "contre": 0,
+     "abstention": 18,
+     "nonVotants": 0
+    },
+    {
+     "key": "RDSE",
+     "label": "Groupe du Rassemblement Démocratique et Social Européen",
+     "size": 17,
+     "pour": 4,
+     "contre": 4,
+     "abstention": 9,
+     "nonVotants": 0
+    },
+    {
+     "key": "GEST",
+     "label": "Groupe Écologiste - Solidarité et Territoires",
+     "size": 16,
+     "pour": 0,
+     "contre": 16,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "NI",
+     "label": "Sénateurs ne figurant sur la liste d'aucun groupe",
+     "size": 4,
+     "pour": 0,
+     "contre": 4,
+     "abstention": 0,
+     "nonVotants": 0
+    }
+   ],
+   "qualification": {
+    "direction": "favorable",
+    "note": "Deuxième lecture de la programmation nationale de l'énergie."
+   },
+   "resultEffect": "favorable",
+   "an": null,
+   "anNote": null
+  },
+  "2025-339": {
+   "id": "2025-339",
+   "date": "2026-07-21",
+   "title": "sur l'ensemble de la proposition de loi pour une montagne vivante et souveraine.",
+   "url": "https://www.senat.fr/scrutin-public/2025/scr2025-339.html",
+   "theme": "climat",
+   "result": "Adoption",
+   "dossierUrl": "https://www.senat.fr/dossier-legislatif/ppl25-629.html",
+   "totals": {
+    "votants": 341,
+    "exprimes": 341,
+    "pour": 325,
+    "contre": 16,
+    "abstention": 0,
+    "nonVotants": 7
+   },
+   "groups": [
+    {
+     "key": "LR",
+     "label": "Groupe Les Républicains",
+     "size": 131,
+     "pour": 129,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 2
+    },
+    {
+     "key": "SER",
+     "label": "Groupe Socialiste, Écologiste et Républicain",
+     "size": 64,
+     "pour": 64,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "UC",
+     "label": "Groupe Union Centriste",
+     "size": 59,
+     "pour": 58,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 1
+    },
+    {
+     "key": "LIRT",
+     "label": "Groupe Les Indépendants - République et Territoires",
+     "size": 20,
+     "pour": 20,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "RDPI",
+     "label": "Groupe Rassemblement des démocrates, progressistes et indépendants",
+     "size": 19,
+     "pour": 19,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "CRCE",
+     "label": "Groupe Communiste Républicain Citoyen et Écologiste - Kanaky",
+     "size": 18,
+     "pour": 18,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "RDSE",
+     "label": "Groupe du Rassemblement Démocratique et Social Européen",
+     "size": 17,
+     "pour": 17,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "GEST",
+     "label": "Groupe Écologiste - Solidarité et Territoires",
+     "size": 16,
+     "pour": 0,
+     "contre": 16,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "NI",
+     "label": "Sénateurs ne figurant sur la liste d'aucun groupe",
+     "size": 4,
+     "pour": 0,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 4
+    }
+   ],
+   "qualification": {
+    "direction": "favorable",
+    "note": "Le texte renforce la protection de la montagne (biodiversité, pastoralisme, adaptation)."
+   },
+   "resultEffect": "favorable",
+   "an": {
+    "uid": "VTANR5L17V8421",
+    "legislature": 17,
+    "numero": 8421,
+    "date": "2026-07-20",
+    "title": "l'ensemble de la proposition de loi pour une montagne vivante et souveraine (texte de la commission mixte paritaire).",
+    "stage": "Texte de la CMP",
+    "result": "Adoption",
+    "resultLabel": "l'Assemblée nationale a adopté",
+    "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/8421",
+    "totals": {
+     "votants": 472,
+     "exprimes": 468,
+     "pour": 376,
+     "contre": 92,
+     "abstention": 4,
+     "nonVotants": 1
+    },
+    "groups": [
+     {
+      "key": "RN",
+      "label": "Rassemblement National",
+      "short": "RN",
+      "color": "#22315B",
+      "size": 122,
+      "pour": 97,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "EPR",
+      "label": "Ensemble pour la République (Renaissance)",
+      "short": "EPR",
+      "color": "#FF8A00",
+      "size": 91,
+      "pour": 66,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 1
+     },
+     {
+      "key": "LFI-NFP",
+      "label": "La France insoumise – Nouveau Front Populaire",
+      "short": "LFI-NFP",
+      "color": "#CC2443",
+      "size": 71,
+      "pour": 0,
+      "contre": 63,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "SOC",
+      "label": "Socialistes et apparentés",
+      "short": "SOC",
+      "color": "#E7536C",
+      "size": 68,
+      "pour": 42,
+      "contre": 0,
+      "abstention": 1,
+      "nonVotants": 0
+     },
+     {
+      "key": "DR",
+      "label": "Droite Républicaine",
+      "short": "DR",
+      "color": "#3B5BA5",
+      "size": 48,
+      "pour": 48,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "EcoS",
+      "label": "Écologiste et Social",
+      "short": "EcoS",
+      "color": "#35D07F",
+      "size": 38,
+      "pour": 0,
+      "contre": 29,
+      "abstention": 1,
+      "nonVotants": 0
+     },
+     {
+      "key": "Dem",
+      "label": "Les Démocrates (MoDem)",
+      "short": "Dem",
+      "color": "#F2C14E",
+      "size": 37,
+      "pour": 35,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "HOR",
+      "label": "Horizons & Indépendants",
+      "short": "HOR",
+      "color": "#4FC3F7",
+      "size": 35,
+      "pour": 33,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "LIOT",
+      "label": "Libertés, Indépendants, Outre-mer et Territoires",
+      "short": "LIOT",
+      "color": "#A78BFA",
+      "size": 23,
+      "pour": 19,
+      "contre": 0,
+      "abstention": 2,
+      "nonVotants": 0
+     },
+     {
+      "key": "UDR",
+      "label": "Union des droites pour la République",
+      "short": "UDR",
+      "color": "#5B6B9E",
+      "size": 17,
+      "pour": 17,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "GDR",
+      "label": "Gauche Démocrate et Républicaine",
+      "short": "GDR",
+      "color": "#B03030",
+      "size": 17,
+      "pour": 14,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "NI",
+      "label": "Non inscrits",
+      "short": "NI",
+      "color": "#8B95A9",
+      "size": 10,
+      "pour": 5,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     }
+    ]
+   },
+   "anNote": null
+  },
+  "2024-7": {
+   "id": "2024-7",
+   "date": "2024-10-10",
+   "title": "sur l'article 2 constituant l'ensemble de la proposition de loi visant à assurer la mixité sociale et scolaire dans les établissements d'enseignement publics et privés sous contrat du premier et du second degrés et à garantir davantage de transparence dans les procédures d'affectation et de financement des établissements privés sous contrat.",
+   "url": "https://www.senat.fr/scrutin-public/2024/scr2024-7.html",
+   "theme": "inegalites",
+   "result": "Rejet",
+   "dossierUrl": "https://www.senat.fr/dossier-legislatif/ppl23-471.html",
+   "totals": {
+    "votants": 331,
+    "exprimes": 327,
+    "pour": 109,
+    "contre": 218,
+    "abstention": 4,
+    "nonVotants": 16
+   },
+   "groups": [
+    {
+     "key": "LR",
+     "label": "Groupe Les Républicains",
+     "size": 131,
+     "pour": 0,
+     "contre": 124,
+     "abstention": 0,
+     "nonVotants": 7
+    },
+    {
+     "key": "SER",
+     "label": "Groupe Socialiste, Écologiste et Républicain",
+     "size": 64,
+     "pour": 63,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 1
+    },
+    {
+     "key": "UC",
+     "label": "Groupe Union Centriste",
+     "size": 58,
+     "pour": 0,
+     "contre": 56,
+     "abstention": 1,
+     "nonVotants": 1
+    },
+    {
+     "key": "RDPI",
+     "label": "Groupe Rassemblement des démocrates, progressistes et indépendants",
+     "size": 21,
+     "pour": 0,
+     "contre": 20,
+     "abstention": 0,
+     "nonVotants": 1
+    },
+    {
+     "key": "LIRT",
+     "label": "Groupe Les Indépendants - République et Territoires",
+     "size": 19,
+     "pour": 0,
+     "contre": 18,
+     "abstention": 0,
+     "nonVotants": 1
+    },
+    {
+     "key": "CRCE",
+     "label": "Groupe Communiste Républicain Citoyen et Écologiste - Kanaky",
+     "size": 18,
+     "pour": 15,
+     "contre": 0,
+     "abstention": 3,
+     "nonVotants": 0
+    },
+    {
+     "key": "RDSE",
+     "label": "Groupe du Rassemblement Démocratique et Social Européen",
+     "size": 16,
+     "pour": 15,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 1
+    },
+    {
+     "key": "GEST",
+     "label": "Groupe Écologiste - Solidarité et Territoires",
+     "size": 16,
+     "pour": 16,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "NI",
+     "label": "Sénateurs ne figurant sur la liste d'aucun groupe",
+     "size": 4,
+     "pour": 0,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 4
+    }
+   ],
+   "qualification": {
+    "direction": "favorable",
+    "note": "La proposition renforçait la mixité sociale et scolaire et la transparence des affectations et des financements des établissements."
+   },
+   "resultEffect": "defavorable",
+   "an": null,
+   "anNote": null
+  },
+  "2024-322": {
+   "id": "2024-322",
+   "date": "2025-06-12",
+   "title": "sur l'article unique constituant l'ensemble de la proposition de loi instaurant un impôt plancher de 2 % sur le patrimoine des ultrariches.",
+   "url": "https://www.senat.fr/scrutin-public/2024/scr2024-322.html",
+   "theme": "inegalites",
+   "result": "Rejet",
+   "dossierUrl": "https://www.senat.fr/dossier-legislatif/ppl24-380.html",
+   "totals": {
+    "votants": 341,
+    "exprimes": 317,
+    "pour": 129,
+    "contre": 188,
+    "abstention": 24,
+    "nonVotants": 7
+   },
+   "groups": [
+    {
+     "key": "LR",
+     "label": "Groupe Les Républicains",
+     "size": 130,
+     "pour": 0,
+     "contre": 127,
+     "abstention": 2,
+     "nonVotants": 1
+    },
+    {
+     "key": "SER",
+     "label": "Groupe Socialiste, Écologiste et Républicain",
+     "size": 65,
+     "pour": 65,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "UC",
+     "label": "Groupe Union Centriste",
+     "size": 59,
+     "pour": 14,
+     "contre": 34,
+     "abstention": 11,
+     "nonVotants": 0
+    },
+    {
+     "key": "LIRT",
+     "label": "Groupe Les Indépendants - République et Territoires",
+     "size": 20,
+     "pour": 1,
+     "contre": 17,
+     "abstention": 1,
+     "nonVotants": 1
+    },
+    {
+     "key": "RDPI",
+     "label": "Groupe Rassemblement des démocrates, progressistes et indépendants",
+     "size": 19,
+     "pour": 1,
+     "contre": 10,
+     "abstention": 8,
+     "nonVotants": 0
+    },
+    {
+     "key": "CRCE",
+     "label": "Groupe Communiste Républicain Citoyen et Écologiste - Kanaky",
+     "size": 18,
+     "pour": 17,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 1
+    },
+    {
+     "key": "RDSE",
+     "label": "Groupe du Rassemblement Démocratique et Social Européen",
+     "size": 17,
+     "pour": 15,
+     "contre": 0,
+     "abstention": 2,
+     "nonVotants": 0
+    },
+    {
+     "key": "GEST",
+     "label": "Groupe Écologiste - Solidarité et Territoires",
+     "size": 16,
+     "pour": 16,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "NI",
+     "label": "Sénateurs ne figurant sur la liste d'aucun groupe",
+     "size": 4,
+     "pour": 0,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 4
+    }
+   ],
+   "qualification": {
+    "direction": "favorable",
+    "note": "La proposition créait un impôt plancher de 2 % sur le patrimoine des ultra-riches."
+   },
+   "resultEffect": "defavorable",
+   "an": {
+    "uid": "VTANR5L17V881",
+    "legislature": 17,
+    "numero": 881,
+    "date": "2025-02-20",
+    "title": "l'ensemble de la proposition de loi instaurant un impôt plancher de 2 % sur le patrimoine des ultra riches (première lecture).",
+    "stage": "1ʳᵉ lecture",
+    "result": "Adoption",
+    "resultLabel": "l'Assemblée nationale a adopté",
+    "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/881",
+    "totals": {
+     "votants": 186,
+     "exprimes": 155,
+     "pour": 116,
+     "contre": 39,
+     "abstention": 31,
+     "nonVotants": 1
+    },
+    "groups": [
+     {
+      "key": "RN",
+      "label": "Rassemblement National",
+      "short": "RN",
+      "color": "#22315B",
+      "size": 124,
+      "pour": 0,
+      "contre": 0,
+      "abstention": 28,
+      "nonVotants": 0
+     },
+     {
+      "key": "EPR",
+      "label": "Ensemble pour la République (Renaissance)",
+      "short": "EPR",
+      "color": "#FF8A00",
+      "size": 94,
+      "pour": 0,
+      "contre": 16,
+      "abstention": 0,
+      "nonVotants": 1
+     },
+     {
+      "key": "LFI-NFP",
+      "label": "La France insoumise – Nouveau Front Populaire",
+      "short": "LFI-NFP",
+      "color": "#CC2443",
+      "size": 71,
+      "pour": 37,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "SOC",
+      "label": "Socialistes et apparentés",
+      "short": "SOC",
+      "color": "#E7536C",
+      "size": 66,
+      "pour": 36,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "DR",
+      "label": "Droite Républicaine",
+      "short": "DR",
+      "color": "#3B5BA5",
+      "size": 47,
+      "pour": 0,
+      "contre": 3,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "EcoS",
+      "label": "Écologiste et Social",
+      "short": "EcoS",
+      "color": "#35D07F",
+      "size": 38,
+      "pour": 38,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "Dem",
+      "label": "Les Démocrates (MoDem)",
+      "short": "Dem",
+      "color": "#F2C14E",
+      "size": 36,
+      "pour": 0,
+      "contre": 9,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "HOR",
+      "label": "Horizons & Indépendants",
+      "short": "HOR",
+      "color": "#4FC3F7",
+      "size": 33,
+      "pour": 0,
+      "contre": 7,
+      "abstention": 3,
+      "nonVotants": 0
+     },
+     {
+      "key": "LIOT",
+      "label": "Libertés, Indépendants, Outre-mer et Territoires",
+      "short": "LIOT",
+      "color": "#A78BFA",
+      "size": 23,
+      "pour": 0,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "GDR",
+      "label": "Gauche Démocrate et Républicaine",
+      "short": "GDR",
+      "color": "#B03030",
+      "size": 17,
+      "pour": 5,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "UDR",
+      "label": "Union des droites pour la République",
+      "short": "UDR",
+      "color": "#5B6B9E",
+      "size": 16,
+      "pour": 0,
+      "contre": 4,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "NI",
+      "label": "Non inscrits",
+      "short": "NI",
+      "color": "#8B95A9",
+      "size": 11,
+      "pour": 0,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     }
+    ]
+   },
+   "anNote": null
+  },
+  "2024-327": {
+   "id": "2024-327",
+   "date": "2025-06-19",
+   "title": "sur l'ensemble de la proposition de loi relative à la lutte contre l'antisémitisme, le racisme, les discriminations, les violences et la haine dans l'enseignement supérieur.",
+   "url": "https://www.senat.fr/scrutin-public/2024/scr2024-327.html",
+   "theme": "inegalites",
+   "result": "Adoption",
+   "dossierUrl": "https://www.senat.fr/dossier-legislatif/ppl24-026.html",
+   "totals": {
+    "votants": 342,
+    "exprimes": 326,
+    "pour": 326,
+    "contre": 0,
+    "abstention": 16,
+    "nonVotants": 6
+   },
+   "groups": [
+    {
+     "key": "LR",
+     "label": "Groupe Les Républicains",
+     "size": 130,
+     "pour": 129,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 1
+    },
+    {
+     "key": "SER",
+     "label": "Groupe Socialiste, Écologiste et Républicain",
+     "size": 65,
+     "pour": 65,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "UC",
+     "label": "Groupe Union Centriste",
+     "size": 59,
+     "pour": 59,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "LIRT",
+     "label": "Groupe Les Indépendants - République et Territoires",
+     "size": 20,
+     "pour": 19,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 1
+    },
+    {
+     "key": "RDPI",
+     "label": "Groupe Rassemblement des démocrates, progressistes et indépendants",
+     "size": 19,
+     "pour": 19,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "CRCE",
+     "label": "Groupe Communiste Républicain Citoyen et Écologiste - Kanaky",
+     "size": 18,
+     "pour": 18,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "RDSE",
+     "label": "Groupe du Rassemblement Démocratique et Social Européen",
+     "size": 17,
+     "pour": 17,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "GEST",
+     "label": "Groupe Écologiste - Solidarité et Territoires",
+     "size": 16,
+     "pour": 0,
+     "contre": 0,
+     "abstention": 16,
+     "nonVotants": 0
+    },
+    {
+     "key": "NI",
+     "label": "Sénateurs ne figurant sur la liste d'aucun groupe",
+     "size": 4,
+     "pour": 0,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 4
+    }
+   ],
+   "qualification": {
+    "direction": "favorable",
+    "note": "Le texte renforce la lutte contre l'antisémitisme, le racisme et les discriminations dans l'enseignement supérieur."
+   },
+   "resultEffect": "favorable",
+   "an": {
+    "uid": "VTANR5L17V1601",
+    "legislature": 17,
+    "numero": 1601,
+    "date": "2025-05-07",
+    "title": "l'ensemble de la proposition de loi relative à la lutte contre l'antisémitisme, le racisme, les discriminations, les violences et la haine dans l'enseignement supérieur (première lecture).",
+    "stage": "1ʳᵉ lecture",
+    "result": "Adoption",
+    "resultLabel": "l'Assemblée nationale a adopté",
+    "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/1601",
+    "totals": {
+     "votants": 160,
+     "exprimes": 159,
+     "pour": 131,
+     "contre": 28,
+     "abstention": 1,
+     "nonVotants": 1
+    },
+    "groups": [
+     {
+      "key": "RN",
+      "label": "Rassemblement National",
+      "short": "RN",
+      "color": "#22315B",
+      "size": 123,
+      "pour": 27,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "EPR",
+      "label": "Ensemble pour la République (Renaissance)",
+      "short": "EPR",
+      "color": "#FF8A00",
+      "size": 94,
+      "pour": 28,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 1
+     },
+     {
+      "key": "LFI-NFP",
+      "label": "La France insoumise – Nouveau Front Populaire",
+      "short": "LFI-NFP",
+      "color": "#CC2443",
+      "size": 71,
+      "pour": 0,
+      "contre": 25,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "SOC",
+      "label": "Socialistes et apparentés",
+      "short": "SOC",
+      "color": "#E7536C",
+      "size": 66,
+      "pour": 22,
+      "contre": 0,
+      "abstention": 1,
+      "nonVotants": 0
+     },
+     {
+      "key": "DR",
+      "label": "Droite Républicaine",
+      "short": "DR",
+      "color": "#3B5BA5",
+      "size": 48,
+      "pour": 8,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "EcoS",
+      "label": "Écologiste et Social",
+      "short": "EcoS",
+      "color": "#35D07F",
+      "size": 38,
+      "pour": 13,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "Dem",
+      "label": "Les Démocrates (MoDem)",
+      "short": "Dem",
+      "color": "#F2C14E",
+      "size": 36,
+      "pour": 9,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "HOR",
+      "label": "Horizons & Indépendants",
+      "short": "HOR",
+      "color": "#4FC3F7",
+      "size": 33,
+      "pour": 12,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "LIOT",
+      "label": "Libertés, Indépendants, Outre-mer et Territoires",
+      "short": "LIOT",
+      "color": "#A78BFA",
+      "size": 23,
+      "pour": 8,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "GDR",
+      "label": "Gauche Démocrate et Républicaine",
+      "short": "GDR",
+      "color": "#B03030",
+      "size": 17,
+      "pour": 0,
+      "contre": 3,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "UDR",
+      "label": "Union des droites pour la République",
+      "short": "UDR",
+      "color": "#5B6B9E",
+      "size": 16,
+      "pour": 3,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "NI",
+      "label": "Non inscrits",
+      "short": "NI",
+      "color": "#8B95A9",
+      "size": 11,
+      "pour": 1,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     }
+    ]
+   },
+   "anNote": null
+  },
+  "2025-250": {
+   "id": "2025-250",
+   "date": "2026-05-11",
+   "title": "sur l'ensemble du texte élaboré par la commission mixte paritaire sur le projet de loi relatif à la lutte contre les fraudes sociales et fiscales.",
+   "url": "https://www.senat.fr/scrutin-public/2025/scr2025-250.html",
+   "theme": "inegalites",
+   "result": "Adoption",
+   "dossierUrl": "https://www.senat.fr/dossier-legislatif/pjl25-024.html",
+   "totals": {
+    "votants": 343,
+    "exprimes": 343,
+    "pour": 244,
+    "contre": 99,
+    "abstention": 0,
+    "nonVotants": 5
+   },
+   "groups": [
+    {
+     "key": "LR",
+     "label": "Groupe Les Républicains",
+     "size": 131,
+     "pour": 130,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 1
+    },
+    {
+     "key": "SER",
+     "label": "Groupe Socialiste, Écologiste et Républicain",
+     "size": 65,
+     "pour": 0,
+     "contre": 65,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "UC",
+     "label": "Groupe Union Centriste",
+     "size": 59,
+     "pour": 59,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "LIRT",
+     "label": "Groupe Les Indépendants - République et Territoires",
+     "size": 20,
+     "pour": 19,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 1
+    },
+    {
+     "key": "RDPI",
+     "label": "Groupe Rassemblement des démocrates, progressistes et indépendants",
+     "size": 19,
+     "pour": 19,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "CRCE",
+     "label": "Groupe Communiste Républicain Citoyen et Écologiste - Kanaky",
+     "size": 18,
+     "pour": 0,
+     "contre": 18,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "RDSE",
+     "label": "Groupe du Rassemblement Démocratique et Social Européen",
+     "size": 16,
+     "pour": 16,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "GEST",
+     "label": "Groupe Écologiste - Solidarité et Territoires",
+     "size": 16,
+     "pour": 0,
+     "contre": 16,
+     "abstention": 0,
+     "nonVotants": 0
+    },
+    {
+     "key": "NI",
+     "label": "Sénateurs ne figurant sur la liste d'aucun groupe",
+     "size": 4,
+     "pour": 1,
+     "contre": 0,
+     "abstention": 0,
+     "nonVotants": 3
+    }
+   ],
+   "qualification": {
+    "direction": "favorable",
+    "note": "Le texte renforce les moyens de lutte contre les fraudes sociales et fiscales."
+   },
+   "resultEffect": "favorable",
+   "an": {
+    "uid": "VTANR5L17V6319",
+    "legislature": 17,
+    "numero": 6319,
+    "date": "2026-05-05",
+    "title": "l'ensemble du projet de loi relatif à la lutte contre les fraudes sociales et fiscales (texte de la commission mixte paritaire).",
+    "stage": "Texte de la CMP",
+    "result": "Adoption",
+    "resultLabel": "l'Assemblée nationale a adopté",
+    "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/6319",
+    "totals": {
+     "votants": 522,
+     "exprimes": 517,
+     "pour": 335,
+     "contre": 182,
+     "abstention": 5,
+     "nonVotants": 1
+    },
+    "groups": [
+     {
+      "key": "RN",
+      "label": "Rassemblement National",
+      "short": "RN",
+      "color": "#22315B",
+      "size": 122,
+      "pour": 109,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "EPR",
+      "label": "Ensemble pour la République (Renaissance)",
+      "short": "EPR",
+      "color": "#FF8A00",
+      "size": 91,
+      "pour": 79,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 1
+     },
+     {
+      "key": "LFI-NFP",
+      "label": "La France insoumise – Nouveau Front Populaire",
+      "short": "LFI-NFP",
+      "color": "#CC2443",
+      "size": 71,
+      "pour": 0,
+      "contre": 60,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "SOC",
+      "label": "Socialistes et apparentés",
+      "short": "SOC",
+      "color": "#E7536C",
+      "size": 68,
+      "pour": 0,
+      "contre": 64,
+      "abstention": 1,
+      "nonVotants": 0
+     },
+     {
+      "key": "DR",
+      "label": "Droite Républicaine",
+      "short": "DR",
+      "color": "#3B5BA5",
+      "size": 48,
+      "pour": 48,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "EcoS",
+      "label": "Écologiste et Social",
+      "short": "EcoS",
+      "color": "#35D07F",
+      "size": 38,
+      "pour": 0,
+      "contre": 34,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "Dem",
+      "label": "Les Démocrates (MoDem)",
+      "short": "Dem",
+      "color": "#F2C14E",
+      "size": 37,
+      "pour": 34,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "HOR",
+      "label": "Horizons & Indépendants",
+      "short": "HOR",
+      "color": "#4FC3F7",
+      "size": 35,
+      "pour": 33,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "LIOT",
+      "label": "Libertés, Indépendants, Outre-mer et Territoires",
+      "short": "LIOT",
+      "color": "#A78BFA",
+      "size": 23,
+      "pour": 10,
+      "contre": 7,
+      "abstention": 4,
+      "nonVotants": 0
+     },
+     {
+      "key": "GDR",
+      "label": "Gauche Démocrate et Républicaine",
+      "short": "GDR",
+      "color": "#B03030",
+      "size": 17,
+      "pour": 0,
+      "contre": 16,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "UDR",
+      "label": "Union des droites pour la République",
+      "short": "UDR",
+      "color": "#5B6B9E",
+      "size": 17,
+      "pour": 16,
+      "contre": 0,
+      "abstention": 0,
+      "nonVotants": 0
+     },
+     {
+      "key": "NI",
+      "label": "Non inscrits",
+      "short": "NI",
+      "color": "#8B95A9",
+      "size": 10,
+      "pour": 6,
+      "contre": 1,
+      "abstention": 0,
+      "nonVotants": 0
+     }
+    ]
+   },
+   "anNote": null
+  }
+ }
+}

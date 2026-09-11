@@ -1,0 +1,41 @@
+{
+  "_comment": "Rapprochement manuel vérifié entre chaque scrutin du Sénat affiché et le vote correspondant de l'Assemblée nationale (même texte). null = aucun vote public de l'Assemblée recensé dans les données officielles.",
+  "map": {
+    "2023-5": "VTANR5L16V3009",
+    "2023-19": "VTANR5L16V2967",
+    "2023-30": "VTANR5L16V2967",
+    "2023-100": null,
+    "2024-243": "VTANR5L17V1624",
+    "2024-262": "VTANR5L17V1473",
+    "2025-184": null,
+    "2025-338": "VTANR5L17V8433",
+    "2023-4": "VTANR5L16V361",
+    "2024-35": null,
+    "2024-147": "VTANR5L17V518",
+    "2025-72": "VTANR5L17V4442",
+    "2025-125": null,
+    "2023-106": "VTANR5L16V3206",
+    "2024-277": null,
+    "2025-169": "VTANR5L17V8280",
+    "2025-170": "VTANR5L17V5728",
+    "2023-43": "VTANR5L16V3213",
+    "2023-109": "VTANR5L16V3213",
+    "2024-248": "VTANR5L17V1308",
+    "2024-268": null,
+    "2025-308": "VTANR5L17V7405",
+    "2023-174": "VTANR5L16V3662",
+    "2024-10": null,
+    "2024-303": "VTANR5L17V7494",
+    "2024-347": null,
+    "2025-339": "VTANR5L17V8421",
+    "2024-7": null,
+    "2024-322": "VTANR5L17V881",
+    "2024-327": "VTANR5L17V1601",
+    "2025-250": "VTANR5L17V6319"
+  },
+  "notes": {
+    "2023-4": "Le vote de l'Assemblée nationale sur ce texte est sa première lecture du 25 octobre 2022 : l'Assemblée l'avait alors rejeté. Le Sénat a repris le texte en nouvelle lecture en 2023.",
+    "2023-43": "L'Assemblée nationale a voté sur le texte issu de la commission mixte paritaire (décembre 2023).",
+    "2023-109": "Même vote de l'Assemblée nationale que le scrutin sénatorial du 14 novembre 2023 : texte de la CMP."
+  }
+}
