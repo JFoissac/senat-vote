@@ -136,10 +136,14 @@ const anSource = computed(() => (data.raw ? data.raw.anSource : null));
       <h2>4. La superposition Sénat / Assemblée</h2>
       <p>
         Dans chaque fiche, l'interrupteur <b>« Superposer Sénat et Assemblée »</b> remplace les deux blocs séparés par un
-        graphique unique : pour chaque groupe, deux barres alignées, l'une pour le Sénat, l'autre pour le groupe de
-        l'Assemblée qui lui est rapproché.
+        tableau unique : <b>une ligne par groupe</b> et <b>deux colonnes</b> (Sénat, Assemblée nationale).
       </p>
       <ul>
+        <li>
+          Lecture : la couleur indique la position (<b>vert = pour</b>, <b>rouge = contre</b>, <b>gris = abstention</b>) et
+          la <b>forme</b> indique la chambre (<b>aplat = Sénat</b>, <b>hachures = Assemblée</b>). Le pourcentage affiché est
+          la part de votes « pour » sur les votes émis.
+        </li>
         <li>Le rapprochement des groupes (LR ↔ DR, SER ↔ SOC, RDPI ↔ EPR, UC ↔ Dem, etc.) est <b>indicatif</b> : les groupes ne sont pas les mêmes dans les deux chambres.</li>
         <li>Les groupes sans équivalent dans l'autre chambre (par exemple RN, LFI-NFP, AD ou UDR à l'Assemblée) sont listés à part, sous le graphique.</li>
         <li>
