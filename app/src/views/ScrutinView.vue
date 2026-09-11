@@ -45,6 +45,15 @@ const CATS = [
 const votes = ref(null);
 const votesLoading = ref(false);
 const votesError = ref(null);
+const failedPhotos = ref(new Set());
+
+const textSummary = computed(() =>
+  s.value ? data.textSummaryOf(s.value.text) : ""
+);
+
+function markFailed(key) {
+  failedPhotos.value.add(key);
+}
 
 function splitNames(value) {
   if (!value) return [];
@@ -63,16 +72,19 @@ function initials(name) {
   return (first + last).toUpperCase();
 }
 
-function voter(name, listGroup) {
+function voter(name, listGroup, index) {
   const senator = data.senatorOf(name);
   const meta = senator ? data.groupMeta(senator.group) : null;
   return {
     raw: name,
+    key: listGroup.key + "|" + name + "|" + index,
     name: senator ? senator.name : name,
     department: senator ? senator.department : "",
     region: senator ? regionOfDept(senator.dept) : "",
     short: meta ? meta.short : listGroup.short,
     color: meta ? meta.color : listGroup.color,
+    photo: senator && senator.photo ? senator.photo : "",
+    page: senator && senator.page ? senator.page : "",
     initials: initials(senator ? senator.name : name)
   };
 }
@@ -88,7 +100,7 @@ const groupRows = computed(() => {
     const cats = CATS.map((c) => ({
       key: c.key,
       label: c.label,
-      people: splitNames(block[c.key]).map((name) => voter(name, meta))
+      people: splitNames(block[c.key]).map((name, i) => voter(name, meta, i))
     }));
     const total = cats.reduce((acc, c) => acc + c.people.length, 0);
     return { key: meta.key, short: meta.short, label: meta.label, color: meta.color, cats, total, official: official[meta.key] || {} };
@@ -118,6 +130,7 @@ async function loadVotes(id) {
   votes.value = null;
   votesError.value = null;
   votesLoading.value = true;
+  failedPhotos.value = new Set();
   try {
     const res = await fetch("/votes/" + id + ".json");
     if (!res.ok) throw new Error("HTTP " + res.status);
@@ -211,6 +224,7 @@ watch(
 
       <section class="scrutin-card about" aria-label="À propos du texte">
         <h2 class="scrutin-card__title">À propos du texte</h2>
+        <p v-if="textSummary" class="resume"><b>En bref</b>{{ textSummary }}</p>
         <dl class="about__facts">
           <div>
             <dt>Texte</dt>
@@ -267,9 +281,28 @@ watch(
                   <p class="wv-cat__head">{{ c.label }} <b>{{ n(c.people.length) }}</b></p>
                   <ul class="wv-voters">
                     <li v-for="(p, i) in c.people" :key="p.raw + i" class="wv-voter">
-                      <span class="wv-avatar" :style="{ background: p.color }" aria-hidden="true">{{ p.initials }}</span>
+                      <span class="wv-avatar" :style="{ background: p.color }" aria-hidden="true">
+                        <img
+                          v-if="p.photo && !failedPhotos.has(p.key)"
+                          class="wv-photo"
+                          :src="p.photo"
+                          alt=""
+                          loading="lazy"
+                          referrerpolicy="no-referrer"
+                          @error="markFailed(p.key)"
+                        />
+                        <template v-else>{{ p.initials }}</template>
+                      </span>
                       <span class="wv-voter__id">
-                        <span class="wv-voter__name">{{ p.name }}</span>
+                        <a
+                          v-if="p.page"
+                          class="wv-voter__name"
+                          :href="p.page"
+                          target="_blank"
+                          rel="noopener"
+                          :aria-label="'Fiche du sénateur ' + p.name + ' sur senat.fr'"
+                        >{{ p.name }}</a>
+                        <span v-else class="wv-voter__name">{{ p.name }}</span>
                         <span v-if="p.department" class="wv-voter__dept">{{ p.department }}<template v-if="p.region"> · {{ p.region }}</template></span>
                       </span>
                       <span class="wv-tag" :style="{ color: p.color, borderColor: p.color }">{{ p.short }}</span>

@@ -597,9 +597,10 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 .wv-cat__head { margin: 0 0 6px; font-size: 0.72rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); }
 .wv-cat__head b { color: var(--ink); }
 .wv-voters { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr; gap: 3px; }
-.wv-voter { display: grid; grid-template-columns: 28px minmax(0, 1fr) auto; align-items: center; gap: 8px; padding: 4px 0; border-bottom: 1px dashed var(--line); min-width: 0; }
+.wv-voter { display: grid; grid-template-columns: 36px minmax(0, 1fr) auto; align-items: center; gap: 8px; padding: 4px 0; border-bottom: 1px dashed var(--line); min-width: 0; }
 .wv-voter:last-child { border-bottom: 0; }
-.wv-avatar { width: 28px; height: 28px; border-radius: 9px; display: grid; place-items: center; color: #fff; font-size: 0.66rem; font-weight: 800; letter-spacing: 0.02em; flex: none; }
+.wv-avatar { width: 36px; height: 36px; border-radius: 10px; display: grid; place-items: center; color: #fff; font-size: 0.66rem; font-weight: 800; letter-spacing: 0.02em; flex: none; overflow: hidden; }
+.wv-photo { width: 100%; height: 100%; object-fit: cover; display: block; }
 .wv-voter__id { min-width: 0; display: grid; }
 .wv-voter__name { font-size: 0.8rem; font-weight: 700; color: var(--ink); line-height: 1.25; overflow-wrap: anywhere; text-wrap: pretty; }
 .wv-voter__dept { font-size: 0.72rem; color: var(--muted); font-weight: 600; overflow-wrap: anywhere; text-wrap: pretty; }

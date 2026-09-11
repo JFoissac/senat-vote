@@ -126,6 +126,12 @@ export const useDataStore = defineStore("data", {
           : null;
       };
     },
+    textSummaries(state) {
+      return state.raw && state.raw.textSummaries ? state.raw.textSummaries : {};
+    },
+    textSummaryOf() {
+      return (text) => this.textSummaries[text] || "";
+    },
     senatorCount(state) {
       return state.raw ? state.raw.senatorCount : 0;
     },
