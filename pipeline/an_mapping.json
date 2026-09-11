@@ -1,18 +1,28 @@
 {
-  "_comment": "Rapprochement manuel vérifié entre chaque scrutin du Sénat affiché et le vote correspondant de l'Assemblée nationale (même texte). null = aucun vote public de l'Assemblée recensé dans les données officielles.",
+  "_comment": "Rapprochement vérifié entre chaque scrutin du Sénat affiché et le vote correspondant de l'Assemblée nationale sur le même texte. null = aucun vote public recensé dans les données officielles.",
   "map": {
     "2023-5": "VTANR5L16V3009",
     "2023-19": "VTANR5L16V2967",
     "2023-30": "VTANR5L16V2967",
     "2023-100": null,
-    "2024-243": "VTANR5L17V1624",
-    "2024-262": "VTANR5L17V1473",
-    "2025-184": null,
-    "2025-338": "VTANR5L17V8433",
+    "2023-29": "VTANR5L16V2965",
+    "2023-131": null,
+    "2024-8": "VTANR5L17V740",
+    "2024-26": "VTANR5L16V4000",
+    "2024-196": "VTANR5L17V844",
+    "2024-211": "VTANR5L17V844",
+    "2024-213": null,
+    "2024-329": "VTANR5L17V6512",
+    "2024-353": "VTANR5L17V3055",
+    "2025-147": null,
+    "2025-221": "VTANR5L17V7260",
+    "2025-287": "VTANR5L17V7408",
+    "2025-340": "VTANR5L17V8427",
+    "2023-157": null,
+    "2024-235": null,
     "2023-4": "VTANR5L16V361",
     "2024-35": null,
     "2024-147": "VTANR5L17V518",
-    "2025-72": "VTANR5L17V4442",
     "2025-125": null,
     "2023-106": "VTANR5L16V3206",
     "2024-277": null,
@@ -34,8 +44,15 @@
     "2025-250": "VTANR5L17V6319"
   },
   "notes": {
-    "2023-4": "Le vote de l'Assemblée nationale sur ce texte est sa première lecture du 25 octobre 2022 : l'Assemblée l'avait alors rejeté. Le Sénat a repris le texte en nouvelle lecture en 2023.",
+    "2023-4": "L'Assemblée nationale s'est prononcée sur ce texte en première lecture, le 25 octobre 2022 : elle l'avait alors rejeté.",
     "2023-43": "L'Assemblée nationale a voté sur le texte issu de la commission mixte paritaire (décembre 2023).",
-    "2023-109": "Même vote de l'Assemblée nationale que le scrutin sénatorial du 14 novembre 2023 : texte de la CMP."
+    "2023-109": "Même vote de l'Assemblée nationale que le scrutin sénatorial du 14 novembre 2023 : texte de la CMP.",
+    "2023-29": "L'Assemblée nationale a voté le texte issu de la commission mixte paritaire (novembre 2023).",
+    "2024-196": "L'Assemblée nationale a voté sur le texte après le Sénat (février 2025).",
+    "2024-211": "Même texte que le scrutin sénatorial du 18 février 2025 : version de la commission mixte paritaire.",
+    "2024-329": "Vote ultérieur de l'Assemblée nationale sur ce texte (mai 2026).",
+    "2024-353": "L'Assemblée nationale s'est prononcée après le Sénat (octobre 2025).",
+    "2024-26": "Vote de l'Assemblée nationale sur ce texte en mai 2024.",
+    "2024-8": "Vote de l'Assemblée nationale sur le texte adopté par le Sénat (février 2025)."
   }
 }

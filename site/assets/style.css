@@ -256,10 +256,12 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 .b--unfav { background: #fbe3df; color: var(--red-ink); }
 .b--neutral { background: #eceef1; color: #5c6167; }
 .b--an { background: #f0f2f5; color: var(--ink-2); border-color: var(--line); }
+.b--origin { background: #fff; color: var(--ink-2); border-color: var(--line-dark); }
 
 .vrow__body { border-top: 1px solid var(--line); padding: 14px 16px 18px; display: none; }
 .vrow.is-open .vrow__body { display: block; }
-.qualnote { background: var(--surface-2); border-left: 3px solid var(--line-dark); border-radius: 8px; padding: 10px 12px; font-size: 0.83rem; color: var(--ink-2); margin: 0 0 14px; }
+.qualnote, .resume { background: var(--surface-2); border-left: 3px solid var(--line-dark); border-radius: 8px; padding: 10px 12px; font-size: 0.85rem; color: var(--ink-2); margin: 0 0 14px; }
+.resume b, .qualnote b { display: block; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin-bottom: 3px; }
 .qualnote b { display: block; font-size: 0.74rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin-bottom: 3px; }
 
 .chambers { display: grid; gap: 16px; }

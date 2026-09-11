@@ -261,16 +261,20 @@ def validate_an(scrutin: dict) -> list:
     return problems
 
 
-def result_effect(direction: str, result: str):
-    if direction == "neutre":
-        return None
-    favorable = (direction == "favorable" and result == "Adoption") or (direction == "defavorable" and result == "Rejet")
-    return "favorable" if favorable else "defavorable"
+def origin_of(title: str) -> str:
+    t = title.lower()
+    if "projet de loi" in t:
+        return "Gouvernement"
+    if "proposition de loi" in t:
+        return "Parlementaire"
+    if "proposition de résolution" in t:
+        return "Résolution"
+    return "—"
 
 
 def main() -> None:
     config = json.loads((ROOT / "pipeline" / "config.json").read_text(encoding="utf-8"))
-    qualifications = json.loads((ROOT / "pipeline" / "qualifications.json").read_text(encoding="utf-8"))
+    resumes = json.loads((ROOT / "pipeline" / "resumes.json").read_text(encoding="utf-8"))
     an_mapping = json.loads((ROOT / "pipeline" / "an_mapping.json").read_text(encoding="utf-8"))
     sessions = {d["id"]: d for d in json.loads((OPENDATA / "session_scrutins.json").read_text(encoding="utf-8"))}
     senators = json.loads((OPENDATA / "senateurs.json").read_text(encoding="utf-8"))
@@ -309,11 +313,9 @@ def main() -> None:
             if meta["result"] and parsed["result"] not in (meta["result"], "?"):
                 sys.exit(f"ERREUR {sid} : résultat page ({parsed['result']}) != liste ({meta['result']})")
 
-            qual = qualifications.get(theme["id"], {}).get(sid)
-            if not qual:
-                sys.exit(f"ERREUR : aucune qualification pour {sid}")
-            if qual["direction"] not in ("favorable", "defavorable", "neutre"):
-                sys.exit(f"ERREUR : direction invalide pour {sid}")
+            resume = resumes.get(sid)
+            if not resume:
+                sys.exit(f"ERREUR : aucun résumé pour {sid}")
 
             an_uid = an_mapping["map"].get(sid)
             an = None
@@ -335,13 +337,13 @@ def main() -> None:
                 "dossierUrl": parsed["dossierUrl"],
                 "totals": parsed["totals"],
                 "groups": parsed["groups"],
-                "qualification": {"direction": qual["direction"], "note": qual["note"]},
-                "resultEffect": result_effect(qual["direction"], parsed["result"]),
+                "origin": origin_of(meta["title"]),
+                "resume": resume,
                 "an": an,
                 "anNote": an_mapping.get("notes", {}).get(sid),
             }
             flag = f"AN {an_uid}" if an_uid else "AN —"
-            print(f"  ok {sid}  {parsed['result']:>8}  [{qual['direction']:>10}]  {flag}")
+            print(f"  ok {sid}  {parsed['result']:>8}  [{origin_of(meta['title']):>12}]  {flag}")
 
     # --- profils agrégés Sénat ---
     profiles = {}
@@ -396,9 +398,8 @@ def main() -> None:
         "anGroups": an_groups,
         "themes": [
             {
-                "id": t["id"], "name": t["name"], "icon": t["icon"], "pastel": t["pastel"],
-                "primaryScore": t["primaryScore"], "secondaryScore": t["secondaryScore"],
-                "secondaryLabel": t["secondaryLabel"], "goal": t["goal"], "description": t["description"],
+                "id": t["id"], "order": t.get("order", 99), "name": t["name"], "icon": t["icon"],
+                "pastel": t["pastel"], "description": t["description"], "concern": t.get("concern"),
                 "scrutins": t["scrutins"],
             }
             for t in config["themes"]
