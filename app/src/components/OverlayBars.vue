@@ -46,7 +46,7 @@ function pourPct(g) {
 }
 function label(chamber, name, g) {
   return (
-    chamber + " · " + name + " : " + g.pour + " pour, " + g.contre + " contre, " + g.abstention + " abstentions, " + g.nonVotants + " non-votants (effectif " + g.size + ")"
+    chamber + " · " + name + " (effectif " + g.size + ") : " + g.pour + " pour, " + g.contre + " contre, " + g.abstention + " abstention, " + g.nonVotants + " non-votants"
   );
 }
 </script>
@@ -54,20 +54,21 @@ function label(chamber, name, g) {
 <template>
   <div class="ovg2" role="group" aria-label="Superposition des votes du Sénat et de l'Assemblée nationale, groupe par groupe">
     <div class="ovg2__legend">
-      <span><i class="ovg2__sw ovg2__sw--pour"></i>pour</span>
-      <span><i class="ovg2__sw ovg2__sw--contre"></i>contre</span>
-      <span><i class="ovg2__sw ovg2__sw--abs"></i>abstention</span>
-      <span><i class="ovg2__sw ovg2__sw--nv"></i>non-votants</span>
+      <span><i class="ovg2__sw ovg2__sw--pour"></i>P · pour</span>
+      <span><i class="ovg2__sw ovg2__sw--contre"></i>C · contre</span>
+      <span><i class="ovg2__sw ovg2__sw--abs"></i>A · abstention</span>
+      <span><i class="ovg2__sw ovg2__sw--nv"></i>NV · non-votants (absents compris)</span>
       <span class="ovg2__sep" aria-hidden="true"></span>
-      <span>Sénat : barre = répartition du groupe (non-votants inclus) · Assemblée : <b>% de votes « pour »</b> sur les votes émis</span>
+      <span class="ovg2__legend-note">Barre du Sénat = répartition complète du groupe · Assemblée = % de « pour » sur les votes émis</span>
     </div>
 
-    <div class="ovg2__head" aria-hidden="true"><span>Groupe</span><span>Sénat</span><span>Assemblée · % pour</span></div>
+    <div class="ovg2__head" aria-hidden="true"><span>Groupe</span><span>Sénat · décompte</span><span>Assemblée</span></div>
 
     <div v-for="row in paired.rows" :key="row.sg.key" class="ovg2__row">
       <div class="ovg2__group">
         <span class="ovg2__dot" :style="{ background: row.sg.color }"></span>
-        <span class="ovg2__gname">{{ row.sg.short }} <small>≈ {{ row.ag.short }}</small></span>
+        <b>{{ row.sg.short }}</b>
+        <small>≈ {{ row.ag.short }}</small>
       </div>
       <div class="ovg2__cell" data-ch="Sénat">
         <div class="ovg2__stack" role="img" :aria-label="label('Sénat', row.sg.short, row.sg)" :title="label('Sénat', row.sg.short, row.sg)">
@@ -76,21 +77,25 @@ function label(chamber, name, g) {
           <span v-if="row.sg.abstention" class="ovg2__seg ovg2__seg--abs" :style="{ width: wSize(row.sg, row.sg.abstention) + '%' }"></span>
           <span v-if="row.sg.nonVotants" class="ovg2__seg ovg2__seg--nv" :style="{ width: wSize(row.sg, row.sg.nonVotants) + '%' }"></span>
         </div>
+        <div class="ovg2__counts">
+          <span class="p">{{ row.sg.pour }} P</span>
+          <span class="c">{{ row.sg.contre }} C</span>
+          <span class="a">{{ row.sg.abstention }} A</span>
+          <span class="nv">{{ row.sg.nonVotants }} NV</span>
+        </div>
       </div>
       <div class="ovg2__cell ovg2__cell--num" data-ch="Assemblée">
         <span class="ovg2__pct" :title="label('Assemblée', row.ag.short, row.ag)">{{ pourPct(row.ag) == null ? "—" : pourPct(row.ag) + " %" }}</span>
+        <span class="ovg2__pct-lbl">pour</span>
       </div>
     </div>
 
     <template v-if="paired.unmatchedSenate.length || paired.unmatchedAn.length">
-      <p class="ovg2__extra-title">
-        Groupes sans équivalent dans l'autre chambre
-        <span class="ovg2__extra-hint">(affichés à part ; pour l'Assemblée, seul le % de « pour » est indiqué)</span>
-      </p>
+      <p class="ovg2__extra-title">Groupes sans équivalent dans l'autre chambre</p>
       <div v-for="g in paired.unmatchedSenate" :key="'s-' + g.key" class="ovg2__row ovg2__row--extra">
         <div class="ovg2__group">
           <span class="ovg2__dot" :style="{ background: g.color }"></span>
-          <span class="ovg2__gname">Sénat · {{ g.short }}</span>
+          <b>{{ g.short }}</b><small>Sénat seul</small>
         </div>
         <div class="ovg2__cell" data-ch="Sénat">
           <div class="ovg2__stack" role="img" :aria-label="label('Sénat', g.short, g)" :title="label('Sénat', g.short, g)">
@@ -99,17 +104,21 @@ function label(chamber, name, g) {
             <span v-if="g.abstention" class="ovg2__seg ovg2__seg--abs" :style="{ width: wSize(g, g.abstention) + '%' }"></span>
             <span v-if="g.nonVotants" class="ovg2__seg ovg2__seg--nv" :style="{ width: wSize(g, g.nonVotants) + '%' }"></span>
           </div>
+          <div class="ovg2__counts">
+            <span class="p">{{ g.pour }} P</span><span class="c">{{ g.contre }} C</span><span class="a">{{ g.abstention }} A</span><span class="nv">{{ g.nonVotants }} NV</span>
+          </div>
         </div>
         <div class="ovg2__cell ovg2__cell--num" data-ch="Assemblée"><span class="ovg2__dash">—</span></div>
       </div>
       <div v-for="g in paired.unmatchedAn" :key="'a-' + g.key" class="ovg2__row ovg2__row--extra">
         <div class="ovg2__group">
           <span class="ovg2__dot" :style="{ background: g.color }"></span>
-          <span class="ovg2__gname">Assemblée · {{ g.short }}</span>
+          <b>{{ g.short }}</b><small>Assemblée seule</small>
         </div>
         <div class="ovg2__cell" data-ch="Sénat"><span class="ovg2__dash">—</span></div>
         <div class="ovg2__cell ovg2__cell--num" data-ch="Assemblée">
           <span class="ovg2__pct" :title="label('Assemblée', g.short, g)">{{ pourPct(g) == null ? "—" : pourPct(g) + " %" }}</span>
+          <span class="ovg2__pct-lbl">pour</span>
         </div>
       </div>
     </template>

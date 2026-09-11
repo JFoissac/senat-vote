@@ -1,12 +1,14 @@
 <script setup>
-import { nextTick, ref, watch } from "vue";
+import { computed, nextTick, ref, watch } from "vue";
 import { useRoute } from "vue-router";
 import { useDataStore } from "./stores/data.js";
 import AppHeader from "./components/AppHeader.vue";
+import { frDate } from "./format.js";
 
 const route = useRoute();
 const data = useDataStore();
 const main = ref(null);
+const dataDate = computed(() => (data.generatedAt ? frDate(data.generatedAt.slice(0, 10)) : ""));
 
 const TITLES = {
   home: "les votes par sujet",
@@ -52,6 +54,7 @@ watch(
         <div class="footer__col footer__col--brand">
           <p class="footer__title">Sénat·Vote</p>
           <p class="footer__text">Comment le Sénat et l'Assemblée nationale votent sur les sujets qui préoccupent les Français. Un outil citoyen indépendant, sans publicité et sans traceur.</p>
+          <p class="footer__text footer__text--small">Interface v2.3 · données du {{ dataDate }}</p>
         </div>
         <div class="footer__col">
           <p class="footer__heading">Le projet</p>
