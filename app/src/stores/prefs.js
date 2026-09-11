@@ -26,7 +26,7 @@ function loadPrefs() {
     const raw = localStorage.getItem(PREFS_KEY);
     if (!raw) return defaultPrefs();
     return mergePrefs(defaultPrefs(), JSON.parse(raw));
-  } catch (err) {
+  } catch {
     return defaultPrefs();
   }
 }

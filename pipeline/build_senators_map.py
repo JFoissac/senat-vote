@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Construit l'annuaire des sénateurs et l'injecte dans app/public/data.json et site/data.json.
+"""Construit l'annuaire des sénateurs et l'injecte dans app/public/data.json.
 
 Source principale : API officielle du Sénat (https://www.senat.fr/api-senat/senateurs.json) —
 fournit photo (urlAvatar), page officielle, groupe et circonscription des 348 sénateurs en exercice.
@@ -77,15 +77,11 @@ def build_map() -> dict:
 
 def main() -> None:
     mapping = build_map()
-    for path in (ROOT / "app" / "public" / "data.json", ROOT / "site" / "data.json"):
-        if not path.exists():
-            continue
+    path = ROOT / "app" / "public" / "data.json"
+    if path.exists():
         data = json.loads(path.read_text(encoding="utf-8"))
         data["senators"] = mapping
-        if "site" in path.parts:
-            path.write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
-        else:
-            path.write_text(json.dumps(data, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+        path.write_text(json.dumps(data, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
         print(f"{path} : {len(mapping)} entrées")
     with_photo = sum(1 for v in mapping.values() if v["photo"])
     print(f"dont {with_photo} avec photo et page officielle")

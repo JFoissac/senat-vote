@@ -1,0 +1,5 @@
+dist
+coverage
+public/data.json
+public/votes
+package-lock.json

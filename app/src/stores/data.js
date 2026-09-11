@@ -1,15 +1,5 @@
 import { defineStore } from "pinia";
-
-export function nin(name) {
-  return (name || "")
-    .normalize("NFKD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .toLowerCase()
-    .replace(/^(?:mm?\.|mme|mmes?|mlles?)\s+/, "")
-    .replace(/[^a-z0-9 ]+/g, " ")
-    .replace(/\s+/g, " ")
-    .trim();
-}
+import { nin } from "../lib/names.js";
 
 export const useDataStore = defineStore("data", {
   state: () => ({

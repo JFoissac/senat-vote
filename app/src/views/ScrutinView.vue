@@ -3,6 +3,7 @@ import { computed, onMounted, ref, watch } from "vue";
 import { useRoute } from "vue-router";
 import { useDataStore } from "../stores/data.js";
 import { capFirst, frDate, frDateShort, n } from "../format.js";
+import { initials } from "../lib/names.js";
 import { regionOfDept } from "../data/departments.js";
 import GroupBars from "../components/GroupBars.vue";
 import TotalsChips from "../components/TotalsChips.vue";
@@ -61,15 +62,6 @@ function splitNames(value) {
     .split(",")
     .map((name) => name.trim())
     .filter(Boolean);
-}
-
-function initials(name) {
-  const clean = (name || "").replace(/^(?:mm?\.|mme|mmes?|mlles?)\s+/i, "").trim();
-  const parts = clean.split(/\s+/).filter(Boolean);
-  if (!parts.length) return "?";
-  const first = parts[0].charAt(0);
-  const last = parts.length > 1 ? parts[parts.length - 1].charAt(0) : "";
-  return (first + last).toUpperCase();
 }
 
 function voter(name, listGroup, index) {
@@ -137,7 +129,7 @@ async function loadVotes(id) {
     const json = await res.json();
     if (json.id === id) votes.value = json;
     else throw new Error("identifiant inattendu");
-  } catch (err) {
+  } catch {
     votesError.value = "Les votes nominatifs de ce scrutin ne sont pas disponibles.";
   } finally {
     votesLoading.value = false;

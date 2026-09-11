@@ -3,8 +3,10 @@
 node_modules/
 app/node_modules/
 
-# Build de l'application Vue
+# Build et qualité de l'application Vue
 app/dist/
+app/coverage/
+.eslintcache
 
 # Caches de données (re-téléchargeables)
 opendata/an16/
@@ -23,5 +25,4 @@ __pycache__/
 .vercel/
 .DS_Store
 
-# Note : app/public/data.json est versionné (données de production de l'app).
-.vercel
+# Note : app/public/data.json et app/public/votes/ sont versionnés (données de production de l'app).

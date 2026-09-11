@@ -1,5 +1,7 @@
 <script setup>
 import { computed } from "vue";
+import { pairGroups } from "../lib/overlay.js";
+import { pourPct } from "../lib/stats.js";
 
 const props = defineProps({
   senateGroups: { type: Array, default: () => [] },
@@ -7,42 +9,10 @@ const props = defineProps({
   mapping: { type: Object, default: () => ({}) }
 });
 
-const paired = computed(() => {
-  const anByKey = {};
-  props.anGroups.forEach((g) => {
-    anByKey[g.key] = g;
-  });
-  const matchedAn = new Set();
-  const rows = [];
-  const unmatchedSenate = [];
-  props.senateGroups
-    .slice()
-    .sort((a, b) => (b.size || 0) - (a.size || 0))
-    .forEach((sg) => {
-      const anKey = props.mapping[sg.key];
-      const ag = anKey ? anByKey[anKey] || null : null;
-      if (ag) {
-        matchedAn.add(anKey);
-        rows.push({ sg, ag });
-      } else {
-        unmatchedSenate.push(sg);
-      }
-    });
-  const unmatchedAn = props.anGroups
-    .filter((g) => !matchedAn.has(g.key))
-    .sort((a, b) => (b.size || 0) - (a.size || 0));
-  return { rows, unmatchedSenate, unmatchedAn };
-});
+const paired = computed(() => pairGroups(props.senateGroups, props.anGroups, props.mapping));
 
 function wSize(g, value) {
   return g.size ? (100 * value) / g.size : 0;
-}
-function emis(g) {
-  return g.pour + g.contre + g.abstention;
-}
-function pourPct(g) {
-  const e = emis(g);
-  return e ? Math.round((100 * g.pour) / e) : null;
 }
 function label(chamber, name, g) {
   return (

@@ -3,7 +3,8 @@ import { computed, onMounted, ref, watch } from "vue";
 import { useRoute } from "vue-router";
 import { useDataStore } from "../stores/data.js";
 import { usePrefsStore } from "../stores/prefs.js";
-import { byDateDesc, n } from "../format.js";
+import { n } from "../format.js";
+import { filterScrutins, sortScrutins } from "../lib/votes.js";
 import VoteCard from "../components/VoteCard.vue";
 import Pager from "../components/Pager.vue";
 
@@ -25,47 +26,18 @@ const themeRank = computed(() => {
   return map;
 });
 
-function majority(g) {
-  if (!g) return null;
-  if (g.pour >= g.contre && g.pour >= g.abstention) return "pour";
-  if (g.contre >= g.pour && g.contre >= g.abstention) return "contre";
-  return "abs";
-}
-
 const SORTS = [
   { value: "recents", label: "Plus récents d'abord" },
   { value: "anciens", label: "Plus anciens d'abord" },
   { value: "pour", label: "Plus de votes « pour »" },
   { value: "contre", label: "Plus de votes « contre »" },
   { value: "votants", label: "Plus de votants" },
-  { value: "sujet", label: "Par sujet" }
+  { value: "sujet", label: "Par sujet" },
 ];
 
-const filtered = computed(() => {
-  const v = prefs.votes;
-  const sel = Object.keys(v.themes).filter((k) => v.themes[k]);
-  const list = data.scrutinsArray.filter((s) => {
-    if (sel.length && sel.indexOf(s.theme) === -1) return false;
-    if (v.withAn && !s.an) return false;
-    if (v.origin && s.origin !== v.origin) return false;
-    if (v.group && v.position) {
-      const g = s.groups.find((x) => x.key === v.group);
-      if (!g || majority(g) !== v.position) return false;
-    }
-    if (v.q) {
-      const q = v.q.toLowerCase();
-      if ((s.title + " " + (s.resume || "") + " " + s.text).toLowerCase().indexOf(q) === -1) return false;
-    }
-    return true;
-  });
-  if (v.sort === "anciens") list.sort((a, b) => (a.date || "").localeCompare(b.date || ""));
-  else if (v.sort === "pour") list.sort((a, b) => b.totals.pour - a.totals.pour || byDateDesc(a, b));
-  else if (v.sort === "contre") list.sort((a, b) => b.totals.contre - a.totals.contre || byDateDesc(a, b));
-  else if (v.sort === "votants") list.sort((a, b) => (b.totals.votants || 0) - (a.totals.votants || 0));
-  else if (v.sort === "sujet") list.sort((a, b) => (themeRank.value[a.theme] || 0) - (themeRank.value[b.theme] || 0) || byDateDesc(a, b));
-  else list.sort(byDateDesc);
-  return list;
-});
+const filtered = computed(() =>
+  sortScrutins(filterScrutins(data.scrutinsArray, prefs.votes), prefs.votes.sort, themeRank.value),
+);
 
 const pages = computed(() => Math.max(1, Math.ceil(filtered.value.length / PAGE_SIZE)));
 const page = computed(() => Math.min(Math.max(1, prefs.votes.page), pages.value));
@@ -103,7 +75,8 @@ watch(pages, (p) => {
     <div class="page-head">
       <h1 class="page-title">Tous les votes</h1>
       <p class="page-lede">
-        {{ n(totalCount) }} scrutins publics du Sénat, avec le résultat et la position des groupes ; votes de l'Assemblée nationale indiqués lorsqu'ils existent. <RouterLink to="/methode">Méthode et sources</RouterLink>.
+        {{ n(totalCount) }} scrutins publics du Sénat, avec le résultat et la position des groupes ; votes de
+        l'Assemblée nationale indiqués lorsqu'ils existent. <RouterLink to="/methode">Méthode et sources</RouterLink>.
       </p>
     </div>
     <div class="layout">
@@ -121,65 +94,68 @@ watch(pages, (p) => {
           </button>
         </div>
         <div id="votes-filters" class="filters__body">
-        <div class="filters__group">
-          <input
-            v-model="prefs.votes.q"
-            type="search"
-            placeholder="Un vote, un texte…"
-            aria-label="Rechercher"
-            @input="resetPage"
-          >
-        </div>
-        <div class="filters__group">
-          <p class="filters__label">Origine du texte</p>
-          <select v-model="prefs.votes.origin" aria-label="Origine du texte" @change="resetPage">
-            <option value="">Toutes origines</option>
-            <option value="Gouvernement">Projets de loi (gouvernement)</option>
-            <option value="Parlementaire">Propositions de loi (parlementaire)</option>
-            <option value="Autre">Autres</option>
-          </select>
-        </div>
-        <div class="filters__group">
-          <p class="filters__label">Sujets</p>
-          <label v-for="t in themes" :key="t.id" class="checkline">
-            <input v-model="prefs.votes.themes[t.id]" type="checkbox" @change="resetPage">
-            <span class="dot" :style="{ background: t.pastel }"></span>{{ t.name }} <small>({{ themeCount(t.id) }})</small>
-          </label>
-        </div>
-        <div class="filters__group">
-          <p class="filters__label">Position d'un groupe</p>
-          <select v-model="prefs.votes.group" aria-label="Groupe politique" @change="resetPage">
-            <option value="">Tous les groupes (Sénat)</option>
-            <option v-for="g in data.senateGroups" :key="g.key" :value="g.key">{{ g.short }} — {{ g.label }}</option>
-          </select>
-          <select
-            v-model="prefs.votes.position"
-            aria-label="Position majoritaire du groupe"
-            :disabled="!prefs.votes.group"
-            style="margin-top: 8px"
-            @change="resetPage"
-          >
-            <option value="">Toutes les positions</option>
-            <option value="pour">A voté majoritairement pour</option>
-            <option value="contre">A voté majoritairement contre</option>
-            <option value="abs">S'est majoritairement abstenu</option>
-          </select>
-          <p class="note" style="margin: 6px 0 0">
-            Chaque scrutin liste les 9 groupes du Sénat. Choisissez un groupe, puis la position majoritaire
-            (pour, contre, abstention) pour ne garder que les scrutins correspondants.
-          </p>
-        </div>
-        <div class="filters__group">
-          <label class="switch">
-            <input v-model="prefs.votes.withAn" type="checkbox" @change="resetPage">
-            Uniquement les votes avec un vote de l'Assemblée
-          </label>
-        </div>
+          <div class="filters__group">
+            <input
+              v-model="prefs.votes.q"
+              type="search"
+              placeholder="Un vote, un texte…"
+              aria-label="Rechercher"
+              @input="resetPage"
+            />
+          </div>
+          <div class="filters__group">
+            <p class="filters__label">Origine du texte</p>
+            <select v-model="prefs.votes.origin" aria-label="Origine du texte" @change="resetPage">
+              <option value="">Toutes origines</option>
+              <option value="Gouvernement">Projets de loi (gouvernement)</option>
+              <option value="Parlementaire">Propositions de loi (parlementaire)</option>
+              <option value="Autre">Autres</option>
+            </select>
+          </div>
+          <div class="filters__group">
+            <p class="filters__label">Sujets</p>
+            <label v-for="t in themes" :key="t.id" class="checkline">
+              <input v-model="prefs.votes.themes[t.id]" type="checkbox" @change="resetPage" />
+              <span class="dot" :style="{ background: t.pastel }"></span>{{ t.name }}
+              <small>({{ themeCount(t.id) }})</small>
+            </label>
+          </div>
+          <div class="filters__group">
+            <p class="filters__label">Position d'un groupe</p>
+            <select v-model="prefs.votes.group" aria-label="Groupe politique" @change="resetPage">
+              <option value="">Tous les groupes (Sénat)</option>
+              <option v-for="g in data.senateGroups" :key="g.key" :value="g.key">{{ g.short }} — {{ g.label }}</option>
+            </select>
+            <select
+              v-model="prefs.votes.position"
+              aria-label="Position majoritaire du groupe"
+              :disabled="!prefs.votes.group"
+              style="margin-top: 8px"
+              @change="resetPage"
+            >
+              <option value="">Toutes les positions</option>
+              <option value="pour">A voté majoritairement pour</option>
+              <option value="contre">A voté majoritairement contre</option>
+              <option value="abs">S'est majoritairement abstenu</option>
+            </select>
+            <p class="note" style="margin: 6px 0 0">
+              Chaque scrutin liste les 9 groupes du Sénat. Choisissez un groupe, puis la position majoritaire (pour,
+              contre, abstention) pour ne garder que les scrutins correspondants.
+            </p>
+          </div>
+          <div class="filters__group">
+            <label class="switch">
+              <input v-model="prefs.votes.withAn" type="checkbox" @change="resetPage" />
+              Uniquement les votes avec un vote de l'Assemblée
+            </label>
+          </div>
         </div>
       </aside>
       <div id="votelist">
         <div class="listbar">
-          <p class="result-count" aria-live="polite">{{ n(filtered.length) }} vote{{ filtered.length > 1 ? "s" : "" }}</p>
+          <p class="result-count" aria-live="polite">
+            {{ n(filtered.length) }} vote{{ filtered.length > 1 ? "s" : "" }}
+          </p>
           <label class="listbar__sort">
             <span>Trier</span>
             <select v-model="prefs.votes.sort" aria-label="Trier les votes" @change="resetPage">
