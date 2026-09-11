@@ -1,23 +1,26 @@
 # Sénat·Vote — les votes du Sénat et de l'Assemblée, sujet par sujet
 
-Site statique (HTML/CSS/JS, sans dépendance) qui présente les **scrutins publics du Sénat** croisés avec les
-**votes de l'Assemblée nationale** sur les mêmes textes, classés par **sujets de la vie quotidienne**,
-avec la position de chaque **groupe politique**. Présentation strictement factuelle.
+Site statique (HTML/CSS/JS, sans dépendance) qui présente **tous les scrutins publics du Sénat** de la période,
+regroupés par **texte** et classés par **sujets de la vie quotidienne**, avec la position de chaque **groupe
+politique** et, au niveau du texte, les **votes de l'Assemblée nationale**. Présentation strictement factuelle.
 
 ## Ce que montre le site
 
-- **10 sujets** : pouvoir d'achat, santé, école, logement, travail, environnement/climat/énergie,
-  alimentation/agriculture, retraites/solidarité/grand âge, immigration/asile/intégration, finances publiques/dette.
+- **12 sujets** : pouvoir d'achat, santé, école, logement, travail, sécurité et ordre public, écologie/climat/énergie,
+  alimentation/agriculture, retraites/solidarité/grand âge, immigration/asile/intégration, finances publiques/dette, autres textes.
+- **Tous les votes publics** de la période (ensemble, articles, amendements, motions), regroupés par texte (dossier législatif).
 - Pour chaque vote : **ce que change le texte** (résumé factuel), **adopté ou rejeté**, son **origine**
   (projet de loi du gouvernement ou proposition parlementaire), le **vote correspondant de l'Assemblée nationale**
   lorsqu'il existe, et la **répartition des votes par groupe** (pour, contre, abstention, non-votants).
-- Graphiques par groupe (« comment le Sénat / l'Assemblée a voté ») et page Groupes (Sénat et Assemblée).
+- Graphiques par groupe (« comment le Sénat / l'Assemblée a voté »), page **Groupes** (Sénat et Assemblée) et page **Comparer** :
+  checklist de sujets, taux d'accord entre deux groupes, participation et part de votes pour/contre, par sujet.
 
 ## Neutralité
 
 - Le site **ne note pas les textes, ne classe pas les partis et ne recommande aucun vote**.
 - Les sujets ont des **libellés descriptifs** (ex. « Immigration, asile et intégration »), pas des objectifs orientés.
 - Aucun indicateur « en faveur / en défaveur » : les graphiques montrent la répartition des votes, sans juger le sens des textes.
+- L'onglet Comparer ne désigne ni « meilleur » ni « pire » groupe : il mesure un **taux d'accord** (position majoritaire identique), la **participation** et la part de votes pour/contre.
 - La page Méthode explique aussi la **composition du Sénat** : pas de groupe LFI (aucun sénateur LFI ; gauche représentée par SER, CRCE-K, GEST) et 4 sénateurs RN, sous le seuil de 10 pour former un groupe, donc non-inscrits (« NI »).
 
 ## Structure

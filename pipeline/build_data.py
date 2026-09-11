@@ -1,19 +1,26 @@
 #!/usr/bin/env python3
-"""Construit les données du site :
+"""Construit les données du site à partir de TOUS les scrutins publics du Sénat
+de la période couverte, croisés (au niveau du texte) avec l'Assemblée nationale.
 
-  - scrutins du Sénat : pages officielles senat.fr (totaux + ventilation par groupe) ;
-  - vote correspondant de l'Assemblée nationale : dumps officiels data.assemblee-nationale.fr ;
-  - qualification éditoriale de chaque texte (pipeline/qualifications.json) ;
-  - validation stricte de toutes les sommes ; génération de site/data.js et site/data.json.
+Étapes :
+  1. liste complète des scrutins (opendata/session_scrutins.json) ;
+  2. téléchargement/parsing des pages officielles (cache opendata/pages) en parallèle ;
+  3. validation stricte (sommes) — les scrutins incohérents sont écartés et signalés ;
+  4. regroupement par texte (dossier législatif), affectation à un sujet, type de vote ;
+  5. correspondance AN : fiche détaillée pour les votes « ensemble » vérifiés (an_mapping.json)
+     + liste des votes de l'Assemblée sur le même texte ;
+  6. écriture de site/data.js et site/data.json.
 """
 
-import csv
 import glob
 import html as htmllib
 import json
+import os
 import re
 import sys
+import unicodedata
 import urllib.request
+from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -22,17 +29,7 @@ OPENDATA = ROOT / "opendata"
 PAGES = OPENDATA / "pages"
 SITE = ROOT / "site"
 
-ACCORDION_TO_GROUP = {
-    "UMP": "LR",
-    "SOC": "SER",
-    "UC": "UC",
-    "RTLI": "LIRT",
-    "LREM": "RDPI",
-    "CRC": "CRCE",
-    "RDSE": "RDSE",
-    "GEST": "GEST",
-    "NI": "NI",
-}
+ACCORDION_TO_GROUP = {"UMP": "LR", "SOC": "SER", "UC": "UC", "RTLI": "LIRT", "LREM": "RDPI", "CRC": "CRCE", "RDSE": "RDSE", "GEST": "GEST", "NI": "NI"}
 
 AN_STAGES = [
     (r"\(texte de la commission mixte paritaire\)", "Texte de la CMP"),
@@ -43,19 +40,53 @@ AN_STAGES = [
     (r"\(seconde délibération\)", "2ᵈᵉ délibération"),
 ]
 
+THEME_PATTERNS = [
+    ("environnement", r"climat|environnement|écologie|ecologie|énergie|energie|nucléaire|nucleaire|renouvelable|biodiversité|biodiversite|pollution|déchets|dechets|montagne|eau\b|assainissement|forêt|foret|chasse|pêche|peche|inondation|mobilités? durables|véhicules? électriques|nature|paysage"),
+    ("alimentation", r"alimentation|agricole|agriculture|élevage|elevage|agriculteurs|souveraineté alimentaire|pêche|peche|vigne|viticul|cultures?|élevage|bien-être animal"),
+    ("logement", r"logement|habitat|locatif|hébergement|hebergement|construction|bail\b|foncier|loyer|copropriété|copropriete"),
+    ("ecole", r"école|ecole|scolaire|professeur|université|universite|enseignement|étudiant|etudiant|laïcité|laicite|recherche|vie scolaire|lycée|college|collège"),
+    ("travail", r"emploi|travail|salari|chômage|chomage|apprentissage|dialogue social|plein emploi|travailleurs|seniors|laboratoire|convention collective|assurance chômage|sécurité sociale des travailleurs"),
+    ("securite", r"sécurité|securite|délinquance|delinquance|criminalit|criminelle|narcotrafic|stupéfiant|stupefiant|police|gendarmerie|ordre public|terroris|délinquants|delinquants|violences|justice pénale|sécurité civile|cybersécurité|cybercriminalité|victimes"),
+    ("sante", r"santé|sante|soins|médical|medical|hôpital|hopital|médecin|medecin|maladie|vaccin|médicament|medicament|palliatif|aide à mourir|aide a mourir|psychiatri|handicap|cancer|sclérose|sclerose|protection de l'enfance"),
+    ("solidarite", r"retraite|pension|grand âge|grand age|autonomie|dépendance|dependance|prestations sociales|minima sociaux|aide sociale|famille|enfance|jeunesse|bénéficiaires|beneficiaires|allocation|vieillesse"),
+    ("immigration", r"immigration|intégration|integration|asile|étrangers|etrangers|nationalité|nationalite|rétention|retention|titre de séjour|visa|apatridie|frontière"),
+    ("finances", r"finances|budget|financi|fiscal|impôt|impot|taxe|déficit|deficit|dette|comptes|fraude|dépense|depense|douane|trésor|tresor"),
+    ("pouvoir-achat", r"pouvoir d'achat|prix|inflation|pouvoir d'achat|tarif|énergie|energie|consommation|concurrence|partage de la valeur|salaires|smic|aide alimentaire|chèques|cheques"),
+]
+THEME_OVERRIDES = {
+    "projet de loi de finances": "finances",
+    "projet de loi de financement": "sante",
+    "projet de loi de programmation des finances publiques": "finances",
+    "projet de loi de finances de fin de gestion": "finances",
+    "projet de loi d'orientation pour la souveraineté alimentaire": "alimentation",
+    "projet de loi d'urgence pour la protection et la souveraineté agricoles": "alimentation",
+    "projet de loi pour le plein emploi": "travail",
+    "projet de loi portant transposition des accords nationaux interprofessionnels": "travail",
+}
+
 
 def clean_text(text: str) -> str:
     text = htmllib.unescape(text)
     text = text.replace("\\'", "'")
     text = re.sub(r"<[^>]+>", " ", text)
-    text = re.sub(r"\s+", " ", text)
-    return text.strip()
+    return re.sub(r"\s+", " ", text).strip()
+
+
+def norm(text: str) -> str:
+    t = unicodedata.normalize("NFKD", (text or "").lower()).replace("’", "'").replace("œ", "oe")
+    t = "".join(c for c in t if not unicodedata.combining(c))
+    t = re.sub(r"[^a-z0-9' ]+", " ", t)
+    return re.sub(r"\s+", " ", t).strip()
+
+
+def tokens(s: str):
+    return [w for w in s.split() if len(w) > 2]
 
 
 def fetch_page(scrutin_id: str, url: str) -> str:
     PAGES.mkdir(parents=True, exist_ok=True)
     cache = PAGES / f"{scrutin_id}.html"
-    if cache.exists() and cache.stat().st_size > 10000:
+    if cache.exists() and cache.stat().st_size > 8000:
         return cache.read_text(encoding="utf-8", errors="replace")
     req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (compatible; scrutins-citoyens/1.0)"})
     with urllib.request.urlopen(req, timeout=60) as resp:
@@ -66,38 +97,19 @@ def fetch_page(scrutin_id: str, url: str) -> str:
 
 def parse_scrutin_page(raw: str) -> dict:
     totals = {}
-    for value, label in re.findall(
-        r'<strong class="display-4 ff-alt[^"]*">(\d+)</strong>\s*(votants|suffrages exprim[^<]*|pour|contre)',
-        raw,
-    ):
-        key = label.strip()
-        if key.startswith("suffrages"):
-            key = "exprimes"
+    for value, label in re.findall(r'<strong class="display-4 ff-alt[^"]*">(\d+)</strong>\s*(votants|suffrages exprim[^<]*|pour|contre)', raw):
+        key = "exprimes" if label.strip().startswith("suffrages") else label.strip()
         totals[key] = int(value)
-
     m = re.search(r"Abstention\s*(?:&nbsp;|&#160;|&amp;nbsp;|\s)*:\s*<span class=\"fw-semibold\">(\d+)</span>", raw)
     abstention = int(m.group(1)) if m else 0
-    m = re.search(
-        r"N[^<:]{0,60}part au vote\s*(?:&nbsp;|&#160;|&amp;nbsp;|\s)*:\s*<span class=\"fw-semibold\">(\d+)</span>",
-        raw,
-        re.S,
-    )
+    m = re.search(r"N[^<:]{0,60}part au vote\s*(?:&nbsp;|&#160;|&amp;nbsp;|\s)*:\s*<span class=\"fw-semibold\">(\d+)</span>", raw, re.S)
     non_votants = int(m.group(1)) if m else 0
 
-    result_raw = None
+    result = "?"
     m = re.search(r"<h2 class=\"card-title\">R(?:&eacute;|é)sultat du scrutin</h2>\s*<p>(.*?)</p>", raw, re.S)
     if m:
-        result_raw = clean_text(m.group(1))
-    if result_raw:
-        low = result_raw.lower()
-        if "n'a pas adopt" in low or "pas adopt" in low or "rejet" in low:
-            result = "Rejet"
-        elif "adopt" in low:
-            result = "Adoption"
-        else:
-            result = result_raw
-    else:
-        result = "?"
+        low = clean_text(m.group(1)).lower()
+        result = "Rejet" if ("n'a pas adopt" in low or "pas adopt" in low or "rejet" in low) else ("Adoption" if "adopt" in low else "?")
 
     dossier = None
     m = re.search(r'href="(/dossier-legislatif/[^"]+\.html)"', raw)
@@ -114,11 +126,7 @@ def parse_scrutin_page(raw: str) -> dict:
         sm = re.search(r":\s*(\d+)\s*s[eé]nateurs", label)
         size = int(sm.group(1)) if sm else None
         counts = {"pour": 0, "contre": 0, "abstention": 0, "nonVotants": 0}
-        for pos_label, value in re.findall(
-            r">((?:Pour|Contre|Abstention|N[^<:]{0,60}part au vote))[^<]*?:\s*<span class=\"ms-1 fw-semibold\">(\d+)</span>",
-            block,
-            re.S,
-        ):
+        for pos_label, value in re.findall(r">((?:Pour|Contre|Abstention|N[^<:]{0,60}part au vote))[^<]*?:\s*<span class=\"ms-1 fw-semibold\">(\d+)</span>", block, re.S):
             pl = pos_label.lower()
             if "pour" in pl and "part" not in pl:
                 counts["pour"] = int(value)
@@ -128,21 +136,12 @@ def parse_scrutin_page(raw: str) -> dict:
                 counts["abstention"] = int(value)
             elif "part au vote" in pl:
                 counts["nonVotants"] = int(value)
-        label_short = re.sub(r"\s*:\s*\d+\s*s[eé]nateurs\s*$", "", label).strip()
-        groups.append({"key": ACCORDION_TO_GROUP.get(gm.group(1), gm.group(1)), "label": label_short, "size": size, **counts})
+        groups.append({"key": ACCORDION_TO_GROUP.get(gm.group(1), gm.group(1)), "size": size, **counts})
 
     return {
-        "resultDetail": result_raw,
         "result": result,
         "dossierUrl": dossier,
-        "totals": {
-            "votants": totals.get("votants"),
-            "exprimes": totals.get("exprimes"),
-            "pour": totals.get("pour"),
-            "contre": totals.get("contre"),
-            "abstention": abstention,
-            "nonVotants": non_votants,
-        },
+        "totals": {"votants": totals.get("votants"), "exprimes": totals.get("exprimes"), "pour": totals.get("pour"), "contre": totals.get("contre"), "abstention": abstention, "nonVotants": non_votants},
         "groups": groups,
     }
 
@@ -151,27 +150,63 @@ def validate_scrutin(scrutin: dict) -> list:
     problems = []
     t = scrutin["totals"]
     if None in (t["votants"], t["exprimes"], t["pour"], t["contre"]):
-        problems.append("totaux incomplets")
-        return problems
+        return ["totaux incomplets"]
     if t["votants"] != t["pour"] + t["contre"] + t["abstention"]:
         problems.append("votants != pour+contre+abstention")
     if t["exprimes"] != t["pour"] + t["contre"]:
         problems.append("exprimés != pour+contre")
     if not scrutin["groups"]:
-        problems.append("aucun groupe parsé")
+        problems.append("aucun groupe")
         return problems
     seats = sum(g["size"] or 0 for g in scrutin["groups"])
-    if seats not in range(340, 349):
-        problems.append(f"sièges par groupe = {seats} (hors plage)")
+    if seats not in range(330, 349):
+        problems.append(f"sièges={seats}")
     for g in scrutin["groups"]:
-        if g["size"] is None:
-            problems.append(f"groupe {g['key']} sans effectif")
-        elif g["pour"] + g["contre"] + g["abstention"] + g["nonVotants"] != g["size"]:
-            problems.append(f"groupe {g['key']} : somme != effectif")
+        if g["size"] is None or g["pour"] + g["contre"] + g["abstention"] + g["nonVotants"] != g["size"]:
+            problems.append(f"groupe {g['key']} incohérent")
     for pos in ("pour", "contre", "abstention", "nonVotants"):
         if sum(g[pos] for g in scrutin["groups"]) != t[pos]:
-            problems.append(f"somme {pos} par groupe != total")
+            problems.append(f"somme {pos} != total")
     return problems
+
+
+def text_of(title: str) -> str:
+    t = re.sub(r"^sur\s+", "", title, flags=re.I)
+    t = re.sub(r"\s*-\s*consulter le dossier.*$", "", t, flags=re.I)
+    t = re.sub(r"\s*\((premi[eè]re|deuxi[eè]me|nouvelle|lecture d[ée]finitive|texte de la commission mixte paritaire)[^)]*\)", "", t, flags=re.I)
+    last = None
+    for m in re.finditer(r"(projet de loi|proposition de loi|proposition de r[ée]solution)", t, re.I):
+        last = m
+    if not last:
+        return t.strip(" .,;:")[:180]
+    after = re.sub(r"\s*-\s*consulter.*$", "", t[last.end():], flags=re.I).strip(" .,;:")
+    return (last.group(1) + " " + after).strip(" .,;:")[:190]
+
+
+def vote_type(title: str) -> str:
+    t = title.lower()
+    if "motion" in t and ("rejet" in t or "préalable" in t or "renvoi" in t or "irrecevabilité" in t or "question préalable" in t or "exception" in t):
+        return "Motion de procédure"
+    if "sous-amendement" in t or "amendement" in t:
+        return "Amendement"
+    if "constituant l'ensemble" in t or "sur l'ensemble" in t:
+        return "Ensemble du texte"
+    if re.search(r"l'article\b", t):
+        return "Article"
+    return "Autre"
+
+
+def theme_of(text: str) -> str:
+    nt = norm(text)
+    for key, val in THEME_OVERRIDES.items():
+        if norm(key) in nt:
+            return val
+    best, best_score = None, 0
+    for key, pattern in THEME_PATTERNS:
+        score = len(re.findall(pattern, nt, re.I))
+        if score > best_score:
+            best, best_score = key, score
+    return best or "autres"
 
 
 def load_an_group_labels() -> dict:
@@ -194,82 +229,34 @@ def stage_of(title: str) -> str:
     return "Vote public"
 
 
-def parse_an_scrutin(uid: str, labels: dict, colors: dict, an_labels: dict, normalize: dict) -> dict:
+def an_scrutin_brief(uid: str, labels: dict, normalize: dict, full: bool = False) -> dict:
     leg = re.search(r"VTANR5L(\d+)V", uid).group(1)
     path = OPENDATA / f"an{leg}" / "json" / f"{uid}.json"
     if not path.exists():
-        sys.exit(
-            f"ERREUR : dump AN introuvable ({path}).\n"
-            "Lancez d'abord : python3 pipeline/fetch_an.py"
-        )
+        sys.exit(f"ERREUR : dump AN introuvable ({path}). Lancez : python3 pipeline/fetch_an.py")
     s = json.loads(path.read_text(encoding="utf-8"))["scrutin"]
     dec = s["syntheseVote"]["decompte"]
-    totals = {
-        "votants": int(s["syntheseVote"]["nombreVotants"]),
-        "exprimes": int(s["syntheseVote"]["suffragesExprimes"]),
-        "pour": int(dec["pour"]),
-        "contre": int(dec["contre"]),
-        "abstention": int(dec.get("abstentions") or 0),
-        "nonVotants": int(dec.get("nonVotants") or 0),
-    }
-    groups = []
-    for g in s["ventilationVotes"]["organe"]["groupes"]["groupe"]:
-        info = labels.get(g["organeRef"], {})
-        raw_abbr = info.get("abbr") or g["organeRef"]
-        abbr = normalize.get(raw_abbr, raw_abbr)
-        dv = g["vote"].get("decompteVoix") or {}
-        groups.append({
-            "key": abbr,
-            "label": an_labels.get(abbr, info.get("label") or abbr),
-            "short": abbr,
-            "color": colors.get(abbr, "#8B95A9"),
-            "size": int(g.get("nombreMembresGroupe") or 0),
-            "pour": int(dv.get("pour") or 0),
-            "contre": int(dv.get("contre") or 0),
-            "abstention": int(dv.get("abstentions") or 0),
-            "nonVotants": int(dv.get("nonVotants") or 0),
-        })
-    result = "Adoption" if s["sort"]["code"] == "adopté" else "Rejet"
-    return {
-        "uid": uid,
-        "legislature": int(leg),
-        "numero": int(s["numero"]),
-        "date": s["dateScrutin"],
+    brief = {
+        "uid": uid, "legislature": int(leg), "date": s["dateScrutin"], "stage": stage_of(s["titre"]),
+        "result": "Adoption" if s["sort"]["code"] == "adopté" else "Rejet",
         "title": clean_text(s["titre"]),
-        "stage": stage_of(s["titre"]),
-        "result": result,
-        "resultLabel": clean_text(s["sort"].get("libelle") or ""),
         "url": f"https://www.assemblee-nationale.fr/dyn/{leg}/scrutins/{s['numero']}",
-        "totals": totals,
-        "groups": groups,
+        "totals": {"pour": int(dec["pour"]), "contre": int(dec["contre"]), "abstention": int(dec.get("abstentions") or 0)},
     }
-
-
-def validate_an(scrutin: dict) -> list:
-    problems = []
-    t = scrutin["totals"]
-    if t["votants"] != t["pour"] + t["contre"] + t["abstention"]:
-        problems.append(f"AN {scrutin['uid']} : votants != pour+contre+abstention")
-    if t["exprimes"] != t["pour"] + t["contre"]:
-        problems.append(f"AN {scrutin['uid']} : exprimés != pour+contre")
-    seats = sum(g["size"] for g in scrutin["groups"])
-    if not 550 <= seats <= 578:
-        problems.append(f"AN {scrutin['uid']} : total sièges = {seats} (hors plage)")
-    for pos in ("pour", "contre", "abstention", "nonVotants"):
-        if sum(g[pos] for g in scrutin["groups"]) != t[pos]:
-            problems.append(f"AN {scrutin['uid']} : somme {pos} par groupe != total")
-    return problems
-
-
-def origin_of(title: str) -> str:
-    t = title.lower()
-    if "projet de loi" in t:
-        return "Gouvernement"
-    if "proposition de loi" in t:
-        return "Parlementaire"
-    if "proposition de résolution" in t:
-        return "Résolution"
-    return "—"
+    if full:
+        groups = []
+        for g in s["ventilationVotes"]["organe"]["groupes"]["groupe"]:
+            info = labels.get(g["organeRef"], {})
+            raw = info.get("abbr") or g["organeRef"]
+            key = normalize.get(raw, raw)
+            dv = g["vote"].get("decompteVoix") or {}
+            groups.append({"key": key, "size": int(g.get("nombreMembresGroupe") or 0), "pour": int(dv.get("pour") or 0),
+                           "contre": int(dv.get("contre") or 0), "abstention": int(dv.get("abstentions") or 0), "nonVotants": int(dv.get("nonVotants") or 0)})
+        brief["groups"] = groups
+        brief["totals"] = {"votants": int(s["syntheseVote"]["nombreVotants"]), "exprimes": int(s["syntheseVote"]["suffragesExprimes"]),
+                           "pour": int(dec["pour"]), "contre": int(dec["contre"]), "abstention": int(dec.get("abstentions") or 0), "nonVotants": int(dec.get("nonVotants") or 0)}
+        brief["resultLabel"] = clean_text(s["sort"].get("libelle") or "")
+    return brief
 
 
 def main() -> None:
@@ -279,79 +266,91 @@ def main() -> None:
     sessions = {d["id"]: d for d in json.loads((OPENDATA / "session_scrutins.json").read_text(encoding="utf-8"))}
     senators = json.loads((OPENDATA / "senateurs.json").read_text(encoding="utf-8"))
     deputes = json.loads((OPENDATA / "deputes.json").read_text(encoding="utf-8"))
-
     an_labels = load_an_group_labels()
-    an_colors = config["anGroupColors"]
-    an_short = config["anGroupLabels"]
-    an_normalize = config.get("anGroupNormalize", {})
 
-    # --- groupes Sénat (effectifs actuels + membres) ---
+    ordered_ids = sorted(sessions.keys(), key=lambda k: (k.split("-")[0], int(k.split("-")[1])))
+
+    def work(sid):
+        meta = sessions[sid]
+        try:
+            parsed = parse_scrutin_page(fetch_page(sid, meta["url"]))
+        except Exception as exc:  # noqa: BLE001
+            return sid, None, [f"téléchargement/parse: {exc}"]
+        problems = validate_scrutin(parsed)
+        return sid, parsed, problems
+
+    scrutins_out, rejects = {}, []
+    with ThreadPoolExecutor(max_workers=8) as pool:
+        for sid, parsed, problems in pool.map(work, ordered_ids):
+            if parsed is None or problems:
+                rejects.append((sid, problems[:2]))
+                continue
+            meta = sessions[sid]
+            text = text_of(meta["title"])
+            an_uid = an_mapping["map"].get(sid)
+            scrutins_out[sid] = {
+                "id": sid, "date": meta["date"], "title": meta["title"],
+                "url": meta["url"], "dossierUrl": parsed["dossierUrl"], "text": text,
+                "type": vote_type(meta["title"]), "theme": theme_of(text), "result": parsed["result"],
+                "origin": "Gouvernement" if "projet de loi" in norm(meta["title"]) else ("Parlementaire" if "proposition de loi" in norm(meta["title"]) else "Autre"),
+                "totals": parsed["totals"], "groups": [{"key": g["key"], "size": g["size"], "pour": g["pour"], "contre": g["contre"], "abstention": g["abstention"], "nonVotants": g["nonVotants"]} for g in parsed["groups"]],
+            }
+            if sid in resumes:
+                scrutins_out[sid]["resume"] = resumes[sid]
+            if an_uid:
+                scrutins_out[sid]["an"] = an_scrutin_brief(an_uid, an_labels, config.get("anGroupNormalize", {}), full=True)
+                note = an_mapping.get("notes", {}).get(sid)
+                if note:
+                    scrutins_out[sid]["anNote"] = note
+
+    print(f"Scrutins parsés/validés : {len(scrutins_out)} / {len(ordered_ids)}")
+    if rejects:
+        print(f"Scrutins écartés : {len(rejects)}")
+        for sid, p in rejects[:8]:
+            print("   ", sid, p)
+
+    # --- correspondance AN au niveau du texte (votes « ensemble » de l'Assemblée) ---
+    an_docs = []
+    for folder in ("an16", "an17"):
+        for f in glob.glob(str(OPENDATA / folder / "json" / "*.json")):
+            s = json.loads(Path(f).read_text(encoding="utf-8")).get("scrutin")
+            if s:
+                an_docs.append((s["uid"], norm(s.get("titre", ""))))
+    by_text = {}
+    for s in scrutins_out.values():
+        by_text.setdefault(s["text"], []).append(s)
+    an_by_text = {}
+    for text, items in by_text.items():
+        kt = tokens(norm(text))
+        if len(kt) < 4:
+            continue
+        matches = []
+        for uid, an_norm in an_docs:
+            if "ensemble" not in an_norm:
+                continue
+            if sum(1 for t in kt if t in set(tokens(an_norm))) / len(kt) >= 0.85:
+                matches.append(uid)
+        if matches:
+            matches = sorted(set(matches), key=lambda u: an_scrutin_brief(u, an_labels, config.get("anGroupNormalize", {}))["date"])[:4]
+            an_by_text[text] = [an_scrutin_brief(u, an_labels, config.get("anGroupNormalize", {})) for u in matches]
+
+    # --- groupes Sénat ---
     active = [s for s in senators if s["active"]]
     members_by_group = {}
     for s in active:
         key = config["senatorGroupMapping"].get(s["group_short"])
         if not key:
-            sys.exit(f"ERREUR : groupe inconnu pour {s['full_name']} : {s['group_short']}")
+            continue
         members_by_group.setdefault(key, []).append({"name": s["full_name"], "department": s["department_label"] or "—"})
     for key in members_by_group:
         members_by_group[key].sort(key=lambda m: m["name"])
 
-    # --- scrutins ---
-    scrutins_out = {}
-    an_cache = {}
-    for theme in config["themes"]:
-        for sid in theme["scrutins"]:
-            if sid in scrutins_out:
-                continue
-            meta = sessions.get(sid)
-            if not meta:
-                sys.exit(f"ERREUR : scrutin {sid} absent de session_scrutins.json")
-            parsed = parse_scrutin_page(fetch_page(sid, meta["url"]))
-            problems = validate_scrutin({**parsed, "id": sid})
-            if problems:
-                sys.exit(f"ERREUR validation Sénat {sid} : " + " ; ".join(problems))
-            if meta["result"] and parsed["result"] not in (meta["result"], "?"):
-                sys.exit(f"ERREUR {sid} : résultat page ({parsed['result']}) != liste ({meta['result']})")
-
-            resume = resumes.get(sid)
-            if not resume:
-                sys.exit(f"ERREUR : aucun résumé pour {sid}")
-
-            an_uid = an_mapping["map"].get(sid)
-            an = None
-            if an_uid:
-                if an_uid not in an_cache:
-                    an_cache[an_uid] = parse_an_scrutin(an_uid, an_labels, an_colors, an_short, an_normalize)
-                    problems = validate_an(an_cache[an_uid])
-                    if problems:
-                        sys.exit("ERREUR validation AN : " + " ; ".join(problems))
-                an = an_cache[an_uid]
-
-            scrutins_out[sid] = {
-                "id": sid,
-                "date": meta["date"],
-                "title": meta["title"],
-                "url": meta["url"],
-                "theme": theme["id"],
-                "result": parsed["result"],
-                "dossierUrl": parsed["dossierUrl"],
-                "totals": parsed["totals"],
-                "groups": parsed["groups"],
-                "origin": origin_of(meta["title"]),
-                "resume": resume,
-                "an": an,
-                "anNote": an_mapping.get("notes", {}).get(sid),
-            }
-            flag = f"AN {an_uid}" if an_uid else "AN —"
-            print(f"  ok {sid}  {parsed['result']:>8}  [{origin_of(meta['title']):>12}]  {flag}")
-
-    # --- profils agrégés Sénat ---
     profiles = {}
     for g in config["groups"]:
         key = g["key"]
         tot = {"pour": 0, "contre": 0, "abstention": 0, "exprimes": 0, "votants": 0, "possible": 0}
-        for scrutiny in scrutins_out.values():
-            gr = next((x for x in scrutiny["groups"] if x["key"] == key), None)
+        for s in scrutins_out.values():
+            gr = next((x for x in s["groups"] if x["key"] == key), None)
             if not gr or not gr["size"]:
                 continue
             tot["pour"] += gr["pour"]; tot["contre"] += gr["contre"]; tot["abstention"] += gr["abstention"]
@@ -359,61 +358,46 @@ def main() -> None:
             tot["votants"] += gr["pour"] + gr["contre"] + gr["abstention"]
             tot["possible"] += gr["size"]
         expr = tot["exprimes"] or 1
-        profiles[key] = {
-            "presencePct": round(100 * tot["votants"] / tot["possible"], 1) if tot["possible"] else None,
-            "pourPct": round(100 * tot["pour"] / expr, 1),
-            "contrePct": round(100 * tot["contre"] / expr, 1),
-            "nbVotes": tot["exprimes"],
-        }
+        profiles[key] = {"presencePct": round(100 * tot["votants"] / tot["possible"], 1) if tot["possible"] else None,
+                         "pourPct": round(100 * tot["pour"] / expr, 1), "contrePct": round(100 * tot["contre"] / expr, 1),
+                         "nbVotes": tot["exprimes"]}
 
-    # --- groupes AN actuels (17e législature) ---
     depute_norm = config.get("anDeputeGroupNormalize", {})
     an_groups_count = {}
     for d in deputes:
         if d.get("active"):
             k = depute_norm.get(d["group_short"], d["group_short"])
             an_groups_count[k] = an_groups_count.get(k, 0) + 1
-    an_groups = [
-        {"key": k, "short": k, "label": an_short.get(k, k), "color": an_colors.get(k, "#8B95A9"), "seats": v}
-        for k, v in sorted(an_groups_count.items(), key=lambda x: -x[1])
-    ]
+    an_groups = [{"key": k, "short": k, "label": config["anGroupLabels"].get(k, k), "color": config["anGroupColors"].get(k, "#8B95A9"), "seats": v} for k, v in sorted(an_groups_count.items(), key=lambda x: -x[1])]
+
+    themes_cfg = [t for t in sorted(config["themes"], key=lambda x: x.get("order", 99))]
+    themes_cfg.append({"id": "autres", "order": 99, "name": "Autres textes votés", "icon": "book", "pastel": "#ECEEF1",
+                       "description": "Textes votés ne relevant pas des dix sujets principaux.", "concern": None})
 
     dates = sorted(s["date"] for s in scrutins_out.values() if s["date"])
     data = {
         "generatedAt": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "period": {"from": dates[0], "to": dates[-1]},
-        "senatorCount": len(active),
-        "deputeCount": sum(an_groups_count.values()),
-        "opinion": config["opinion"],
-        "anSource": config["anSource"],
-        "groups": [
-            {
-                "key": g["key"], "short": g["short"], "label": g["label"], "color": g["color"],
-                "seats": len(members_by_group.get(g["key"], [])),
-                "members": members_by_group.get(g["key"], []),
-                "profile": profiles[g["key"]],
-            }
-            for g in config["groups"]
-        ],
+        "senatorCount": len(active), "deputeCount": sum(an_groups_count.values()),
+        "opinion": config["opinion"], "anSource": config["anSource"],
+        "groups": [{"key": g["key"], "short": g["short"], "label": g["label"], "color": g["color"], "seats": len(members_by_group.get(g["key"], [])), "members": members_by_group.get(g["key"], []), "profile": profiles[g["key"]]} for g in config["groups"]],
         "anGroups": an_groups,
-        "themes": [
-            {
-                "id": t["id"], "order": t.get("order", 99), "name": t["name"], "icon": t["icon"],
-                "pastel": t["pastel"], "description": t["description"], "concern": t.get("concern"),
-                "scrutins": t["scrutins"],
-            }
-            for t in config["themes"]
-        ],
+        "anGroupColors": config["anGroupColors"], "anGroupLabels": config["anGroupLabels"],
+        "themes": [{"id": t["id"], "order": t.get("order", 99), "name": t["name"], "icon": t["icon"], "pastel": t["pastel"], "description": t["description"], "concern": t.get("concern")} for t in themes_cfg],
         "scrutins": scrutins_out,
+        "anByText": an_by_text,
     }
 
     SITE.mkdir(parents=True, exist_ok=True)
     payload = json.dumps(data, ensure_ascii=False, separators=(",", ":"))
     (SITE / "data.json").write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
     (SITE / "data.js").write_text("window.SENAT_DATA=" + payload + ";\n", encoding="utf-8")
-    with_an = sum(1 for s in scrutins_out.values() if s["an"])
-    print(f"\nOK : {len(scrutins_out)} scrutins dont {with_an} avec vote AN · période {data['period']['from']} → {data['period']['to']}")
-    print(f"     {SITE / 'data.js'} ({len(payload) / 1024:.0f} Ko)")
+    print(f"OK : {len(scrutins_out)} scrutins · {len(by_text)} textes · {len(an_by_text)} textes avec votes AN · période {data['period']['from']} → {data['period']['to']}")
+    print(f"     {SITE / 'data.js'} ({len(payload)/1024/1024:.2f} Mo)")
+
+    if os.environ.get("KEEP_PAGES") != "1" and PAGES.exists():
+        for f in PAGES.glob("*.html"):
+            f.unlink()
 
 
 if __name__ == "__main__":

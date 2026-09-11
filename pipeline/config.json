@@ -46,31 +46,37 @@
       "scrutins": ["2023-29", "2024-353", "2025-221", "2023-131"]
     },
     {
-      "id": "environnement", "order": 6, "name": "Environnement, climat et énergie", "icon": "leaf", "pastel": "#CFEEDB",
+      "id": "securite", "order": 6, "name": "Sécurité et ordre public", "icon": "shield", "pastel": "#DCE4FF",
+      "description": "Délinquance, ordre public, police et justice pénale.",
+      "concern": { "value": 41, "label": "la criminalité et la violence", "source": "Ipsos", "date": "juillet 2026" },
+      "scrutins": ["2024-243", "2024-262", "2025-184", "2025-338"]
+    },
+    {
+      "id": "environnement", "order": 7, "name": "Écologie, climat et énergie", "icon": "leaf", "pastel": "#CFEEDB",
       "description": "Climat, énergie, biodiversité, pollution.",
       "concern": { "value": 33, "label": "le changement climatique", "source": "Ipsos", "date": "juillet 2026" },
       "scrutins": ["2023-174", "2024-10", "2024-303", "2024-347", "2025-339"]
     },
     {
-      "id": "alimentation", "order": 7, "name": "Alimentation et agriculture", "icon": "wheat", "pastel": "#F3E9CE",
+      "id": "alimentation", "order": 8, "name": "Alimentation et agriculture", "icon": "wheat", "pastel": "#F3E9CE",
       "description": "Agriculture, alimentation, souveraineté alimentaire.",
       "concern": null,
       "scrutins": ["2024-196", "2024-211", "2025-340"]
     },
     {
-      "id": "solidarite", "order": 8, "name": "Retraites, solidarité et grand âge", "icon": "users", "pastel": "#E4DBF9",
+      "id": "solidarite", "order": 9, "name": "Retraites, solidarité et grand âge", "icon": "users", "pastel": "#E4DBF9",
       "description": "Retraites, prestations sociales, grand âge et maladies graves.",
       "concern": null,
       "scrutins": ["2023-157", "2024-235", "2024-8", "2024-26"]
     },
     {
-      "id": "immigration", "order": 9, "name": "Immigration, asile et intégration", "icon": "globe", "pastel": "#E4DBF9",
+      "id": "immigration", "order": 10, "name": "Immigration, asile et intégration", "icon": "globe", "pastel": "#E4DBF9",
       "description": "Entrée et séjour des étrangers, asile, intégration, nationalité.",
       "concern": { "value": 25, "label": "les flux migratoires", "source": "Ipsos", "date": "juillet 2026" },
       "scrutins": ["2023-43", "2023-109", "2024-248", "2024-268", "2025-308"]
     },
     {
-      "id": "finances", "order": 10, "name": "Finances publiques et dette", "icon": "scale", "pastel": "#CFEAF6",
+      "id": "finances", "order": 11, "name": "Finances publiques et dette", "icon": "scale", "pastel": "#CFEAF6",
       "description": "Budget de l'État, dette et déficits, fiscalité.",
       "concern": { "value": 29, "label": "la dette publique", "source": "Elabe", "date": "août 2026" },
       "scrutins": ["2023-4", "2024-35", "2024-147", "2025-125", "2024-322", "2025-250"]

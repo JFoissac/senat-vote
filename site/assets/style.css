@@ -423,3 +423,16 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   .hero-band__inner { padding: 36px 24px 40px; }
   .chart-card { padding: 22px 22px; }
 }
+
+/* ---------- v4 : types de vote, textes, pagination ---------- */
+.b--type { background: #f0f2f5; color: var(--muted); border-color: var(--line); }
+.b--type-ens { background: #eef2ff; color: #3b4bb5; border-color: #d7ddfb; }
+.textblock { margin: 0 0 24px; }
+.textblock__head { border-bottom: 2px solid var(--ink); padding-bottom: 8px; margin-bottom: 12px; }
+.textblock__title { font-family: var(--font-display); font-size: 1.12rem; line-height: 1.25; margin: 0 0 4px; letter-spacing: -0.2px; }
+.textblock__meta { color: var(--muted); font-size: 0.78rem; margin: 0; }
+.anvotes { list-style: none; margin: 6px 0 0; padding: 0; display: grid; gap: 6px; }
+.anvotes li { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-size: 0.82rem; }
+.anvotes__c { color: var(--muted); font-weight: 600; }
+.pager { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin: 16px 0; font-size: 0.82rem; color: var(--muted); font-weight: 600; }
+.checkline small { color: var(--faint); font-weight: 600; }

@@ -11,6 +11,7 @@ const routes = [
   "#/votes",
   "#/votes?q=immigration",
   "#/groupes",
+  "#/comparer",
   "#/methode",
   "#/sujet/pouvoir-achat",
   "#/sujet/sante",
