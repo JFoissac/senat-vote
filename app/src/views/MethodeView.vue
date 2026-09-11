@@ -140,9 +140,17 @@ const anSource = computed(() => (data.raw ? data.raw.anSource : null));
       </p>
       <ul>
         <li>
-          Lecture : la couleur indique la position (<b>vert = pour</b>, <b>rouge = contre</b>, <b>gris = abstention</b>) et
-          la <b>forme</b> indique la chambre (<b>aplat = Sénat</b>, <b>hachures = Assemblée</b>). Le pourcentage affiché est
-          la part de votes « pour » sur les votes émis.
+          La <b>barre du Sénat</b> montre la répartition du groupe : <b>pour</b> (vert), <b>contre</b> (rouge),
+          <b>abstention</b> (gris) et <b>non-votants</b> (hachures claires, absents compris), proportionnellement à
+          l'effectif du groupe au jour du vote.
+        </li>
+        <li>
+          Pour l'<b>Assemblée nationale</b>, seul le <b>pourcentage de votes « pour »</b> est affiché (sur les votes émis,
+          c'est-à-dire hors non-votants) ; les comptes détaillés sont disponibles au survol.
+        </li>
+        <li>
+          Les groupes sans équivalent dans l'autre chambre (RN, LFI-NFP, AD, UDR à l'Assemblée, par exemple) sont
+          affichés <b>en dessous</b> : barre Sénat seule, ou pourcentage Assemblée seul.
         </li>
         <li>Le rapprochement des groupes (LR ↔ DR, SER ↔ SOC, RDPI ↔ EPR, UC ↔ Dem, etc.) est <b>indicatif</b> : les groupes ne sont pas les mêmes dans les deux chambres.</li>
         <li>Les groupes sans équivalent dans l'autre chambre (par exemple RN, LFI-NFP, AD ou UDR à l'Assemblée) sont listés à part, sous le graphique.</li>

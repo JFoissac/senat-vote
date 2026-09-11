@@ -444,6 +444,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 .ovg2__sw--pour { background: var(--green); }
 .ovg2__sw--contre { background: var(--red); }
 .ovg2__sw--abs { background: #d7d9dc; }
+.ovg2__sw--nv { background: repeating-linear-gradient(45deg, #c2c8d1 0 2px, #f2f4f7 2px 4px); }
 .ovg2__sw--senat { background: var(--green); }
 .ovg2__sw--an { background: repeating-linear-gradient(45deg, var(--green) 0 3px, rgba(255,255,255,.75) 3px 6px); }
 .ovg2__sep { width: 1px; height: 12px; background: var(--line-dark); }
@@ -455,13 +456,17 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 .ovg2__cell { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 8px; }
 .ovg2__cell::before { content: attr(data-ch); grid-column: 1 / -1; font-size: 0.64rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.07em; color: var(--faint); }
 .ovg2__stack { position: relative; display: flex; height: 10px; border-radius: 999px; overflow: hidden; background: #edeef1; gap: 1px; }
-.ovg2__stack--an { box-shadow: inset 0 0 0 1px rgba(14, 16, 19, 0.22); }
-.ovg2__stack--an::after { content: ""; position: absolute; inset: 0; background: repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.62) 0 3px, transparent 3px 6px); pointer-events: none; }
 .ovg2__seg { height: 100%; }
 .ovg2__seg--pour { background: var(--green); }
 .ovg2__seg--contre { background: var(--red); }
 .ovg2__seg--abs { background: #d7d9dc; }
-.ovg2__pct { font-size: 0.72rem; font-weight: 800; white-space: nowrap; }
+.ovg2__seg--nv { background: repeating-linear-gradient(45deg, #c2c8d1 0 2px, #f2f4f7 2px 4px); }
+.ovg2__pct { font-size: 0.85rem; font-weight: 800; white-space: nowrap; }
+.ovg2__cell--num { justify-content: end; }
+.ovg2__dash { color: var(--faint); font-weight: 700; }
+.ovg2__extra-title { margin: 12px 0 2px; font-size: 0.72rem; font-weight: 800; color: var(--muted); }
+.ovg2__extra-hint { font-weight: 600; color: var(--faint); }
+.ovg2__row--extra .ovg2__gname { font-weight: 700; }
 .ovg2__unmatched { margin-top: 12px; border-top: 1px dashed var(--line); padding-top: 10px; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
 .ovg2__chip-title { font-size: 0.72rem; font-weight: 800; color: var(--muted); }
 .ovg2__chip { display: inline-flex; align-items: center; gap: 5px; border: 1px solid var(--line); border-radius: 999px; padding: 3px 9px; font-size: 0.7rem; font-weight: 700; color: var(--muted); }
