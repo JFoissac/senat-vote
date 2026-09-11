@@ -24,3 +24,4 @@ __pycache__/
 .DS_Store
 
 # Note : app/public/data.json est versionné (données de production de l'app).
+.vercel

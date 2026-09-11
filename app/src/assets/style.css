@@ -453,7 +453,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 .ovg2__group { display: flex; align-items: center; gap: 6px; font-size: 0.78rem; }
 .ovg2__group small { color: var(--faint); font-weight: 700; }
 .ovg2__dot { display: inline-block; width: 9px; height: 9px; border-radius: 3px; flex: none; }
-.ovg2__cell { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 8px; }
+.ovg2__cell { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 8px; min-height: 26px; }
 .ovg2__cell::before { content: attr(data-ch); grid-column: 1 / -1; font-size: 0.62rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.07em; color: var(--faint); }
 .ovg2__stack { position: relative; display: flex; height: 12px; border-radius: 999px; overflow: hidden; background: #edeef1; gap: 1px; }
 .ovg2__seg { height: 100%; }
@@ -465,9 +465,10 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 .ovg2__counts .p { color: var(--green-ink); }
 .ovg2__counts .c { color: var(--red-ink); }
 .ovg2__counts .nv { color: #6b7480; }
-.ovg2__pct { font-family: var(--font-display); font-size: 1.35rem; font-weight: 700; white-space: nowrap; line-height: 1; }
-.ovg2__pct-lbl { font-size: 0.64rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.07em; color: var(--faint); }
+.ovg2__pct { font-family: var(--font-body); font-size: 1rem; font-weight: 800; white-space: nowrap; line-height: 1; }
+.ovg2__pct-lbl { font-size: 0.72rem; font-weight: 700; color: var(--muted); }
 .ovg2__cell--num { justify-content: end; text-align: right; }
+.ovg2__pctwrap { display: inline-flex; align-items: baseline; gap: 5px; }
 .ovg2__dash { color: var(--faint); font-weight: 700; }
 .ovg2__extra-title { margin: 14px 0 2px; font-size: 0.72rem; font-weight: 800; color: var(--muted); }
 .ovg2__row--extra { background: transparent; }
@@ -527,3 +528,10 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 .ctable--cmp th { white-space: normal; }
 .ctable--cmp .th-name { display: block; color: var(--muted); font-weight: 700; font-size: 0.7rem; text-transform: none; letter-spacing: 0; }
 .ctable--cmp .th-sub { display: block; color: var(--faint); font-weight: 700; font-size: 0.64rem; text-transform: uppercase; letter-spacing: 0.06em; }
+
+@media (max-width: 719px) {
+  .ovg2__row { padding: 8px; gap: 4px; }
+  .ovg2__cell--num { grid-template-columns: auto 1fr; }
+  .ovg2__cell--num::before { grid-column: 1; align-self: center; }
+  .ovg2__counts { margin-top: 2px; }
+}

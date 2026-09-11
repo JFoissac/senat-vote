@@ -85,8 +85,10 @@ function label(chamber, name, g) {
         </div>
       </div>
       <div class="ovg2__cell ovg2__cell--num" data-ch="Assemblée">
-        <span class="ovg2__pct" :title="label('Assemblée', row.ag.short, row.ag)">{{ pourPct(row.ag) == null ? "—" : pourPct(row.ag) + " %" }}</span>
-        <span class="ovg2__pct-lbl">pour</span>
+        <span class="ovg2__pctwrap" :title="label('Assemblée', row.ag.short, row.ag)">
+          <span class="ovg2__pct">{{ pourPct(row.ag) == null ? "—" : pourPct(row.ag) + " %" }}</span>
+          <span class="ovg2__pct-lbl">pour</span>
+        </span>
       </div>
     </div>
 
@@ -117,8 +119,10 @@ function label(chamber, name, g) {
         </div>
         <div class="ovg2__cell" data-ch="Sénat"><span class="ovg2__dash">—</span></div>
         <div class="ovg2__cell ovg2__cell--num" data-ch="Assemblée">
-          <span class="ovg2__pct" :title="label('Assemblée', g.short, g)">{{ pourPct(g) == null ? "—" : pourPct(g) + " %" }}</span>
-          <span class="ovg2__pct-lbl">pour</span>
+          <span class="ovg2__pctwrap" :title="label('Assemblée', g.short, g)">
+            <span class="ovg2__pct">{{ pourPct(g) == null ? "—" : pourPct(g) + " %" }}</span>
+            <span class="ovg2__pct-lbl">pour</span>
+          </span>
         </div>
       </div>
     </template>
