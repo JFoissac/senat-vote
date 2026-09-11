@@ -501,13 +501,14 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 .checkline--icon { gap: 9px; }
 .tile { display: inline-grid; place-items: center; width: 30px; height: 30px; border-radius: 9px; flex: none; border: 1px solid rgba(14,16,19,.06); }
 .tile svg { width: 16px; height: 16px; }
-.cmp-vs { display: flex; align-items: center; justify-content: center; gap: 18px; flex-wrap: wrap; padding: 6px 0 10px; }
-.cmp-vs__g { display: flex; flex-direction: column; align-items: center; gap: 6px; text-align: center; }
-.cmp-mono { display: grid; place-items: center; width: 46px; height: 46px; border-radius: 14px; color: #fff; font-weight: 800; font-size: 0.86rem; box-shadow: var(--shadow-s); }
-.cmp-vs__g b { font-family: var(--font-display); font-size: clamp(2.2rem, 9vw, 3.4rem); font-weight: 700; line-height: 0.95; letter-spacing: -1.5px; }
-.cmp-vs__g small { color: var(--muted); font-size: 0.76rem; font-weight: 700; }
-.cmp-vs__word { font-family: var(--font-display); color: var(--faint); font-size: 1.1rem; letter-spacing: 0.05em; }
-.cmp-vs__note { text-align: center; margin: 0 auto 18px; max-width: 70ch; }
+.cmp-vs { display: grid; grid-template-columns: 1fr; gap: 12px; align-items: stretch; margin-bottom: 4px; }
+.cmp-vs__g { display: flex; flex-direction: column; align-items: center; gap: 7px; text-align: center; background: var(--surface-2); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px 14px; min-width: 0; }
+.cmp-mono { display: inline-grid; place-items: center; min-width: 44px; height: 44px; padding: 0 11px; border-radius: 13px; background: #999; color: #fff; font-weight: 800; font-size: 0.78rem; letter-spacing: 0.01em; white-space: nowrap; box-shadow: var(--shadow-s); }
+.cmp-vs__name { font-size: 0.86rem; font-weight: 800; line-height: 1.22; max-width: 30ch; text-wrap: balance; hyphens: auto; }
+.cmp-vs__num { font-family: var(--font-display); font-size: clamp(2.2rem, 8vw, 3.2rem); font-weight: 700; line-height: 0.95; letter-spacing: -1.5px; }
+.cmp-vs__sub { color: var(--muted); font-size: 0.76rem; font-weight: 700; }
+.cmp-vs__word { font-family: var(--font-display); color: var(--faint); font-size: 1rem; letter-spacing: 0.08em; text-align: center; align-self: center; }
+.cmp-vs__note { text-align: center; margin: 14px auto 18px; max-width: 70ch; }
 .ctable--cmp td.n { white-space: nowrap; }
 .ctable--cmp .tname { display: flex; align-items: center; gap: 10px; font-weight: 700; }
 .ctable--cmp .tname__txt { display: flex; flex-direction: column; }
@@ -516,8 +517,9 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 .cmp-pct { font-family: var(--font-display); font-size: 1.3rem; font-weight: 700; letter-spacing: -0.5px; }
 .cmp-pct__sub { display: block; color: var(--muted); font-size: 0.7rem; font-weight: 700; }
 @media (min-width: 720px) {
-  .cmp-vs { gap: 40px; }
+  .cmp-vs { grid-template-columns: 1fr auto 1fr; gap: 16px; align-items: center; }
 }
+
 
 /* Comparer : noms complets des groupes */
 .cmp-vs__name { color: var(--muted); font-size: 0.76rem; font-weight: 700; max-width: 18ch; }
