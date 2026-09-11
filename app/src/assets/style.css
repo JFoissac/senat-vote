@@ -404,8 +404,6 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   .hero-band__inner { grid-template-columns: 1.15fr 1fr; align-items: start; padding: 30px 24px 34px; }
   .goalcard { margin-top: 34px; }
   .chambers { grid-template-columns: 1fr; }
-  .layout { grid-template-columns: 280px minmax(0, 1fr); align-items: start; }
-  .compare { grid-template-columns: 320px minmax(0, 1fr); align-items: start; }
   .gcards { grid-template-columns: repeat(2, 1fr); }
   .footer__cols { grid-template-columns: 1.4fr 1fr 1fr 1.2fr; }
   .wrap { padding: 0 24px; }
@@ -415,6 +413,8 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 /* ---------- Desktop ---------- */
 
 @media (min-width: 1024px) {
+  .layout { grid-template-columns: 280px minmax(0, 1fr); align-items: start; }
+  .compare { grid-template-columns: 320px minmax(0, 1fr); align-items: start; }
   .gcards { grid-template-columns: repeat(3, 1fr); }
   .hero-band__inner { padding: 36px 24px 40px; }
   .chart-card { padding: 22px 22px; }
@@ -518,3 +518,9 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 @media (min-width: 720px) {
   .cmp-vs { gap: 40px; }
 }
+
+/* Comparer : noms complets des groupes */
+.cmp-vs__name { color: var(--muted); font-size: 0.76rem; font-weight: 700; max-width: 18ch; }
+.ctable--cmp th { white-space: normal; }
+.ctable--cmp .th-name { display: block; color: var(--muted); font-weight: 700; font-size: 0.7rem; text-transform: none; letter-spacing: 0; }
+.ctable--cmp .th-sub { display: block; color: var(--faint); font-weight: 700; font-size: 0.64rem; text-transform: uppercase; letter-spacing: 0.06em; }

@@ -117,18 +117,20 @@ function toggleAll() {
         <div class="cmp-vs">
           <div class="cmp-vs__g">
             <span class="cmp-mono" :style="{ background: ga ? ga.color : '#999' }">{{ ga ? ga.short : "?" }}</span>
+            <span class="cmp-vs__name">{{ ga ? ga.label : "—" }}</span>
             <b :style="{ color: ga ? ga.color : 'inherit' }">{{ fmt(totA.pour) }}</b>
             <small>pour<template v-if="totA.contre != null"> · {{ fmt(totA.contre) }} contre</template></small>
           </div>
           <span class="cmp-vs__word">VS</span>
           <div class="cmp-vs__g">
             <span class="cmp-mono" :style="{ background: gb ? gb.color : '#999' }">{{ gb ? gb.short : "?" }}</span>
+            <span class="cmp-vs__name">{{ gb ? gb.label : "—" }}</span>
             <b :style="{ color: gb ? gb.color : 'inherit' }">{{ fmt(totB.pour) }}</b>
             <small>pour<template v-if="totB.contre != null"> · {{ fmt(totB.contre) }} contre</template></small>
           </div>
         </div>
         <p class="note cmp-vs__note">
-          Part des votes « pour » et « contre » de chaque groupe, sur les scrutins des sujets cochés.
+          Part des votes « pour » et « contre » de <b>{{ ga ? ga.label : "—" }}</b> et <b>{{ gb ? gb.label : "—" }}</b>, sur les scrutins des sujets cochés.
           <template v-if="prefs.comparer.excludeAbs">Abstentions exclues.</template>
           <template v-else>Votes émis (pour + contre + abstentions) ; non-votants exclus.</template>
         </p>
@@ -137,8 +139,16 @@ function toggleAll() {
           <thead>
             <tr>
               <th>Sujet</th>
-              <th><span class="cmp-dot" :style="{ background: ga ? ga.color : '#999' }"></span>{{ ga ? ga.short : "—" }} · pour / contre</th>
-              <th><span class="cmp-dot" :style="{ background: gb ? gb.color : '#999' }"></span>{{ gb ? gb.short : "—" }} · pour / contre</th>
+              <th>
+                <span class="cmp-dot" :style="{ background: ga ? ga.color : '#999' }"></span>{{ ga ? ga.short : "—" }}
+                <span class="th-name">{{ ga ? ga.label : "" }}</span>
+                <span class="th-sub">pour / contre</span>
+              </th>
+              <th>
+                <span class="cmp-dot" :style="{ background: gb ? gb.color : '#999' }"></span>{{ gb ? gb.short : "—" }}
+                <span class="th-name">{{ gb ? gb.label : "" }}</span>
+                <span class="th-sub">pour / contre</span>
+              </th>
             </tr>
           </thead>
           <tbody>
