@@ -25,3 +25,8 @@ export function frDateShort(iso) {
 export function byDateDesc(a, b) {
   return (b.date || "").localeCompare(a.date || "");
 }
+
+export function capFirst(str) {
+  if (!str) return "";
+  return str.charAt(0).toUpperCase() + str.slice(1);
+}

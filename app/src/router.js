@@ -2,6 +2,7 @@ import { createRouter, createWebHashHistory } from "vue-router";
 import HomeView from "./views/HomeView.vue";
 import ThemeView from "./views/ThemeView.vue";
 import VotesView from "./views/VotesView.vue";
+import ScrutinView from "./views/ScrutinView.vue";
 import CompareView from "./views/CompareView.vue";
 import GroupesView from "./views/GroupesView.vue";
 import MethodeView from "./views/MethodeView.vue";
@@ -11,6 +12,7 @@ const routes = [
   { path: "/", name: "home", component: HomeView },
   { path: "/sujet/:id", name: "sujet", component: ThemeView },
   { path: "/votes", name: "votes", component: VotesView },
+  { path: "/scrutin/:id", name: "scrutin", component: ScrutinView },
   { path: "/comparer", name: "comparer", component: CompareView },
   { path: "/groupes", name: "groupes", component: GroupesView },
   { path: "/methode", name: "methode", component: MethodeView },

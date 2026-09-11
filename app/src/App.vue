@@ -27,6 +27,9 @@ watch(
     if (name === "sujet") {
       const theme = data.themeById(route.params.id);
       title += theme ? " — " + theme.name : "";
+    } else if (name === "scrutin") {
+      const scrutin = data.scrutins[route.params.id];
+      title += scrutin ? " — " + scrutin.subject : " — scrutin introuvable";
     } else if (TITLES[name]) {
       title += " — " + TITLES[name];
     }

@@ -184,6 +184,60 @@ def text_of(title: str) -> str:
     return (last.group(1) + " " + after).strip(" .,;:")[:190]
 
 
+
+AMEND_RX = re.compile(r"((?:sous-)?amendements? (?:identiques )?(?:n[°o]\s*[0-9A-Za-z\-]+(?: rectifi[eé](?: bis| ter| quater)?)?))", re.I)
+AUTHOR_RX = re.compile(r"pr[eé]sent[eé]e?s? par (?:M\.|MM\.|Mme|Mmes) ([^,]+?)(?: et les membres| et plusieurs|,|$)", re.I)
+ARTICLE_RX = re.compile(r"((?:avant |apr[eè]s )?l'article (?:unique|premier|1er|[0-9]+(?: bis| ter| quater)?(?:\s+(?-i:[A-Z]{1,2})\b)?))", re.I)
+
+
+def subject_of(title: str) -> str:
+    t = re.sub(r"^sur\s+", "", title, flags=re.I)
+    t = re.sub(r"\s*-\s*consulter le dossier.*$", "", t, flags=re.I)
+    t = re.sub(r"\s*\((premi[eè]re|deuxi[eè]me|nouvelle|lecture d[ée]finitive|texte de la commission mixte paritaire)[^)]*\)\s*$", "", t, flags=re.I)
+    last = None
+    for m in re.finditer(r"(projet de loi|proposition de loi|proposition de r[ée]solution)", t, re.I):
+        last = m
+    prefix = t[: last.start()] if last else t
+    low = prefix.lower()
+    if "commission mixte paritaire" in low:
+        return "Ensemble du texte · texte de la CMP"
+    if "motion" in low:
+        if "rejet pr" in low:
+            return "Motion de rejet préalable"
+        if "renvoi en commission" in low:
+            return "Motion de renvoi en commission"
+        if "question pr" in low:
+            return "Question préalable"
+        if "irrecevabilit" in low:
+            return "Exception d'irrecevabilité"
+        return "Motion de procédure"
+    if "l'ensemble" in low and "amendement" not in low and "article" not in low:
+        return "Ensemble du texte"
+    if "l'ensemble" in low and "article" in low and "amendement" not in low:
+        art = ARTICLE_RX.search(prefix)
+        if art:
+            lab = re.sub(r"^l'", "", art.group(1).strip())
+            return "Ensemble du texte · " + lab
+        return "Ensemble du texte"
+    am = AMEND_RX.search(prefix)
+    if am:
+        label = re.sub(r"\s+", " ", am.group(1)).strip()
+        label = label[0].upper() + label[1:]
+        author = AUTHOR_RX.search(prefix)
+        art = ARTICLE_RX.search(prefix)
+        parts = [label]
+        if author:
+            parts.append(author.group(1).strip())
+        if art:
+            parts.append(re.sub(r"^l'", "", art.group(1).strip()))
+        return " · ".join(parts)
+    art = ARTICLE_RX.search(prefix)
+    if art:
+        label = re.sub(r"^l'", "", art.group(1).strip())
+        return label[0].upper() + label[1:]
+    return re.sub(r"\s+", " ", prefix).strip(" .,;:")[:80] or "Scrutin"
+
+
 def vote_type(title: str) -> str:
     t = title.lower()
     if "motion" in t and ("rejet" in t or "préalable" in t or "renvoi" in t or "irrecevabilité" in t or "question préalable" in t or "exception" in t):
@@ -291,7 +345,7 @@ def main() -> None:
             an_uid = an_mapping["map"].get(sid)
             scrutins_out[sid] = {
                 "id": sid, "date": meta["date"], "title": meta["title"],
-                "url": meta["url"], "dossierUrl": parsed["dossierUrl"], "text": text,
+                "url": meta["url"], "dossierUrl": parsed["dossierUrl"], "text": text, "subject": subject_of(meta["title"]),
                 "type": vote_type(meta["title"]), "theme": theme_of(text), "result": parsed["result"],
                 "origin": "Gouvernement" if "projet de loi" in norm(meta["title"]) else ("Parlementaire" if "proposition de loi" in norm(meta["title"]) else "Autre"),
                 "totals": parsed["totals"], "groups": [{"key": g["key"], "size": g["size"], "pour": g["pour"], "contre": g["contre"], "abstention": g["abstention"], "nonVotants": g["nonVotants"]} for g in parsed["groups"]],

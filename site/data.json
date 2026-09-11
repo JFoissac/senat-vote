@@ -1918,7 +1918,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Amendement n° 9 · Yannick Jadot · article unique"
   },
   "2023-2": {
    "id": "2023-2",
@@ -2012,7 +2013,8 @@
      "abstention": 0,
      "nonVotants": 3
     }
-   ]
+   ],
+   "subject": "Ensemble du texte · texte de la CMP"
   },
   "2023-3": {
    "id": "2023-3",
@@ -2106,7 +2108,8 @@
      "abstention": 0,
      "nonVotants": 3
     }
-   ]
+   ],
+   "subject": "Ensemble du texte · texte de la CMP"
   },
   "2023-4": {
    "id": "2023-4",
@@ -2310,7 +2313,8 @@
     ],
     "resultLabel": "L'Assemblée nationale n'a pas adopté"
    },
-   "anNote": "L'Assemblée nationale s'est prononcée sur ce texte en première lecture, le 25 octobre 2022 : elle l'avait alors rejeté."
+   "anNote": "L'Assemblée nationale s'est prononcée sur ce texte en première lecture, le 25 octobre 2022 : elle l'avait alors rejeté.",
+   "subject": "Ensemble du texte"
   },
   "2023-5": {
    "id": "2023-5",
@@ -2513,7 +2517,8 @@
      }
     ],
     "resultLabel": "l'Assemblée nationale a adopté"
-   }
+   },
+   "subject": "Ensemble du texte"
   },
   "2023-6": {
    "id": "2023-6",
@@ -2607,7 +2612,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Question préalable"
   },
   "2023-7": {
    "id": "2023-7",
@@ -2701,7 +2707,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Article 4"
   },
   "2023-8": {
    "id": "2023-8",
@@ -2795,7 +2802,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2023-9": {
    "id": "2023-9",
@@ -2889,7 +2897,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 2 rectifié · Jean-Luc Fichet · après l'article 2 bis"
   },
   "2023-10": {
    "id": "2023-10",
@@ -2983,7 +2992,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 185 rectifié · Anne Souyris · après l'article 2 bis"
   },
   "2023-11": {
    "id": "2023-11",
@@ -3077,7 +3087,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 128 rectifié · Céline Brulin · après l'article 2 bis"
   },
   "2023-12": {
    "id": "2023-12",
@@ -3171,7 +3182,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 44 rectifié bis · Stéphane Sautarel · après l'article 2 bis"
   },
   "2023-13": {
    "id": "2023-13",
@@ -3265,7 +3277,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 78 rectifié ter · Patrice Joly · après l'article 2 bis"
   },
   "2023-14": {
    "id": "2023-14",
@@ -3359,7 +3372,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 57 rectifié bis · Emilienne Poumirol · article 5 quater"
   },
   "2023-15": {
    "id": "2023-15",
@@ -3453,7 +3467,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 43 rectifié bis · Stéphane Sautarel · article 5 quater"
   },
   "2023-16": {
    "id": "2023-16",
@@ -3547,7 +3562,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 148 · Céline Brulin · article 10"
   },
   "2023-17": {
    "id": "2023-17",
@@ -3641,7 +3657,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 88 rectifié · Véronique Guillotin · article 10"
   },
   "2023-18": {
    "id": "2023-18",
@@ -3735,7 +3752,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2023-19": {
    "id": "2023-19",
@@ -3938,7 +3956,8 @@
      }
     ],
     "resultLabel": "l'Assemblée nationale a adopté"
-   }
+   },
+   "subject": "Ensemble du texte"
   },
   "2023-20": {
    "id": "2023-20",
@@ -4032,7 +4051,8 @@
      "abstention": 0,
      "nonVotants": 0
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2023-21": {
    "id": "2023-21",
@@ -4126,7 +4146,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Ensemble du texte · article 5"
   },
   "2023-22": {
    "id": "2023-22",
@@ -4220,7 +4241,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2023-23": {
    "id": "2023-23",
@@ -4314,7 +4336,8 @@
      "abstention": 0,
      "nonVotants": 0
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 25 rectifié · Ian Brossat · article 1er"
   },
   "2023-24": {
    "id": "2023-24",
@@ -4408,7 +4431,8 @@
      "abstention": 0,
      "nonVotants": 0
     }
-   ]
+   ],
+   "subject": "Article 1er"
   },
   "2023-25": {
    "id": "2023-25",
@@ -4502,7 +4526,8 @@
      "abstention": 0,
      "nonVotants": 3
     }
-   ]
+   ],
+   "subject": "Amendement n° 344 rectifié · Valérie Boyer · article 2 bis"
   },
   "2023-26": {
    "id": "2023-26",
@@ -4596,7 +4621,8 @@
      "abstention": 0,
      "nonVotants": 0
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 655 · Muriel Jourda et M. Philippe Bonnecarrère au nom de la commission des lois · article 3"
   },
   "2023-27": {
    "id": "2023-27",
@@ -4690,7 +4716,8 @@
      "abstention": 0,
      "nonVotants": 0
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 656 · Muriel Jourda et M. Philippe Bonnecarrère au nom de la commission des lois · article 4"
   },
   "2023-28": {
    "id": "2023-28",
@@ -4784,7 +4811,8 @@
      "abstention": 0,
      "nonVotants": 0
     }
-   ]
+   ],
+   "subject": "Amendement n° 657 · Muriel Jourda et M. Philippe Bonnecarrère au nom de la commission des lois · après l'article 4"
   },
   "2023-29": {
    "id": "2023-29",
@@ -4988,7 +5016,8 @@
     ],
     "resultLabel": "l'Assemblée nationale a adopté"
    },
-   "anNote": "L'Assemblée nationale a voté le texte issu de la commission mixte paritaire (novembre 2023)."
+   "anNote": "L'Assemblée nationale a voté le texte issu de la commission mixte paritaire (novembre 2023).",
+   "subject": "Ensemble du texte · texte de la CMP"
   },
   "2023-30": {
    "id": "2023-30",
@@ -5191,7 +5220,8 @@
      }
     ],
     "resultLabel": "l'Assemblée nationale a adopté"
-   }
+   },
+   "subject": "Ensemble du texte · texte de la CMP"
   },
   "2023-31": {
    "id": "2023-31",
@@ -5285,7 +5315,8 @@
      "abstention": 1,
      "nonVotants": 3
     }
-   ]
+   ],
+   "subject": "Amendement n° 350 rectifié · Bruno Retailleau · article 10"
   },
   "2023-32": {
    "id": "2023-32",
@@ -5379,7 +5410,8 @@
      "abstention": 0,
      "nonVotants": 3
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 181 · Guy Benarroche · article 11 ter"
   },
   "2023-33": {
    "id": "2023-33",
@@ -5473,7 +5505,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Article 11 ter"
   },
   "2023-34": {
    "id": "2023-34",
@@ -5567,7 +5600,8 @@
      "abstention": 1,
      "nonVotants": 3
     }
-   ]
+   ],
+   "subject": "Amendement n° 182 · Marie-Pierre de La Gontrie · article 12"
   },
   "2023-35": {
    "id": "2023-35",
@@ -5661,7 +5695,8 @@
      "abstention": 0,
      "nonVotants": 3
     }
-   ]
+   ],
+   "subject": "Amendement n° 39 rectifié · Cécile Cukierman · article 12"
   },
   "2023-36": {
    "id": "2023-36",
@@ -5755,7 +5790,8 @@
      "abstention": 0,
      "nonVotants": 3
     }
-   ]
+   ],
+   "subject": "Amendement n° 298 · Guy Benarroche · article 12"
   },
   "2023-37": {
    "id": "2023-37",
@@ -5849,7 +5885,8 @@
      "abstention": 0,
      "nonVotants": 3
     }
-   ]
+   ],
+   "subject": "Amendement n° 7 rectifié bis · Maryse Carrère · article 12"
   },
   "2023-38": {
    "id": "2023-38",
@@ -5943,7 +5980,8 @@
      "abstention": 0,
      "nonVotants": 3
     }
-   ]
+   ],
+   "subject": "Amendement n° 183 · Marie-Pierre de La Gontrie · article 12"
   },
   "2023-39": {
    "id": "2023-39",
@@ -6037,7 +6075,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 299 · Guy Benarroche · article 12"
   },
   "2023-40": {
    "id": "2023-40",
@@ -6131,7 +6170,8 @@
      "abstention": 0,
      "nonVotants": 0
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 154 · Hélène Conway-Mouret · article 14 A"
   },
   "2023-41": {
    "id": "2023-41",
@@ -6225,7 +6265,8 @@
      "abstention": 0,
      "nonVotants": 0
     }
-   ]
+   ],
+   "subject": "Amendement n° 194 · Marie-Pierre de La Gontrie · après l'article 14"
   },
   "2023-42": {
    "id": "2023-42",
@@ -6319,7 +6360,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Question préalable"
   },
   "2023-43": {
    "id": "2023-43",
@@ -6523,7 +6565,8 @@
     ],
     "resultLabel": "l'Assemblée nationale a adopté"
    },
-   "anNote": "L'Assemblée nationale a voté sur le texte issu de la commission mixte paritaire (décembre 2023)."
+   "anNote": "L'Assemblée nationale a voté sur le texte issu de la commission mixte paritaire (décembre 2023).",
+   "subject": "Ensemble du texte"
   },
   "2023-44": {
    "id": "2023-44",
@@ -6617,7 +6660,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 807 rectifié · Raymonde Poncet Monge · article 9"
   },
   "2023-45": {
    "id": "2023-45",
@@ -6711,7 +6755,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Amendement n° 1003 rectifié · Thomas Dossus · après l'article 10"
   },
   "2023-46": {
    "id": "2023-46",
@@ -6805,7 +6850,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2023-47": {
    "id": "2023-47",
@@ -6899,7 +6945,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 260 · Corinne Imbert au nom de la commission des affaires sociales · article 23"
   },
   "2023-48": {
    "id": "2023-48",
@@ -6993,7 +7040,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 481 rectifié ter · Alexandre Ouizille · après l'article 26"
   },
   "2023-49": {
    "id": "2023-49",
@@ -7087,7 +7135,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 450 rectifié quater · Patrice Joly · après l'article 26"
   },
   "2023-50": {
    "id": "2023-50",
@@ -7181,7 +7230,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 957 · Céline Brulin · après l'article 26"
   },
   "2023-51": {
    "id": "2023-51",
@@ -7275,7 +7325,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 1325 · Mathilde Ollivier · après l'article 40"
   },
   "2023-52": {
    "id": "2023-52",
@@ -7369,7 +7420,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 331 · Corinne Imbert au nom de la commission des affaires sociales · article 43"
   },
   "2023-53": {
    "id": "2023-53",
@@ -7463,7 +7515,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 16 · Cathy Apourceau-Poly · avant l'article 1er"
   },
   "2023-54": {
    "id": "2023-54",
@@ -7557,7 +7610,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 17 · Pascal Savoldelli · après l'article 3"
   },
   "2023-55": {
    "id": "2023-55",
@@ -7651,7 +7705,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2023-56": {
    "id": "2023-56",
@@ -7745,7 +7800,8 @@
      "abstention": 0,
      "nonVotants": 0
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2023-57": {
    "id": "2023-57",
@@ -7839,7 +7895,8 @@
      "abstention": 3,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Sous-amendement n° 3 · Hussein Bourgi · article 1er"
   },
   "2023-58": {
    "id": "2023-58",
@@ -7933,7 +7990,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Amendement n° 1 · Francis Szpiner au nom de la commission des lois · article 1er"
   },
   "2023-59": {
    "id": "2023-59",
@@ -8027,7 +8085,8 @@
      "abstention": 3,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Article 2"
   },
   "2023-60": {
    "id": "2023-60",
@@ -8121,7 +8180,8 @@
      "abstention": 3,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Article 3"
   },
   "2023-61": {
    "id": "2023-61",
@@ -8215,7 +8275,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Article 4"
   },
   "2023-62": {
    "id": "2023-62",
@@ -8309,7 +8370,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Amendement n° 2 · Francis Szpiner au nom de la commission des lois"
   },
   "2023-63": {
    "id": "2023-63",
@@ -8403,7 +8465,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2023-64": {
    "id": "2023-64",
@@ -8497,7 +8560,8 @@
      "abstention": 3,
      "nonVotants": 0
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2023-65": {
    "id": "2023-65",
@@ -8591,7 +8655,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte · texte de la CMP"
   },
   "2023-66": {
    "id": "2023-66",
@@ -8685,7 +8750,8 @@
      "abstention": 3,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Question préalable"
   },
   "2023-67": {
    "id": "2023-67",
@@ -8779,7 +8845,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° I-1641 rectifié bis · Bruno Retailleau · après l'article 3"
   },
   "2023-68": {
    "id": "2023-68",
@@ -8873,7 +8940,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° I-168 · Jean-François Husson au nom de la commission des finances · après l'article 3"
   },
   "2023-69": {
    "id": "2023-69",
@@ -8967,7 +9035,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° I-1131 · Thomas Dossus · après l'article 3"
   },
   "2023-70": {
    "id": "2023-70",
@@ -9061,7 +9130,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° I-891 rectifié · Éric Bocquet · après l'article 3"
   },
   "2023-71": {
    "id": "2023-71",
@@ -9155,7 +9225,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° I-729 · Grégory Blanc · article 6"
   },
   "2023-72": {
    "id": "2023-72",
@@ -9249,7 +9320,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° I-2136 rectifié bis · Gilbert-Luc Devinaz · après l'article 11"
   },
   "2023-73": {
    "id": "2023-73",
@@ -9343,7 +9415,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° I-617 rectifié bis · Vincent Capo-Canellas · article 15"
   },
   "2023-74": {
    "id": "2023-74",
@@ -9437,7 +9510,8 @@
      "abstention": 3,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° I-807 rectifié · Emmanuel Capus · article 22"
   },
   "2023-75": {
    "id": "2023-75",
@@ -9531,7 +9605,8 @@
      "abstention": 3,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Amendement n° I-2073 rectifié bis · Thierry Cozic · après l'article 22"
   },
   "2023-76": {
    "id": "2023-76",
@@ -9625,7 +9700,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° I-536 rectifié · Françoise Gatel · article 24"
   },
   "2023-77": {
    "id": "2023-77",
@@ -9719,7 +9795,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° I-2107 rectifié bis · Monique de Marco · après l'article 27"
   },
   "2023-78": {
    "id": "2023-78",
@@ -9813,7 +9890,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° I-83 rectifié ter · Jean-Claude Anglars · article 28"
   },
   "2023-79": {
    "id": "2023-79",
@@ -9907,7 +9985,8 @@
      "abstention": 0,
      "nonVotants": 0
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2023-80": {
    "id": "2023-80",
@@ -10001,7 +10080,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Question préalable"
   },
   "2023-81": {
    "id": "2023-81",
@@ -10095,7 +10175,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° II-262 · Mathilde Ollivier les membres du groupe Écologiste - Solidarité et Territoires"
   },
   "2023-82": {
    "id": "2023-82",
@@ -10189,7 +10270,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° II-298 rectifié bis · Simon Uzenat"
   },
   "2023-83": {
    "id": "2023-83",
@@ -10283,7 +10365,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° II-297 · Simon Uzenat"
   },
   "2023-84": {
    "id": "2023-84",
@@ -10377,7 +10460,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "les crédits de la mission « Cohésion des territoires » figurant à l'état B du"
   },
   "2023-85": {
    "id": "2023-85",
@@ -10471,7 +10555,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° II-540 rectifié · Ghislaine Senée"
   },
   "2023-86": {
    "id": "2023-86",
@@ -10565,7 +10650,8 @@
      "abstention": 3,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Amendement n° II-491 · Audrey Linkenheld"
   },
   "2023-87": {
    "id": "2023-87",
@@ -10659,7 +10745,8 @@
      "abstention": 3,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Amendement n° II-631 rectifié bis · Éric Kerrouche · après l'article 50 F"
   },
   "2023-88": {
    "id": "2023-88",
@@ -10753,7 +10840,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° II-755 rectifié · Olivier Jacquin et Michaël Weber"
   },
   "2023-89": {
    "id": "2023-89",
@@ -10847,7 +10935,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Amendement n° II-7 · Vincent Delahaye au nom de la commission des finances"
   },
   "2023-90": {
    "id": "2023-90",
@@ -10941,7 +11030,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° II-1113 rectifié · Victorin Lurel · article 55"
   },
   "2023-91": {
    "id": "2023-91",
@@ -11035,7 +11125,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° II-538 rectifié ter · François Patriat"
   },
   "2023-92": {
    "id": "2023-92",
@@ -11129,7 +11220,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° II-5 · Jean-Raymond Hugonet au nom de la commission des finances"
   },
   "2023-93": {
    "id": "2023-93",
@@ -11223,7 +11315,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° II-31 · Nathalie Goulet au nom de la commission des finances"
   },
   "2023-94": {
    "id": "2023-94",
@@ -11317,7 +11410,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° II-32 · Michel Canévet et Raphaël Daubet"
   },
   "2023-95": {
    "id": "2023-95",
@@ -11411,7 +11505,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° II-672 · Franck Montaugé"
   },
   "2023-96": {
    "id": "2023-96",
@@ -11505,7 +11600,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° II-661 · Franck Montaugé"
   },
   "2023-97": {
    "id": "2023-97",
@@ -11599,7 +11695,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "les crédits de la mission « Justice » figurant à l'état B du"
   },
   "2023-98": {
    "id": "2023-98",
@@ -11693,7 +11790,8 @@
      "abstention": 0,
      "nonVotants": 0
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2023-99": {
    "id": "2023-99",
@@ -11787,7 +11885,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2023-100": {
    "id": "2023-100",
@@ -11882,7 +11981,8 @@
      "nonVotants": 4
     }
    ],
-   "resume": "Créait une allocation d'autonomie pour les étudiants afin de garantir un revenu minimal ; proposition rejetée par le Sénat."
+   "resume": "Créait une allocation d'autonomie pour les étudiants afin de garantir un revenu minimal ; proposition rejetée par le Sénat.",
+   "subject": "Ensemble du texte · article unique"
   },
   "2023-101": {
    "id": "2023-101",
@@ -11976,7 +12076,8 @@
      "abstention": 0,
      "nonVotants": 5
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2023-102": {
    "id": "2023-102",
@@ -12070,7 +12171,8 @@
      "abstention": 0,
      "nonVotants": 5
     }
-   ]
+   ],
+   "subject": "Ensemble du texte · article unique"
   },
   "2023-103": {
    "id": "2023-103",
@@ -12164,7 +12266,8 @@
      "abstention": 0,
      "nonVotants": 5
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2023-104": {
    "id": "2023-104",
@@ -12258,7 +12361,8 @@
      "abstention": 0,
      "nonVotants": 5
     }
-   ]
+   ],
+   "subject": "Ensemble du texte · texte de la CMP"
   },
   "2023-105": {
    "id": "2023-105",
@@ -12352,7 +12456,8 @@
      "abstention": 0,
      "nonVotants": 2
     }
-   ]
+   ],
+   "subject": "Ensemble du texte · texte de la CMP"
   },
   "2023-106": {
    "id": "2023-106",
@@ -12555,7 +12660,8 @@
      }
     ],
     "resultLabel": "l'Assemblée nationale a adopté"
-   }
+   },
+   "subject": "Ensemble du texte · texte de la CMP"
   },
   "2023-107": {
    "id": "2023-107",
@@ -12649,7 +12755,8 @@
      "abstention": 0,
      "nonVotants": 5
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2023-108": {
    "id": "2023-108",
@@ -12743,7 +12850,8 @@
      "abstention": 1,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Question préalable"
   },
   "2023-109": {
    "id": "2023-109",
@@ -12947,7 +13055,8 @@
     ],
     "resultLabel": "l'Assemblée nationale a adopté"
    },
-   "anNote": "Même vote de l'Assemblée nationale que le scrutin sénatorial du 14 novembre 2023 : texte de la CMP."
+   "anNote": "Même vote de l'Assemblée nationale que le scrutin sénatorial du 14 novembre 2023 : texte de la CMP.",
+   "subject": "Ensemble du texte · texte de la CMP"
   },
   "2023-110": {
    "id": "2023-110",
@@ -13041,7 +13150,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2023-111": {
    "id": "2023-111",
@@ -13135,7 +13245,8 @@
      "abstention": 0,
      "nonVotants": 5
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2023-112": {
    "id": "2023-112",
@@ -13229,7 +13340,8 @@
      "abstention": 0,
      "nonVotants": 2
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 1 rectifié ter · Victorin Lurel · article 2"
   },
   "2023-113": {
    "id": "2023-113",
@@ -13323,7 +13435,8 @@
      "abstention": 0,
      "nonVotants": 5
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2023-114": {
    "id": "2023-114",
@@ -13417,7 +13530,8 @@
      "abstention": 0,
      "nonVotants": 0
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2023-115": {
    "id": "2023-115",
@@ -13511,7 +13625,8 @@
      "abstention": 1,
      "nonVotants": 0
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2023-116": {
    "id": "2023-116",
@@ -13605,7 +13720,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 3 rectifié ter · Nathalie Delattre · article 1er"
   },
   "2023-117": {
    "id": "2023-117",
@@ -13699,7 +13815,8 @@
      "abstention": 0,
      "nonVotants": 5
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2023-118": {
    "id": "2023-118",
@@ -13793,7 +13910,8 @@
      "abstention": 1,
      "nonVotants": 0
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2023-119": {
    "id": "2023-119",
@@ -13887,7 +14005,8 @@
      "abstention": 1,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2023-120": {
    "id": "2023-120",
@@ -13981,7 +14100,8 @@
      "abstention": 0,
      "nonVotants": 5
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2023-121": {
    "id": "2023-121",
@@ -14075,7 +14195,8 @@
      "abstention": 0,
      "nonVotants": 5
     }
-   ]
+   ],
+   "subject": "Amendement n° 2 · Mélanie Vogel · article 1er"
   },
   "2023-122": {
    "id": "2023-122",
@@ -14169,7 +14290,8 @@
      "abstention": 0,
      "nonVotants": 5
     }
-   ]
+   ],
+   "subject": "Amendements n° 1 · Claude Raynal · article 1er"
   },
   "2023-123": {
    "id": "2023-123",
@@ -14263,7 +14385,8 @@
      "abstention": 0,
      "nonVotants": 5
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2023-124": {
    "id": "2023-124",
@@ -14357,7 +14480,8 @@
      "abstention": 0,
      "nonVotants": 5
     }
-   ]
+   ],
+   "subject": "Article 1er"
   },
   "2023-125": {
    "id": "2023-125",
@@ -14451,7 +14575,8 @@
      "abstention": 0,
      "nonVotants": 5
     }
-   ]
+   ],
+   "subject": "Article 2"
   },
   "2023-126": {
    "id": "2023-126",
@@ -14545,7 +14670,8 @@
      "abstention": 0,
      "nonVotants": 5
     }
-   ]
+   ],
+   "subject": "Ensemble du texte · article 3"
   },
   "2023-127": {
    "id": "2023-127",
@@ -14639,7 +14765,8 @@
      "abstention": 0,
      "nonVotants": 5
     }
-   ]
+   ],
+   "subject": "Amendement n° 6 rectifié bis · Annick Billon · article 1er"
   },
   "2023-128": {
    "id": "2023-128",
@@ -14733,7 +14860,8 @@
      "abstention": 0,
      "nonVotants": 5
     }
-   ]
+   ],
+   "subject": "Amendement n° 14 rectifié bis · Annick Billon · article 1er"
   },
   "2023-129": {
    "id": "2023-129",
@@ -14827,7 +14955,8 @@
      "abstention": 0,
      "nonVotants": 5
     }
-   ]
+   ],
+   "subject": "Article 1er"
   },
   "2023-130": {
    "id": "2023-130",
@@ -14921,7 +15050,8 @@
      "abstention": 0,
      "nonVotants": 5
     }
-   ]
+   ],
+   "subject": "Article 2"
   },
   "2023-131": {
    "id": "2023-131",
@@ -15016,7 +15146,8 @@
      "nonVotants": 5
     }
    ],
-   "resume": "Voulait améliorer la santé et le bien-être des femmes au travail ; proposition rejetée par le Sénat."
+   "resume": "Voulait améliorer la santé et le bien-être des femmes au travail ; proposition rejetée par le Sénat.",
+   "subject": "Ensemble du texte · article 4"
   },
   "2023-132": {
    "id": "2023-132",
@@ -15110,7 +15241,8 @@
      "abstention": 0,
      "nonVotants": 2
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2023-133": {
    "id": "2023-133",
@@ -15204,7 +15336,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Question préalable"
   },
   "2023-134": {
    "id": "2023-134",
@@ -15298,7 +15431,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Amendement n° 2 rectifié · Philippe Bas · article unique"
   },
   "2023-135": {
    "id": "2023-135",
@@ -15392,7 +15526,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Amendement n° 1 rectifié · Alain Milon · article unique"
   },
   "2023-136": {
    "id": "2023-136",
@@ -15486,7 +15621,8 @@
      "abstention": 0,
      "nonVotants": 0
     }
-   ]
+   ],
+   "subject": "Ensemble du texte · article unique"
   },
   "2023-137": {
    "id": "2023-137",
@@ -15580,7 +15716,8 @@
      "abstention": 0,
      "nonVotants": 5
     }
-   ]
+   ],
+   "subject": "Sous-amendement n° 159 · Anne-Catherine Loisier · après l'article 9 ter"
   },
   "2023-138": {
    "id": "2023-138",
@@ -15674,7 +15811,8 @@
      "abstention": 0,
      "nonVotants": 5
     }
-   ]
+   ],
+   "subject": "Amendement n° 131 · article 9"
   },
   "2023-139": {
    "id": "2023-139",
@@ -15768,7 +15906,8 @@
      "abstention": 0,
      "nonVotants": 5
     }
-   ]
+   ],
+   "subject": "Amendement n° 155 · Bernard Buis · article 10"
   },
   "2023-140": {
    "id": "2023-140",
@@ -15862,7 +16001,8 @@
      "abstention": 0,
      "nonVotants": 5
     }
-   ]
+   ],
+   "subject": "Amendement n° 171 · Amel Gacquerre au nom de la commission des affaires économiques · article 10"
   },
   "2023-141": {
    "id": "2023-141",
@@ -15956,7 +16096,8 @@
      "abstention": 0,
      "nonVotants": 2
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2023-142": {
    "id": "2023-142",
@@ -16050,7 +16191,8 @@
      "abstention": 0,
      "nonVotants": 2
     }
-   ]
+   ],
+   "subject": "Amendement n° 98 · Ronan Dantec · article 1er"
   },
   "2023-143": {
    "id": "2023-143",
@@ -16144,7 +16286,8 @@
      "abstention": 3,
      "nonVotants": 2
     }
-   ]
+   ],
+   "subject": "Amendement n° 128 rectifié · Xavier Iacovelli · après l'article 7"
   },
   "2023-144": {
    "id": "2023-144",
@@ -16238,7 +16381,8 @@
      "abstention": 0,
      "nonVotants": 5
     }
-   ]
+   ],
+   "subject": "Amendement n° 243 rectifié · Cécile Cukierman · après l'article 9"
   },
   "2023-145": {
    "id": "2023-145",
@@ -16332,7 +16476,8 @@
      "abstention": 0,
      "nonVotants": 5
     }
-   ]
+   ],
+   "subject": "Amendement n° 45 rectifié bis · Pierre-Alain Roiron · après l'article 9"
   },
   "2023-146": {
    "id": "2023-146",
@@ -16426,7 +16571,8 @@
      "abstention": 0,
      "nonVotants": 5
     }
-   ]
+   ],
+   "subject": "Amendement n° 170 · André Reichardt · après l'article 9"
   },
   "2023-147": {
    "id": "2023-147",
@@ -16520,7 +16666,8 @@
      "abstention": 0,
      "nonVotants": 5
     }
-   ]
+   ],
+   "subject": "Amendement n° 223 · Guy Benarroche · après l'article 9"
   },
   "2023-148": {
    "id": "2023-148",
@@ -16614,7 +16761,8 @@
      "abstention": 0,
      "nonVotants": 2
     }
-   ]
+   ],
+   "subject": "Amendement n° 308 rectifié · Ghislaine Senée · article 14"
   },
   "2023-149": {
    "id": "2023-149",
@@ -16708,7 +16856,8 @@
      "abstention": 0,
      "nonVotants": 5
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 189 rectifié · Thomas Dossus · article 23"
   },
   "2023-150": {
    "id": "2023-150",
@@ -16802,7 +16951,8 @@
      "abstention": 0,
      "nonVotants": 2
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2023-151": {
    "id": "2023-151",
@@ -16896,7 +17046,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 16 · article 1er"
   },
   "2023-152": {
    "id": "2023-152",
@@ -16990,7 +17141,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 1 · Corinne Narassiguin · article 1er"
   },
   "2023-153": {
    "id": "2023-153",
@@ -17084,7 +17236,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 4 rectifié bis · article 1er"
   },
   "2023-154": {
    "id": "2023-154",
@@ -17178,7 +17331,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2023-155": {
    "id": "2023-155",
@@ -17272,7 +17426,8 @@
      "abstention": 3,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Article 50"
   },
   "2023-156": {
    "id": "2023-156",
@@ -17366,7 +17521,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2023-157": {
    "id": "2023-157",
@@ -17461,7 +17617,8 @@
      "nonVotants": 2
     }
    ],
-   "resume": "Révise le mode de calcul des pensions de retraite de base des non-salariés agricoles."
+   "resume": "Révise le mode de calcul des pensions de retraite de base des non-salariés agricoles.",
+   "subject": "Ensemble du texte"
   },
   "2023-158": {
    "id": "2023-158",
@@ -17555,7 +17712,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Motion de renvoi en commission"
   },
   "2023-159": {
    "id": "2023-159",
@@ -17649,7 +17807,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Article 1er"
   },
   "2023-160": {
    "id": "2023-160",
@@ -17743,7 +17902,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2023-161": {
    "id": "2023-161",
@@ -17837,7 +17997,8 @@
      "abstention": 4,
      "nonVotants": 0
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2023-162": {
    "id": "2023-162",
@@ -17931,7 +18092,8 @@
      "abstention": 0,
      "nonVotants": 5
     }
-   ]
+   ],
+   "subject": "Question préalable"
   },
   "2023-163": {
    "id": "2023-163",
@@ -18025,7 +18187,8 @@
      "abstention": 0,
      "nonVotants": 5
     }
-   ]
+   ],
+   "subject": "Sous-amendement n° 35 · François-Noël Buffet · article 1er"
   },
   "2023-164": {
    "id": "2023-164",
@@ -18119,7 +18282,8 @@
      "abstention": 0,
      "nonVotants": 5
     }
-   ]
+   ],
+   "subject": "Amendement n° 4 · Philippe Bas au nom de la commission des lois · article 1er"
   },
   "2023-165": {
    "id": "2023-165",
@@ -18213,7 +18377,8 @@
      "abstention": 0,
      "nonVotants": 5
     }
-   ]
+   ],
+   "subject": "Amendement n° 8 rectifié · Michel Canévet · article unique"
   },
   "2023-166": {
    "id": "2023-166",
@@ -18307,7 +18472,8 @@
      "abstention": 0,
      "nonVotants": 5
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2023-167": {
    "id": "2023-167",
@@ -18401,7 +18567,8 @@
      "abstention": 0,
      "nonVotants": 5
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 4 rectifié · Michel Masset · article 1er"
   },
   "2023-168": {
    "id": "2023-168",
@@ -18495,7 +18662,8 @@
      "abstention": 0,
      "nonVotants": 0
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2023-169": {
    "id": "2023-169",
@@ -18589,7 +18757,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte · texte de la CMP"
   },
   "2023-170": {
    "id": "2023-170",
@@ -18683,7 +18852,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Question préalable"
   },
   "2023-171": {
    "id": "2023-171",
@@ -18777,7 +18947,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Question préalable"
   },
   "2023-172": {
    "id": "2023-172",
@@ -18871,7 +19042,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2023-173": {
    "id": "2023-173",
@@ -18965,7 +19137,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2023-174": {
    "id": "2023-174",
@@ -19168,7 +19341,8 @@
      }
     ],
     "resultLabel": "l'Assemblée nationale a adopté"
-   }
+   },
+   "subject": "Ensemble du texte · texte de la CMP"
   },
   "2023-175": {
    "id": "2023-175",
@@ -19262,7 +19436,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Ensemble du texte · texte de la CMP"
   },
   "2023-176": {
    "id": "2023-176",
@@ -19356,7 +19531,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 10 rectifié bis · Annick Billon · article 1er"
   },
   "2023-177": {
    "id": "2023-177",
@@ -19450,7 +19626,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 3 rectifié · Stéphane Piednoir · article 1er"
   },
   "2023-178": {
    "id": "2023-178",
@@ -19544,7 +19721,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 11 rectifié ter · Annick Billon · article 3"
   },
   "2023-179": {
    "id": "2023-179",
@@ -19638,7 +19816,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2023-180": {
    "id": "2023-180",
@@ -19732,7 +19911,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 5 · Cédric Vial · avant l'article unique"
   },
   "2023-181": {
    "id": "2023-181",
@@ -19826,7 +20006,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 6 · Cédric Vial · avant l'article unique"
   },
   "2023-182": {
    "id": "2023-182",
@@ -19920,7 +20101,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2023-183": {
    "id": "2023-183",
@@ -20014,7 +20196,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 159 · Sylviane Noël au nom de la commission des affaires économiques · article 1er"
   },
   "2023-184": {
    "id": "2023-184",
@@ -20108,7 +20291,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 32 rectifié bis · Cédric Chevalier · article 1er"
   },
   "2023-185": {
    "id": "2023-185",
@@ -20202,7 +20386,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 7 rectifié bis · Max Brisson · article 1er"
   },
   "2023-186": {
    "id": "2023-186",
@@ -20296,7 +20481,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 9 rectifié bis · Max Brisson · article 1er"
   },
   "2023-187": {
    "id": "2023-187",
@@ -20390,7 +20576,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 108 · Ian Brossat · article 1er"
   },
   "2023-188": {
    "id": "2023-188",
@@ -20484,7 +20671,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 63 · Viviane Artigalas · article 1er"
   },
   "2023-189": {
    "id": "2023-189",
@@ -20578,7 +20766,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 65 · Bernard Buis · article 1er"
   },
   "2023-190": {
    "id": "2023-190",
@@ -20672,7 +20861,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 1 rectifié quater · Anne Chain-Larché · article 1er"
   },
   "2023-191": {
    "id": "2023-191",
@@ -20766,7 +20956,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 12 rectifié bis · Max Brisson · article 2"
   },
   "2023-192": {
    "id": "2023-192",
@@ -20860,7 +21051,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 46 rectifié bis · Rémi Féraud · après l'article 2"
   },
   "2023-193": {
    "id": "2023-193",
@@ -20954,7 +21146,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 99 · Marianne Margaté · après l'article 2"
   },
   "2023-194": {
    "id": "2023-194",
@@ -21048,7 +21241,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 53 rectifié bis · Rémi Féraud · après l'article 2"
   },
   "2023-195": {
    "id": "2023-195",
@@ -21142,7 +21336,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 6 rectifié · Christian Redon-Sarrazy · article 1er"
   },
   "2023-196": {
    "id": "2023-196",
@@ -21236,7 +21431,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 1 · Marianne Margaté · article 1er"
   },
   "2023-197": {
    "id": "2023-197",
@@ -21330,7 +21526,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 13 · Antoinette Guhl · article 1er"
   },
   "2023-198": {
    "id": "2023-198",
@@ -21424,7 +21621,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 15 · Antoinette Guhl · article 1er"
   },
   "2023-199": {
    "id": "2023-199",
@@ -21518,7 +21716,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 16 · Antoinette Guhl · article 1er"
   },
   "2023-200": {
    "id": "2023-200",
@@ -21612,7 +21811,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 29 · Mélanie Vogel · article 3"
   },
   "2023-201": {
    "id": "2023-201",
@@ -21706,7 +21906,8 @@
      "abstention": 0,
      "nonVotants": 0
     }
-   ]
+   ],
+   "subject": "Question préalable"
   },
   "2023-202": {
    "id": "2023-202",
@@ -21800,7 +22001,8 @@
      "abstention": 0,
      "nonVotants": 3
     }
-   ]
+   ],
+   "subject": "Motion de procédure"
   },
   "2023-203": {
    "id": "2023-203",
@@ -21894,7 +22096,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 4 · Silvana Silvani · article 1er"
   },
   "2023-204": {
    "id": "2023-204",
@@ -21988,7 +22191,8 @@
      "abstention": 0,
      "nonVotants": 0
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2023-205": {
    "id": "2023-205",
@@ -22082,7 +22286,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte · article 1er"
   },
   "2023-206": {
    "id": "2023-206",
@@ -22176,7 +22381,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 4 · Hervé Gillé · article 1er"
   },
   "2023-207": {
    "id": "2023-207",
@@ -22270,7 +22476,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 25 rectifié · Didier Rambaud · article 1er"
   },
   "2023-208": {
    "id": "2023-208",
@@ -22364,7 +22571,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 14 · Anne Souyris · article 1er"
   },
   "2023-209": {
    "id": "2023-209",
@@ -22458,7 +22666,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Article 1er"
   },
   "2023-210": {
    "id": "2023-210",
@@ -22552,7 +22761,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 1 rectifié · Marie-Claude Lermytte · article 1er"
   },
   "2023-211": {
    "id": "2023-211",
@@ -22646,7 +22856,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 2 rectifié · Marie-Claude Lermytte · article 1er"
   },
   "2023-212": {
    "id": "2023-212",
@@ -22740,7 +22951,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Article 2"
   },
   "2023-213": {
    "id": "2023-213",
@@ -22834,7 +23046,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 476 · article 6"
   },
   "2023-214": {
    "id": "2023-214",
@@ -22928,7 +23141,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 376 · Raymonde Poncet Monge · article 6"
   },
   "2023-215": {
    "id": "2023-215",
@@ -23022,7 +23236,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 338 · Thomas Dossus · article 18"
   },
   "2024-1": {
    "id": "2024-1",
@@ -23116,7 +23331,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 3 · Pascal Savoldelli · article 1er"
   },
   "2024-2": {
    "id": "2024-2",
@@ -23210,7 +23426,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Article 1er"
   },
   "2024-3": {
    "id": "2024-3",
@@ -23304,7 +23521,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Article 2"
   },
   "2024-4": {
    "id": "2024-4",
@@ -23398,7 +23616,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Article 3"
   },
   "2024-5": {
    "id": "2024-5",
@@ -23492,7 +23711,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Article 1er"
   },
   "2024-6": {
    "id": "2024-6",
@@ -23586,7 +23806,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Article 1er"
   },
   "2024-7": {
    "id": "2024-7",
@@ -23681,7 +23902,8 @@
      "nonVotants": 4
     }
    ],
-   "resume": "Voulait renforcer la mixité sociale et scolaire et la transparence des affectations et des financements des établissements ; proposition rejetée par le Sénat."
+   "resume": "Voulait renforcer la mixité sociale et scolaire et la transparence des affectations et des financements des établissements ; proposition rejetée par le Sénat.",
+   "subject": "Ensemble du texte · article 2"
   },
   "2024-8": {
    "id": "2024-8",
@@ -23893,7 +24115,8 @@
     ],
     "resultLabel": "l'Assemblée nationale a adopté"
    },
-   "anNote": "Vote de l'Assemblée nationale sur le texte adopté par le Sénat (février 2025)."
+   "anNote": "Vote de l'Assemblée nationale sur le texte adopté par le Sénat (février 2025).",
+   "subject": "Ensemble du texte"
   },
   "2024-9": {
    "id": "2024-9",
@@ -23987,7 +24210,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 143 rectifié · article 3"
   },
   "2024-10": {
    "id": "2024-10",
@@ -24082,7 +24306,8 @@
      "nonVotants": 4
     }
    ],
-   "resume": "Programmation nationale de l'énergie et simplification des normes du secteur économique de l'énergie."
+   "resume": "Programmation nationale de l'énergie et simplification des normes du secteur économique de l'énergie.",
+   "subject": "Ensemble du texte"
   },
   "2024-11": {
    "id": "2024-11",
@@ -24176,7 +24401,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 10 rectifié · Max Brisson · article 1er"
   },
   "2024-12": {
    "id": "2024-12",
@@ -24270,7 +24496,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Amendement n° 6 rectifié bis · Cédric Vial · article 2"
   },
   "2024-13": {
    "id": "2024-13",
@@ -24364,7 +24591,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 1 rectifié · Michel Laugier · article 6"
   },
   "2024-14": {
    "id": "2024-14",
@@ -24458,7 +24686,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 15 rectifié · Monique de Marco · après l'article 6"
   },
   "2024-15": {
    "id": "2024-15",
@@ -24552,7 +24781,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 2 rectifié · Michel Laugier · article 7"
   },
   "2024-16": {
    "id": "2024-16",
@@ -24646,7 +24876,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2024-17": {
    "id": "2024-17",
@@ -24740,7 +24971,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 3 rectifié · Cécile Cukierman · article 1er"
   },
   "2024-18": {
    "id": "2024-18",
@@ -24834,7 +25066,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2024-19": {
    "id": "2024-19",
@@ -24928,7 +25161,8 @@
      "abstention": 0,
      "nonVotants": 0
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2024-20": {
    "id": "2024-20",
@@ -25022,7 +25256,8 @@
      "abstention": 0,
      "nonVotants": 0
     }
-   ]
+   ],
+   "subject": "Ensemble du texte · article 9"
   },
   "2024-21": {
    "id": "2024-21",
@@ -25116,7 +25351,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Question préalable"
   },
   "2024-22": {
    "id": "2024-22",
@@ -25210,7 +25446,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2024-23": {
    "id": "2024-23",
@@ -25304,7 +25541,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2024-24": {
    "id": "2024-24",
@@ -25398,7 +25636,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Amendement n° 35 · Marie-Claude Varaillas · après l'article 3"
   },
   "2024-25": {
    "id": "2024-25",
@@ -25492,7 +25731,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2024-26": {
    "id": "2024-26",
@@ -25696,7 +25936,8 @@
     ],
     "resultLabel": "l'Assemblée nationale a adopté"
    },
-   "anNote": "Vote de l'Assemblée nationale sur ce texte en mai 2024."
+   "anNote": "Vote de l'Assemblée nationale sur ce texte en mai 2024.",
+   "subject": "Ensemble du texte"
   },
   "2024-27": {
    "id": "2024-27",
@@ -25790,7 +26031,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Article 1er"
   },
   "2024-28": {
    "id": "2024-28",
@@ -25884,7 +26126,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2024-29": {
    "id": "2024-29",
@@ -25978,7 +26221,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2024-30": {
    "id": "2024-30",
@@ -26072,7 +26316,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2024-31": {
    "id": "2024-31",
@@ -26166,7 +26411,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 2 rectifié · Raymonde Poncet Monge · article 1er"
   },
   "2024-32": {
    "id": "2024-32",
@@ -26260,7 +26506,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 2 rectifié bis · André Reichardt · article unique"
   },
   "2024-33": {
    "id": "2024-33",
@@ -26354,7 +26601,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2024-34": {
    "id": "2024-34",
@@ -26448,7 +26696,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Article 1er"
   },
   "2024-35": {
    "id": "2024-35",
@@ -26543,7 +26792,8 @@
      "nonVotants": 4
     }
    ],
-   "resume": "Proposait d'inscrire dans la Constitution des règles de redressement des finances publiques ; proposition rejetée par le Sénat."
+   "resume": "Proposait d'inscrire dans la Constitution des règles de redressement des finances publiques ; proposition rejetée par le Sénat.",
+   "subject": "Ensemble du texte · article 12"
   },
   "2024-36": {
    "id": "2024-36",
@@ -26637,7 +26887,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2024-37": {
    "id": "2024-37",
@@ -26731,7 +26982,8 @@
      "abstention": 0,
      "nonVotants": 0
     }
-   ]
+   ],
+   "subject": "Amendement n° 1 rectifié · Jean-Pierre Grand · article 1er"
   },
   "2024-38": {
    "id": "2024-38",
@@ -26825,7 +27077,8 @@
      "abstention": 0,
      "nonVotants": 3
     }
-   ]
+   ],
+   "subject": "Amendement n° 3 rectifié · Raymonde Poncet Monge · après l'article 1er"
   },
   "2024-39": {
    "id": "2024-39",
@@ -26919,7 +27172,8 @@
      "abstention": 0,
      "nonVotants": 0
     }
-   ]
+   ],
+   "subject": "Amendements n° 2 rectifié · Jean-Pierre Grand · article 2"
   },
   "2024-40": {
    "id": "2024-40",
@@ -27013,7 +27267,8 @@
      "abstention": 3,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Exception d'irrecevabilité"
   },
   "2024-41": {
    "id": "2024-41",
@@ -27107,7 +27362,8 @@
      "abstention": 3,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Question préalable"
   },
   "2024-42": {
    "id": "2024-42",
@@ -27201,7 +27457,8 @@
      "abstention": 1,
      "nonVotants": 3
     }
-   ]
+   ],
+   "subject": "Sous-amendement n° 1356 · Élisabeth Doineau · article 2"
   },
   "2024-43": {
    "id": "2024-43",
@@ -27295,7 +27552,8 @@
      "abstention": 1,
      "nonVotants": 3
     }
-   ]
+   ],
+   "subject": "Amendement n° 1343 · article 2"
   },
   "2024-44": {
    "id": "2024-44",
@@ -27389,7 +27647,8 @@
      "abstention": 0,
      "nonVotants": 3
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 742 · Monique Lubin · après l'article 3"
   },
   "2024-45": {
    "id": "2024-45",
@@ -27483,7 +27742,8 @@
      "abstention": 0,
      "nonVotants": 3
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 518 rectifié · Ghislaine Senée · après l'article 3"
   },
   "2024-46": {
    "id": "2024-46",
@@ -27577,7 +27837,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 358 rectifié · Franck Dhersin · après l'article 3 quater"
   },
   "2024-47": {
    "id": "2024-47",
@@ -27671,7 +27932,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Amendement n° 359 rectifié · Franck Dhersin · après l'article 3 quater"
   },
   "2024-48": {
    "id": "2024-48",
@@ -27765,7 +28027,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 197 · Joshua Hochart · article 6"
   },
   "2024-49": {
    "id": "2024-49",
@@ -27859,7 +28122,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 1226 · Xavier Iacovelli · article 6"
   },
   "2024-50": {
    "id": "2024-50",
@@ -27953,7 +28217,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 385 rectifié · Franck Dhersin · article 6"
   },
   "2024-51": {
    "id": "2024-51",
@@ -28047,7 +28312,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 121 rectifié · Élisabeth Doineau au nom de la commission des affaires sociales · article 6"
   },
   "2024-52": {
    "id": "2024-52",
@@ -28141,7 +28407,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 122 · Élisabeth Doineau au nom de la commission des affaires sociales · article 6"
   },
   "2024-53": {
    "id": "2024-53",
@@ -28235,7 +28502,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Amendement n° 586 rectifié · Henri Cabanel · après l'article 6"
   },
   "2024-54": {
    "id": "2024-54",
@@ -28329,7 +28597,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 108 rectifié · François Bonhomme et Patrick Chaize · article 7"
   },
   "2024-55": {
    "id": "2024-55",
@@ -28423,7 +28692,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 198 · Joshua Hochart · article 7"
   },
   "2024-56": {
    "id": "2024-56",
@@ -28517,7 +28787,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Amendement n° 125 · Élisabeth Doineau au nom de la commission des affaires sociales · après l'article 7"
   },
   "2024-57": {
    "id": "2024-57",
@@ -28611,7 +28882,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 610 rectifié · Michel Masset · article 9"
   },
   "2024-58": {
    "id": "2024-58",
@@ -28705,7 +28977,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 435 rectifié ter · Alain Milon · article 9"
   },
   "2024-59": {
    "id": "2024-59",
@@ -28799,7 +29072,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Sous-amendement n° 1378 · Élisabeth Doineau au nom de la commission des affaires sociales · article 9"
   },
   "2024-60": {
    "id": "2024-60",
@@ -28893,7 +29167,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 128 · Élisabeth Doineau au nom de la commission des affaires sociales · article 9"
   },
   "2024-61": {
    "id": "2024-61",
@@ -28987,7 +29262,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Sous-amendement n° 1377 · Élisabeth Doineau au nom de la commission des affaires sociales · article 9"
   },
   "2024-62": {
    "id": "2024-62",
@@ -29081,7 +29357,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 129 · Élisabeth Doineau au nom de la commission des affaires sociales · article 9"
   },
   "2024-63": {
    "id": "2024-63",
@@ -29175,7 +29452,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 135 rectifié bis · Élisabeth Doineau au nom de la commission des affaires sociales · après l'article 9 bis"
   },
   "2024-64": {
    "id": "2024-64",
@@ -29269,7 +29547,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 454 rectifié · Thomas Dossus · après l'article 9 bis"
   },
   "2024-65": {
    "id": "2024-65",
@@ -29363,7 +29642,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 1393 · article 14"
   },
   "2024-66": {
    "id": "2024-66",
@@ -29457,7 +29737,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2024-67": {
    "id": "2024-67",
@@ -29551,7 +29832,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 101 rectifié · Alain Milon · article 15"
   },
   "2024-68": {
    "id": "2024-68",
@@ -29645,7 +29927,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 399 rectifié · Alain Milon · article 16"
   },
   "2024-69": {
    "id": "2024-69",
@@ -29739,7 +30022,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Amendement n° 1332 rectifié · après l'article 16"
   },
   "2024-70": {
    "id": "2024-70",
@@ -29833,7 +30117,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Amendement n° 151 · Corinne Imbert au nom de la commission des affaires sociales · après l'article 16"
   },
   "2024-71": {
    "id": "2024-71",
@@ -29927,7 +30212,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 969 · Céline Brulin · article 17"
   },
   "2024-72": {
    "id": "2024-72",
@@ -30021,7 +30307,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 781 · Anne Souyris · après l'article 17"
   },
   "2024-73": {
    "id": "2024-73",
@@ -30115,7 +30402,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 319 · Aymeric Durox · article 23"
   },
   "2024-74": {
    "id": "2024-74",
@@ -30209,7 +30497,8 @@
      "abstention": 3,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Amendement n° 1260 rectifié · Philippe Grosvalet · article 23"
   },
   "2024-75": {
    "id": "2024-75",
@@ -30303,7 +30592,8 @@
      "abstention": 0,
      "nonVotants": 3
     }
-   ]
+   ],
+   "subject": "Amendement n° 194 rectifié · Pascale Gruny au nom de la commission des affaires sociales · article 23"
   },
   "2024-76": {
    "id": "2024-76",
@@ -30397,7 +30687,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2024-77": {
    "id": "2024-77",
@@ -30491,7 +30782,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Question préalable"
   },
   "2024-78": {
    "id": "2024-78",
@@ -30585,7 +30877,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2024-79": {
    "id": "2024-79",
@@ -30679,7 +30972,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Article 40"
   },
   "2024-80": {
    "id": "2024-80",
@@ -30773,7 +31067,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° I-86 rectifié bis · Antoine Lefèvre · après l'article 2"
   },
   "2024-81": {
    "id": "2024-81",
@@ -30867,7 +31162,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° I-397 rectifié · Éric Gold · après l'article 2"
   },
   "2024-82": {
    "id": "2024-82",
@@ -30961,7 +31257,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° I-121 rectifié · Vincent Louault · après l'article 2"
   },
   "2024-83": {
    "id": "2024-83",
@@ -31055,7 +31352,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° I-1009 · Laurence Rossignol · après l'article 2"
   },
   "2024-84": {
    "id": "2024-84",
@@ -31149,7 +31447,8 @@
      "abstention": 0,
      "nonVotants": 0
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2024-85": {
    "id": "2024-85",
@@ -31243,7 +31542,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° I-658 · Pascal Savoldelli · après l'article 3"
   },
   "2024-86": {
    "id": "2024-86",
@@ -31337,7 +31637,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° I-659 · Pascal Savoldelli et Pierre Barros · après l'article 3"
   },
   "2024-87": {
    "id": "2024-87",
@@ -31431,7 +31732,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Amendement n° I-400 rectifié · Christian Bilhac · après l'article 3"
   },
   "2024-88": {
    "id": "2024-88",
@@ -31525,7 +31827,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° I-457 · Christopher Szczurek · article 4"
   },
   "2024-89": {
    "id": "2024-89",
@@ -31619,7 +31922,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° I-1 · Jean-François Husson au nom de la commission des finances · article 7"
   },
   "2024-90": {
    "id": "2024-90",
@@ -31713,7 +32017,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° I-620 rectifié bis · Vincent Delahaye · article 7"
   },
   "2024-91": {
    "id": "2024-91",
@@ -31807,7 +32112,8 @@
      "abstention": 0,
      "nonVotants": 0
     }
-   ]
+   ],
+   "subject": "Article 50"
   },
   "2024-92": {
    "id": "2024-92",
@@ -31901,7 +32207,8 @@
      "abstention": 0,
      "nonVotants": 0
     }
-   ]
+   ],
+   "subject": "Amendement n° I-2076 · après l'article 9"
   },
   "2024-93": {
    "id": "2024-93",
@@ -31995,7 +32302,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement identiques n° I-1352 · Thomas Dossus · après l'article 10"
   },
   "2024-94": {
    "id": "2024-94",
@@ -32089,7 +32397,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° I-1634 rectifié · Audrey Linkenheld · après l'article 10"
   },
   "2024-95": {
    "id": "2024-95",
@@ -32183,7 +32492,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° I-1568 rectifié · Fabien Gay · après l'article 10"
   },
   "2024-96": {
    "id": "2024-96",
@@ -32277,7 +32587,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Amendement n° I-1334 · Claude Raynal · article 15"
   },
   "2024-97": {
    "id": "2024-97",
@@ -32371,7 +32682,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° I-436 rectifié · Philippe Grosvalet · après l'article 24"
   },
   "2024-98": {
    "id": "2024-98",
@@ -32465,7 +32777,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Sous-amendement n° I-2272 · Jean-François Husson au nom de la commission des finances · après l'article 26"
   },
   "2024-99": {
    "id": "2024-99",
@@ -32559,7 +32872,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° I-96 rectifié · Nathalie Goulet · après l'article 26"
   },
   "2024-100": {
    "id": "2024-100",
@@ -32653,7 +32967,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° I-77 rectifié · Antoine Lefèvre · article 29"
   },
   "2024-101": {
    "id": "2024-101",
@@ -32747,7 +33062,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° I-939 · Patrick Kanner · article 29"
   },
   "2024-102": {
    "id": "2024-102",
@@ -32841,7 +33157,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° I-149 · Frédérique Espagnac · article 29"
   },
   "2024-103": {
    "id": "2024-103",
@@ -32935,7 +33252,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° I-445 rectifié · Philippe Grosvalet · article 31"
   },
   "2024-104": {
    "id": "2024-104",
@@ -33029,7 +33347,8 @@
      "abstention": 1,
      "nonVotants": 3
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° I-1484 rectifié ter · Christine Lavarde · après l'article 31"
   },
   "2024-105": {
    "id": "2024-105",
@@ -33123,7 +33442,8 @@
      "abstention": 1,
      "nonVotants": 3
     }
-   ]
+   ],
+   "subject": "Amendement n° I-299 rectifié bis · Max Brisson · après l'article 31"
   },
   "2024-106": {
    "id": "2024-106",
@@ -33217,7 +33537,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Amendement n° I-2295 · article 41"
   },
   "2024-107": {
    "id": "2024-107",
@@ -33311,7 +33632,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Amendement n° I-2197 · Jean-François Husson au nom de la commission des finances · article 41"
   },
   "2024-108": {
    "id": "2024-108",
@@ -33405,7 +33727,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° A-20 · Jean-François Husson au nom de la commission des finances · article 2 ter"
   },
   "2024-109": {
    "id": "2024-109",
@@ -33499,7 +33822,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° A-5 · article 3 ter"
   },
   "2024-110": {
    "id": "2024-110",
@@ -33593,7 +33917,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° A-3 · article 3"
   },
   "2024-111": {
    "id": "2024-111",
@@ -33687,7 +34012,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° A-4 · article 7"
   },
   "2024-112": {
    "id": "2024-112",
@@ -33781,7 +34107,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° A-21 · Jean-François Husson au nom de la commission des finances · article 9 bis"
   },
   "2024-113": {
    "id": "2024-113",
@@ -33875,7 +34202,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° A-19 · article 10"
   },
   "2024-114": {
    "id": "2024-114",
@@ -33969,7 +34297,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° A-12 · article 10"
   },
   "2024-115": {
    "id": "2024-115",
@@ -34063,7 +34392,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° A-13 · article 11 bis"
   },
   "2024-116": {
    "id": "2024-116",
@@ -34157,7 +34487,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° A-15 · article 11 ter"
   },
   "2024-117": {
    "id": "2024-117",
@@ -34251,7 +34582,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° A-9 · article 11"
   },
   "2024-118": {
    "id": "2024-118",
@@ -34345,7 +34677,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° A-10 · article 11"
   },
   "2024-119": {
    "id": "2024-119",
@@ -34439,7 +34772,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° A-17 · article 14 bis"
   },
   "2024-120": {
    "id": "2024-120",
@@ -34533,7 +34867,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° A-22 · Jean-François Husson au nom de la commission des finances · article 14 bis"
   },
   "2024-121": {
    "id": "2024-121",
@@ -34627,7 +34962,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° A-14 · article 14 quater"
   },
   "2024-122": {
    "id": "2024-122",
@@ -34721,7 +35057,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° A-6 · article 17 bis"
   },
   "2024-123": {
    "id": "2024-123",
@@ -34815,7 +35152,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° A-7 · article 17 ter"
   },
   "2024-124": {
    "id": "2024-124",
@@ -34909,7 +35247,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° A-8 · article 17 quater"
   },
   "2024-125": {
    "id": "2024-125",
@@ -35003,7 +35342,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° A-2 · article 19 ter"
   },
   "2024-126": {
    "id": "2024-126",
@@ -35097,7 +35437,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° A-23 · Jean-François Husson au nom de la commission des finances · article 24 bis"
   },
   "2024-127": {
    "id": "2024-127",
@@ -35191,7 +35532,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° A-1 · article 24"
   },
   "2024-128": {
    "id": "2024-128",
@@ -35285,7 +35627,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° A-18 · article 26"
   },
   "2024-129": {
    "id": "2024-129",
@@ -35379,7 +35722,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° A-24 · Jean-François Husson au nom de la commission des finances · article 26 quater"
   },
   "2024-130": {
    "id": "2024-130",
@@ -35473,7 +35817,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° A-25 · Jean-François Husson · article 30 bis"
   },
   "2024-131": {
    "id": "2024-131",
@@ -35567,7 +35912,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° A-11 · article 31 ter"
   },
   "2024-132": {
    "id": "2024-132",
@@ -35661,7 +36007,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° A-16 · article 40"
   },
   "2024-133": {
    "id": "2024-133",
@@ -35755,7 +36102,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° A-27 rectifié · article 41"
   },
   "2024-134": {
    "id": "2024-134",
@@ -35849,7 +36197,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° A-26 rectifié"
   },
   "2024-135": {
    "id": "2024-135",
@@ -35943,7 +36292,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2024-136": {
    "id": "2024-136",
@@ -36037,7 +36387,8 @@
      "abstention": 0,
      "nonVotants": 0
     }
-   ]
+   ],
+   "subject": "Amendement n° II-18 · Olivier Paccaud au nom de la commission des finances"
   },
   "2024-137": {
    "id": "2024-137",
@@ -36131,7 +36482,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° II-19 · Olivier Paccaud au nom de la commission des finances"
   },
   "2024-138": {
    "id": "2024-138",
@@ -36225,7 +36577,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Amendement n° II-451 · Yan Chantrel"
   },
   "2024-139": {
    "id": "2024-139",
@@ -36319,7 +36672,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° II-21 · Olivier Paccaud au nom de la commission des finances"
   },
   "2024-140": {
    "id": "2024-140",
@@ -36413,7 +36767,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° II-36 · Vincent Delahaye au nom de la commission des finances"
   },
   "2024-141": {
    "id": "2024-141",
@@ -36507,7 +36862,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° II-86 rectifié · Michel Canévet"
   },
   "2024-142": {
    "id": "2024-142",
@@ -36601,7 +36957,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° II-37 · Vincent Delahaye au nom de la commission des finances"
   },
   "2024-143": {
    "id": "2024-143",
@@ -36695,7 +37052,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Amendement n° II-353 · Grégory Blanc"
   },
   "2024-144": {
    "id": "2024-144",
@@ -36789,7 +37147,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Amendement n° II-360 · Jérôme Durain"
   },
   "2024-145": {
    "id": "2024-145",
@@ -36883,7 +37242,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° II-1099 · Raymonde Poncet Monge"
   },
   "2024-146": {
    "id": "2024-146",
@@ -36977,7 +37337,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° II-767 · Marie-Pierre de La Gontrie"
   },
   "2024-147": {
    "id": "2024-147",
@@ -37188,7 +37549,8 @@
      }
     ],
     "resultLabel": "l'Assemblée nationale a adopté"
-   }
+   },
+   "subject": "Ensemble du texte · texte de la CMP"
   },
   "2024-148": {
    "id": "2024-148",
@@ -37282,7 +37644,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° II-11 rectifié · Stéphane Sautarel au nom de la commission des finances · après l'article 64"
   },
   "2024-149": {
    "id": "2024-149",
@@ -37376,7 +37739,8 @@
      "abstention": 1,
      "nonVotants": 0
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2024-150": {
    "id": "2024-150",
@@ -37470,7 +37834,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 2 rectifié · Véronique Guillotin · article unique"
   },
   "2024-151": {
    "id": "2024-151",
@@ -37564,7 +37929,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° II-1172 rectifié · Pierre Jean Rochette"
   },
   "2024-152": {
    "id": "2024-152",
@@ -37658,7 +38024,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° II-1327 rectifié · Michelle Gréaume"
   },
   "2024-153": {
    "id": "2024-153",
@@ -37752,7 +38119,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "les crédits de la mission « Aide publique au développement » figurant à l'état B"
   },
   "2024-154": {
    "id": "2024-154",
@@ -37846,7 +38214,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° II-2105"
   },
   "2024-155": {
    "id": "2024-155",
@@ -37940,7 +38309,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° II-2091"
   },
   "2024-156": {
    "id": "2024-156",
@@ -38034,7 +38404,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° II-2102"
   },
   "2024-157": {
    "id": "2024-157",
@@ -38128,7 +38499,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° II-675 rectifié · Marie-Lise Housseau"
   },
   "2024-158": {
    "id": "2024-158",
@@ -38222,7 +38594,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° II-236 rectifié · Monique de Marco"
   },
   "2024-159": {
    "id": "2024-159",
@@ -38316,7 +38689,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° II-433 · Colombe Brossel"
   },
   "2024-160": {
    "id": "2024-160",
@@ -38410,7 +38784,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° II-485 · Monique de Marco"
   },
   "2024-161": {
    "id": "2024-161",
@@ -38504,7 +38879,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° II-205 rectifié · Ahmed Laouedj"
   },
   "2024-162": {
    "id": "2024-162",
@@ -38598,7 +38974,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° II-79 rectifié · Mathilde Ollivier"
   },
   "2024-163": {
    "id": "2024-163",
@@ -38692,7 +39069,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° II-80 rectifié · Mathilde Ollivier"
   },
   "2024-164": {
    "id": "2024-164",
@@ -38786,7 +39164,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° II-2195"
   },
   "2024-165": {
    "id": "2024-165",
@@ -38880,7 +39259,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° II-1188 rectifié ter · Mireille Jouve"
   },
   "2024-166": {
    "id": "2024-166",
@@ -38974,7 +39354,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° II-1888 · Yan Chantrel"
   },
   "2024-167": {
    "id": "2024-167",
@@ -39068,7 +39449,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° II-2121 rectifié · Marianne Margaté"
   },
   "2024-168": {
    "id": "2024-168",
@@ -39162,7 +39544,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° II-340 · Amel Gacquerre au nom de la commission des affaires économiques"
   },
   "2024-169": {
    "id": "2024-169",
@@ -39256,7 +39639,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° II-2028 rectifié ter · Ahmed Laouedj"
   },
   "2024-170": {
    "id": "2024-170",
@@ -39350,7 +39734,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° II-2081 · Olivia Richard"
   },
   "2024-171": {
    "id": "2024-171",
@@ -39444,7 +39829,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° II-2128 · Marianne Margaté"
   },
   "2024-172": {
    "id": "2024-172",
@@ -39538,7 +39924,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° II-2222 · article 47"
   },
   "2024-173": {
    "id": "2024-173",
@@ -39632,7 +40019,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° II-2220 · article 48"
   },
   "2024-174": {
    "id": "2024-174",
@@ -39726,7 +40114,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° II-1164 rectifié · Mathieu Darnaud · article 48"
   },
   "2024-175": {
    "id": "2024-175",
@@ -39820,7 +40209,8 @@
      "abstention": 0,
      "nonVotants": 0
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2024-176": {
    "id": "2024-176",
@@ -39914,7 +40304,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte · texte de la CMP"
   },
   "2024-177": {
    "id": "2024-177",
@@ -40008,7 +40399,8 @@
      "abstention": 3,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Article 1er"
   },
   "2024-178": {
    "id": "2024-178",
@@ -40102,7 +40494,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Article 2"
   },
   "2024-179": {
    "id": "2024-179",
@@ -40196,7 +40589,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Article 3"
   },
   "2024-180": {
    "id": "2024-180",
@@ -40290,7 +40684,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Article 6"
   },
   "2024-181": {
    "id": "2024-181",
@@ -40384,7 +40779,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2024-182": {
    "id": "2024-182",
@@ -40478,7 +40874,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 271 · article 16"
   },
   "2024-183": {
    "id": "2024-183",
@@ -40572,7 +40969,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2024-184": {
    "id": "2024-184",
@@ -40666,7 +41064,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2024-185": {
    "id": "2024-185",
@@ -40760,7 +41159,8 @@
      "abstention": 0,
      "nonVotants": 0
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2024-186": {
    "id": "2024-186",
@@ -40854,7 +41254,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2024-187": {
    "id": "2024-187",
@@ -40948,7 +41349,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2024-188": {
    "id": "2024-188",
@@ -41042,7 +41444,8 @@
      "abstention": 0,
      "nonVotants": 0
     }
-   ]
+   ],
+   "subject": "Ensemble du texte · texte de la CMP"
   },
   "2024-189": {
    "id": "2024-189",
@@ -41136,7 +41539,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 384 rectifié ter · Jean-Claude Tissot · article 13"
   },
   "2024-190": {
    "id": "2024-190",
@@ -41230,7 +41634,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 874 · article 13"
   },
   "2024-191": {
    "id": "2024-191",
@@ -41324,7 +41729,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Article 13"
   },
   "2024-192": {
    "id": "2024-192",
@@ -41418,7 +41824,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 3 rectifié bis · Jean-Michel Arnaud · après l'article 18"
   },
   "2024-193": {
    "id": "2024-193",
@@ -41512,7 +41919,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Amendement n° 49 · Annie Le Houerou · article 14"
   },
   "2024-194": {
    "id": "2024-194",
@@ -41606,7 +42014,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2024-195": {
    "id": "2024-195",
@@ -41700,7 +42109,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2024-196": {
    "id": "2024-196",
@@ -41912,7 +42322,8 @@
     ],
     "resultLabel": "l'Assemblée nationale a adopté"
    },
-   "anNote": "L'Assemblée nationale a voté sur le texte après le Sénat (février 2025)."
+   "anNote": "L'Assemblée nationale a voté sur le texte après le Sénat (février 2025).",
+   "subject": "Ensemble du texte"
   },
   "2024-197": {
    "id": "2024-197",
@@ -42006,7 +42417,8 @@
      "abstention": 0,
      "nonVotants": 3
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 4 · Sylvie Robert · article 1er"
   },
   "2024-198": {
    "id": "2024-198",
@@ -42100,7 +42512,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Article 1er"
   },
   "2024-199": {
    "id": "2024-199",
@@ -42194,7 +42607,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2024-200": {
    "id": "2024-200",
@@ -42288,7 +42702,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Article 1er"
   },
   "2024-201": {
    "id": "2024-201",
@@ -42382,7 +42797,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Article 2"
   },
   "2024-202": {
    "id": "2024-202",
@@ -42476,7 +42892,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Article 3"
   },
   "2024-203": {
    "id": "2024-203",
@@ -42570,7 +42987,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 1 rectifié · après l'article 3"
   },
   "2024-204": {
    "id": "2024-204",
@@ -42664,7 +43082,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Article 4"
   },
   "2024-205": {
    "id": "2024-205",
@@ -42758,7 +43177,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2024-206": {
    "id": "2024-206",
@@ -42852,7 +43272,8 @@
      "abstention": 0,
      "nonVotants": 0
     }
-   ]
+   ],
+   "subject": "Exception d'irrecevabilité"
   },
   "2024-207": {
    "id": "2024-207",
@@ -42946,7 +43367,8 @@
      "abstention": 0,
      "nonVotants": 0
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 2 · Mélanie Vogel · article unique"
   },
   "2024-208": {
    "id": "2024-208",
@@ -43040,7 +43462,8 @@
      "abstention": 0,
      "nonVotants": 0
     }
-   ]
+   ],
+   "subject": "Article unique"
   },
   "2024-209": {
    "id": "2024-209",
@@ -43134,7 +43557,8 @@
      "abstention": 0,
      "nonVotants": 0
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2024-210": {
    "id": "2024-210",
@@ -43228,7 +43652,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2024-211": {
    "id": "2024-211",
@@ -43440,7 +43865,8 @@
     ],
     "resultLabel": "l'Assemblée nationale a adopté"
    },
-   "anNote": "Même texte que le scrutin sénatorial du 18 février 2025 : version de la commission mixte paritaire."
+   "anNote": "Même texte que le scrutin sénatorial du 18 février 2025 : version de la commission mixte paritaire.",
+   "subject": "Ensemble du texte · texte de la CMP"
   },
   "2024-212": {
    "id": "2024-212",
@@ -43534,7 +43960,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 5 · Pierre Ouzoulias · après l'article 1er"
   },
   "2024-213": {
    "id": "2024-213",
@@ -43629,7 +44056,8 @@
      "nonVotants": 4
     }
    ],
-   "resume": "Renforce la protection de l'école et des personnels face aux atteintes et aux violences."
+   "resume": "Renforce la protection de l'école et des personnels face aux atteintes et aux violences.",
+   "subject": "Ensemble du texte"
   },
   "2024-214": {
    "id": "2024-214",
@@ -43723,7 +44151,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 10 rectifié · Anne Souyris · article 1er"
   },
   "2024-215": {
    "id": "2024-215",
@@ -43817,7 +44246,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 7 rectifié ter · Cédric Chevalier · article 1er"
   },
   "2024-216": {
    "id": "2024-216",
@@ -43911,7 +44341,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 2 rectifié · Jean-Marie Mizzon · article 1er"
   },
   "2024-217": {
    "id": "2024-217",
@@ -44005,7 +44436,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 3 rectifié · Jean-Marie Mizzon · article 1er"
   },
   "2024-218": {
    "id": "2024-218",
@@ -44099,7 +44531,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 37 rectifié · Nadine Bellurot et M. Éric Kerrouche au nom de la commission des lois · article 1er"
   },
   "2024-219": {
    "id": "2024-219",
@@ -44193,7 +44626,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 28 rectifié bis · Daniel Chasseing · article 1er"
   },
   "2024-220": {
    "id": "2024-220",
@@ -44287,7 +44721,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Article 1er"
   },
   "2024-221": {
    "id": "2024-221",
@@ -44381,7 +44816,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 27 rectifié bis · Anne-Sophie Romagny · article 1er"
   },
   "2024-222": {
    "id": "2024-222",
@@ -44475,7 +44911,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Article 1er"
   },
   "2024-223": {
    "id": "2024-223",
@@ -44569,7 +45006,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 20 rectifié quater · après l'article 1er"
   },
   "2024-224": {
    "id": "2024-224",
@@ -44663,7 +45101,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Article 3"
   },
   "2024-225": {
    "id": "2024-225",
@@ -44757,7 +45196,8 @@
      "abstention": 3,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2024-226": {
    "id": "2024-226",
@@ -44851,7 +45291,8 @@
      "abstention": 3,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2024-227": {
    "id": "2024-227",
@@ -44945,7 +45386,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 1 rectifié · Olivier Cadic · après l'article 16"
   },
   "2024-228": {
    "id": "2024-228",
@@ -45039,7 +45481,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Article 2"
   },
   "2024-229": {
    "id": "2024-229",
@@ -45133,7 +45576,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Article 4"
   },
   "2024-230": {
    "id": "2024-230",
@@ -45227,7 +45671,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte · texte de la CMP"
   },
   "2024-231": {
    "id": "2024-231",
@@ -45321,7 +45766,8 @@
      "abstention": 0,
      "nonVotants": 0
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2024-232": {
    "id": "2024-232",
@@ -45415,7 +45861,8 @@
      "abstention": 0,
      "nonVotants": 0
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2024-233": {
    "id": "2024-233",
@@ -45509,7 +45956,8 @@
      "abstention": 0,
      "nonVotants": 0
     }
-   ]
+   ],
+   "subject": "Exception d'irrecevabilité"
   },
   "2024-234": {
    "id": "2024-234",
@@ -45603,7 +46051,8 @@
      "abstention": 0,
      "nonVotants": 3
     }
-   ]
+   ],
+   "subject": "Question préalable"
   },
   "2024-235": {
    "id": "2024-235",
@@ -45698,7 +46147,8 @@
      "nonVotants": 0
     }
    ],
-   "resume": "Crée une condition de durée de résidence pour le versement de certaines prestations sociales."
+   "resume": "Crée une condition de durée de résidence pour le versement de certaines prestations sociales.",
+   "subject": "Ensemble du texte"
   },
   "2024-236": {
    "id": "2024-236",
@@ -45792,7 +46242,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2024-237": {
    "id": "2024-237",
@@ -45886,7 +46337,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2024-238": {
    "id": "2024-238",
@@ -45980,7 +46432,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2024-239": {
    "id": "2024-239",
@@ -46074,7 +46527,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 48 rectifié · Marie-Claire Carrère-Gée · article 4"
   },
   "2024-240": {
    "id": "2024-240",
@@ -46168,7 +46622,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Amendement n° 50 rectifié · Marie-Claire Carrère-Gée · après l'article 4 bis"
   },
   "2024-241": {
    "id": "2024-241",
@@ -46262,7 +46717,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Sous-amendement n° 60 · Marie-Carole Ciuntu · article 5"
   },
   "2024-242": {
    "id": "2024-242",
@@ -46356,7 +46812,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Amendement n° 49 rectifié · Marie-Claire Carrère-Gée · article 5"
   },
   "2024-243": {
    "id": "2024-243",
@@ -46450,7 +46907,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2024-244": {
    "id": "2024-244",
@@ -46544,7 +47002,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2024-245": {
    "id": "2024-245",
@@ -46638,7 +47097,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2024-246": {
    "id": "2024-246",
@@ -46732,7 +47192,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Sous-amendement n° 155 · Antoine Lefèvre au nom de la commission des finances · article 3 ter"
   },
   "2024-247": {
    "id": "2024-247",
@@ -46826,7 +47287,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 134 · article 3 ter"
   },
   "2024-248": {
    "id": "2024-248",
@@ -47037,7 +47499,8 @@
      }
     ],
     "resultLabel": "l'Assemblée nationale a adopté"
-   }
+   },
+   "subject": "Ensemble du texte · texte de la CMP"
   },
   "2024-249": {
    "id": "2024-249",
@@ -47131,7 +47594,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte · texte de la CMP"
   },
   "2024-250": {
    "id": "2024-250",
@@ -47225,7 +47689,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 4 rectifié ter · Annick Billon · article 1er"
   },
   "2024-251": {
    "id": "2024-251",
@@ -47319,7 +47784,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 19 rectifié · Solanges Nadille · article 1er"
   },
   "2024-252": {
    "id": "2024-252",
@@ -47413,7 +47879,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 3 rectifié · Véronique Guillotin · article 2"
   },
   "2024-253": {
    "id": "2024-253",
@@ -47507,7 +47974,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2024-254": {
    "id": "2024-254",
@@ -47601,7 +48069,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 6 · Éric Kerrouche · après l'article 5"
   },
   "2024-255": {
    "id": "2024-255",
@@ -47695,7 +48164,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 12 rectifié · Marie-Pierre de La Gontrie · après l'article 17"
   },
   "2024-256": {
    "id": "2024-256",
@@ -47789,7 +48259,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 54 · Marie-Pierre de La Gontrie · après l'article 17"
   },
   "2024-257": {
    "id": "2024-257",
@@ -47883,7 +48354,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 1 rectifié · Éric Kerrouche · après l'article 22"
   },
   "2024-258": {
    "id": "2024-258",
@@ -47977,7 +48449,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2024-259": {
    "id": "2024-259",
@@ -48071,7 +48544,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Amendement n° 16 rectifié · Nadège Havet au nom de la commission de l'aménagement du territoire et du développement durable · article 1er"
   },
   "2024-260": {
    "id": "2024-260",
@@ -48165,7 +48639,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2024-261": {
    "id": "2024-261",
@@ -48259,7 +48734,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2024-262": {
    "id": "2024-262",
@@ -48353,7 +48829,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte · texte de la CMP"
   },
   "2024-263": {
    "id": "2024-263",
@@ -48447,7 +48924,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte · texte de la CMP"
   },
   "2024-264": {
    "id": "2024-264",
@@ -48541,7 +49019,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 11 rectifié · Laurence Muller-Bronn · article 1er"
   },
   "2024-265": {
    "id": "2024-265",
@@ -48635,7 +49114,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2024-266": {
    "id": "2024-266",
@@ -48729,7 +49209,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Exception d'irrecevabilité"
   },
   "2024-267": {
    "id": "2024-267",
@@ -48823,7 +49304,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Question préalable"
   },
   "2024-268": {
    "id": "2024-268",
@@ -48918,7 +49400,8 @@
      "nonVotants": 1
     }
    ],
-   "resume": "Confie à l'OFII des tâches d'accueil et d'information des personnes retenues en rétention."
+   "resume": "Confie à l'OFII des tâches d'accueil et d'information des personnes retenues en rétention.",
+   "subject": "Ensemble du texte"
   },
   "2024-269": {
    "id": "2024-269",
@@ -49012,7 +49495,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 103 rectifié bis · Jean-Luc Fichet · avant l'article 3"
   },
   "2024-270": {
    "id": "2024-270",
@@ -49106,7 +49590,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 68 · Céline Brulin · avant l'article 3"
   },
   "2024-271": {
    "id": "2024-271",
@@ -49200,7 +49685,8 @@
      "abstention": 0,
      "nonVotants": 0
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2024-272": {
    "id": "2024-272",
@@ -49294,7 +49780,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 69 · Céline Brulin · article 3"
   },
   "2024-273": {
    "id": "2024-273",
@@ -49388,7 +49875,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 21 rectifié bis · Franck Menonville · article 3"
   },
   "2024-274": {
    "id": "2024-274",
@@ -49482,7 +49970,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 99 rectifié · Jean-Luc Fichet · article 3"
   },
   "2024-275": {
    "id": "2024-275",
@@ -49576,7 +50065,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 89 rectifié · Émilienne Poumirol · article 3"
   },
   "2024-276": {
    "id": "2024-276",
@@ -49670,7 +50160,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 77 rectifié bis · Véronique Guillotin · article 3"
   },
   "2024-277": {
    "id": "2024-277",
@@ -49765,7 +50256,8 @@
      "nonVotants": 4
     }
    ],
-   "resume": "Prévoit des mesures de territorialisation de l'offre de soins pour les zones sous-dotées."
+   "resume": "Prévoit des mesures de territorialisation de l'offre de soins pour les zones sous-dotées.",
+   "subject": "Ensemble du texte"
   },
   "2024-278": {
    "id": "2024-278",
@@ -49859,7 +50351,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2024-279": {
    "id": "2024-279",
@@ -49953,7 +50446,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2024-280": {
    "id": "2024-280",
@@ -50047,7 +50541,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Exception d'irrecevabilité"
   },
   "2024-281": {
    "id": "2024-281",
@@ -50141,7 +50636,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2024-282": {
    "id": "2024-282",
@@ -50235,7 +50731,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Article 1er"
   },
   "2024-283": {
    "id": "2024-283",
@@ -50329,7 +50826,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 4 rectifié · Ludovic Haye · article 2"
   },
   "2024-284": {
    "id": "2024-284",
@@ -50423,7 +50921,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 1 rectifié · Marie-Do Aeschlimann · article 3"
   },
   "2024-285": {
    "id": "2024-285",
@@ -50517,7 +51016,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Article 4"
   },
   "2024-286": {
    "id": "2024-286",
@@ -50611,7 +51111,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 1 · Cathy Apourceau-Poly · avant l'article 1er"
   },
   "2024-287": {
    "id": "2024-287",
@@ -50705,7 +51206,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Article 1er"
   },
   "2024-288": {
    "id": "2024-288",
@@ -50799,7 +51301,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Article 2"
   },
   "2024-289": {
    "id": "2024-289",
@@ -50893,7 +51396,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte · texte de la CMP"
   },
   "2024-290": {
    "id": "2024-290",
@@ -50987,7 +51491,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 6 rectifié · Saïd Omar Oili · après l'article 2 bis"
   },
   "2024-291": {
    "id": "2024-291",
@@ -51081,7 +51586,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 14 · Corinne Narassiguin · article 19"
   },
   "2024-292": {
    "id": "2024-292",
@@ -51175,7 +51681,8 @@
      "abstention": 0,
      "nonVotants": 0
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2024-293": {
    "id": "2024-293",
@@ -51269,7 +51776,8 @@
      "abstention": 0,
      "nonVotants": 0
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2024-294": {
    "id": "2024-294",
@@ -51363,7 +51871,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 65 · Jean Hingray · article 2"
   },
   "2024-295": {
    "id": "2024-295",
@@ -51457,7 +51966,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 46 rectifié bis · Nadège Havet · article 2"
   },
   "2024-296": {
    "id": "2024-296",
@@ -51551,7 +52061,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 32 rectifié ter · Marie-Lise Housseau · article 2"
   },
   "2024-297": {
    "id": "2024-297",
@@ -51645,7 +52156,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 83 · Marie-Claude Varaillas · article 3"
   },
   "2024-298": {
    "id": "2024-298",
@@ -51739,7 +52251,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 9 rectifié ter · Vanina Paoli-Gagin · article 3"
   },
   "2024-299": {
    "id": "2024-299",
@@ -51833,7 +52346,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 39 rectifié · Nicole Bonnefoy · article 3"
   },
   "2024-300": {
    "id": "2024-300",
@@ -51927,7 +52441,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 76 rectifié · Thomas Dossus · article 3"
   },
   "2024-301": {
    "id": "2024-301",
@@ -52021,7 +52536,8 @@
      "abstention": 0,
      "nonVotants": 0
     }
-   ]
+   ],
+   "subject": "Article 1er"
   },
   "2024-302": {
    "id": "2024-302",
@@ -52115,7 +52631,8 @@
      "abstention": 0,
      "nonVotants": 0
     }
-   ]
+   ],
+   "subject": "Article 6"
   },
   "2024-303": {
    "id": "2024-303",
@@ -52326,7 +52843,8 @@
      }
     ],
     "resultLabel": "l'Assemblée nationale a adopté"
-   }
+   },
+   "subject": "Ensemble du texte"
   },
   "2024-304": {
    "id": "2024-304",
@@ -52420,7 +52938,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 81 · article 1er"
   },
   "2024-305": {
    "id": "2024-305",
@@ -52514,7 +53033,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 6 rectifié · Stéphane Piednoir · article 1er"
   },
   "2024-306": {
    "id": "2024-306",
@@ -52608,7 +53128,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2024-307": {
    "id": "2024-307",
@@ -52702,7 +53223,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 13 · après l'article 4 bis"
   },
   "2024-308": {
    "id": "2024-308",
@@ -52796,7 +53318,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2024-309": {
    "id": "2024-309",
@@ -52890,7 +53413,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 1 rectifié · Anne-Sophie Romagny · après l'article 1er"
   },
   "2024-310": {
    "id": "2024-310",
@@ -52984,7 +53508,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2024-311": {
    "id": "2024-311",
@@ -53078,7 +53603,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2024-312": {
    "id": "2024-312",
@@ -53172,7 +53698,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 2 rectifié · Frédéric Buval · article 1er"
   },
   "2024-313": {
    "id": "2024-313",
@@ -53266,7 +53793,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 4 rectifié · Frédéric Buval · article 1er"
   },
   "2024-314": {
    "id": "2024-314",
@@ -53360,7 +53888,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 21 · article 1er"
   },
   "2024-315": {
    "id": "2024-315",
@@ -53454,7 +53983,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Article 1er"
   },
   "2024-316": {
    "id": "2024-316",
@@ -53548,7 +54078,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° A-1 · article 1er"
   },
   "2024-317": {
    "id": "2024-317",
@@ -53642,7 +54173,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Article 1er"
   },
   "2024-318": {
    "id": "2024-318",
@@ -53736,7 +54268,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2024-319": {
    "id": "2024-319",
@@ -53830,7 +54363,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 1 rectifié · Vincent Louault · article 1er"
   },
   "2024-320": {
    "id": "2024-320",
@@ -53924,7 +54458,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 9 · Jacques Fernique · après l'article 1er"
   },
   "2024-321": {
    "id": "2024-321",
@@ -54018,7 +54553,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Article 2"
   },
   "2024-322": {
    "id": "2024-322",
@@ -54229,7 +54765,8 @@
      }
     ],
     "resultLabel": "l'Assemblée nationale a adopté"
-   }
+   },
+   "subject": "Ensemble du texte · article unique"
   },
   "2024-323": {
    "id": "2024-323",
@@ -54323,7 +54860,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Article 1er"
   },
   "2024-324": {
    "id": "2024-324",
@@ -54417,7 +54955,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 4 · Mathilde Ollivier · article 2"
   },
   "2024-325": {
    "id": "2024-325",
@@ -54511,7 +55050,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Article 2"
   },
   "2024-326": {
    "id": "2024-326",
@@ -54605,7 +55145,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2024-327": {
    "id": "2024-327",
@@ -54816,7 +55357,8 @@
      }
     ],
     "resultLabel": "l'Assemblée nationale a adopté"
-   }
+   },
+   "subject": "Ensemble du texte"
   },
   "2024-328": {
    "id": "2024-328",
@@ -54910,7 +55452,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 11 rectifié ter · Marie-Pierre Monier · article 3 bis B"
   },
   "2024-329": {
    "id": "2024-329",
@@ -55122,7 +55665,8 @@
     ],
     "resultLabel": "l'Assemblée nationale a adopté"
    },
-   "anNote": "Vote ultérieur de l'Assemblée nationale sur ce texte (mai 2026)."
+   "anNote": "Vote ultérieur de l'Assemblée nationale sur ce texte (mai 2026).",
+   "subject": "Ensemble du texte"
   },
   "2024-330": {
    "id": "2024-330",
@@ -55216,7 +55760,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte · texte de la CMP"
   },
   "2024-331": {
    "id": "2024-331",
@@ -55310,7 +55855,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte · article 10"
   },
   "2024-332": {
    "id": "2024-332",
@@ -55404,7 +55950,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte · article 3"
   },
   "2024-333": {
    "id": "2024-333",
@@ -55498,7 +56045,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 15 · Cathy Apourceau-Poly · article 30"
   },
   "2024-334": {
    "id": "2024-334",
@@ -55592,7 +56140,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2024-335": {
    "id": "2024-335",
@@ -55686,7 +56235,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Ensemble du texte · texte de la CMP"
   },
   "2024-336": {
    "id": "2024-336",
@@ -55780,7 +56330,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 3 rectifié bis · Éric Kerrouche · article 4"
   },
   "2024-337": {
    "id": "2024-337",
@@ -55874,7 +56425,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Question préalable"
   },
   "2024-338": {
    "id": "2024-338",
@@ -55968,7 +56520,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 3 · Corinne Lubin · article unique"
   },
   "2024-339": {
    "id": "2024-339",
@@ -56062,7 +56615,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 10 · Raymonde Poncet Monge · article unique"
   },
   "2024-340": {
    "id": "2024-340",
@@ -56156,7 +56710,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 11 · Raymonde Poncet Monge · article unique"
   },
   "2024-341": {
    "id": "2024-341",
@@ -56250,7 +56805,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 12 · Raymonde Poncet Monge · article unique"
   },
   "2024-342": {
    "id": "2024-342",
@@ -56344,7 +56900,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Article unique"
   },
   "2024-343": {
    "id": "2024-343",
@@ -56438,7 +56995,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2024-344": {
    "id": "2024-344",
@@ -56532,7 +57090,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte · article unique"
   },
   "2024-345": {
    "id": "2024-345",
@@ -56626,7 +57185,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 20 rectifié bis · Stéphane Piednoir · article 5"
   },
   "2024-346": {
    "id": "2024-346",
@@ -56720,7 +57280,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 8 · Sébastien Fagnen · article 5"
   },
   "2024-347": {
    "id": "2024-347",
@@ -56815,7 +57376,8 @@
      "nonVotants": 0
     }
    ],
-   "resume": "Deuxième lecture de la programmation nationale de l'énergie."
+   "resume": "Deuxième lecture de la programmation nationale de l'énergie.",
+   "subject": "Ensemble du texte"
   },
   "2024-348": {
    "id": "2024-348",
@@ -56909,7 +57471,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2024-349": {
    "id": "2024-349",
@@ -57003,7 +57566,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Article 1er"
   },
   "2024-350": {
    "id": "2024-350",
@@ -57097,7 +57661,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Article 6"
   },
   "2024-351": {
    "id": "2024-351",
@@ -57191,7 +57756,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte · texte de la CMP"
   },
   "2024-352": {
    "id": "2024-352",
@@ -57285,7 +57851,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte · texte de la CMP"
   },
   "2024-353": {
    "id": "2024-353",
@@ -57497,7 +58064,8 @@
     ],
     "resultLabel": "l'Assemblée nationale a adopté"
    },
-   "anNote": "L'Assemblée nationale s'est prononcée après le Sénat (octobre 2025)."
+   "anNote": "L'Assemblée nationale s'est prononcée après le Sénat (octobre 2025).",
+   "subject": "Ensemble du texte · texte de la CMP"
   },
   "2024-354": {
    "id": "2024-354",
@@ -57591,7 +58159,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Exception d'irrecevabilité"
   },
   "2024-355": {
    "id": "2024-355",
@@ -57685,7 +58254,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Question préalable"
   },
   "2024-356": {
    "id": "2024-356",
@@ -57779,7 +58349,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Motion de renvoi en commission"
   },
   "2024-357": {
    "id": "2024-357",
@@ -57873,7 +58444,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 234 · Monique de Marco"
   },
   "2024-358": {
    "id": "2024-358",
@@ -57967,7 +58539,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 8 · Jérémy Bacchi · article 1er"
   },
   "2024-359": {
    "id": "2024-359",
@@ -58061,7 +58634,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 298 rectifié · Monique de Marco · article 1er"
   },
   "2024-360": {
    "id": "2024-360",
@@ -58155,7 +58729,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 15 rectifié · Roger Karoutchi · article 1er"
   },
   "2024-361": {
    "id": "2024-361",
@@ -58249,7 +58824,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 23 · Jérémy Bacchi · article 1er"
   },
   "2024-362": {
    "id": "2024-362",
@@ -58343,7 +58919,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 226 · Monique de Marco · article 1er"
   },
   "2024-363": {
    "id": "2024-363",
@@ -58437,7 +59014,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 71 · Sylvie Robert · article 1er"
   },
   "2024-364": {
    "id": "2024-364",
@@ -58531,7 +59109,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 73 · Sylvie Robert · article 1er"
   },
   "2024-365": {
    "id": "2024-365",
@@ -58625,7 +59204,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 74 · Sylvie Robert · article 1er"
   },
   "2024-366": {
    "id": "2024-366",
@@ -58719,7 +59299,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 75 · Sylvie Robert · article 1er"
   },
   "2024-367": {
    "id": "2024-367",
@@ -58813,7 +59394,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Article 44"
   },
   "2025-1": {
    "id": "2025-1",
@@ -58907,7 +59489,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Question préalable"
   },
   "2025-2": {
    "id": "2025-2",
@@ -59001,7 +59584,8 @@
      "abstention": 0,
      "nonVotants": 0
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2025-3": {
    "id": "2025-3",
@@ -59095,7 +59679,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 1 · Guy Benarroche · article unique"
   },
   "2025-4": {
    "id": "2025-4",
@@ -59189,7 +59774,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2025-5": {
    "id": "2025-5",
@@ -59283,7 +59869,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2025-6": {
    "id": "2025-6",
@@ -59377,7 +59964,8 @@
      "abstention": 0,
      "nonVotants": 5
     }
-   ]
+   ],
+   "subject": "Amendement n° 6 rectifié bis · Xavier Iacovelli · après l'article 2"
   },
   "2025-7": {
    "id": "2025-7",
@@ -59471,7 +60059,8 @@
      "abstention": 0,
      "nonVotants": 5
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2025-8": {
    "id": "2025-8",
@@ -59565,7 +60154,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 49 · Audrey Bélim · après l'article 5"
   },
   "2025-9": {
    "id": "2025-9",
@@ -59659,7 +60249,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte · texte de la CMP"
   },
   "2025-10": {
    "id": "2025-10",
@@ -59753,7 +60344,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte · texte de la CMP"
   },
   "2025-11": {
    "id": "2025-11",
@@ -59847,7 +60439,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte · texte de la CMP"
   },
   "2025-12": {
    "id": "2025-12",
@@ -59941,7 +60534,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Article 1er"
   },
   "2025-13": {
    "id": "2025-13",
@@ -60035,7 +60629,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Article 2"
   },
   "2025-14": {
    "id": "2025-14",
@@ -60129,7 +60724,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 1 · Gisèle Jourda et Viviane Malet · après l'article 2"
   },
   "2025-15": {
    "id": "2025-15",
@@ -60223,7 +60819,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 2 · Gisèle Jourda et Viviane Malet · après l'article 2"
   },
   "2025-16": {
    "id": "2025-16",
@@ -60317,7 +60914,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte · article 3"
   },
   "2025-17": {
    "id": "2025-17",
@@ -60411,7 +61009,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Article 1er"
   },
   "2025-18": {
    "id": "2025-18",
@@ -60505,7 +61104,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Article 2"
   },
   "2025-19": {
    "id": "2025-19",
@@ -60599,7 +61199,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Article 3"
   },
   "2025-20": {
    "id": "2025-20",
@@ -60693,7 +61294,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Ensemble du texte · article 4"
   },
   "2025-21": {
    "id": "2025-21",
@@ -60787,7 +61389,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 3 rectifié · Grégory Blanc · article 1er"
   },
   "2025-22": {
    "id": "2025-22",
@@ -60881,7 +61484,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte · article unique"
   },
   "2025-23": {
    "id": "2025-23",
@@ -60975,7 +61579,8 @@
      "abstention": 0,
      "nonVotants": 0
     }
-   ]
+   ],
+   "subject": "Ensemble du texte · article unique"
   },
   "2025-24": {
    "id": "2025-24",
@@ -61069,7 +61674,8 @@
      "abstention": 0,
      "nonVotants": 3
     }
-   ]
+   ],
+   "subject": "Question préalable"
   },
   "2025-25": {
    "id": "2025-25",
@@ -61163,7 +61769,8 @@
      "abstention": 1,
      "nonVotants": 3
     }
-   ]
+   ],
+   "subject": "Amendement n° 55 rectifié · Cyril Pellevat · article 8"
   },
   "2025-26": {
    "id": "2025-26",
@@ -61257,7 +61864,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 54 rectifié · Cyril Pellevat · article 8"
   },
   "2025-27": {
    "id": "2025-27",
@@ -61351,7 +61959,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 74 · Jacques Fernique · article 8"
   },
   "2025-28": {
    "id": "2025-28",
@@ -61445,7 +62054,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 63 rectifié ter · Bernard Pillefer · article 8"
   },
   "2025-29": {
    "id": "2025-29",
@@ -61539,7 +62149,8 @@
      "abstention": 0,
      "nonVotants": 0
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2025-30": {
    "id": "2025-30",
@@ -61633,7 +62244,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Exception d'irrecevabilité"
   },
   "2025-31": {
    "id": "2025-31",
@@ -61727,7 +62339,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Question préalable"
   },
   "2025-32": {
    "id": "2025-32",
@@ -61821,7 +62434,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Motion de renvoi en commission"
   },
   "2025-33": {
    "id": "2025-33",
@@ -61915,7 +62529,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 591 · Élisabeth Doineau au nom de la commission des affaires sociales · article 5 bis"
   },
   "2025-34": {
    "id": "2025-34",
@@ -62009,7 +62624,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Amendement n° 1362 rectifié · Anne-Sophie Romagny · article 5 bis"
   },
   "2025-35": {
    "id": "2025-35",
@@ -62103,7 +62719,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 523 rectifié bis · Emmanuel Capus · article 6 bis"
   },
   "2025-36": {
    "id": "2025-36",
@@ -62197,7 +62814,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 605 · Élisabeth Doineau au nom de la commission des affaires sociales · article 9"
   },
   "2025-37": {
    "id": "2025-37",
@@ -62291,7 +62909,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 606 · Élisabeth Doineau au nom de la commission des affaires sociales · article 9 bis"
   },
   "2025-38": {
    "id": "2025-38",
@@ -62385,7 +63004,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 610 · Élisabeth Doineau au nom de la commission des affaires sociales · article 9"
   },
   "2025-39": {
    "id": "2025-39",
@@ -62479,7 +63099,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 1861 · article 10"
   },
   "2025-40": {
    "id": "2025-40",
@@ -62573,7 +63194,8 @@
      "abstention": 0,
      "nonVotants": 0
     }
-   ]
+   ],
+   "subject": "Article 11 ter"
   },
   "2025-41": {
    "id": "2025-41",
@@ -62667,7 +63289,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 1138 · Cathy Apourceau-Poly · après l'article 11"
   },
   "2025-42": {
    "id": "2025-42",
@@ -62761,7 +63384,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Amendement n° 572 rectifié · Olivier Henno · après l'article 11"
   },
   "2025-43": {
    "id": "2025-43",
@@ -62855,7 +63479,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 418 rectifié ter · Jean-Yves Roux · après l'article 12"
   },
   "2025-44": {
    "id": "2025-44",
@@ -62949,7 +63574,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 625 · Élisabeth Doineau au nom de la commission des affaires sociales · article 12 bis"
   },
   "2025-45": {
    "id": "2025-45",
@@ -63043,7 +63669,8 @@
      "abstention": 3,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 799 rectifié ter · Maryse Carrère · après l'article 12 bis"
   },
   "2025-46": {
    "id": "2025-46",
@@ -63137,7 +63764,8 @@
      "abstention": 3,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Amendement n° 800 rectifié ter · Maryse Carrère · après l'article 12 bis"
   },
   "2025-47": {
    "id": "2025-47",
@@ -63231,7 +63859,8 @@
      "abstention": 3,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Amendement n° 1128 rectifié bis · Vanina Paoli-Gagin · après l'article 12 bis"
   },
   "2025-48": {
    "id": "2025-48",
@@ -63325,7 +63954,8 @@
      "abstention": 3,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 419 rectifié · Jean-Yves Roux · après l'article 12 bis"
   },
   "2025-49": {
    "id": "2025-49",
@@ -63419,7 +64049,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2025-50": {
    "id": "2025-50",
@@ -63513,7 +64144,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 1002 rectifié · Bernard Delcros · article 21"
   },
   "2025-51": {
    "id": "2025-51",
@@ -63607,7 +64239,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Sous-amendement n° 832 rectifié ter · Véronique Guillotin · article 21"
   },
   "2025-52": {
    "id": "2025-52",
@@ -63701,7 +64334,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 656 rectifié · Corinne Imbert au nom de la commission des affaires sociales · article 21"
   },
   "2025-53": {
    "id": "2025-53",
@@ -63795,7 +64429,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 1363 rectifié · Anne-Sophie Romagny · article 21"
   },
   "2025-54": {
    "id": "2025-54",
@@ -63889,7 +64524,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 659 · Corinne Imbert au nom de la commission des affaires sociales · article 21 bis"
   },
   "2025-55": {
    "id": "2025-55",
@@ -63983,7 +64619,8 @@
      "abstention": 0,
      "nonVotants": 0
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 1342 rectifié · Raymonde Poncet Monge · après l'article 36"
   },
   "2025-56": {
    "id": "2025-56",
@@ -64077,7 +64714,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2025-57": {
    "id": "2025-57",
@@ -64171,7 +64809,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 126 rectifié · Olivier Henno · article 44"
   },
   "2025-58": {
    "id": "2025-58",
@@ -64265,7 +64904,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Amendement n° 1236 rectifié · Cathy Apourceau-Poly · après l'article 45"
   },
   "2025-59": {
    "id": "2025-59",
@@ -64359,7 +64999,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 128 rectifié · Olivier Henno · article 45 bis"
   },
   "2025-60": {
    "id": "2025-60",
@@ -64453,7 +65094,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 1328 rectifié bis · Corinne Bourcier · après l'article 45 bis"
   },
   "2025-61": {
    "id": "2025-61",
@@ -64547,7 +65189,8 @@
      "abstention": 0,
      "nonVotants": 0
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2025-62": {
    "id": "2025-62",
@@ -64641,7 +65284,8 @@
      "abstention": 0,
      "nonVotants": 3
     }
-   ]
+   ],
+   "subject": "Question préalable"
   },
   "2025-63": {
    "id": "2025-63",
@@ -64735,7 +65379,8 @@
      "abstention": 4,
      "nonVotants": 0
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° I-643 rectifié · Thierry Cozic · article 2"
   },
   "2025-64": {
    "id": "2025-64",
@@ -64829,7 +65474,8 @@
      "abstention": 0,
      "nonVotants": 0
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° I-856 · Joshua Hochart · après l'article 2"
   },
   "2025-65": {
    "id": "2025-65",
@@ -64923,7 +65569,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° I-44 rectifié bis · Emmanuel Capus · article 3"
   },
   "2025-66": {
    "id": "2025-66",
@@ -65017,7 +65664,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° I-159 rectifié ter · Albéric de Montgolfier · après l'article 3"
   },
   "2025-67": {
    "id": "2025-67",
@@ -65111,7 +65759,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° I-2526 rectifié quater · après l'article 3"
   },
   "2025-68": {
    "id": "2025-68",
@@ -65205,7 +65854,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° I-2527 rectifié ter · Bernard Delcros · après l'article 3"
   },
   "2025-69": {
    "id": "2025-69",
@@ -65299,7 +65949,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° I-2 · Jean-François Husson au nom de la commission des finances · article 4"
   },
   "2025-70": {
    "id": "2025-70",
@@ -65393,7 +66044,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° I-1004 rectifié · Thierry Cozic · article 5"
   },
   "2025-71": {
    "id": "2025-71",
@@ -65487,7 +66139,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° I-231 rectifié · Philippe Grosvalet · après l'article 27"
   },
   "2025-72": {
    "id": "2025-72",
@@ -65581,7 +66234,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Ensemble du texte · texte de la CMP"
   },
   "2025-73": {
    "id": "2025-73",
@@ -65675,7 +66329,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° I-531 rectifié bis · Mathieu Darnaud · article 31"
   },
   "2025-74": {
    "id": "2025-74",
@@ -65769,7 +66424,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° I-2737 · Jean-François Husson au nom de la commission des finances · article 31"
   },
   "2025-75": {
    "id": "2025-75",
@@ -65863,7 +66519,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° I-20 rectifié · Jean-François Husson au nom de la commission des finances · article 31"
   },
   "2025-76": {
    "id": "2025-76",
@@ -65957,7 +66614,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° I-558 rectifié · Paul Toussaint Parigi · après l'article 34"
   },
   "2025-77": {
    "id": "2025-77",
@@ -66051,7 +66709,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° A-1 · Jean-François Husson au nom de la commission des finances · article 3"
   },
   "2025-78": {
    "id": "2025-78",
@@ -66145,7 +66804,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° A-2 · Jean-François Husson au nom de la commission des finances · article 11"
   },
   "2025-79": {
    "id": "2025-79",
@@ -66239,7 +66899,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° A-3 · Jean-François Husson au nom de la commission des finances · article 11"
   },
   "2025-80": {
    "id": "2025-80",
@@ -66333,7 +66994,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° A-5 · Jean-François Husson au nom de la commission des finances · article 36"
   },
   "2025-81": {
    "id": "2025-81",
@@ -66427,7 +67089,8 @@
      "abstention": 0,
      "nonVotants": 0
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2025-82": {
    "id": "2025-82",
@@ -66521,7 +67184,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° II-549 rectifié · Michel Canévet"
   },
   "2025-83": {
    "id": "2025-83",
@@ -66615,7 +67279,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° II-464 · Jérémy Bacchi"
   },
   "2025-84": {
    "id": "2025-84",
@@ -66709,7 +67374,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° II-199 · Mathilde Ollivier"
   },
   "2025-85": {
    "id": "2025-85",
@@ -66803,7 +67469,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° II-449 · Nathalie Delattre et M. Ahmed Laouedj"
   },
   "2025-86": {
    "id": "2025-86",
@@ -66897,7 +67564,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° II-552 rectifié · Akli Mellouli"
   },
   "2025-87": {
    "id": "2025-87",
@@ -66991,7 +67659,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Sous-amendement n° II-1679 · Michel Savin"
   },
   "2025-88": {
    "id": "2025-88",
@@ -67085,7 +67754,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° II-577 rectifié quater · Cédric Vial"
   },
   "2025-89": {
    "id": "2025-89",
@@ -67179,7 +67849,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° II-197 · Mathilde Ollivier"
   },
   "2025-90": {
    "id": "2025-90",
@@ -67273,7 +67944,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° II-465 · Jérémy Bacchi"
   },
   "2025-91": {
    "id": "2025-91",
@@ -67367,7 +68039,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° II-313 rectifié bis · Béatrice Gosselin"
   },
   "2025-92": {
    "id": "2025-92",
@@ -67461,7 +68134,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° II-212 · Solanges Nadille"
   },
   "2025-93": {
    "id": "2025-93",
@@ -67555,7 +68229,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Amendement n° II-320 · Victorin Lurel"
   },
   "2025-94": {
    "id": "2025-94",
@@ -67649,7 +68324,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Amendement n° II-338 · Evelyne Corbière Naminzo"
   },
   "2025-95": {
    "id": "2025-95",
@@ -67743,7 +68419,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Amendement n° II-339 · Evelyne Corbière Naminzo"
   },
   "2025-96": {
    "id": "2025-96",
@@ -67837,7 +68514,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Amendement n° II-559 · Akli Mellouli"
   },
   "2025-97": {
    "id": "2025-97",
@@ -67931,7 +68609,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Amendement n° II-524 · Audrey Bélim"
   },
   "2025-98": {
    "id": "2025-98",
@@ -68025,7 +68704,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Amendement n° II-565 · Akli Mellouli"
   },
   "2025-99": {
    "id": "2025-99",
@@ -68119,7 +68799,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Amendement n° II-517 · Saïd Omar Oili"
   },
   "2025-100": {
    "id": "2025-100",
@@ -68213,7 +68894,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Amendement n° II-518 · Saïd Omar Oili"
   },
   "2025-101": {
    "id": "2025-101",
@@ -68307,7 +68989,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Amendement n° II-493 · Solanges Nadille"
   },
   "2025-102": {
    "id": "2025-102",
@@ -68401,7 +69084,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° II-516 · Saïd Omar Oili"
   },
   "2025-103": {
    "id": "2025-103",
@@ -68495,7 +69179,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° II-522 · Audrey Bélim"
   },
   "2025-104": {
    "id": "2025-104",
@@ -68589,7 +69274,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "les crédits de la mission « Outre-mer » figurant à l'état B du"
   },
   "2025-105": {
    "id": "2025-105",
@@ -68683,7 +69369,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° II-756 rectifié · Michel Masset"
   },
   "2025-106": {
    "id": "2025-106",
@@ -68777,7 +69464,8 @@
      "abstention": 3,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° II-807 rectifié quater · Vincent Louault"
   },
   "2025-107": {
    "id": "2025-107",
@@ -68871,7 +69559,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Amendement n° II-1022 rectifié · Christine Lavarde"
   },
   "2025-108": {
    "id": "2025-108",
@@ -68965,7 +69654,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° II-766 rectifié · Michel Masset · article 67"
   },
   "2025-109": {
    "id": "2025-109",
@@ -69059,7 +69749,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° II-455 rectifié · Nathalie Delattre"
   },
   "2025-110": {
    "id": "2025-110",
@@ -69153,7 +69844,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Amendement n° II-1 · Jean-François Husson au nom de la commission des finances"
   },
   "2025-111": {
    "id": "2025-111",
@@ -69247,7 +69939,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° II-31 · Jean-François Rapin au nom de la commission des finances"
   },
   "2025-112": {
    "id": "2025-112",
@@ -69341,7 +70034,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° II-24 · Stéphane Sautarel au nom de la commission des finances · article 76"
   },
   "2025-113": {
    "id": "2025-113",
@@ -69435,7 +70129,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° II-27 · Vincent Delahaye au nom de la commission des finances"
   },
   "2025-114": {
    "id": "2025-114",
@@ -69529,7 +70224,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° II-29 · Vincent Delahaye au nom de la commission des finances · après l'article 78"
   },
   "2025-115": {
    "id": "2025-115",
@@ -69623,7 +70319,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Sous-amendement n° II-2334 · Christine Lavarde"
   },
   "2025-116": {
    "id": "2025-116",
@@ -69717,7 +70414,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Exception d'irrecevabilité"
   },
   "2025-117": {
    "id": "2025-117",
@@ -69811,7 +70509,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Question préalable"
   },
   "2025-118": {
    "id": "2025-118",
@@ -69905,7 +70604,8 @@
      "abstention": 1,
      "nonVotants": 3
     }
-   ]
+   ],
+   "subject": "Amendement n° II-3 · Jean-François Husson au nom de la commission des finances"
   },
   "2025-119": {
    "id": "2025-119",
@@ -69999,7 +70699,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° II-2277 · Olivier Rietmann et Mme Christine Lavarde"
   },
   "2025-120": {
    "id": "2025-120",
@@ -70093,7 +70794,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Sous-amendement n° II-2343 · Claude Raynal"
   },
   "2025-121": {
    "id": "2025-121",
@@ -70187,7 +70889,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Sous-amendement n° II-2283 rectifié · Vincent Louault"
   },
   "2025-122": {
    "id": "2025-122",
@@ -70281,7 +70984,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Amendement n° II-19 · Jean-François Husson au nom de la commission des finances"
   },
   "2025-123": {
    "id": "2025-123",
@@ -70375,7 +71079,8 @@
      "abstention": 3,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "les crédits de la mission « Sport, jeunesse et vie associative » figurant à l'ét"
   },
   "2025-124": {
    "id": "2025-124",
@@ -70469,7 +71174,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Amendement n° II-1746 rectifié bis · Michel Canévet"
   },
   "2025-125": {
    "id": "2025-125",
@@ -70564,7 +71270,8 @@
      "nonVotants": 0
     }
    ],
-   "resume": "Budget de l'État pour 2026 : recettes, dépenses et équilibre général."
+   "resume": "Budget de l'État pour 2026 : recettes, dépenses et équilibre général.",
+   "subject": "Ensemble du texte"
   },
   "2025-126": {
    "id": "2025-126",
@@ -70658,7 +71365,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Article 50"
   },
   "2025-127": {
    "id": "2025-127",
@@ -70752,7 +71460,8 @@
      "abstention": 0,
      "nonVotants": 0
     }
-   ]
+   ],
+   "subject": "Amendement n° 3 rectifié · Olivier Cadic et Thierry Meignen · article unique"
   },
   "2025-128": {
    "id": "2025-128",
@@ -70846,7 +71555,8 @@
      "abstention": 0,
      "nonVotants": 0
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2025-129": {
    "id": "2025-129",
@@ -70940,7 +71650,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2025-130": {
    "id": "2025-130",
@@ -71034,7 +71745,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Article 50"
   },
   "2025-131": {
    "id": "2025-131",
@@ -71128,7 +71840,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Article 1er"
   },
   "2025-132": {
    "id": "2025-132",
@@ -71222,7 +71935,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte · article 2"
   },
   "2025-133": {
    "id": "2025-133",
@@ -71316,7 +72030,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 3 · Jean-Claude Tissot · avant l'article 1er"
   },
   "2025-134": {
    "id": "2025-134",
@@ -71410,7 +72125,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 1 rectifié bis · Vincent Louault · article 1er"
   },
   "2025-135": {
    "id": "2025-135",
@@ -71504,7 +72220,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 2 rectifié bis · Vincent Louault · article 2"
   },
   "2025-136": {
    "id": "2025-136",
@@ -71598,7 +72315,8 @@
      "abstention": 0,
      "nonVotants": 0
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2025-137": {
    "id": "2025-137",
@@ -71692,7 +72410,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 8 rectifié · Cédric Vial · article 1er"
   },
   "2025-138": {
    "id": "2025-138",
@@ -71786,7 +72505,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 9 rectifié · Cédric Vial · article 2"
   },
   "2025-139": {
    "id": "2025-139",
@@ -71880,7 +72600,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 10 rectifié · Cédric Vial · article 3"
   },
   "2025-140": {
    "id": "2025-140",
@@ -71974,7 +72695,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 11 rectifié · Cédric Vial · article 4"
   },
   "2025-141": {
    "id": "2025-141",
@@ -72068,7 +72790,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Article 1er"
   },
   "2025-142": {
    "id": "2025-142",
@@ -72162,7 +72885,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Article 2"
   },
   "2025-143": {
    "id": "2025-143",
@@ -72256,7 +72980,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Article 3"
   },
   "2025-144": {
    "id": "2025-144",
@@ -72350,7 +73075,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 31 rectifié · Yannick Jadot · article 4"
   },
   "2025-145": {
    "id": "2025-145",
@@ -72444,7 +73170,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2025-146": {
    "id": "2025-146",
@@ -72538,7 +73265,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2025-147": {
    "id": "2025-147",
@@ -72633,7 +73361,8 @@
      "nonVotants": 0
     }
    ],
-   "resume": "Mesures pour soutenir la construction, l'offre de logements et la rénovation de l'habitat."
+   "resume": "Mesures pour soutenir la construction, l'offre de logements et la rénovation de l'habitat.",
+   "subject": "Ensemble du texte"
   },
   "2025-148": {
    "id": "2025-148",
@@ -72727,7 +73456,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 208 rectifié quater · Marie-Pierre de la Gontrie · article 4"
   },
   "2025-149": {
    "id": "2025-149",
@@ -72821,7 +73551,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 328 rectifié ter · Olivier Cadic · article 4"
   },
   "2025-150": {
    "id": "2025-150",
@@ -72915,7 +73646,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 209 rectifié ter · Marie-Pierre de la Gontrie · article 4"
   },
   "2025-151": {
    "id": "2025-151",
@@ -73009,7 +73741,8 @@
      "abstention": 0,
      "nonVotants": 3
     }
-   ]
+   ],
+   "subject": "Amendement n° 186 rectifié · Véronique Guillotin · article 4"
   },
   "2025-152": {
    "id": "2025-152",
@@ -73103,7 +73836,8 @@
      "abstention": 0,
      "nonVotants": 3
     }
-   ]
+   ],
+   "subject": "Amendement n° 253 rectifié · Anne Souyris · article 4"
   },
   "2025-153": {
    "id": "2025-153",
@@ -73197,7 +73931,8 @@
      "abstention": 0,
      "nonVotants": 3
     }
-   ]
+   ],
+   "subject": "Amendement n° 283 rectifié · Silvana Silvani · article 4"
   },
   "2025-154": {
    "id": "2025-154",
@@ -73291,7 +74026,8 @@
      "abstention": 0,
      "nonVotants": 3
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 55 rectifié · Olivier Henno · article 4"
   },
   "2025-155": {
    "id": "2025-155",
@@ -73385,7 +74121,8 @@
      "abstention": 0,
      "nonVotants": 3
     }
-   ]
+   ],
+   "subject": "Amendement n° 254 rectifié · Anne Souyris · article 4"
   },
   "2025-156": {
    "id": "2025-156",
@@ -73479,7 +74216,8 @@
      "abstention": 0,
      "nonVotants": 3
     }
-   ]
+   ],
+   "subject": "Amendement n° 165 rectifié bis · Bernard Fialaire · article 4"
   },
   "2025-157": {
    "id": "2025-157",
@@ -73573,7 +74311,8 @@
      "abstention": 0,
      "nonVotants": 3
     }
-   ]
+   ],
+   "subject": "Article 4"
   },
   "2025-158": {
    "id": "2025-158",
@@ -73667,7 +74406,8 @@
      "abstention": 0,
      "nonVotants": 0
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 11 rectifié ter · Francis Szpiner · article 2"
   },
   "2025-159": {
    "id": "2025-159",
@@ -73761,7 +74501,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Article 3"
   },
   "2025-160": {
    "id": "2025-160",
@@ -73855,7 +74596,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 232 rectifié ter · Annie Le Houerou · article 15"
   },
   "2025-161": {
    "id": "2025-161",
@@ -73949,7 +74691,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 37 · Marion Canalès · article 1er"
   },
   "2025-162": {
    "id": "2025-162",
@@ -74043,7 +74786,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 46 rectifié · Jean-Luc Fichet · article 4"
   },
   "2025-163": {
    "id": "2025-163",
@@ -74137,7 +74881,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 72 rectifié · Anne Souyris · article 4"
   },
   "2025-164": {
    "id": "2025-164",
@@ -74231,7 +74976,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Article 4"
   },
   "2025-165": {
    "id": "2025-165",
@@ -74325,7 +75071,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 22 rectifié · Guylène Pantel · article 5"
   },
   "2025-166": {
    "id": "2025-166",
@@ -74419,7 +75166,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 47 · Jean-Luc Fichet · article 5"
   },
   "2025-167": {
    "id": "2025-167",
@@ -74513,7 +75261,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 50 rectifié · Annie Le Houerou · article 8"
   },
   "2025-168": {
    "id": "2025-168",
@@ -74607,7 +75356,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 78 rectifié · Jocelyne Antoine · article 8"
   },
   "2025-169": {
    "id": "2025-169",
@@ -74818,7 +75568,8 @@
      }
     ],
     "resultLabel": "l'Assemblée nationale a adopté"
-   }
+   },
+   "subject": "Ensemble du texte"
   },
   "2025-170": {
    "id": "2025-170",
@@ -75029,7 +75780,8 @@
      }
     ],
     "resultLabel": "l'Assemblée nationale a adopté"
-   }
+   },
+   "subject": "Ensemble du texte"
   },
   "2025-171": {
    "id": "2025-171",
@@ -75123,7 +75875,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2025-172": {
    "id": "2025-172",
@@ -75217,7 +75970,8 @@
      "abstention": 0,
      "nonVotants": 0
     }
-   ]
+   ],
+   "subject": "Exception d'irrecevabilité"
   },
   "2025-173": {
    "id": "2025-173",
@@ -75311,7 +76065,8 @@
      "abstention": 0,
      "nonVotants": 0
     }
-   ]
+   ],
+   "subject": "Question préalable"
   },
   "2025-174": {
    "id": "2025-174",
@@ -75405,7 +76160,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2025-175": {
    "id": "2025-175",
@@ -75499,7 +76255,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 2 · Yannick Jadot · article 1er"
   },
   "2025-176": {
    "id": "2025-176",
@@ -75593,7 +76350,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Article 1er"
   },
   "2025-177": {
    "id": "2025-177",
@@ -75687,7 +76445,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 4 · Yannick Jadot · article 2"
   },
   "2025-178": {
    "id": "2025-178",
@@ -75781,7 +76540,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2025-179": {
    "id": "2025-179",
@@ -75875,7 +76635,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 193 rectifié bis · Patricia Schillinger · article 2"
   },
   "2025-180": {
    "id": "2025-180",
@@ -75969,7 +76730,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 15 rectifié · Guislain Cambier · article 2"
   },
   "2025-181": {
    "id": "2025-181",
@@ -76063,7 +76825,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 44 rectifié bis · Olivier Henno · article 2"
   },
   "2025-182": {
    "id": "2025-182",
@@ -76157,7 +76920,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Article 2"
   },
   "2025-183": {
    "id": "2025-183",
@@ -76251,7 +77015,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2025-184": {
    "id": "2025-184",
@@ -76345,7 +77110,8 @@
      "abstention": 0,
      "nonVotants": 0
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2025-185": {
    "id": "2025-185",
@@ -76439,7 +77205,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2025-186": {
    "id": "2025-186",
@@ -76533,7 +77300,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2025-187": {
    "id": "2025-187",
@@ -76627,7 +77395,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 8 rectifié · Monique de Marco · article 1er"
   },
   "2025-188": {
    "id": "2025-188",
@@ -76721,7 +77490,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 5 rectifié · Max Brisson · article 2"
   },
   "2025-189": {
    "id": "2025-189",
@@ -76815,7 +77585,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 9 rectifié · Monique de Marco · article 4"
   },
   "2025-190": {
    "id": "2025-190",
@@ -76909,7 +77680,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2025-191": {
    "id": "2025-191",
@@ -77003,7 +77775,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 3 rectifié · Thani Mohamed Soilihi · article 1er"
   },
   "2025-192": {
    "id": "2025-192",
@@ -77097,7 +77870,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 5 · Corinne Féret · article 2"
   },
   "2025-193": {
    "id": "2025-193",
@@ -77191,7 +77965,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2025-194": {
    "id": "2025-194",
@@ -77285,7 +78060,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 150 rectifié · Nathalie Delattre · article 48"
   },
   "2025-195": {
    "id": "2025-195",
@@ -77379,7 +78155,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 39 rectifié · Max Brisson · article 48"
   },
   "2025-196": {
    "id": "2025-196",
@@ -77473,7 +78250,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2025-197": {
    "id": "2025-197",
@@ -77567,7 +78345,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2025-198": {
    "id": "2025-198",
@@ -77661,7 +78440,8 @@
      "abstention": 0,
      "nonVotants": 3
     }
-   ]
+   ],
+   "subject": "Exception d'irrecevabilité"
   },
   "2025-199": {
    "id": "2025-199",
@@ -77755,7 +78535,8 @@
      "abstention": 0,
      "nonVotants": 3
     }
-   ]
+   ],
+   "subject": "Question préalable"
   },
   "2025-200": {
    "id": "2025-200",
@@ -77849,7 +78630,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 8 · Agnès Canayer au nom de la commission des lois · après l'article 2"
   },
   "2025-201": {
    "id": "2025-201",
@@ -77943,7 +78725,8 @@
      "abstention": 1,
      "nonVotants": 0
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2025-202": {
    "id": "2025-202",
@@ -78037,7 +78820,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte · article 1er"
   },
   "2025-203": {
    "id": "2025-203",
@@ -78131,7 +78915,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Article 1er"
   },
   "2025-204": {
    "id": "2025-204",
@@ -78225,7 +79010,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Article 2"
   },
   "2025-205": {
    "id": "2025-205",
@@ -78319,7 +79105,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Article 3"
   },
   "2025-206": {
    "id": "2025-206",
@@ -78413,7 +79200,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Article 4"
   },
   "2025-207": {
    "id": "2025-207",
@@ -78507,7 +79295,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Article 5"
   },
   "2025-208": {
    "id": "2025-208",
@@ -78601,7 +79390,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Article 6"
   },
   "2025-209": {
    "id": "2025-209",
@@ -78695,7 +79485,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 7 · Patrick Kanner · avant l'article 1er"
   },
   "2025-210": {
    "id": "2025-210",
@@ -78789,7 +79580,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 6 · Patrick Kanner · article 1er"
   },
   "2025-211": {
    "id": "2025-211",
@@ -78883,7 +79675,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Article 1er"
   },
   "2025-212": {
    "id": "2025-212",
@@ -78977,7 +79770,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 4 rectifié · Grégory Blanc · après l'article 1er"
   },
   "2025-213": {
    "id": "2025-213",
@@ -79071,7 +79865,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 3 rectifié · Grégory Blanc · après l'article 1er"
   },
   "2025-214": {
    "id": "2025-214",
@@ -79165,7 +79960,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2025-215": {
    "id": "2025-215",
@@ -79259,7 +80055,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 4 · Audrey Linkenheld · article 2"
   },
   "2025-216": {
    "id": "2025-216",
@@ -79353,7 +80150,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Article 2"
   },
   "2025-217": {
    "id": "2025-217",
@@ -79447,7 +80245,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2025-218": {
    "id": "2025-218",
@@ -79541,7 +80340,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 7 · Marianne Margaté · article 1er"
   },
   "2025-219": {
    "id": "2025-219",
@@ -79635,7 +80435,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 32 · article 1er"
   },
   "2025-220": {
    "id": "2025-220",
@@ -79729,7 +80530,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 1 · Raymonde Poncet Monge · article unique"
   },
   "2025-221": {
    "id": "2025-221",
@@ -79940,7 +80742,8 @@
      }
     ],
     "resultLabel": "l'Assemblée nationale a adopté"
-   }
+   },
+   "subject": "Ensemble du texte · article unique"
   },
   "2025-222": {
    "id": "2025-222",
@@ -80034,7 +80837,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 3 · Raymonde Poncet Monge · article 1er"
   },
   "2025-223": {
    "id": "2025-223",
@@ -80128,7 +80932,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2025-224": {
    "id": "2025-224",
@@ -80222,7 +81027,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2025-225": {
    "id": "2025-225",
@@ -80316,7 +81122,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 1 rectifié · Corinne Narassiguin · article 1er"
   },
   "2025-226": {
    "id": "2025-226",
@@ -80410,7 +81217,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2025-227": {
    "id": "2025-227",
@@ -80504,7 +81312,8 @@
      "abstention": 0,
      "nonVotants": 5
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 24 · Guy Benarroche · article 1er"
   },
   "2025-228": {
    "id": "2025-228",
@@ -80598,7 +81407,8 @@
      "abstention": 0,
      "nonVotants": 5
     }
-   ]
+   ],
+   "subject": "Amendement n° 94 · article 1er"
   },
   "2025-229": {
    "id": "2025-229",
@@ -80692,7 +81502,8 @@
      "abstention": 0,
      "nonVotants": 2
     }
-   ]
+   ],
+   "subject": "Article 1er"
   },
   "2025-230": {
    "id": "2025-230",
@@ -80786,7 +81597,8 @@
      "abstention": 3,
      "nonVotants": 2
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2025-231": {
    "id": "2025-231",
@@ -80880,7 +81692,8 @@
      "abstention": 0,
      "nonVotants": 5
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2025-232": {
    "id": "2025-232",
@@ -80974,7 +81787,8 @@
      "abstention": 0,
      "nonVotants": 2
     }
-   ]
+   ],
+   "subject": "Ensemble du texte · texte de la CMP"
   },
   "2025-233": {
    "id": "2025-233",
@@ -81068,7 +81882,8 @@
      "abstention": 4,
      "nonVotants": 0
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2025-234": {
    "id": "2025-234",
@@ -81162,7 +81977,8 @@
      "abstention": 0,
      "nonVotants": 0
     }
-   ]
+   ],
+   "subject": "Exception d'irrecevabilité"
   },
   "2025-235": {
    "id": "2025-235",
@@ -81256,7 +82072,8 @@
      "abstention": 0,
      "nonVotants": 0
     }
-   ]
+   ],
+   "subject": "Question préalable"
   },
   "2025-236": {
    "id": "2025-236",
@@ -81350,7 +82167,8 @@
      "abstention": 0,
      "nonVotants": 0
     }
-   ]
+   ],
+   "subject": "Motion de renvoi en commission"
   },
   "2025-237": {
    "id": "2025-237",
@@ -81444,7 +82262,8 @@
      "abstention": 0,
      "nonVotants": 3
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 7 · Corinne Narassiguin · article 1er"
   },
   "2025-238": {
    "id": "2025-238",
@@ -81538,7 +82357,8 @@
      "abstention": 0,
      "nonVotants": 0
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2025-239": {
    "id": "2025-239",
@@ -81632,7 +82452,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2025-240": {
    "id": "2025-240",
@@ -81726,7 +82547,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2025-241": {
    "id": "2025-241",
@@ -81820,7 +82642,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Article 1er"
   },
   "2025-242": {
    "id": "2025-242",
@@ -81914,7 +82737,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 1 · Nathalie Goulet · article 1er"
   },
   "2025-243": {
    "id": "2025-243",
@@ -82008,7 +82832,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 3 · Pascal Savoldelli · après l'article 1er"
   },
   "2025-244": {
    "id": "2025-244",
@@ -82102,7 +82927,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 2 · Nathalie Goulet · article 2"
   },
   "2025-245": {
    "id": "2025-245",
@@ -82196,7 +83022,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 9 · Ronan Le Gleut et Christophe-André Frassa · après l'article 2"
   },
   "2025-246": {
    "id": "2025-246",
@@ -82290,7 +83117,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 6 rectifié · Ronan Le Gleut et Christophe-André Frassa · après l'article 2"
   },
   "2025-247": {
    "id": "2025-247",
@@ -82384,7 +83212,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 7 rectifié · Ronan Le Gleut et Christophe-André Frassa · après l'article 2"
   },
   "2025-248": {
    "id": "2025-248",
@@ -82478,7 +83307,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 8 · Ronan Le Gleut et Christophe-André Frassa · après l'article 2"
   },
   "2025-249": {
    "id": "2025-249",
@@ -82572,7 +83402,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte · texte de la CMP"
   },
   "2025-250": {
    "id": "2025-250",
@@ -82783,7 +83614,8 @@
      }
     ],
     "resultLabel": "l'Assemblée nationale a adopté"
-   }
+   },
+   "subject": "Ensemble du texte · texte de la CMP"
   },
   "2025-251": {
    "id": "2025-251",
@@ -82877,7 +83709,8 @@
      "abstention": 0,
      "nonVotants": 3
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2025-252": {
    "id": "2025-252",
@@ -82971,7 +83804,8 @@
      "abstention": 0,
      "nonVotants": 3
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 79 rectifié quater · Guillaume Chevrollier · article 2"
   },
   "2025-253": {
    "id": "2025-253",
@@ -83065,7 +83899,8 @@
      "abstention": 0,
      "nonVotants": 0
     }
-   ]
+   ],
+   "subject": "Amendement n° 201 rectifié · Jocelyne Antoine · article 2"
   },
   "2025-254": {
    "id": "2025-254",
@@ -83159,7 +83994,8 @@
      "abstention": 0,
      "nonVotants": 0
     }
-   ]
+   ],
+   "subject": "Amendement n° 1 · Silvana Silvani · article 2"
   },
   "2025-255": {
    "id": "2025-255",
@@ -83253,7 +84089,8 @@
      "abstention": 0,
      "nonVotants": 0
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 198 rectifié · Jocelyne Antoine · article 2"
   },
   "2025-256": {
    "id": "2025-256",
@@ -83347,7 +84184,8 @@
      "abstention": 0,
      "nonVotants": 0
     }
-   ]
+   ],
+   "subject": "Amendement n° 574 · Anne Souyris · article 2"
   },
   "2025-257": {
    "id": "2025-257",
@@ -83441,7 +84279,8 @@
      "abstention": 0,
      "nonVotants": 0
     }
-   ]
+   ],
+   "subject": "Amendement n° 211 rectifié · Olivier Henno · article 2"
   },
   "2025-258": {
    "id": "2025-258",
@@ -83535,7 +84374,8 @@
      "abstention": 0,
      "nonVotants": 0
     }
-   ]
+   ],
+   "subject": "Amendement n° 497 rectifié bis · Emmanuel Capus · article 2"
   },
   "2025-259": {
    "id": "2025-259",
@@ -83629,7 +84469,8 @@
      "abstention": 0,
      "nonVotants": 0
     }
-   ]
+   ],
+   "subject": "Amendement n° 2 · Silvana Silvani · article 2"
   },
   "2025-260": {
    "id": "2025-260",
@@ -83723,7 +84564,8 @@
      "abstention": 0,
      "nonVotants": 3
     }
-   ]
+   ],
+   "subject": "Amendement n° 348 rectifié · Jean Sol · article 2"
   },
   "2025-261": {
    "id": "2025-261",
@@ -83817,7 +84659,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 576 · Anne Souyris · article 2"
   },
   "2025-262": {
    "id": "2025-262",
@@ -83911,7 +84754,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 457 rectifié · David Margueritte · article 2"
   },
   "2025-263": {
    "id": "2025-263",
@@ -84005,7 +84849,8 @@
      "abstention": 0,
      "nonVotants": 3
     }
-   ]
+   ],
+   "subject": "Amendement n° 358 rectifié · Alain Duffourg et Arnaud Bazin · article 2"
   },
   "2025-264": {
    "id": "2025-264",
@@ -84099,7 +84944,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 31 rectifié · Alain Houpert · article 2"
   },
   "2025-265": {
    "id": "2025-265",
@@ -84193,7 +85039,8 @@
      "abstention": 0,
      "nonVotants": 0
     }
-   ]
+   ],
+   "subject": "Article 2"
   },
   "2025-266": {
    "id": "2025-266",
@@ -84287,7 +85134,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2025-267": {
    "id": "2025-267",
@@ -84381,7 +85229,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 3 · Cathy Apourceau-Poly · article unique"
   },
   "2025-268": {
    "id": "2025-268",
@@ -84475,7 +85324,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 1 · Monique Lubin · article unique"
   },
   "2025-269": {
    "id": "2025-269",
@@ -84569,7 +85419,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 2 · Raymonde Poncet Monge · article unique"
   },
   "2025-270": {
    "id": "2025-270",
@@ -84663,7 +85514,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Ensemble du texte · article unique"
   },
   "2025-271": {
    "id": "2025-271",
@@ -84757,7 +85609,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Amendement n° 2 · Corinne Narassiguin · article 1er"
   },
   "2025-272": {
    "id": "2025-272",
@@ -84851,7 +85704,8 @@
      "abstention": 3,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Amendement n° 3 · après l'article 1er"
   },
   "2025-273": {
    "id": "2025-273",
@@ -84945,7 +85799,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2025-274": {
    "id": "2025-274",
@@ -85039,7 +85894,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Article 2"
   },
   "2025-275": {
    "id": "2025-275",
@@ -85133,7 +85989,8 @@
      "abstention": 0,
      "nonVotants": 0
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2025-276": {
    "id": "2025-276",
@@ -85227,7 +86084,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte · article unique"
   },
   "2025-277": {
    "id": "2025-277",
@@ -85321,7 +86179,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 4 · Cécile Cukierman · article 2"
   },
   "2025-278": {
    "id": "2025-278",
@@ -85415,7 +86274,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Article 2"
   },
   "2025-279": {
    "id": "2025-279",
@@ -85509,7 +86369,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 16 · Rachid Temal · article 6 ter"
   },
   "2025-280": {
    "id": "2025-280",
@@ -85603,7 +86464,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2025-281": {
    "id": "2025-281",
@@ -85697,7 +86559,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Sous-amendement n° 10 · Christophe Chaillou · après l'article 2"
   },
   "2025-282": {
    "id": "2025-282",
@@ -85791,7 +86654,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 9 · après l'article 2"
   },
   "2025-283": {
    "id": "2025-283",
@@ -85885,7 +86749,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Motion de renvoi en commission"
   },
   "2025-284": {
    "id": "2025-284",
@@ -85979,7 +86844,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 3 rectifié · Émilienne Poumirol · article unique"
   },
   "2025-285": {
    "id": "2025-285",
@@ -86073,7 +86939,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 4 · Corinne Imbert · article unique"
   },
   "2025-286": {
    "id": "2025-286",
@@ -86167,7 +87034,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte · article unique"
   },
   "2025-287": {
    "id": "2025-287",
@@ -86378,7 +87246,8 @@
      }
     ],
     "resultLabel": "l'Assemblée nationale a adopté"
-   }
+   },
+   "subject": "Ensemble du texte · texte de la CMP"
   },
   "2025-288": {
    "id": "2025-288",
@@ -86472,7 +87341,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Amendement n° 26 rectifié bis · Max Brisson · article 1er"
   },
   "2025-289": {
    "id": "2025-289",
@@ -86566,7 +87436,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 61 · Mathilde Ollivier · article 5"
   },
   "2025-290": {
    "id": "2025-290",
@@ -86660,7 +87531,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 37 rectifié · Jacques Grosperrin · article 5"
   },
   "2025-291": {
    "id": "2025-291",
@@ -86754,7 +87626,8 @@
      "abstention": 3,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Amendement n° 128 · Rachid Temal · article 1er"
   },
   "2025-292": {
    "id": "2025-292",
@@ -86848,7 +87721,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 123 · Rachid Temal · article 2"
   },
   "2025-293": {
    "id": "2025-293",
@@ -86942,7 +87816,8 @@
      "abstention": 0,
      "nonVotants": 0
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2025-294": {
    "id": "2025-294",
@@ -87036,7 +87911,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2025-295": {
    "id": "2025-295",
@@ -87130,7 +88006,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 37 · article 1er"
   },
   "2025-296": {
    "id": "2025-296",
@@ -87224,7 +88101,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 38 · article 2"
   },
   "2025-297": {
    "id": "2025-297",
@@ -87318,7 +88196,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 39 · article 3"
   },
   "2025-298": {
    "id": "2025-298",
@@ -87412,7 +88291,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2025-299": {
    "id": "2025-299",
@@ -87506,7 +88386,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 2 · Sylvie Robert · article 1er"
   },
   "2025-300": {
    "id": "2025-300",
@@ -87600,7 +88481,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2025-301": {
    "id": "2025-301",
@@ -87694,7 +88576,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Sous-amendement n° 9 · Laurent Somon · article 1er"
   },
   "2025-302": {
    "id": "2025-302",
@@ -87788,7 +88671,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Article 3"
   },
   "2025-303": {
    "id": "2025-303",
@@ -87882,7 +88766,8 @@
      "abstention": 3,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Article 4"
   },
   "2025-304": {
    "id": "2025-304",
@@ -87976,7 +88861,8 @@
      "abstention": 3,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2025-305": {
    "id": "2025-305",
@@ -88070,7 +88956,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 3 · Silvana Silvani · article 1er"
   },
   "2025-306": {
    "id": "2025-306",
@@ -88164,7 +89051,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendement n° 39 rectifié · Daniel Chasseing · article 1er"
   },
   "2025-307": {
    "id": "2025-307",
@@ -88258,7 +89146,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Article 1er"
   },
   "2025-308": {
    "id": "2025-308",
@@ -88469,7 +89358,8 @@
      }
     ],
     "resultLabel": "l'Assemblée nationale a adopté"
-   }
+   },
+   "subject": "Ensemble du texte · texte de la CMP"
   },
   "2025-309": {
    "id": "2025-309",
@@ -88563,7 +89453,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Exception d'irrecevabilité"
   },
   "2025-310": {
    "id": "2025-310",
@@ -88657,7 +89548,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Question préalable"
   },
   "2025-311": {
    "id": "2025-311",
@@ -88751,7 +89643,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Motion de renvoi en commission"
   },
   "2025-312": {
    "id": "2025-312",
@@ -88845,7 +89738,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2025-313": {
    "id": "2025-313",
@@ -88939,7 +89833,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2025-314": {
    "id": "2025-314",
@@ -89033,7 +89928,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2025-315": {
    "id": "2025-315",
@@ -89127,7 +90023,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Question préalable"
   },
   "2025-316": {
    "id": "2025-316",
@@ -89221,7 +90118,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2025-317": {
    "id": "2025-317",
@@ -89315,7 +90213,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2025-318": {
    "id": "2025-318",
@@ -89409,7 +90308,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Amendement n° 114 rectifié · Anne Souyris et l'ensemble des membres du groupe Écologiste - Solidarité et Territoires · après l'article 3"
   },
   "2025-319": {
    "id": "2025-319",
@@ -89503,7 +90403,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 215 · Éric Kerrouche · article 3 bis"
   },
   "2025-320": {
    "id": "2025-320",
@@ -89597,7 +90498,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Amendement n° 441 rectifié · article 8"
   },
   "2025-321": {
    "id": "2025-321",
@@ -89691,7 +90593,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 398 · Daniel Salmon · article 2 quater"
   },
   "2025-322": {
    "id": "2025-322",
@@ -89785,7 +90688,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Article 2 quater"
   },
   "2025-323": {
    "id": "2025-323",
@@ -89879,7 +90783,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Ensemble du texte · texte de la CMP"
   },
   "2025-324": {
    "id": "2025-324",
@@ -89973,7 +90878,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 392 · Ronan Dantec · article 5 A"
   },
   "2025-325": {
    "id": "2025-325",
@@ -90067,7 +90973,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 584 rectifié · Hervé Gillé · article 5 quater A"
   },
   "2025-326": {
    "id": "2025-326",
@@ -90161,7 +91068,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 283 rectifié · Nathalie Delattre · article 6"
   },
   "2025-327": {
    "id": "2025-327",
@@ -90255,7 +91163,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2025-328": {
    "id": "2025-328",
@@ -90349,7 +91258,8 @@
      "abstention": 0,
      "nonVotants": 0
     }
-   ]
+   ],
+   "subject": "Question préalable"
   },
   "2025-329": {
    "id": "2025-329",
@@ -90443,7 +91353,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Motion de renvoi en commission"
   },
   "2025-330": {
    "id": "2025-330",
@@ -90537,7 +91448,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 154 rectifié · Bernard Delcros · article 2"
   },
   "2025-331": {
    "id": "2025-331",
@@ -90631,7 +91543,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 114 rectifié · Pierre Ouzoulias · article 2"
   },
   "2025-332": {
    "id": "2025-332",
@@ -90725,7 +91638,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 209 rectifié ter · Sophie Primas · article 4"
   },
   "2025-333": {
    "id": "2025-333",
@@ -90819,7 +91733,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Amendements identiques n° 3 rectifié ter · Vincent Capo-Canellas · article 4"
   },
   "2025-334": {
    "id": "2025-334",
@@ -90913,7 +91828,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte · texte de la CMP"
   },
   "2025-335": {
    "id": "2025-335",
@@ -91007,7 +91923,8 @@
      "abstention": 0,
      "nonVotants": 4
     }
-   ]
+   ],
+   "subject": "Ensemble du texte · texte de la CMP"
   },
   "2025-336": {
    "id": "2025-336",
@@ -91101,7 +92018,8 @@
      "abstention": 0,
      "nonVotants": 1
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2025-337": {
    "id": "2025-337",
@@ -91195,7 +92113,8 @@
      "abstention": 3,
      "nonVotants": 0
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2025-338": {
    "id": "2025-338",
@@ -91289,7 +92208,8 @@
      "abstention": 0,
      "nonVotants": 0
     }
-   ]
+   ],
+   "subject": "Ensemble du texte"
   },
   "2025-339": {
    "id": "2025-339",
@@ -91500,7 +92420,8 @@
      }
     ],
     "resultLabel": "l'Assemblée nationale a adopté"
-   }
+   },
+   "subject": "Ensemble du texte"
   },
   "2025-340": {
    "id": "2025-340",
@@ -91711,7 +92632,8 @@
      }
     ],
     "resultLabel": "l'Assemblée nationale a adopté"
-   }
+   },
+   "subject": "Ensemble du texte"
   }
  },
  "anByText": {

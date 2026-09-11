@@ -9,6 +9,7 @@ const active = computed(() => {
   if (name === "home" || name === "sujet") return "home";
   if (name === "groupes") return "groupes";
   if (name === "votes") return "votes";
+  if (name === "scrutin") return "votes";
   if (name === "comparer") return "comparer";
   return "";
 });

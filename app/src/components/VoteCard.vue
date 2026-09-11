@@ -2,7 +2,7 @@
 import { computed, ref, watch } from "vue";
 import { useDataStore } from "../stores/data.js";
 import { usePrefsStore } from "../stores/prefs.js";
-import { frDate, frDateShort, n } from "../format.js";
+import { frDate, frDateShort, n, capFirst } from "../format.js";
 import GroupBars from "./GroupBars.vue";
 import OverlayBars from "./OverlayBars.vue";
 import TotalsChips from "./TotalsChips.vue";
@@ -26,7 +26,8 @@ watch(
 
 const s = computed(() => props.scrutin);
 const theme = computed(() => data.themeById(props.scrutin.theme));
-const title = computed(() => props.scrutin.title.replace(/^sur /, "Sur "));
+const title = computed(() => capFirst(props.scrutin.text));
+const subject = computed(() => props.scrutin.subject);
 const typeClass = computed(() =>
   props.scrutin.type === "Ensemble du texte" ? "b--type-ens" : "b--type"
 );
@@ -94,6 +95,7 @@ function toggleOverlay(event) {
         <template v-else>Scrutin</template>
       </span>
       <span class="vrow__title">{{ title }}</span>
+      <span v-if="subject" class="vrow__subject">{{ subject }}</span>
       <span class="vrow__meta">
         <span class="b" :class="resultClass(s.result)">Sénat · {{ resultWord(s.result) }}</span>
         <span v-if="anBadge" class="b b--an">{{ anBadge }}</span>
@@ -105,6 +107,10 @@ function toggleOverlay(event) {
     </button>
     <div :id="'body-' + s.id" class="vrow__body">
       <template v-if="open">
+        <div class="vrow__links vrow__links--top">
+          <RouterLink :to="'/scrutin/' + s.id">Détail du scrutin et votes nominatifs →</RouterLink>
+        </div>
+
         <p v-if="s.resume" class="resume"><b>Ce que change le texte</b>{{ s.resume }}</p>
 
       <div class="overlay-toggle">
