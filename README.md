@@ -112,7 +112,9 @@ python3 pipeline/build_senators_map.py # annuaire des sénateurs (photos, pages 
 
 ## Déploiement (Vercel)
 
-Le déploiement est automatique à chaque push sur GitHub. Deux options équivalentes :
+**En ligne : <https://senat-vote.vercel.app/#/>** — le site est redéployé automatiquement à chaque push sur `main`.
+
+Configuration du projet Vercel (deux options équivalentes) :
 
 - **Root Directory vide** : la configuration racine (`vercel.json`) construit `app/dist` ;
 - **Root Directory** réglé sur `app` : Vercel utilise directement les scripts de `app/package.json`.
