@@ -132,7 +132,7 @@ export const useDataStore = defineStore("data", {
   actions: {
     async load() {
       try {
-        const res = await fetch("/data.json");
+        const res = await fetch(import.meta.env.BASE_URL + "data.json");
         if (!res.ok) throw new Error("HTTP " + res.status);
         this.raw = await res.json();
         this.ready = true;

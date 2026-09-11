@@ -124,7 +124,7 @@ async function loadVotes(id) {
   votesLoading.value = true;
   failedPhotos.value = new Set();
   try {
-    const res = await fetch("/votes/" + id + ".json");
+    const res = await fetch(import.meta.env.BASE_URL + "votes/" + id + ".json");
     if (!res.ok) throw new Error("HTTP " + res.status);
     const json = await res.json();
     if (json.id === id) votes.value = json;
