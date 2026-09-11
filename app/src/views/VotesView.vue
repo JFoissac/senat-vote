@@ -1,5 +1,5 @@
 <script setup>
-import { computed, onMounted, watch } from "vue";
+import { computed, onMounted, ref, watch } from "vue";
 import { useRoute } from "vue-router";
 import { useDataStore } from "../stores/data.js";
 import { usePrefsStore } from "../stores/prefs.js";
@@ -12,6 +12,7 @@ const prefs = usePrefsStore();
 const route = useRoute();
 
 const PAGE_SIZE = 50;
+const filtersOpen = ref(false);
 
 const themes = computed(() => data.themesSorted);
 const totalCount = computed(() => data.scrutinsArray.length);
@@ -74,8 +75,20 @@ watch(pages, (p) => {
       </p>
     </div>
     <div class="layout">
-      <aside class="filters">
-        <h2>Filtres</h2>
+      <aside class="filters" :class="{ 'is-open': filtersOpen }">
+        <div class="filters__head">
+          <h2>Filtres</h2>
+          <button
+            class="filters__toggle"
+            type="button"
+            :aria-expanded="filtersOpen"
+            aria-controls="votes-filters"
+            @click="filtersOpen = !filtersOpen"
+          >
+            {{ filtersOpen ? "Masquer" : "Afficher" }}<span class="filters__chev" aria-hidden="true">▾</span>
+          </button>
+        </div>
+        <div id="votes-filters" class="filters__body">
         <div class="filters__group">
           <input
             v-model="prefs.votes.q"
@@ -113,6 +126,7 @@ watch(pages, (p) => {
             <input v-model="prefs.votes.withAn" type="checkbox" @change="resetPage">
             Uniquement les votes avec un vote de l'Assemblée
           </label>
+        </div>
         </div>
       </aside>
       <div id="votelist">

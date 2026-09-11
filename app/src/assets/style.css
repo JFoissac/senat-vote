@@ -535,3 +535,15 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   .ovg2__cell--num::before { grid-column: 1; align-self: center; }
   .ovg2__counts { margin-top: 2px; }
 }
+
+/* Filtres / panneaux repliables sur mobile */
+.filters__head { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+.filters__head h2 { margin: 0; }
+.filters__toggle { display: none; }
+.filters__chev { display: inline-block; margin-left: 6px; transition: transform 0.18s ease; }
+@media (max-width: 1023px) {
+  .filters__toggle { display: inline-flex; align-items: center; gap: 6px; font-weight: 800; font-size: 0.84rem; color: var(--ink); background: var(--surface-2); border: 1px solid var(--line); border-radius: 999px; padding: 7px 13px; }
+  .filters__body, .compare__side-body { display: none; margin-top: 12px; }
+  .filters.is-open .filters__body, .compare__side.is-open .compare__side-body { display: block; }
+  .filters.is-open .filters__chev, .compare__side.is-open .filters__chev { transform: rotate(180deg); }
+}

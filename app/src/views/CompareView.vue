@@ -1,5 +1,5 @@
 <script setup>
-import { computed } from "vue";
+import { computed, ref } from "vue";
 import { useDataStore } from "../stores/data.js";
 import { usePrefsStore } from "../stores/prefs.js";
 import Icon from "../components/Icon.vue";
@@ -7,6 +7,7 @@ import Icon from "../components/Icon.vue";
 const data = useDataStore();
 const prefs = usePrefsStore();
 
+const sideOpen = ref(false);
 const themes = computed(() => data.themesSorted);
 const groups = computed(() => data.senateGroups);
 
@@ -83,8 +84,20 @@ function toggleAll() {
       <p class="page-lede">Choisissez deux groupes du Sénat pour comparer la part de leurs votes <b>« pour »</b> et <b>« contre »</b>, sujet par sujet.</p>
     </div>
     <div class="compare">
-      <aside class="compare__side">
-        <h2>Groupes à comparer</h2>
+      <aside class="compare__side" :class="{ 'is-open': sideOpen }">
+        <div class="filters__head">
+          <h2>Groupes et sujets</h2>
+          <button
+            class="filters__toggle"
+            type="button"
+            :aria-expanded="sideOpen"
+            aria-controls="compare-filters"
+            @click="sideOpen = !sideOpen"
+          >
+            {{ sideOpen ? "Masquer" : "Afficher" }}<span class="filters__chev" aria-hidden="true">▾</span>
+          </button>
+        </div>
+        <div id="compare-filters" class="compare__side-body">
         <label for="cmp-a">1. Premier groupe</label>
         <select id="cmp-a" v-model="prefs.comparer.a">
           <option v-for="g in groups" :key="g.key" :value="g.key">{{ g.short }} — {{ g.label }}</option>
@@ -110,6 +123,7 @@ function toggleAll() {
             <span>{{ t.name }} <small>({{ data.scrutinsOfTheme(t.id).length }})</small></span>
           </label>
           <button class="btn btn--small" type="button" style="margin-top: 8px" @click="toggleAll">Tout cocher / décocher</button>
+        </div>
         </div>
       </aside>
 
