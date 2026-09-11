@@ -1,6 +1,10 @@
 # Dépendances et outils locaux
 .qa/
 node_modules/
+app/node_modules/
+
+# Build de l'application Vue
+app/dist/
 
 # Caches de données (re-téléchargeables)
 opendata/an16/
@@ -12,6 +16,11 @@ opendata/ref/
 opendata/*.zip
 opendata/an_group_labels.json
 
-# Vercel / OS
+# Caches Python / Vite et fichiers système
+__pycache__/
+*.pyc
+.vite/
 .vercel/
 .DS_Store
+
+# Note : app/public/data.json est versionné (données de production de l'app).

@@ -9,7 +9,7 @@ de la période couverte, croisés (au niveau du texte) avec l'Assemblée nationa
   4. regroupement par texte (dossier législatif), affectation à un sujet, type de vote ;
   5. correspondance AN : fiche détaillée pour les votes « ensemble » vérifiés (an_mapping.json)
      + liste des votes de l'Assemblée sur le même texte ;
-  6. écriture de site/data.js et site/data.json.
+  6. écriture de app/public/data.json (application Vue active) et de site/data.json + site/data.js (archive).
 """
 
 import glob
@@ -28,6 +28,7 @@ ROOT = Path(__file__).resolve().parent.parent
 OPENDATA = ROOT / "opendata"
 PAGES = OPENDATA / "pages"
 SITE = ROOT / "site"
+APP_PUBLIC = ROOT / "app" / "public"
 
 ACCORDION_TO_GROUP = {"UMP": "LR", "SOC": "SER", "UC": "UC", "RTLI": "LIRT", "LREM": "RDPI", "CRC": "CRCE", "RDSE": "RDSE", "GEST": "GEST", "NI": "NI"}
 
@@ -332,7 +333,7 @@ def main() -> None:
                 matches.append(uid)
         if matches:
             matches = sorted(set(matches), key=lambda u: an_scrutin_brief(u, an_labels, config.get("anGroupNormalize", {}))["date"])[:4]
-            an_by_text[text] = [an_scrutin_brief(u, an_labels, config.get("anGroupNormalize", {})) for u in matches]
+            an_by_text[text] = [an_scrutin_brief(u, an_labels, config.get("anGroupNormalize", {}), full=True) for u in matches]
 
     # --- groupes Sénat ---
     active = [s for s in senators if s["active"]]
@@ -386,14 +387,18 @@ def main() -> None:
         "themes": [{"id": t["id"], "order": t.get("order", 99), "name": t["name"], "icon": t["icon"], "pastel": t["pastel"], "description": t["description"], "concern": t.get("concern")} for t in themes_cfg],
         "scrutins": scrutins_out,
         "anByText": an_by_text,
+        "groupMapping": config.get("senatToAnGroups", {}),
     }
 
     SITE.mkdir(parents=True, exist_ok=True)
+    APP_PUBLIC.mkdir(parents=True, exist_ok=True)
     payload = json.dumps(data, ensure_ascii=False, separators=(",", ":"))
     (SITE / "data.json").write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
     (SITE / "data.js").write_text("window.SENAT_DATA=" + payload + ";\n", encoding="utf-8")
+    (APP_PUBLIC / "data.json").write_text(payload, encoding="utf-8")
     print(f"OK : {len(scrutins_out)} scrutins · {len(by_text)} textes · {len(an_by_text)} textes avec votes AN · période {data['period']['from']} → {data['period']['to']}")
     print(f"     {SITE / 'data.js'} ({len(payload)/1024/1024:.2f} Mo)")
+    print(f"     {APP_PUBLIC / 'data.json'} ({(APP_PUBLIC / 'data.json').stat().st_size/1024/1024:.2f} Mo)")
 
     if os.environ.get("KEEP_PAGES") != "1" and PAGES.exists():
         for f in PAGES.glob("*.html"):

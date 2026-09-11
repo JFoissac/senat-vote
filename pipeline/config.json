@@ -104,6 +104,7 @@
     "GEST": "GEST",
     "NI": "NI"
   },
+  "senatToAnGroups": { "LR": "DR", "SER": "SOC", "UC": "Dem", "LIRT": "LIOT", "RDPI": "EPR", "CRCE": "GDR", "RDSE": "LIOT", "GEST": "EcoS", "NI": "NI" },
   "anGroupColors": {
     "EPR": "#FF8A00", "RE": "#FF8A00", "RN": "#22315B", "LFI-NFP": "#CC2443", "LFI - NUPES": "#CC2443",
     "SOC": "#E7536C", "DR": "#3B5BA5", "LR": "#3B5BA5", "Dem": "#F2C14E", "HOR": "#4FC3F7",
