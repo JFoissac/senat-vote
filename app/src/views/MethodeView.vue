@@ -129,6 +129,11 @@ const anSource = computed(() => (data.raw ? data.raw.anSource : null));
           </dd>
         </div>
       </div>
+      <p>
+        Les noms des votants proviennent du compte rendu officiel du scrutin. Le <b>groupe</b> affiché est l'étiquette
+        politique disponible dans les données ouvertes : le parti individuel n'y figure pas. Les <b>photos</b> des
+        sénateurs n'étant pas diffusées dans ces données, chaque votant est représenté par un <b>avatar à initiales</b>.
+      </p>
       <p class="note">
         Les pourcentages ne portent jamais sur l'ensemble des sièges : les non-votants sont exclus du calcul du <b>% P</b>.
       </p>

@@ -1,5 +1,16 @@
 import { defineStore } from "pinia";
 
+export function nin(name) {
+  return (name || "")
+    .normalize("NFKD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/^(?:mm?\.|mme|mmes?|mlles?)\s+/, "")
+    .replace(/[^a-z0-9 ]+/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
 export const useDataStore = defineStore("data", {
   state: () => ({
     raw: null,
@@ -96,6 +107,24 @@ export const useDataStore = defineStore("data", {
         abstention: g.abstention,
         nonVotants: g.nonVotants
       });
+    },
+    senators(state) {
+      return state.raw && state.raw.senators ? state.raw.senators : {};
+    },
+    senatorOf() {
+      return (name) => this.senators[nin(name)] || null;
+    },
+    groupMeta(state) {
+      return (value) => {
+        if (!value) return null;
+        const groups = state.raw ? state.raw.groups : [];
+        const found = groups.find(
+          (g) => g.key === value || g.short === value || g.label === value
+        );
+        return found
+          ? { key: found.key, short: found.short, label: found.label, color: found.color }
+          : null;
+      };
     },
     senatorCount(state) {
       return state.raw ? state.raw.senatorCount : 0;

@@ -441,6 +441,7 @@ def main() -> None:
         "themes": [{"id": t["id"], "order": t.get("order", 99), "name": t["name"], "icon": t["icon"], "pastel": t["pastel"], "description": t["description"], "concern": t.get("concern")} for t in themes_cfg],
         "scrutins": scrutins_out,
         "anByText": an_by_text,
+        "senators": __import__("pipeline.build_senators_map", fromlist=["build_map"]).build_map() if (ROOT / "pipeline" / "build_senators_map.py").exists() else {},
         "groupMapping": config.get("senatToAnGroups", {}),
     }
 

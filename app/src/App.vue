@@ -57,7 +57,7 @@ watch(
         <div class="footer__col footer__col--brand">
           <p class="footer__title">Sénat·Vote</p>
           <p class="footer__text">Comment le Sénat et l'Assemblée nationale votent sur les sujets qui préoccupent les Français. Un outil citoyen indépendant, sans publicité et sans traceur.</p>
-          <p class="footer__text footer__text--small">Interface v2.3 · données du {{ dataDate }}</p>
+          <p class="footer__text footer__text--small">Interface v2.4 · données du {{ dataDate }}</p>
         </div>
         <div class="footer__col">
           <p class="footer__heading">Le projet</p>

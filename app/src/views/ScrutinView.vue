@@ -3,6 +3,7 @@ import { computed, onMounted, ref, watch } from "vue";
 import { useRoute } from "vue-router";
 import { useDataStore } from "../stores/data.js";
 import { capFirst, frDate, frDateShort, n } from "../format.js";
+import { regionOfDept } from "../data/departments.js";
 import GroupBars from "../components/GroupBars.vue";
 import TotalsChips from "../components/TotalsChips.vue";
 
@@ -21,6 +22,10 @@ const anGroupsNorm = computed(() =>
     : []
 );
 const anTextVotes = computed(() => (s.value ? data.anByText(s.value.text) : []));
+const senateTextCount = computed(() => {
+  if (!s.value) return 0;
+  return data.scrutinsArray.filter((x) => x.text === s.value.text).length;
+});
 const anBadge = computed(() => {
   if (!s.value) return "";
   if (s.value.an) {
@@ -49,6 +54,29 @@ function splitNames(value) {
     .filter(Boolean);
 }
 
+function initials(name) {
+  const clean = (name || "").replace(/^(?:mm?\.|mme|mmes?|mlles?)\s+/i, "").trim();
+  const parts = clean.split(/\s+/).filter(Boolean);
+  if (!parts.length) return "?";
+  const first = parts[0].charAt(0);
+  const last = parts.length > 1 ? parts[parts.length - 1].charAt(0) : "";
+  return (first + last).toUpperCase();
+}
+
+function voter(name, listGroup) {
+  const senator = data.senatorOf(name);
+  const meta = senator ? data.groupMeta(senator.group) : null;
+  return {
+    raw: name,
+    name: senator ? senator.name : name,
+    department: senator ? senator.department : "",
+    region: senator ? regionOfDept(senator.dept) : "",
+    short: meta ? meta.short : listGroup.short,
+    color: meta ? meta.color : listGroup.color,
+    initials: initials(senator ? senator.name : name)
+  };
+}
+
 const groupRows = computed(() => {
   if (!votes.value || !votes.value.groups) return [];
   const official = {};
@@ -60,9 +88,9 @@ const groupRows = computed(() => {
     const cats = CATS.map((c) => ({
       key: c.key,
       label: c.label,
-      names: splitNames(block[c.key])
+      people: splitNames(block[c.key]).map((name) => voter(name, meta))
     }));
-    const total = cats.reduce((acc, c) => acc + c.names.length, 0);
+    const total = cats.reduce((acc, c) => acc + c.people.length, 0);
     return { key: meta.key, short: meta.short, label: meta.label, color: meta.color, cats, total, official: official[meta.key] || {} };
   });
 });
@@ -181,6 +209,40 @@ watch(
         </section>
       </div>
 
+      <section class="scrutin-card about" aria-label="À propos du texte">
+        <h2 class="scrutin-card__title">À propos du texte</h2>
+        <dl class="about__facts">
+          <div>
+            <dt>Texte</dt>
+            <dd>{{ title }}</dd>
+          </div>
+          <div>
+            <dt>Origine</dt>
+            <dd>{{ originLabel(s.origin) }}</dd>
+          </div>
+          <div>
+            <dt>Scrutins du Sénat sur ce texte</dt>
+            <dd>{{ n(senateTextCount) }}</dd>
+          </div>
+        </dl>
+
+        <div v-if="anTextVotes.length" class="about__an">
+          <p class="about__label">Votes de l'Assemblée nationale sur ce texte</p>
+          <ul class="anvotes">
+            <li v-for="a in anTextVotes" :key="a.uid">
+              <a :href="a.url" target="_blank" rel="noopener" :aria-label="'Ouvrir le vote de l\'Assemblée nationale du ' + frDateShort(a.date) + ' sur le site de l\'Assemblée (nouvel onglet)'">{{ frDateShort(a.date) }} · {{ a.stage }}</a>
+              <span class="b" :class="resultClass(a.result)">{{ resultWord(a.result) }}</span>
+              <span class="anvotes__c">{{ n(a.totals.pour) }} pour · {{ n(a.totals.contre) }} contre</span>
+            </li>
+          </ul>
+        </div>
+        <p v-else class="about__empty">Aucun vote public de l'Assemblée nationale n'est recensé sur ce texte.</p>
+
+        <p v-if="s.dossierUrl" class="about__dossier">
+          <a :href="s.dossierUrl" target="_blank" rel="noopener" aria-label="Ouvrir le dossier législatif sur senat.fr (nouvel onglet)">Dossier législatif ↗</a>
+        </p>
+      </section>
+
       <section class="scrutin-card" aria-label="Votes nominatifs des sénateurs">
         <h2 class="scrutin-card__title">Qui a voté<small>Détail nominatif par groupe, d'après le compte rendu officiel du scrutin.</small></h2>
 
@@ -201,9 +263,18 @@ watch(
             </summary>
             <div class="wv-body">
               <div v-if="g.total" class="wv-names">
-                <div v-for="c in g.cats" v-show="c.names.length" :key="c.key" class="wv-cat">
-                  <p class="wv-cat__head">{{ c.label }} <b>{{ n(c.names.length) }}</b></p>
-                  <p class="wv-cat__list">{{ c.names.join(", ") }}</p>
+                <div v-for="c in g.cats" v-show="c.people.length" :key="c.key" class="wv-cat">
+                  <p class="wv-cat__head">{{ c.label }} <b>{{ n(c.people.length) }}</b></p>
+                  <ul class="wv-voters">
+                    <li v-for="(p, i) in c.people" :key="p.raw + i" class="wv-voter">
+                      <span class="wv-avatar" :style="{ background: p.color }" aria-hidden="true">{{ p.initials }}</span>
+                      <span class="wv-voter__id">
+                        <span class="wv-voter__name">{{ p.name }}</span>
+                        <span v-if="p.department" class="wv-voter__dept">{{ p.department }}<template v-if="p.region"> · {{ p.region }}</template></span>
+                      </span>
+                      <span class="wv-tag" :style="{ color: p.color, borderColor: p.color }">{{ p.short }}</span>
+                    </li>
+                  </ul>
                 </div>
               </div>
               <p v-else class="wv-empty">Aucun nom enregistré.</p>
