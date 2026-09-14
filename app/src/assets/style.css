@@ -630,3 +630,70 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   .scrutin-grid { grid-template-columns: 1fr 1fr; align-items: start; }
   .wv-voters { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
+
+/* ---------- Mobile : compacité et lisibilité (<= 480px) ---------- */
+@media (max-width: 480px) {
+  .siteheader__inner { padding: 8px 12px 0; gap: 8px; }
+  .brand { gap: 7px; padding-bottom: 8px; }
+  .brand__mark { width: 28px; height: 28px; border-radius: 8px; }
+  .brand__text { font-size: 1rem; }
+  .siteheader__cta { min-height: 34px; padding: 7px 12px; font-size: 0.8rem; border-radius: 10px; margin-bottom: 8px; }
+  .tabs { gap: 3px; }
+  .tab { padding: 9px 11px; font-size: 0.82rem; border-radius: 12px 12px 0 0; }
+
+  .home__left { padding: 24px 16px 28px; }
+  .home__kicker { display: none; }
+  .home__title { font-size: clamp(1.55rem, 7.4vw, 2.1rem); margin-bottom: 12px; overflow-wrap: anywhere; }
+  .home__lede { font-size: 0.9rem; margin-bottom: 18px; }
+  .home__search { flex-direction: column; max-width: none; }
+  .home__search input { min-width: 0; width: 100%; min-height: 44px; }
+  .home__search .btn { width: 100%; min-height: 44px; }
+  .home__card { margin-top: 20px; padding: 16px; }
+  .home__card strong { font-size: 1.08rem; }
+
+  .b { padding: 3px 8px; font-size: 0.68rem; gap: 4px; }
+  .btn { min-height: 40px; }
+  .totals { gap: 5px; }
+  .tot { font-size: 0.7rem; padding: 3px 8px; }
+  .listbar { gap: 8px; }
+  .listbar__sort { width: 100%; justify-content: space-between; }
+  .listbar__sort select { flex: 1; min-height: 36px; }
+
+  .footer__col a { padding: 6px 0; }
+  .gcard summary { padding: 6px 0; }
+  .gmembers li { padding: 4px 0; }
+}
+
+/* ---------- Comparer : tableau -> cartes empilées (<= 719px) ---------- */
+@media (max-width: 719px) {
+  .ctable--cmp thead { display: none; }
+  .ctable--cmp,
+  .ctable--cmp tbody,
+  .ctable--cmp tr,
+  .ctable--cmp td { display: block; width: auto; }
+  .ctable--cmp tr {
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    background: var(--surface);
+    padding: 10px 12px;
+    margin-bottom: 10px;
+  }
+  .ctable--cmp td { border: 0; padding: 3px 0; text-align: left; }
+  .ctable--cmp td.tname { padding-bottom: 8px; margin-bottom: 6px; border-bottom: 1px solid var(--line); }
+  .ctable--cmp td.n { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; }
+  .ctable--cmp td.n::before {
+    content: attr(data-label);
+    font-weight: 800;
+    font-size: 0.78rem;
+    color: var(--muted);
+  }
+  .ctable--cmp .cmp-pct { font-size: 1.15rem; }
+  .ctable--cmp .cmp-pct__sub { display: inline; margin-left: 8px; font-size: 0.74rem; }
+}
+
+/* ---------- Cibles tactiles (<= 719px) ---------- */
+@media (max-width: 719px) {
+  .wv-voter { padding: 6px 2px; }
+  .wv-voter__name { padding: 2px 0; }
+  .anrow { padding: 12px 12px; }
+}

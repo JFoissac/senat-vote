@@ -42,7 +42,7 @@ function search() {
         <input
           v-model="query"
           type="search"
-          placeholder="Un sujet, un vote, un texte…"
+          placeholder="Un vote, un sujet…"
           aria-label="Rechercher un vote"
         >
         <button class="btn btn--black" type="submit">Rechercher</button>

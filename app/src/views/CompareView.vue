@@ -152,11 +152,11 @@ function toggleAll() {
                   <span class="tname__txt">{{ row.t.name }}<small>{{ row.tl.length }} vote{{ row.tl.length > 1 ? "s" : "" }}</small></span>
                 </span>
               </td>
-              <td class="n" :title="(ga ? ga.short : '') + ' : ' + fmt(row.A.pour) + ' pour, ' + fmt(row.A.contre) + ' contre'">
+              <td class="n" :data-label="ga ? ga.short : '—'" :title="(ga ? ga.short : '') + ' : ' + fmt(row.A.pour) + ' pour, ' + fmt(row.A.contre) + ' contre'">
                 <span class="cmp-pct" :style="{ color: ga ? ga.color : 'inherit' }">{{ fmt(row.A.pour) }}</span>
                 <small class="cmp-pct__sub">{{ fmt(row.A.contre) }} contre</small>
               </td>
-              <td class="n" :title="(gb ? gb.short : '') + ' : ' + fmt(row.B.pour) + ' pour, ' + fmt(row.B.contre) + ' contre'">
+              <td class="n" :data-label="gb ? gb.short : '—'" :title="(gb ? gb.short : '') + ' : ' + fmt(row.B.pour) + ' pour, ' + fmt(row.B.contre) + ' contre'">
                 <span class="cmp-pct" :style="{ color: gb ? gb.color : 'inherit' }">{{ fmt(row.B.pour) }}</span>
                 <small class="cmp-pct__sub">{{ fmt(row.B.contre) }} contre</small>
               </td>
