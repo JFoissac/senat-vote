@@ -109,6 +109,12 @@ export const useDataStore = defineStore("data", {
     senators(state) {
       return state.raw && state.raw.senators ? state.raw.senators : {};
     },
+    senatorBySlug() {
+      return (slug) => {
+        if (!slug) return null;
+        return Object.values(this.senators).find((sen) => sen && sen.slug === slug) || null;
+      };
+    },
     senatorOf() {
       return (name) => this.senators[nin(name)] || null;
     },

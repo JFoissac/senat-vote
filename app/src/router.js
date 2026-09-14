@@ -13,6 +13,7 @@ const routes = [
   { path: "/sujet/:id", name: "sujet", component: ThemeView },
   { path: "/votes", name: "votes", component: VotesView },
   { path: "/scrutin/:id", name: "scrutin", component: ScrutinView },
+  { path: "/senateur/:slug", name: "senateur", component: () => import("./views/SenateurView.vue") },
   { path: "/comparer", name: "comparer", component: CompareView },
   { path: "/groupes", name: "groupes", component: GroupesView },
   { path: "/methode", name: "methode", component: MethodeView },

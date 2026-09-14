@@ -80,6 +80,7 @@ function voter(name, listGroup, index) {
     color: meta ? meta.color : listGroup.color,
     photo: senator && senator.photo ? senator.photo : "",
     page: senator && senator.page ? senator.page : "",
+    slug: senator && senator.slug ? senator.slug : "",
     initials: initials(senator ? senator.name : name)
   };
 }
@@ -292,14 +293,18 @@ const overlayOn = computed(() => prefs.overlay && !!data.anVoteOf(s.value));
                         <template v-else>{{ p.initials }}</template>
                       </span>
                       <span class="wv-voter__id">
-                        <a
-                          v-if="p.page"
-                          class="wv-voter__name"
-                          :href="p.page"
-                          target="_blank"
-                          rel="noopener"
-                          :aria-label="'Fiche du sénateur ' + p.name + ' sur senat.fr'"
-                        >{{ p.name }}</a>
+                        <template v-if="p.slug">
+                          <RouterLink class="wv-voter__name" :to="'/senateur/' + p.slug">{{ p.name }}</RouterLink>
+                          <a
+                            v-if="p.page"
+                            class="wv-voter__ext"
+                            :href="p.page"
+                            target="_blank"
+                            rel="noopener"
+                            :aria-label="'Fiche officielle de ' + p.name + ' sur senat.fr (nouvel onglet)'"
+                          >↗</a>
+                        </template>
+                        <a v-else-if="p.page" class="wv-voter__name" :href="p.page" target="_blank" rel="noopener">{{ p.name }}</a>
                         <span v-else class="wv-voter__name">{{ p.name }}</span>
                         <span v-if="p.department" class="wv-voter__dept">{{ p.department }}<template v-if="p.region"> · {{ p.region }}</template></span>
                       </span>

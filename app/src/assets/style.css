@@ -716,3 +716,57 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   .wv-voter__name { padding: 2px 0; }
   .anrow { padding: 12px 12px; }
 }
+
+/* ---------- Page sénateur ---------- */
+.sen-head { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 16px; align-items: start; margin: 6px 0 4px; }
+.sen-head__photo, .sen-head__avatar { width: 92px; height: 92px; border-radius: 18px; object-fit: cover; box-shadow: var(--shadow-s); }
+.sen-head__avatar { display: grid; place-items: center; color: #fff; font-weight: 800; font-size: 1.5rem; }
+.sen-head__name { font-family: var(--font-display); font-size: clamp(1.4rem, 5vw, 2rem); margin: 0 0 8px; letter-spacing: -0.4px; }
+.chip--group { border-color: color-mix(in srgb, var(--c) 45%, transparent); }
+.sen-head__job { color: var(--ink-2); font-size: 0.9rem; margin: 10px 0 6px; }
+.sen-head__links { display: flex; flex-wrap: wrap; gap: 12px; font-size: 0.82rem; font-weight: 700; margin: 0; }
+.sen-facts { display: grid; grid-template-columns: 1fr; gap: 10px; }
+.sen-fact { margin: 0; font-size: 0.9rem; font-weight: 600; }
+.sen-organs { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.sen-organs li { font-size: 0.86rem; color: var(--ink-2); border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+.sen-organ-type { display: inline-block; font-size: 0.64rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); margin-right: 6px; }
+.sen-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin: 6px 0 14px; }
+.sen-stats > div { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 10px; text-align: center; }
+.sen-stats b { display: block; font-family: var(--font-display); font-size: 1.3rem; }
+.sen-stats span { font-size: 0.66rem; color: var(--muted); font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; }
+.sen-stats .s-p { color: var(--green-ink); }
+.sen-stats .s-c { color: var(--red-ink); }
+.sen-filters { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin-bottom: 10px; }
+.sen-filters select { min-height: 36px; border: 1px solid var(--line); border-radius: 10px; padding: 0 10px; font: inherit; font-size: 0.82rem; background: var(--surface); }
+.sen-votes { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: minmax(0, 1fr); }
+.sen-votes li { display: grid; grid-template-columns: minmax(0, 1fr) auto auto auto; gap: 8px; align-items: center; padding: 8px 0; border-bottom: 1px solid var(--line); }
+.sen-vote__title { display: flex; flex-direction: column; min-width: 0; overflow: hidden; }
+.sen-vote__subject { font-weight: 700; font-size: 0.86rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.sen-vote__text { color: var(--muted); font-size: 0.76rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.sen-vote__date { color: var(--faint); font-size: 0.74rem; font-weight: 700; white-space: nowrap; }
+.b.pos { border: 0; }
+.pos--pour { background: #dff2e9; color: var(--green-ink); }
+.pos--contre { background: #fbe3df; color: var(--red-ink); }
+.pos--abs { background: #eceef1; color: #5c6167; }
+.pos--nv { background: #f2f4f7; color: var(--faint); }
+.b--ecart { background: #fff4d6; color: #8a6100; border-color: #f0d9a0; }
+.sen-more { margin: 14px 0 0; }
+.wv-voter__ext { font-weight: 700; color: var(--muted); margin-left: 4px; }
+
+@media (max-width: 480px) {
+  .sen-votes li { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
+  .sen-vote__title { flex: 1 1 100%; }
+  .sen-vote__date { order: 2; }
+  .sen-votes li .b.pos { order: 3; }
+  .sen-votes li .b--ecart { order: 4; }
+}
+
+@media (min-width: 480px) {
+  .sen-facts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .sen-stats { grid-template-columns: repeat(6, 1fr); }
+}
+
+@media (min-width: 720px) {
+  .sen-head__photo, .sen-head__avatar { width: 104px; height: 104px; }
+  .sen-facts { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}

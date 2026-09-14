@@ -20,7 +20,7 @@ aucune note, aucun classement des partis, aucune recommandation de vote.
 - Un graphique « comment le Sénat / l'Assemblée a voté » par sujet, une page **Groupes** (Sénat et Assemblée),
   une page **Comparer** (checklist de sujets, taux d'accord entre deux groupes, participation, part de votes
   pour/contre) et une **superposition Sénat / Assemblée** optionnelle dans chaque fiche (désactivée par défaut).
-- Les pages **Sujet**, **Votes**, **Comparer**, **Groupes**, **Scrutin** et **Méthode**.
+- Les pages **Sujet**, **Votes**, **Comparer**, **Groupes**, **Scrutin**, **Sénateur** et **Méthode**.
 
 ## Architecture
 
@@ -103,6 +103,7 @@ python3 pipeline/fetch_an.py           # (une fois) télécharge les dumps offic
 python3 pipeline/parse_sessions.py     # reconstruit la liste des scrutins du Sénat
 python3 pipeline/build_data.py         # parse, valide et écrit app/public/data.json
 python3 pipeline/build_individual.py   # écrit les votes nominatifs dans app/public/votes/
+python3 pipeline/build_senator_profiles.py # profils de vote par sénateur dans app/public/senateurs/
 python3 pipeline/build_senators_map.py # annuaire des sénateurs (photos, pages officielles) dans app/public/data.json
 ```
 

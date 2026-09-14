@@ -41,14 +41,24 @@ def build_map() -> dict:
         full = f"{s.get('prenom', '')} {s.get('nom', '')}".strip()
         circ = s.get("circonscription") or {}
         grp = s.get("groupe") or {}
+        slug = re.sub(r"\.html$", "", (s.get("url") or "").rsplit("/", 1)[-1]) or nin(full).replace(" ", "-")
+        prof = s.get("categorieProfessionnelle") or {}
+        organs = [{"type": o.get("type") or "", "label": o.get("libelle") or ""} for o in (s.get("organismes") or [])]
         entry = {
             "name": full,
+            "slug": slug,
             "department": circ.get("libelle") or "",
             "dept": circ.get("code") or "",
             "group": grp.get("libelleCourt") or grp.get("code") or "",
             "groupLabel": grp.get("libelle") or "",
             "photo": ("https://www.senat.fr" + s["urlAvatar"]) if s.get("urlAvatar") else "",
             "page": ("https://www.senat.fr" + s["url"]) if s.get("url") else "",
+            "profession": prof.get("libelle") or "",
+            "serie": s.get("serie") or "",
+            "siege": s.get("siege") if s.get("siege") is not None else "",
+            "twitter": s.get("twitter") or "",
+            "facebook": s.get("facebook") or "",
+            "organs": organs,
             "active": True,
         }
         for form in (full, f"{s.get('nom', '')} {s.get('prenom', '')}"):
@@ -64,6 +74,7 @@ def build_map() -> dict:
             continue
         out[key] = {
             "name": s.get("full_name") or "",
+            "slug": s.get("slug") or nin(s.get("full_name") or "").replace(" ", "-"),
             "department": s.get("department_label") or "",
             "dept": s.get("department_code") or "",
             "group": s.get("group_short") or "",

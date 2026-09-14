@@ -5,6 +5,11 @@ import { n } from "../format.js";
 
 const data = useDataStore();
 
+function slugOf(name) {
+  const senator = data.senatorOf(name);
+  return senator && senator.slug ? senator.slug : "";
+}
+
 const groups = computed(() =>
   data.senateGroups.map((g) => ({
     ...g,
@@ -63,7 +68,11 @@ const anGroupCount = computed(() => anGroups.value.length);
           <details>
             <summary>Voir les {{ g.members.length }} sénateurs du groupe</summary>
             <ul class="gmembers">
-              <li v-for="m in g.members" :key="m.name + m.department">{{ m.name }}<span>{{ m.department }}</span></li>
+              <li v-for="m in g.members" :key="m.name + m.department">
+                <RouterLink v-if="slugOf(m.name)" :to="'/senateur/' + slugOf(m.name)">{{ m.name }}</RouterLink>
+                <span v-else>{{ m.name }}</span>
+                <span>{{ m.department }}</span>
+              </li>
             </ul>
           </details>
         </section>
