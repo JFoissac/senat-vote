@@ -2,14 +2,17 @@
 import { computed, onMounted, ref, watch } from "vue";
 import { useRoute } from "vue-router";
 import { useDataStore } from "../stores/data.js";
+import { usePrefsStore } from "../stores/prefs.js";
 import { capFirst, frDate, frDateShort, n } from "../format.js";
 import { initials } from "../lib/names.js";
 import { regionOfDept } from "../data/departments.js";
 import GroupBars from "../components/GroupBars.vue";
+import OverlaySection from "../components/OverlaySection.vue";
 import TotalsChips from "../components/TotalsChips.vue";
 
 const route = useRoute();
 const data = useDataStore();
+const prefs = usePrefsStore();
 
 const s = computed(() => data.scrutins[route.params.id] || null);
 const theme = computed(() => (s.value ? data.themeById(s.value.theme) : null));
@@ -146,6 +149,7 @@ watch(
     if (id) loadVotes(id);
   }
 );
+const overlayOn = computed(() => prefs.overlay && !!data.anVoteOf(s.value));
 </script>
 
 <template>
@@ -169,7 +173,9 @@ watch(
         <p v-if="s.resume" class="resume"><b>Ce que change le texte</b>{{ s.resume }}</p>
       </header>
 
-      <div class="scrutin-grid">
+      <OverlaySection v-if="s" :scrutin="s" />
+
+      <div v-if="!overlayOn" class="scrutin-grid">
         <section class="scrutin-card" aria-label="Vote du Sénat">
           <div class="chamber__head">
             <div class="chamber__title">Sénat<small>{{ frDate(s.date) }}</small></div>

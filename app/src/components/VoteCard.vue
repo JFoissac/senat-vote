@@ -4,7 +4,7 @@ import { useDataStore } from "../stores/data.js";
 import { usePrefsStore } from "../stores/prefs.js";
 import { frDate, frDateShort, n, capFirst } from "../format.js";
 import GroupBars from "./GroupBars.vue";
-import OverlayBars from "./OverlayBars.vue";
+import OverlaySection from "./OverlaySection.vue";
 import TotalsChips from "./TotalsChips.vue";
 import Icon from "./Icon.vue";
 
@@ -44,15 +44,7 @@ const anGroupsNorm = computed(() =>
     : []
 );
 const anTextVotes = computed(() => data.anByText(props.scrutin.text));
-const anVote = computed(() => props.scrutin.an || anTextVotes.value[0] || null);
-const anIsText = computed(() => !props.scrutin.an && anTextVotes.value.length > 0);
-const overlayAnGroups = computed(() =>
-  anVote.value && anVote.value.groups
-    ? anVote.value.groups.map((g) => data.anGroup(g))
-    : []
-);
-const hasAn = computed(() => !!anVote.value);
-const overlayOn = computed(() => prefs.overlay && hasAn.value);
+const overlayOn = computed(() => prefs.overlay && !!data.anVoteOf(props.scrutin));
 const anBadge = computed(() => {
   if (props.scrutin.an) {
     return (
@@ -74,9 +66,6 @@ function resultClass(result) {
   return result === "Adoption" ? "b--adopted" : "b--rejected";
 }
 
-function toggleOverlay(event) {
-  prefs.overlay = event.target.checked;
-}
 </script>
 
 <template>
@@ -113,56 +102,9 @@ function toggleOverlay(event) {
 
         <p v-if="s.resume" class="resume"><b>Ce que change le texte</b>{{ s.resume }}</p>
 
-      <div class="overlay-toggle">
-        <label class="switch">
-          <input
-            type="checkbox"
-            :checked="overlayOn"
-            :disabled="!hasAn"
-            @change="toggleOverlay"
-          >
-          <span>Superposer Sénat et Assemblée</span>
-        </label>
-        <p v-if="!hasAn" class="note">
-          Aucun vote public recensé à l'Assemblée nationale sur ce texte : la superposition est indisponible.
-        </p>
-      </div>
+      <OverlaySection :scrutin="s" />
 
-      <section v-if="overlayOn" class="chamber" aria-label="Superposition des votes du Sénat et de l'Assemblée nationale">
-        <div class="chamber__head">
-          <div class="chamber__title">
-            Superposition Sénat / Assemblée
-            <small>
-              Assemblée · {{ frDate(anVote.date) }} · {{ anVote.stage }} · {{ anVote.legislature }}ᵉ législature<template v-if="anIsText"> · vote sur le texte</template>
-            </small>
-          </div>
-          <span class="b" :class="resultClass(anVote.result)">AN · {{ resultWord(anVote.result) }}</span>
-        </div>
-
-        <div class="ovg-totals">
-          <div>
-            <p class="ovg-totals__lbl">Sénat · {{ frDate(s.date) }} · {{ resultWord(s.result) }}</p>
-            <TotalsChips :totals="s.totals" />
-          </div>
-          <div>
-            <p class="ovg-totals__lbl">Assemblée · {{ frDate(anVote.date) }} · {{ resultWord(anVote.result) }}</p>
-            <TotalsChips :totals="anVote.totals" />
-          </div>
-        </div>
-
-        <OverlayBars :senate-groups="senateGroups" :an-groups="overlayAnGroups" :mapping="data.groupMapping" />
-
-        <p class="note ovg__note">
-          Le rapprochement des groupes (LR ↔ DR, SER ↔ SOC, RDPI ↔ EPR, …) est <b>indicatif</b> : les groupes du Sénat et de l'Assemblée nationale ne sont pas les mêmes.
-          L'Assemblée ne vote pas les amendements du Sénat : pour un amendement ou un article, la barre « Assemblée » correspond au <b>vote de l'Assemblée sur le texte</b> (date et étape ci-dessus).
-        </p>
-
-        <div class="vrow__links">
-          <a :href="anVote.url" target="_blank" rel="noopener">Page du vote (Assemblée nationale) ↗</a>
-        </div>
-      </section>
-
-      <div v-else class="chambers">
+      <div v-if="!overlayOn" class="chambers">
         <div class="chamber">
           <div class="chamber__head">
             <div class="chamber__title">Sénat<small>{{ frDate(s.date) }}</small></div>

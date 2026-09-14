@@ -69,6 +69,14 @@ export const useDataStore = defineStore("data", {
         return map[text] || [];
       };
     },
+    anVoteOf(state) {
+      return (s) => {
+        if (!s) return null;
+        if (s.an) return s.an;
+        const map = state.raw && state.raw.anByText ? state.raw.anByText : {};
+        return (map[s.text] || [])[0] || null;
+      };
+    },
     senateGroup() {
       return (g) => {
         const meta = this.groupMap[g.key] || {};
