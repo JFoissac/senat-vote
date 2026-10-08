@@ -10,6 +10,12 @@ const app = createApp(App);
 const pinia = createPinia();
 app.use(pinia);
 
+// Les adresses historiques utilisaient un fragment (#/sujet/x) : on les réécrit vers
+// l'URL propre (/sujet/x) avant le montage, pour ne casser aucun lien déjà partagé.
+if (window.location.hash.startsWith("#/")) {
+  window.history.replaceState(null, "", window.location.hash.slice(1));
+}
+
 const data = useDataStore(pinia);
 const prefs = usePrefsStore(pinia);
 

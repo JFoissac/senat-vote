@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1200px; height: 630px; overflow: hidden; }
+  body {
+    background: #0E1013;
+    color: #F1F3F6;
+    font-family: Inter, system-ui, sans-serif;
+    display: flex; flex-direction: column; justify-content: space-between;
+    padding: 64px 72px;
+  }
+  .marque { display: flex; align-items: center; gap: 18px; }
+  .pastille {
+    width: 56px; height: 56px; border-radius: 14px; background: #1B1F26;
+    display: flex; align-items: center; justify-content: center;
+    border: 1px solid #2A303A;
+  }
+  .marque strong { font-family: Fraunces, serif; font-size: 30px; font-weight: 700; letter-spacing: -0.01em; }
+  h1 {
+    font-family: Fraunces, serif; font-weight: 600;
+    font-size: 56px; line-height: 1.12; letter-spacing: -0.02em;
+    max-width: 1000px;
+  }
+  h1 em { font-style: normal; color: #F6E7BC; }
+  .bas { display: flex; align-items: flex-end; justify-content: space-between; gap: 40px; }
+  .chiffres { display: flex; gap: 44px; }
+  .chiffre b { display: block; font-family: Fraunces, serif; font-size: 38px; font-weight: 700; color: #F6E7BC; }
+  .chiffre span { font-size: 15px; color: #9AA3AF; letter-spacing: 0.02em; }
+  .barres { display: flex; gap: 6px; align-items: flex-end; height: 74px; }
+  .barre { width: 17px; border-radius: 3px 3px 0 0; }
+  .mention { font-size: 15px; color: #6F7885; }
+</style>
+</head>
+<body>
+  <div class="marque">
+    <div class="pastille">
+      <svg width="30" height="30" viewBox="0 0 32 32"><rect width="32" height="32" rx="8" fill="none"/><path d="M8 11a2 2 0 0 1 2-2h4l2 2h6a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2z" fill="#F6E7BC"/></svg>
+    </div>
+    <strong>Sénat·Vote</strong>
+  </div>
+
+  <h1>Comment le Sénat et l'Assemblée<br>votent, <em>sujet par sujet</em></h1>
+
+  <div class="bas">
+    <div class="chiffres">
+      <div class="chiffre"><b>922</b><span>scrutins publics</span></div>
+      <div class="chiffre"><b>12</b><span>sujets de la vie quotidienne</span></div>
+      <div class="chiffre"><b>348</b><span>sénateurs</span></div>
+    </div>
+    <div class="barres" id="barres"></div>
+  </div>
+
+  <p class="mention">Données officielles · présentation factuelle, aucun classement des partis</p>
+
+  <script>
+    // Petites barres : la répartition des votes d'un scrutin réel, par groupe.
+    const hauteurs = [62, 48, 70, 34, 55, 41, 66, 29, 52];
+    const couleurs = ["#3B5BA5", "#E7536C", "#22315B", "#CC2443", "#A78BFA", "#F2C14E", "#35D07F", "#4FC3F7", "#B03030"];
+    document.getElementById("barres").innerHTML = hauteurs
+      .map((h, i) => `<div class="barre" style="height:${h}px;background:${couleurs[i]}"></div>`)
+      .join("");
+  </script>
+</body>
+</html>

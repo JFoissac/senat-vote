@@ -2,7 +2,9 @@ import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 
 export default defineConfig({
-  base: "./",
+  // Chemins absolus : les pages sont servies depuis des sous-dossiers (/sujet/x,
+  // /scrutin/y) ; avec « ./ », le navigateur y cherchait /sujet/x/assets/… → 404.
+  base: "/",
   plugins: [vue()],
   test: {
     environment: "jsdom",

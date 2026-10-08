@@ -8,6 +8,9 @@ app/dist/
 app/coverage/
 .eslintcache
 
+# Captures de contrôle produites par les scripts (jamais versionnées)
+app/scripts/.apercu-*.png
+
 # Caches de données (re-téléchargeables)
 opendata/an16/
 opendata/an17/

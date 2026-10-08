@@ -1,4 +1,4 @@
-import { createRouter, createWebHashHistory } from "vue-router";
+import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "./views/HomeView.vue";
 import ThemeView from "./views/ThemeView.vue";
 import VotesView from "./views/VotesView.vue";
@@ -21,7 +21,9 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHashHistory(),
+  // URLs propres, sans « # » : indispensables au référencement. Un fragment (#/sujet/x)
+  // n'est jamais transmis au serveur et Google ne voit alors qu'une seule page.
+  history: createWebHistory(),
   routes,
   scrollBehavior(to, from, savedPosition) {
     if (savedPosition) return savedPosition;
