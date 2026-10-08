@@ -108,10 +108,14 @@ Tous se calculent dans les données déjà en place :
 
 ## 6. Mesurer
 
-- **Google Search Console** (à faire en premier) : soumettre
-  `https://senat-vote.vercel.app/sitemap.xml`, puis suivre les requêtes réelles.
-  Les premières impressions arrivent en général sous 1 à 3 semaines après
-  indexation.
+- **Google Search Console** (à faire en premier) : propriété **« Préfixe d'URL »**
+  `https://senat-vote.vercel.app/`, vérifiée par **balise HTML** — un `*.vercel.app`
+  n'a pas de zone DNS à nous, donc l'option « Domaine » (TXT) est inutilisable ; la
+  balise vit dans `app/index.html` (dans le `<head>`) et le prerender la recopie sur
+  les 1 311 pages. Puis soumettre `https://senat-vote.vercel.app/sitemap.xml` et
+  suivre les requêtes réelles. Les premières impressions arrivent en général sous
+  1 à 3 semaines après indexation. Si le site passe sur un domaine propre, refaire la
+  vérification et remplacer l'URL du site partout (canonical, og, sitemap, robots).
 - **Bing Webmaster Tools** : le même sitemap. L'indexation y est plus rapide.
 - **IndexNow** : la clé est déjà en place
   (`app/public/1aa0057e2211973eb8253e6361d2d682.txt`) ; la soumission automatique
