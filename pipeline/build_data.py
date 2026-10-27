@@ -29,6 +29,13 @@ OPENDATA = ROOT / "opendata"
 PAGES = OPENDATA / "pages"
 APP_PUBLIC = ROOT / "app" / "public"
 
+# Le script importe d'autres modules du dossier pipeline (build_senators_map).
+# Lancé par chemin (`python pipeline/build_data.py`), Python place le dossier du
+# script — et non la racine du dépôt — en tête de sys.path : l'import échoue alors
+# en ModuleNotFoundError. Ajouter la racine rend les deux modes équivalents.
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+
 ACCORDION_TO_GROUP = {"UMP": "LR", "SOC": "SER", "UC": "UC", "RTLI": "LIRT", "LREM": "RDPI", "CRC": "CRCE", "RDSE": "RDSE", "GEST": "GEST", "NI": "NI"}
 
 AN_STAGES = [

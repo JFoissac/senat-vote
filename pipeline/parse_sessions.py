@@ -66,7 +66,7 @@ def parse_session(year: int):
 
 def main():
     all_items = []
-    for year in (2023, 2024, 2025):
+    for year in (2023, 2024, 2025, 2026):
         items = parse_session(year)
         all_items.extend(items)
         print(f"session {year}: {len(items)} scrutins")
