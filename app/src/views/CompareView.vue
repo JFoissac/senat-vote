@@ -3,6 +3,7 @@ import { computed, ref } from "vue";
 import { useDataStore } from "../stores/data.js";
 import { usePrefsStore } from "../stores/prefs.js";
 import { statsOver } from "../lib/stats.js";
+import { inkOn, textOnWhite } from "../lib/colors.js";
 import Icon from "../components/Icon.vue";
 
 const data = useDataStore();
@@ -42,7 +43,7 @@ const rows = computed(() =>
       if (A.nb === 0 && B.nb === 0) return null;
       return { t, tl, A, B };
     })
-    .filter(Boolean)
+    .filter(Boolean),
 );
 
 const allOn = computed(() => selectedCount.value === themes.value.length);
@@ -61,7 +62,10 @@ function toggleAll() {
   <div class="wrap">
     <div class="page-head">
       <h1 class="page-title">Comparer les votes</h1>
-      <p class="page-lede">Choisissez deux groupes du Sénat pour comparer la part de leurs votes <b>« pour »</b> et <b>« contre »</b>, sujet par sujet.</p>
+      <p class="page-lede">
+        Choisissez deux groupes du Sénat pour comparer la part de leurs votes <b>« pour »</b> et <b>« contre »</b>,
+        sujet par sujet.
+      </p>
     </div>
     <div class="compare">
       <aside class="compare__side" :class="{ 'is-open': sideOpen }">
@@ -78,48 +82,64 @@ function toggleAll() {
           </button>
         </div>
         <div id="compare-filters" class="compare__side-body">
-        <label for="cmp-a">1. Premier groupe</label>
-        <select id="cmp-a" v-model="prefs.comparer.a">
-          <option v-for="g in groups" :key="g.key" :value="g.key">{{ g.short }} — {{ g.label }}</option>
-        </select>
-        <label for="cmp-b">2. Second groupe</label>
-        <select id="cmp-b" v-model="prefs.comparer.b">
-          <option v-for="g in groups" :key="g.key" :value="g.key">{{ g.short }} — {{ g.label }}</option>
-        </select>
-        <div style="margin-top: 14px">
-          <label class="switch">
-            <input v-model="prefs.comparer.excludeAbs" type="checkbox">
-            Exclure l'abstention
-          </label>
-          <p class="note" style="margin: 6px 0 0">
-            Par défaut, l'abstention compte dans le total : « pour » et « contre » sont calculés sur les votes émis.
-          </p>
-        </div>
-        <div class="filters__group" style="border-top: 1px solid var(--line); padding-top: 12px; margin-top: 14px">
-          <p class="filters__label">Sujets pris en compte {{ selectedCount }}/{{ themes.length }}</p>
-          <label v-for="t in themes" :key="t.id" class="checkline checkline--icon">
-            <input v-model="prefs.comparer.subjects[t.id]" type="checkbox">
-            <span class="tile" :style="{ background: t.pastel }"><Icon :name="t.icon" /></span>
-            <span>{{ t.name }} <small>({{ data.scrutinsOfTheme(t.id).length }})</small></span>
-          </label>
-          <button class="btn btn--small" type="button" style="margin-top: 8px" @click="toggleAll">Tout cocher / décocher</button>
-        </div>
+          <label for="cmp-a">1. Premier groupe</label>
+          <select id="cmp-a" v-model="prefs.comparer.a">
+            <option v-for="g in groups" :key="g.key" :value="g.key">{{ g.short }} — {{ g.label }}</option>
+          </select>
+          <label for="cmp-b">2. Second groupe</label>
+          <select id="cmp-b" v-model="prefs.comparer.b">
+            <option v-for="g in groups" :key="g.key" :value="g.key">{{ g.short }} — {{ g.label }}</option>
+          </select>
+          <div style="margin-top: 14px">
+            <label class="switch">
+              <input v-model="prefs.comparer.excludeAbs" type="checkbox" />
+              Exclure l'abstention
+            </label>
+            <p class="note" style="margin: 6px 0 0">
+              Par défaut, l'abstention compte dans le total : « pour » et « contre » sont calculés sur les votes émis.
+            </p>
+          </div>
+          <div class="filters__group" style="border-top: 1px solid var(--line); padding-top: 12px; margin-top: 14px">
+            <p class="filters__label">Sujets pris en compte {{ selectedCount }}/{{ themes.length }}</p>
+            <label v-for="t in themes" :key="t.id" class="checkline checkline--icon">
+              <input v-model="prefs.comparer.subjects[t.id]" type="checkbox" />
+              <span class="tile" :style="{ background: t.pastel }"><Icon :name="t.icon" /></span>
+              <span
+                >{{ t.name }} <small>({{ data.scrutinsOfTheme(t.id).length }})</small></span
+              >
+            </label>
+            <button class="btn btn--small" type="button" style="margin-top: 8px" @click="toggleAll">
+              Tout cocher / décocher
+            </button>
+          </div>
         </div>
       </aside>
 
       <div class="compare__main">
         <div class="cmp-vs">
           <div class="cmp-vs__g">
-            <span class="cmp-mono" :style="{ background: ga ? ga.color : '#999' }">{{ ga ? ga.short : "?" }}</span>
+            <span
+              class="cmp-mono"
+              :style="{ background: ga ? ga.color : '#999', color: inkOn(ga ? ga.color : '#999') }"
+              >{{ ga ? ga.short : "?" }}</span
+            >
             <b class="cmp-vs__name">{{ ga ? ga.label : "—" }}</b>
-            <b class="cmp-vs__num" :style="{ color: ga ? ga.color : 'inherit' }">{{ fmt(totA.pour) }}</b>
+            <b class="cmp-vs__num" :style="{ color: ga ? textOnWhite(ga.color, 3) : 'inherit' }">{{
+              fmt(totA.pour)
+            }}</b>
             <small class="cmp-vs__sub">pour · {{ fmt(totA.contre) }} contre</small>
           </div>
           <span class="cmp-vs__word">VS</span>
           <div class="cmp-vs__g">
-            <span class="cmp-mono" :style="{ background: gb ? gb.color : '#999' }">{{ gb ? gb.short : "?" }}</span>
+            <span
+              class="cmp-mono"
+              :style="{ background: gb ? gb.color : '#999', color: inkOn(gb ? gb.color : '#999') }"
+              >{{ gb ? gb.short : "?" }}</span
+            >
             <b class="cmp-vs__name">{{ gb ? gb.label : "—" }}</b>
-            <b class="cmp-vs__num" :style="{ color: gb ? gb.color : 'inherit' }">{{ fmt(totB.pour) }}</b>
+            <b class="cmp-vs__num" :style="{ color: gb ? textOnWhite(gb.color, 3) : 'inherit' }">{{
+              fmt(totB.pour)
+            }}</b>
             <small class="cmp-vs__sub">pour · {{ fmt(totB.contre) }} contre</small>
           </div>
         </div>
@@ -149,15 +169,29 @@ function toggleAll() {
               <td class="tname">
                 <span class="tname__inner">
                   <span class="tile" :style="{ background: row.t.pastel }"><Icon :name="row.t.icon" /></span>
-                  <span class="tname__txt">{{ row.t.name }}<small>{{ row.tl.length }} vote{{ row.tl.length > 1 ? "s" : "" }}</small></span>
+                  <span class="tname__txt"
+                    >{{ row.t.name }}<small>{{ row.tl.length }} vote{{ row.tl.length > 1 ? "s" : "" }}</small></span
+                  >
                 </span>
               </td>
-              <td class="n" :data-label="ga ? ga.short : '—'" :title="(ga ? ga.short : '') + ' : ' + fmt(row.A.pour) + ' pour, ' + fmt(row.A.contre) + ' contre'">
-                <span class="cmp-pct" :style="{ color: ga ? ga.color : 'inherit' }">{{ fmt(row.A.pour) }}</span>
+              <td
+                class="n"
+                :data-label="ga ? ga.short : '—'"
+                :title="(ga ? ga.short : '') + ' : ' + fmt(row.A.pour) + ' pour, ' + fmt(row.A.contre) + ' contre'"
+              >
+                <span class="cmp-pct" :style="{ color: ga ? textOnWhite(ga.color, 3) : 'inherit' }">{{
+                  fmt(row.A.pour)
+                }}</span>
                 <small class="cmp-pct__sub">{{ fmt(row.A.contre) }} contre</small>
               </td>
-              <td class="n" :data-label="gb ? gb.short : '—'" :title="(gb ? gb.short : '') + ' : ' + fmt(row.B.pour) + ' pour, ' + fmt(row.B.contre) + ' contre'">
-                <span class="cmp-pct" :style="{ color: gb ? gb.color : 'inherit' }">{{ fmt(row.B.pour) }}</span>
+              <td
+                class="n"
+                :data-label="gb ? gb.short : '—'"
+                :title="(gb ? gb.short : '') + ' : ' + fmt(row.B.pour) + ' pour, ' + fmt(row.B.contre) + ' contre'"
+              >
+                <span class="cmp-pct" :style="{ color: gb ? textOnWhite(gb.color, 3) : 'inherit' }">{{
+                  fmt(row.B.pour)
+                }}</span>
                 <small class="cmp-pct__sub">{{ fmt(row.B.contre) }} contre</small>
               </td>
             </tr>

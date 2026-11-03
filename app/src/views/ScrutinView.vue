@@ -17,15 +17,20 @@ const prefs = usePrefsStore();
 const s = computed(() => data.scrutins[route.params.id] || null);
 const theme = computed(() => (s.value ? data.themeById(s.value.theme) : null));
 const title = computed(() => capFirst(s.value ? s.value.text : ""));
-const senateGroups = computed(() =>
-  s.value ? s.value.groups.map((g) => data.senateGroup(g)) : []
-);
+const senateGroups = computed(() => (s.value ? s.value.groups.map((g) => data.senateGroup(g)) : []));
 const anGroupsNorm = computed(() =>
-  s.value && s.value.an && s.value.an.groups
-    ? s.value.an.groups.map((g) => data.anGroup(g))
-    : []
+  s.value && s.value.an && s.value.an.groups ? s.value.an.groups.map((g) => data.anGroup(g)) : [],
 );
 const anTextVotes = computed(() => (s.value ? data.anByText(s.value.text) : []));
+const showSubject = computed(() => {
+  if (!s.value || !s.value.subject) return false;
+  return (
+    s.value.subject.trim().toLowerCase() !==
+    String(s.value.type || "")
+      .trim()
+      .toLowerCase()
+  );
+});
 const senateTextCount = computed(() => {
   if (!s.value) return 0;
   return data.scrutinsArray.filter((x) => x.text === s.value.text).length;
@@ -43,7 +48,7 @@ const CATS = [
   { key: "pour", label: "Pour" },
   { key: "contre", label: "Contre" },
   { key: "abstention", label: "Abstention" },
-  { key: "nonVotants", label: "N'a pas pris part au vote" }
+  { key: "nonVotants", label: "N'a pas pris part au vote" },
 ];
 
 const votes = ref(null);
@@ -51,9 +56,7 @@ const votesLoading = ref(false);
 const votesError = ref(null);
 const failedPhotos = ref(new Set());
 
-const textSummary = computed(() =>
-  s.value ? data.textSummaryOf(s.value.text) : ""
-);
+const textSummary = computed(() => (s.value ? data.textSummaryOf(s.value.text) : ""));
 
 function markFailed(key) {
   failedPhotos.value.add(key);
@@ -81,7 +84,7 @@ function voter(name, listGroup, index) {
     photo: senator && senator.photo ? senator.photo : "",
     page: senator && senator.page ? senator.page : "",
     slug: senator && senator.slug ? senator.slug : "",
-    initials: initials(senator ? senator.name : name)
+    initials: initials(senator ? senator.name : name),
   };
 }
 
@@ -91,16 +94,26 @@ const groupRows = computed(() => {
   (s.value ? s.value.groups : []).forEach((g) => {
     official[g.key] = g;
   });
-  return data.senateGroups.map((meta) => {
-    const block = votes.value.groups[meta.key] || {};
-    const cats = CATS.map((c) => ({
-      key: c.key,
-      label: c.label,
-      people: splitNames(block[c.key]).map((name, i) => voter(name, meta, i))
-    }));
-    const total = cats.reduce((acc, c) => acc + c.people.length, 0);
-    return { key: meta.key, short: meta.short, label: meta.label, color: meta.color, cats, total, official: official[meta.key] || {} };
-  });
+  return data.senateGroups
+    .filter((meta) => official[meta.key] || (votes.value.groups && votes.value.groups[meta.key]))
+    .map((meta) => {
+      const block = votes.value.groups[meta.key] || {};
+      const cats = CATS.map((c) => ({
+        key: c.key,
+        label: c.label,
+        people: splitNames(block[c.key]).map((name, i) => voter(name, meta, i)),
+      }));
+      const total = cats.reduce((acc, c) => acc + c.people.length, 0);
+      return {
+        key: meta.key,
+        short: meta.short,
+        label: meta.label,
+        color: meta.color,
+        cats,
+        total,
+        official: official[meta.key] || {},
+      };
+    });
 });
 
 function resultWord(result) {
@@ -148,7 +161,7 @@ watch(
   () => (s.value ? s.value.id : null),
   (id) => {
     if (id) loadVotes(id);
-  }
+  },
 );
 const overlayOn = computed(() => prefs.overlay && !!data.anVoteOf(s.value));
 </script>
@@ -163,7 +176,7 @@ const overlayOn = computed(() => prefs.overlay && !!data.anVoteOf(s.value));
     <article class="scrutin">
       <header class="scrutin__head">
         <h1 class="scrutin__title">{{ title }}</h1>
-        <p class="scrutin__sub">{{ s.subject }}</p>
+        <p v-if="showSubject" class="scrutin__sub">{{ s.subject }}</p>
         <div class="scrutin__badges">
           <span class="b" :class="resultClass(s.result)">Sénat · {{ resultWord(s.result) }}</span>
           <span v-if="anBadge" class="b b--an">{{ anBadge }}</span>
@@ -179,8 +192,9 @@ const overlayOn = computed(() => prefs.overlay && !!data.anVoteOf(s.value));
       <div v-if="!overlayOn" class="scrutin-grid">
         <section class="scrutin-card" aria-label="Vote du Sénat">
           <div class="chamber__head">
-            <div class="chamber__title">Sénat<small>{{ frDate(s.date) }}</small></div>
-            <span class="b" :class="resultClass(s.result)">Sénat · {{ resultWord(s.result) }}</span>
+            <div class="chamber__title">
+              Sénat<small>{{ frDate(s.date) }}</small>
+            </div>
           </div>
           <TotalsChips :totals="s.totals" />
           <GroupBars :groups="senateGroups" />
@@ -189,9 +203,10 @@ const overlayOn = computed(() => prefs.overlay && !!data.anVoteOf(s.value));
         <section class="scrutin-card" aria-label="Vote de l'Assemblée nationale">
           <div v-if="s.an" class="chamber__head">
             <div class="chamber__title">
-              Assemblée nationale<small>{{ frDate(s.an.date) }} · {{ s.an.stage }} · {{ s.an.legislature }}ᵉ législature</small>
+              Assemblée nationale<small
+                >{{ frDate(s.an.date) }} · {{ s.an.stage }} · {{ s.an.legislature }}ᵉ législature</small
+              >
             </div>
-            <span class="b" :class="resultClass(s.an.result)">AN · {{ resultWord(s.an.result) }}</span>
           </div>
           <template v-if="s.an">
             <TotalsChips :totals="s.an.totals" />
@@ -205,7 +220,13 @@ const overlayOn = computed(() => prefs.overlay && !!data.anVoteOf(s.value));
             </div>
             <ul class="anvotes">
               <li v-for="a in anTextVotes" :key="a.uid">
-                <a :href="a.url" target="_blank" rel="noopener" aria-label="Ouvrir le vote de l'Assemblée nationale sur le site de l'Assemblée (nouvel onglet)">{{ frDateShort(a.date) }} · {{ a.stage }}</a>
+                <a
+                  :href="a.url"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="Ouvrir le vote de l'Assemblée nationale sur le site de l'Assemblée (nouvel onglet)"
+                  >{{ frDateShort(a.date) }} · {{ a.stage }}</a
+                >
                 <span class="b" :class="resultClass(a.result)">{{ resultWord(a.result) }}</span>
                 <span class="anvotes__c">{{ n(a.totals.pour) }} pour · {{ n(a.totals.contre) }} contre</span>
               </li>
@@ -216,7 +237,9 @@ const overlayOn = computed(() => prefs.overlay && !!data.anVoteOf(s.value));
             <div class="chamber__head">
               <div class="chamber__title">Assemblée nationale<small>Aucun vote public recensé sur ce texte</small></div>
             </div>
-            <p class="chamber__empty">Aucun vote public de l'Assemblée nationale n'est recensé sur ce texte dans les données officielles.</p>
+            <p class="chamber__empty">
+              Aucun vote public de l'Assemblée nationale n'est recensé sur ce texte dans les données officielles.
+            </p>
           </template>
         </section>
       </div>
@@ -243,7 +266,17 @@ const overlayOn = computed(() => prefs.overlay && !!data.anVoteOf(s.value));
           <p class="about__label">Votes de l'Assemblée nationale sur ce texte</p>
           <ul class="anvotes">
             <li v-for="a in anTextVotes" :key="a.uid">
-              <a :href="a.url" target="_blank" rel="noopener" :aria-label="'Ouvrir le vote de l\'Assemblée nationale du ' + frDateShort(a.date) + ' sur le site de l\'Assemblée (nouvel onglet)'">{{ frDateShort(a.date) }} · {{ a.stage }}</a>
+              <a
+                :href="a.url"
+                target="_blank"
+                rel="noopener"
+                :aria-label="
+                  'Ouvrir le vote de l\'Assemblée nationale du ' +
+                  frDateShort(a.date) +
+                  ' sur le site de l\'Assemblée (nouvel onglet)'
+                "
+                >{{ frDateShort(a.date) }} · {{ a.stage }}</a
+              >
               <span class="b" :class="resultClass(a.result)">{{ resultWord(a.result) }}</span>
               <span class="anvotes__c">{{ n(a.totals.pour) }} pour · {{ n(a.totals.contre) }} contre</span>
             </li>
@@ -252,12 +285,20 @@ const overlayOn = computed(() => prefs.overlay && !!data.anVoteOf(s.value));
         <p v-else class="about__empty">Aucun vote public de l'Assemblée nationale n'est recensé sur ce texte.</p>
 
         <p v-if="s.dossierUrl" class="about__dossier">
-          <a :href="s.dossierUrl" target="_blank" rel="noopener" aria-label="Ouvrir le dossier législatif sur senat.fr (nouvel onglet)">Dossier législatif ↗</a>
+          <a
+            :href="s.dossierUrl"
+            target="_blank"
+            rel="noopener"
+            aria-label="Ouvrir le dossier législatif sur senat.fr (nouvel onglet)"
+            >Dossier législatif ↗</a
+          >
         </p>
       </section>
 
       <section class="scrutin-card" aria-label="Votes nominatifs des sénateurs">
-        <h2 class="scrutin-card__title">Qui a voté<small>Détail nominatif par groupe, d'après le compte rendu officiel du scrutin.</small></h2>
+        <h2 class="scrutin-card__title">
+          Qui a voté<small>Détail nominatif par groupe, d'après le compte rendu officiel du scrutin.</small>
+        </h2>
 
         <p v-if="votesLoading" class="wv-loading">Chargement des votes nominatifs…</p>
         <p v-else-if="votesError" class="wv-error">{{ votesError }}</p>
@@ -271,13 +312,16 @@ const overlayOn = computed(() => prefs.overlay && !!data.anVoteOf(s.value));
                 <span class="wv-group__label">{{ g.label }}</span>
               </span>
               <span class="wv-group__counts">
-                {{ n(g.official.pour) }} pour · {{ n(g.official.contre) }} contre · {{ n(g.official.abstention) }} abst. · {{ n(g.official.nonVotants) }} non-votants
+                {{ n(g.official.pour) }} pour · {{ n(g.official.contre) }} contre · {{ n(g.official.abstention) }} abst.
+                · {{ n(g.official.nonVotants) }} non-votants
               </span>
             </summary>
             <div class="wv-body">
               <div v-if="g.total" class="wv-names">
                 <div v-for="c in g.cats" v-show="c.people.length" :key="c.key" class="wv-cat">
-                  <p class="wv-cat__head">{{ c.label }} <b>{{ n(c.people.length) }}</b></p>
+                  <p class="wv-cat__head">
+                    {{ c.label }} <b>{{ n(c.people.length) }}</b>
+                  </p>
                   <ul class="wv-voters">
                     <li v-for="(p, i) in c.people" :key="p.raw + i" class="wv-voter">
                       <span class="wv-avatar" :style="{ background: p.color }" aria-hidden="true">
@@ -302,11 +346,16 @@ const overlayOn = computed(() => prefs.overlay && !!data.anVoteOf(s.value));
                             target="_blank"
                             rel="noopener"
                             :aria-label="'Fiche officielle de ' + p.name + ' sur senat.fr (nouvel onglet)'"
-                          >↗</a>
+                            >↗</a
+                          >
                         </template>
-                        <a v-else-if="p.page" class="wv-voter__name" :href="p.page" target="_blank" rel="noopener">{{ p.name }}</a>
+                        <a v-else-if="p.page" class="wv-voter__name" :href="p.page" target="_blank" rel="noopener">{{
+                          p.name
+                        }}</a>
                         <span v-else class="wv-voter__name">{{ p.name }}</span>
-                        <span v-if="p.department" class="wv-voter__dept">{{ p.department }}<template v-if="p.region"> · {{ p.region }}</template></span>
+                        <span v-if="p.department" class="wv-voter__dept"
+                          >{{ p.department }}<template v-if="p.region"> · {{ p.region }}</template></span
+                        >
                       </span>
                       <span class="wv-tag" :style="{ color: p.color, borderColor: p.color }">{{ p.short }}</span>
                     </li>
@@ -320,8 +369,21 @@ const overlayOn = computed(() => prefs.overlay && !!data.anVoteOf(s.value));
       </section>
 
       <div class="vrow__links">
-        <a :href="s.url" target="_blank" rel="noopener" aria-label="Ouvrir la page du scrutin sur senat.fr (nouvel onglet)">Page du scrutin (senat.fr) ↗</a>
-        <a v-if="s.dossierUrl" :href="s.dossierUrl" target="_blank" rel="noopener" aria-label="Ouvrir le dossier législatif sur senat.fr (nouvel onglet)">Dossier législatif ↗</a>
+        <a
+          :href="s.url"
+          target="_blank"
+          rel="noopener"
+          aria-label="Ouvrir la page du scrutin sur senat.fr (nouvel onglet)"
+          >Page du scrutin (senat.fr) ↗</a
+        >
+        <a
+          v-if="s.dossierUrl"
+          :href="s.dossierUrl"
+          target="_blank"
+          rel="noopener"
+          aria-label="Ouvrir le dossier législatif sur senat.fr (nouvel onglet)"
+          >Dossier législatif ↗</a
+        >
       </div>
     </article>
   </div>
@@ -329,7 +391,9 @@ const overlayOn = computed(() => prefs.overlay && !!data.anVoteOf(s.value));
   <div v-else class="wrap">
     <div class="page-head">
       <h1 class="page-title">Scrutin introuvable</h1>
-      <p class="page-lede">Ce scrutin n'existe pas ou plus. <RouterLink to="/votes">Revenir à tous les votes</RouterLink>.</p>
+      <p class="page-lede">
+        Ce scrutin n'existe pas ou plus. <RouterLink to="/votes">Revenir à tous les votes</RouterLink>.
+      </p>
     </div>
   </div>
 </template>

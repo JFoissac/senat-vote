@@ -75,7 +75,7 @@ function positionGroupe(g) {
 
 /* --------------------------------------------------------- squelette HTML */
 
-const BALISES_A_REMPLACER = /<title>[\s\S]*?<\/title>|<meta name="description"[^>]*>|<meta name="viewport"[^>]*>/;
+const BALISES_A_REMPLACER = /<title>[\s\S]*?<\/title>|<meta name="description"[^>]*>|<meta name="viewport"[^>]*>/g;
 
 /**
  * Construit la page complète. `contenu` est le HTML placé dans #root : il est lu par
@@ -107,7 +107,8 @@ function page({ chemin, titre, description, jsonld, contenu }) {
     jsonld ? `<script type="application/ld+json">${JSON.stringify(jsonld)}</script>` : "",
   ].filter(Boolean).join("\n    ");
 
-  let html = gabarit.replace(BALISES_A_REMPLACER, tete);
+  let html = gabarit.replace(BALISES_A_REMPLACER, "");
+  html = html.replace("</head>", `${tete}\n  </head>`);
   html = html.replace('<div id="root"></div>', `<div id="root">${contenu}</div>`);
   return { chemin, url, html };
 }

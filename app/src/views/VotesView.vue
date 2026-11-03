@@ -51,6 +51,20 @@ function resetPage() {
   prefs.votes.page = 1;
 }
 
+function resetFilters() {
+  const empty = {};
+  themes.value.forEach((t) => {
+    empty[t.id] = false;
+  });
+  prefs.votes.q = "";
+  prefs.votes.origin = "";
+  prefs.votes.group = "";
+  prefs.votes.position = "";
+  prefs.votes.withAn = false;
+  prefs.votes.themes = empty;
+  prefs.votes.page = 1;
+}
+
 function themeCount(id) {
   return data.scrutinsOfTheme(id).length;
 }
@@ -139,8 +153,8 @@ watch(pages, (p) => {
               <option value="abs">S'est majoritairement abstenu</option>
             </select>
             <p class="note" style="margin: 6px 0 0">
-              Chaque scrutin liste les 9 groupes du Sénat. Choisissez un groupe, puis la position majoritaire (pour,
-              contre, abstention) pour ne garder que les scrutins correspondants.
+              Chaque scrutin liste les {{ data.senateGroups.length }} groupes du Sénat. Choisissez un groupe, puis la
+              position majoritaire (pour, contre, abstention) pour ne garder que les scrutins correspondants.
             </p>
           </div>
           <div class="filters__group">
@@ -167,7 +181,12 @@ watch(pages, (p) => {
         <div v-if="slice.length" class="vlist">
           <VoteCard v-for="s in slice" :key="s.id" :scrutin="s" />
         </div>
-        <p v-else class="empty">Aucun vote ne correspond à ces filtres.</p>
+        <p v-else class="empty" role="status">
+          Aucun vote ne correspond à ces filtres.
+          <button class="btn btn--small empty__action" type="button" @click="resetFilters">
+            Réinitialiser les filtres
+          </button>
+        </p>
         <Pager :page="page" :pages="pages" @update:page="setPage" />
       </div>
     </div>
