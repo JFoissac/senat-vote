@@ -60,6 +60,7 @@ def build_map() -> dict:
             "facebook": s.get("facebook") or "",
             "organs": organs,
             "active": True,
+            "current": True,
         }
         for form in (full, f"{s.get('nom', '')} {s.get('prenom', '')}"):
             key = nin(form)
@@ -82,6 +83,7 @@ def build_map() -> dict:
             "photo": "",
             "page": "",
             "active": bool(s.get("active")),
+            "current": False,
         }
     return out
 

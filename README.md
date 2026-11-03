@@ -10,7 +10,7 @@ aucune note, aucun classement des partis, aucune recommandation de vote.
 - **12 sujets** : pouvoir d'achat et coût de la vie, santé, école, logement, travail, sécurité et ordre public,
   écologie/climat/énergie, alimentation et agriculture, retraites/solidarité/grand âge, immigration/asile/intégration,
   finances publiques et dette, autres textes votés.
-- **922 scrutins du Sénat** de la période, regroupés par **texte** (dossier législatif) : vote sur l'ensemble du
+- **967 scrutins du Sénat** de la période, regroupés par **texte** (dossier législatif) : vote sur l'ensemble du
   texte, articles, amendements et motions de procédure.
 - Pour chaque vote : **ce que change le texte** (résumé factuel pour les principaux textes), **adopté ou rejeté**,
   son **origine** (projet de loi du gouvernement ou proposition parlementaire), la **répartition des votes par
@@ -144,7 +144,7 @@ La navigation utilise un **history par hash** (`#/...`) : aucune règle de réé
 Les données publiques sont réutilisées sous **Licence Ouverte 2.0 (Etalab)**. Toute réutilisation doit
 **mentionner la source** (Sénat / Assemblée nationale) et ne pas laisser croire à une affiliation officielle.
 
-Période couverte : **octobre 2023 → juillet 2026**.
+Période couverte : **octobre 2023 → octobre 2026**.
 
 ## Neutralité
 

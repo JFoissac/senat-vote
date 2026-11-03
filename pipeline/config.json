@@ -85,23 +85,26 @@
   "groups": [
     { "key": "LR",   "short": "LR",    "label": "Les Républicains", "color": "#4C6FFF", "senatLabel": "Groupe Les Républicains" },
     { "key": "SER",  "short": "SER",   "label": "Socialiste, Écologiste et Républicain", "color": "#FF5C8A", "senatLabel": "Groupe Socialiste, Écologiste et Républicain" },
-    { "key": "UC",   "short": "UC",    "label": "Union Centriste", "color": "#31C4F3", "senatLabel": "Groupe Union Centriste" },
+    { "key": "UC",   "short": "UC",    "label": "Union Centriste et Indépendants", "color": "#31C4F3", "senatLabel": "Groupe Union Centriste et Indépendants" },
     { "key": "LIRT", "short": "LIRT",  "label": "Les Indépendants – République et Territoires", "color": "#A78BFA", "senatLabel": "Groupe Les Indépendants - République et Territoires" },
     { "key": "RDPI", "short": "RDPI",  "label": "Rassemblement des démocrates, progressistes et indépendants", "color": "#FF9350", "senatLabel": "Groupe Rassemblement des démocrates, progressistes et indépendants" },
     { "key": "CRCE", "short": "CRCE-K","label": "Communiste Républicain Citoyen et Écologiste – Kanaky", "color": "#E5484D", "senatLabel": "Groupe Communiste Républicain Citoyen et Écologiste - Kanaky" },
     { "key": "RDSE", "short": "RDSE",  "label": "Rassemblement Démocratique et Social Européen", "color": "#FFC53D", "senatLabel": "Groupe du Rassemblement Démocratique et Social Européen" },
     { "key": "GEST", "short": "GEST",  "label": "Écologiste – Solidarité et Territoires", "color": "#35D07F", "senatLabel": "Groupe Écologiste - Solidarité et Territoires" },
-    { "key": "NI",   "short": "NI",    "label": "Non-inscrits (dont 4 sénateurs RN)", "color": "#8B95A9", "senatLabel": "Sénateurs ne figurant sur la liste d'aucun groupe", "senatorFileLabel": "NI" }
+    { "key": "UNT",  "short": "UNT",   "label": "Union Nationale pour les Territoires", "color": "#0F766E", "senatLabel": "Groupe Union Nationale pour les Territoires" },
+    { "key": "NI",   "short": "NI",    "label": "Non-inscrits", "color": "#8B95A9", "senatLabel": "Sénateurs ne figurant sur la liste d'aucun groupe", "senatorFileLabel": "NI" }
   ],
   "senatorGroupMapping": {
     "Les Républicains": "LR",
     "SER": "SER",
     "UC": "UC",
+    "UCI": "UC",
     "Les Indépendants": "LIRT",
     "RDPI": "RDPI",
     "CRCE-K": "CRCE",
     "RDSE": "RDSE",
     "GEST": "GEST",
+    "UNT": "UNT",
     "NI": "NI"
   },
   "senatToAnGroups": { "LR": "DR", "SER": "SOC", "UC": "Dem", "LIRT": "LIOT", "RDPI": "EPR", "CRCE": "GDR", "RDSE": "LIOT", "GEST": "EcoS", "NI": "NI" },

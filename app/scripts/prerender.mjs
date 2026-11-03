@@ -3,8 +3,8 @@
  *
  * Pourquoi : l'application est une SPA. Le `index.html` produit par Vite ne contient
  * qu'un `<div id="root"></div>` vide et un titre générique : un moteur de recherche y
- * voit une seule page, sans contenu ni liens. Résultat, aucun des 922 scrutins, des
- * 12 sujets ou des 372 sénateurs n'est indexable.
+ * voit une seule page, sans contenu ni liens. Résultat, aucun des 967 scrutins, des
+ * 12 sujets ou des 438 sénateurs n'est indexable.
  *
  * Ce script génère, pour chaque route, un fichier `dist/<chemin>/index.html` complet :
  * un titre et une description propres, les balises Open Graph (aperçu de partage),
@@ -289,7 +289,7 @@ for (const t of themes) {
   }));
 }
 
-/* --- les 922 scrutins --- */
+/* --- les 967 scrutins --- */
 for (const s of scrutins) {
   const t = themeParId.get(s.theme);
   const tot = s.totals || {};

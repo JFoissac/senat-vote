@@ -54,7 +54,7 @@ THEME_PATTERNS = [
     ("ecole", r"école|ecole|scolaire|professeur|université|universite|enseignement|étudiant|etudiant|laïcité|laicite|recherche|vie scolaire|lycée|college|collège"),
     ("travail", r"emploi|travail|salari|chômage|chomage|apprentissage|dialogue social|plein emploi|travailleurs|seniors|laboratoire|convention collective|assurance chômage|sécurité sociale des travailleurs"),
     ("securite", r"sécurité|securite|délinquance|delinquance|criminalit|criminelle|narcotrafic|stupéfiant|stupefiant|police|gendarmerie|ordre public|terroris|délinquants|delinquants|violences|justice pénale|sécurité civile|cybersécurité|cybercriminalité|victimes"),
-    ("sante", r"santé|sante|soins|médical|medical|hôpital|hopital|médecin|medecin|maladie|vaccin|médicament|medicament|palliatif|aide à mourir|aide a mourir|psychiatri|handicap|cancer|sclérose|sclerose|protection de l'enfance"),
+    ("sante", r"santé|sante|soins|médical|medical|hôpital|hopital|médecin|medecin|maladie|vaccin|médicament|medicament|palliatif|aide à mourir|aide a mourir|psychiatri|handicap|cancer|sclérose|sclerose|protection de l'enfance|protection des enfants"),
     ("solidarite", r"retraite|pension|grand âge|grand age|autonomie|dépendance|dependance|prestations sociales|minima sociaux|aide sociale|famille|enfance|jeunesse|bénéficiaires|beneficiaires|allocation|vieillesse"),
     ("immigration", r"immigration|intégration|integration|asile|étrangers|etrangers|nationalité|nationalite|rétention|retention|titre de séjour|visa|apatridie|frontière"),
     ("finances", r"finances|budget|financi|fiscal|impôt|impot|taxe|déficit|deficit|dette|comptes|fraude|dépense|depense|douane|trésor|tresor"),
@@ -325,7 +325,11 @@ def main() -> None:
     resumes = json.loads((ROOT / "pipeline" / "resumes.json").read_text(encoding="utf-8"))
     an_mapping = json.loads((ROOT / "pipeline" / "an_mapping.json").read_text(encoding="utf-8"))
     sessions = {d["id"]: d for d in json.loads((OPENDATA / "session_scrutins.json").read_text(encoding="utf-8"))}
-    senators = json.loads((OPENDATA / "senateurs.json").read_text(encoding="utf-8"))
+    # Annuaire officiel : l'API du Sénat donne la composition courante, y compris les
+    # groupes créés en cours de période (ex. UNT, octobre 2026). L'annuaire historique
+    # ne sert plus que de complément pour les sénateurs qui ne siègent plus.
+    build_senators_map = __import__("pipeline.build_senators_map", fromlist=["build_map"])
+    senators_map = build_senators_map.build_map()
     deputes = json.loads((OPENDATA / "deputes.json").read_text(encoding="utf-8"))
     an_labels = load_an_group_labels()
 
@@ -396,13 +400,20 @@ def main() -> None:
             an_by_text[text] = [an_scrutin_brief(u, an_labels, config.get("anGroupNormalize", {}), full=True) for u in matches]
 
     # --- groupes Sénat ---
-    active = [s for s in senators if s["active"]]
+    active, seen_slugs = [], set()
+    for entry in senators_map.values():
+        slug = entry.get("slug")
+        if not entry.get("current") or not slug or slug in seen_slugs:
+            continue
+        seen_slugs.add(slug)
+        active.append(entry)
+    active.sort(key=lambda e: e.get("name") or "")
     members_by_group = {}
     for s in active:
-        key = config["senatorGroupMapping"].get(s["group_short"])
+        key = config["senatorGroupMapping"].get(s.get("group"))
         if not key:
             continue
-        members_by_group.setdefault(key, []).append({"name": s["full_name"], "department": s["department_label"] or "—"})
+        members_by_group.setdefault(key, []).append({"name": s["name"], "department": s.get("department") or "—"})
     for key in members_by_group:
         members_by_group[key].sort(key=lambda m: m["name"])
 
@@ -448,7 +459,7 @@ def main() -> None:
         "scrutins": scrutins_out,
         "anByText": an_by_text,
         "textSummaries": json.loads((ROOT / "pipeline" / "text_summaries.json").read_text(encoding="utf-8")) if (ROOT / "pipeline" / "text_summaries.json").exists() else {},
-        "senators": __import__("pipeline.build_senators_map", fromlist=["build_map"]).build_map() if (ROOT / "pipeline" / "build_senators_map.py").exists() else {},
+        "senators": senators_map,
         "groupMapping": config.get("senatToAnGroups", {}),
     }
 

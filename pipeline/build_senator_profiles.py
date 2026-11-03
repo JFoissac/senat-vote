@@ -51,6 +51,19 @@ def main() -> None:
             by_name[key] = entry
 
     profiles = {}
+    # Slug stable : un profil déjà publié conserve son adresse, même quand l'annuaire
+    # officiel change de forme de slug (un sénateur sortant vient du complément historique).
+    slug_par_personne = {}
+    if OUT.exists():
+        for chemin in OUT.glob("*.json"):
+            try:
+                ancien = json.loads(chemin.read_text(encoding="utf-8"))
+            except ValueError:
+                continue
+            cle = nin(ancien.get("name"))
+            if cle:
+                slug_par_personne.setdefault(cle, ancien.get("slug") or chemin.stem)
+
     for path in sorted(VOTES.glob("*.json")):
         sid = path.stem
         meta = scrutins.get(sid)
@@ -64,12 +77,15 @@ def main() -> None:
                 if not letter or not names:
                     continue
                 for name in names.split(", "):
-                    entry = by_name.get(nin(name))
+                    cle = nin(name)
+                    entry = by_name.get(cle)
                     if not entry or not entry.get("slug"):
                         continue
+                    slug = slug_par_personne.get(cle) or entry["slug"]
+                    slug_par_personne[cle] = slug
                     p = profiles.setdefault(
-                        entry["slug"],
-                        {"slug": entry["slug"], "name": entry.get("name") or name, "votes": [], "stats": {"n": 0, "p": 0, "c": 0, "a": 0, "nv": 0, "ecarts": 0}},
+                        slug,
+                        {"slug": slug, "name": entry.get("name") or name, "votes": [], "stats": {"n": 0, "p": 0, "c": 0, "a": 0, "nv": 0, "ecarts": 0}},
                     )
                     pos_name = {"P": "pour", "C": "contre", "A": "abstention", "N": "nonVotants"}[letter]
                     aligned = pos_name != "nonVotants" and maj.get(gkey) == pos_name
