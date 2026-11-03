@@ -414,6 +414,36 @@ main:focus, main:focus-visible { outline: none; }
 .footer__col a { display: flex; align-items: center; min-height: 34px; font-size: 0.84rem; color: var(--ink-2); padding: 4px 0; }
 .footer__text { color: var(--muted); font-size: 0.82rem; margin: 0; max-width: 40ch; }
 .footer__text--small { font-size: 0.76rem; }
+.footer__legal {
+  max-width: 1240px;
+  margin: 22px auto 0;
+  padding: 14px 14px 22px;
+  border-top: 1px solid var(--line);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0 10px;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+.footer__legal a { display: inline-flex; align-items: center; min-height: 44px; color: var(--ink-2); font-weight: 600; }
+
+/* ---------- Bandeau d'information cookies ---------- */
+
+.cookienotice { background: var(--surface-2); border-bottom: 1px solid var(--line); }
+.cookienotice__inner {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 10px 14px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 18px;
+}
+.cookienotice__text { flex: 1 1 340px; margin: 0; font-size: 0.82rem; color: var(--ink-2); }
+.cookienotice__actions { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 16px; }
+.cookienotice__link { display: inline-flex; align-items: center; min-height: 44px; font-size: 0.82rem; font-weight: 700; text-decoration: underline; }
+.cookienotice__ok { min-height: 44px; }
 
 /* ---------- Accessibilité / mouvement ---------- */
 

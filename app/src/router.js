@@ -6,6 +6,9 @@ import ScrutinView from "./views/ScrutinView.vue";
 import CompareView from "./views/CompareView.vue";
 import GroupesView from "./views/GroupesView.vue";
 import MethodeView from "./views/MethodeView.vue";
+import MentionsLegalesView from "./views/MentionsLegalesView.vue";
+import ConfidentialiteView from "./views/ConfidentialiteView.vue";
+import CookiesView from "./views/CookiesView.vue";
 import NotFoundView from "./views/NotFoundView.vue";
 
 const routes = [
@@ -17,6 +20,9 @@ const routes = [
   { path: "/comparer", name: "comparer", component: CompareView },
   { path: "/groupes", name: "groupes", component: GroupesView },
   { path: "/methode", name: "methode", component: MethodeView },
+  { path: "/mentions-legales", name: "mentions-legales", component: MentionsLegalesView },
+  { path: "/confidentialite", name: "confidentialite", component: ConfidentialiteView },
+  { path: "/cookies", name: "cookies", component: CookiesView },
   { path: "/:pathMatch(.*)*", name: "notfound", component: NotFoundView }
 ];
 

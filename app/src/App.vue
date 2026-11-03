@@ -3,6 +3,7 @@ import { computed, nextTick, ref, watch } from "vue";
 import { useRoute } from "vue-router";
 import { useDataStore } from "./stores/data.js";
 import AppHeader from "./components/AppHeader.vue";
+import CookieNotice from "./components/CookieNotice.vue";
 import { frDate } from "./format.js";
 
 const route = useRoute();
@@ -16,6 +17,9 @@ const TITLES = {
   comparer: "comparer deux groupes",
   groupes: "les groupes politiques",
   methode: "méthode et sources",
+  "mentions-legales": "mentions légales",
+  confidentialite: "confidentialité",
+  cookies: "cookies et stockage local",
   notfound: "page introuvable"
 };
 
@@ -45,6 +49,7 @@ watch(
 <template>
   <a class="skip-link" href="#app">Aller au contenu</a>
   <AppHeader />
+  <CookieNotice />
   <main id="app" ref="main" tabindex="-1">
     <div v-if="data.error" class="wrap">
       <p class="empty">Les données n'ont pas pu être chargées. Vérifiez votre connexion puis rechargez la page.</p>
@@ -78,5 +83,12 @@ watch(
         </div>
       </div>
     </div>
+    <nav class="footer__legal" aria-label="Informations légales">
+      <RouterLink to="/mentions-legales">Mentions légales</RouterLink>
+      <span aria-hidden="true">·</span>
+      <RouterLink to="/confidentialite">Confidentialité</RouterLink>
+      <span aria-hidden="true">·</span>
+      <RouterLink to="/cookies">Cookies</RouterLink>
+    </nav>
   </footer>
 </template>

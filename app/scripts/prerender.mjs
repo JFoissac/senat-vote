@@ -134,6 +134,11 @@ const pied = `
         <a href="/comparer">Comparer deux groupes</a> ·
         <a href="/methode">Méthode et sources</a>
       </nav>
+      <nav aria-label="Informations légales">
+        <a href="/mentions-legales">Mentions légales</a> ·
+        <a href="/confidentialite">Confidentialité</a> ·
+        <a href="/cookies">Cookies</a>
+      </nav>
     </footer>`;
 
 /* ------------------------------------------------------------------ routes */
@@ -455,6 +460,151 @@ for (const s of scrutins) {
   }));
 }
 
+/* --- pages légales : mentions, confidentialité, cookies --- */
+{
+  const mentions = `
+    <main>
+      <nav aria-label="Fil d'Ariane"><a href="/">Accueil</a> › Mentions légales</nav>
+      <h1>Mentions légales</h1>
+      <p>Sénat·Vote est un site d'information citoyen indépendant consacré aux votes publics du Sénat et de l'Assemblée
+      nationale. Dernière mise à jour : 3 novembre 2026.</p>
+      <h2>Éditeur du site</h2>
+      <ul>
+        <li><strong>Éditeur</strong> : Jean-François Foissac, particulier — site édité à titre personnel et non professionnel.</li>
+        <li><strong>Adresse</strong> : Caen, France.</li>
+        <li><strong>Contact</strong> : <a href="mailto:jf.foissac@gmail.com">jf.foissac@gmail.com</a>.</li>
+        <li><strong>Directeur de la publication</strong> : Jean-François Foissac.</li>
+        <li><strong>Immatriculation</strong> : SIRET, RCS, numéro de TVA intracommunautaire : <strong>À VENIR</strong>.</li>
+      </ul>
+      <h2>Hébergeur</h2>
+      <p><strong>Vercel Inc.</strong>, 440 N Barranca Ave #4133, Covina, CA 91723, États-Unis —
+      <a href="https://vercel.com" rel="noopener">vercel.com</a>. Le site est une application statique : les pages sont
+      générées à l'avance et servies par le réseau de l'hébergeur ; aucun serveur applicatif propre à l'éditeur ne traite
+      les visites.</p>
+      <h2>Propriété intellectuelle</h2>
+      <p>La structure du site, son interface, ses graphismes et les textes éditoriaux qui ne proviennent pas des sources
+      officielles sont l'œuvre de l'éditeur. Les <strong>données de vote</strong> sont des données publiques issues du
+      Sénat et de l'Assemblée nationale : elles restent soumises à leurs licences respectives.</p>
+      <h2>Sources et licences</h2>
+      <ul>
+        <li><a href="https://www.senat.fr/scrutin-public/" rel="noopener">Scrutins publics du Sénat</a> — réutilisés sous
+        <strong>Licence Ouverte 2.0</strong> (Etalab). Source : Sénat français.</li>
+        <li><a href="https://data.assemblee-nationale.fr/travaux-parlementaires/votes" rel="noopener">Votes de l'Assemblée
+        nationale</a> — réutilisés sous <strong>Licence Ouverte 2.0</strong>. Source : Assemblée nationale.</li>
+        <li><a href="https://www.senat.fr/api-senat" rel="noopener">API officielle du Sénat</a> — fiches et photos des
+        sénateurs.</li>
+      </ul>
+      <p>Toute réutilisation des données doit mentionner la source et ne pas laisser croire à une affiliation officielle.</p>
+      <h2>Liens externes</h2>
+      <p>Les liens vers le Sénat, l'Assemblée nationale, la CNIL et l'hébergeur permettent de vérifier les informations à
+      la source. L'éditeur ne contrôle pas ces sites et n'est pas responsable de leur contenu.</p>
+      <h2>Données personnelles et cookies</h2>
+      <p>Le site ne collecte aucune donnée personnelle et ne dépose aucun cookie. Voir
+      <a href="/confidentialite">Confidentialité</a> et <a href="/cookies">Cookies et stockage local</a>.</p>
+      <p>Sénat·Vote n'est affilié ni au Sénat, ni à l'Assemblée nationale, ni à un parti politique, ni à un institut de
+      sondage.</p>
+    </main>
+    ${pied}`;
+
+  pages.push(page({
+    chemin: "/mentions-legales",
+    titre: "Mentions légales — Sénat·Vote",
+    description: "Éditeur, contact, directeur de la publication, hébergeur (Vercel Inc.), propriété intellectuelle, sources et licences des données du site Sénat·Vote.",
+    jsonld: fil({ nom: "Accueil", chemin: "/" }, { nom: "Mentions légales", chemin: "/mentions-legales" }),
+    contenu: mentions,
+  }));
+
+  const confidentialite = `
+    <main>
+      <nav aria-label="Fil d'Ariane"><a href="/">Accueil</a> › Confidentialité</nav>
+      <h1>Confidentialité et données personnelles</h1>
+      <p>Ce site ne collecte aucune donnée personnelle : ni compte, ni formulaire, ni newsletter, ni mesure d'audience,
+      ni publicité. Dernière mise à jour : 3 novembre 2026.</p>
+      <h2>Ce que le site ne collecte pas</h2>
+      <ul>
+        <li>Aucun compte et aucune identification : le site se consulte sans se connecter.</li>
+        <li>Aucun formulaire de contact, d'inscription ou de commentaire.</li>
+        <li>Aucun outil de mesure d'audience : personne ne compte les visites.</li>
+        <li>Aucun cookie, aucun traceur publicitaire, aucun profilage.</li>
+        <li>Aucune newsletter et aucune transmission d'adresse e-mail depuis le site.</li>
+      </ul>
+      <p>Les seules données disponibles pour l'éditeur sont celles qu'un visiteur choisit de lui envoyer par e-mail, par
+      exemple pour signaler une erreur ; elles ne servent qu'à répondre à ce message.</p>
+      <h2>Ce qui reste sur votre appareil</h2>
+      <p>Vos préférences d'affichage sont mémorisées dans le <code>localStorage</code> du navigateur, sur votre appareil
+      uniquement : <code>senatvote.prefs.v1</code> (sujets, filtres, comparaison, superposition) et
+      <code>senatvote.avis-cookies.v1</code> (bandeau d'information déjà lu). Rien n'est envoyé à l'éditeur ni à un tiers.</p>
+      <h2>Journaux serveur de l'hébergeur</h2>
+      <p>Comme tout site web, l'accès aux pages passe par l'hébergeur <strong>Vercel Inc.</strong>, qui tient des journaux
+      techniques (adresse IP, date et heure, page demandée, caractéristiques du navigateur) pendant <strong>30 jours</strong>,
+      pour la sécurité et le diagnostic. Base légale : intérêt légitime (article 6.1.f du RGPD). Aucune exploitation
+      commerciale, aucune mesure d'audience.</p>
+      <h2>Polices d'écriture</h2>
+      <p>Les polices Fraunces et Inter sont chargées depuis Google Fonts ; cette requête transmet votre adresse IP à
+      Google, sans cookie ni identifiant, et n'est utilisée par l'éditeur pour aucune mesure.</p>
+      <h2>Vos droits</h2>
+      <p>Vous disposez d'un droit d'accès, de rectification, d'effacement, de limitation, d'opposition et de portabilité.
+      Écrivez à <a href="mailto:jf.foissac@gmail.com">jf.foissac@gmail.com</a> : réponse sous un mois. En pratique, le site
+      ne conservant aucune donnée, ces droits s'exercent surtout auprès de l'hébergeur pour ses journaux techniques.</p>
+      <h2>Réclamation</h2>
+      <p>Vous pouvez saisir la CNIL — 3 place de Fontenoy, TSA 80715, 75334 Paris Cedex 07 —
+      <a href="https://www.cnil.fr/fr/plaintes" rel="noopener">cnil.fr/fr/plaintes</a>.</p>
+      <p>Voir aussi : <a href="/mentions-legales">Mentions légales</a> · <a href="/cookies">Cookies et stockage local</a>.</p>
+    </main>
+    ${pied}`;
+
+  pages.push(page({
+    chemin: "/confidentialite",
+    titre: "Confidentialité et données personnelles — Sénat·Vote",
+    description: "Aucune donnée personnelle collectée, aucun cookie : journaux techniques de l'hébergeur (30 jours), stockage local des préférences, droits RGPD et contact CNIL.",
+    jsonld: fil({ nom: "Accueil", chemin: "/" }, { nom: "Confidentialité", chemin: "/confidentialite" }),
+    contenu: confidentialite,
+  }));
+
+  const cookies = `
+    <main>
+      <nav aria-label="Fil d'Ariane"><a href="/">Accueil</a> › Cookies</nav>
+      <h1>Cookies et stockage local</h1>
+      <p>Sénat·Vote ne dépose <strong>aucun cookie</strong> : ni cookie de session, ni cookie de mesure d'audience, ni
+      cookie publicitaire. Dernière mise à jour : 3 novembre 2026.</p>
+      <h2>Aucun cookie posé par le site</h2>
+      <ul>
+        <li>Cookie de session : aucun — le site n'a ni compte ni espace connecté.</li>
+        <li>Mesure d'audience : aucune — ni Google Analytics, ni Matomo, ni équivalent.</li>
+        <li>Publicité et profilage : aucun — pas de régie, pas de pixel, pas de partage avec un annonceur.</li>
+        <li>Cookies tiers : aucun cookie tiers déposé par le site ; les polices Google Fonts sont chargées sans cookie.</li>
+      </ul>
+      <p>Vérifiable dans les outils de développement du navigateur, onglet « Application », rubrique « Cookies » : aucune
+      entrée n'est créée pour ce site.</p>
+      <h2>Ce que le site stocke dans votre navigateur</h2>
+      <ul>
+        <li><code>senatvote.prefs.v1</code> — sujets suivis, filtres de la page Votes, comparaison, superposition
+        Sénat / Assemblée. Conservé jusqu'à effacement des données du site, jamais transmis.</li>
+        <li><code>senatvote.avis-cookies.v1</code> — valeur « vu » lorsque le bandeau d'information est fermé, pour ne pas
+        le réafficher. Conservé jusqu'à effacement, jamais transmis.</li>
+      </ul>
+      <p>Ce ne sont pas des cookies : ces clés restent sur l'appareil et ne permettent pas de vous suivre.</p>
+      <h2>Le bandeau d'information</h2>
+      <p>Le site ne posant aucun cookie, il n'y a rien à accepter ni à refuser : le bandeau de première visite est
+      purement informatif. « J'ai compris » ne vaut pas consentement et ne bloque aucun contenu.</p>
+      <h2>Comment effacer ces préférences</h2>
+      <p>Réglages du navigateur → « Confidentialité et sécurité » → « Effacer les données de navigation », en cochant
+      « Données des sites » ou « Stockage local ». Effacement ciblé possible dans l'onglet « Application » des outils de
+      développement. En navigation privée, le stockage est effacé à la fermeture de la fenêtre.</p>
+      <p>Questions : <a href="mailto:jf.foissac@gmail.com">jf.foissac@gmail.com</a>. Voir aussi
+      <a href="/confidentialite">Confidentialité</a> et <a href="/mentions-legales">Mentions légales</a>.</p>
+    </main>
+    ${pied}`;
+
+  pages.push(page({
+    chemin: "/cookies",
+    titre: "Cookies et stockage local — Sénat·Vote",
+    description: "Aucun cookie posé par Sénat·Vote : ni session, ni mesure d'audience, ni publicité. Les préférences de filtres restent en localStorage, non traçant et effaçable.",
+    jsonld: fil({ nom: "Accueil", chemin: "/" }, { nom: "Cookies et stockage local", chemin: "/cookies" }),
+    contenu: cookies,
+  }));
+}
+
 /* --- les sénateurs (une page par élu) --- */
 {
   const dossier = path.join(PUBLIC, "senateurs");
@@ -531,7 +681,11 @@ for (const p of pages) {
 
 /* --- sitemap --- */
 const priorite = (chemin) =>
-  chemin === "/" ? "1.0" : chemin.startsWith("/sujet/") ? "0.8" : chemin.startsWith("/scrutin/") ? "0.6" : "0.7";
+  chemin === "/" ? "1.0"
+    : chemin.startsWith("/sujet/") ? "0.8"
+      : chemin.startsWith("/scrutin/") ? "0.6"
+        : ["/mentions-legales", "/confidentialite", "/cookies"].includes(chemin) ? "0.3"
+          : "0.7";
 
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">

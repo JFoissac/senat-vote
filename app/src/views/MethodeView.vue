@@ -285,10 +285,12 @@ const anSource = computed(() => (data.raw ? data.raw.anSource : null));
 
       <h2>8. Vie privée</h2>
       <p>
-        Le site ne dépose <b>aucun cookie</b>, <b>aucun traceur</b> et n'envoie <b>aucune donnée</b> à un serveur. Vos
-        préférences (sujets, filtres, choix de superposition, comparaison) sont stockées
-        <b>uniquement dans le <code>localStorage</code> de votre appareil</b>, sous la clé
-        <code>senatvote.prefs.v1</code>. Vider les données du site dans votre navigateur les efface.
+        Le site ne dépose <b>aucun cookie</b> et n'utilise <b>aucun traceur</b> : il n'envoie aucune donnée de
+        fréquentation à un serveur de mesure. Vos préférences (sujets, filtres, choix de superposition, comparaison) sont
+        stockées <b>uniquement dans le <code>localStorage</code> de votre appareil</b>, sous la clé
+        <code>senatvote.prefs.v1</code>. Vider les données du site dans votre navigateur les efface. Le détail figure
+        dans les pages <RouterLink to="/confidentialite">Confidentialité</RouterLink> et
+        <RouterLink to="/cookies">Cookies et stockage local</RouterLink>.
       </p>
 
       <h2>9. Sources et réutilisation</h2>

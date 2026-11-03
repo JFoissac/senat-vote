@@ -10,6 +10,9 @@ import VotesView from "../VotesView.vue";
 import CompareView from "../CompareView.vue";
 import GroupesView from "../GroupesView.vue";
 import MethodeView from "../MethodeView.vue";
+import MentionsLegalesView from "../MentionsLegalesView.vue";
+import ConfidentialiteView from "../ConfidentialiteView.vue";
+import CookiesView from "../CookiesView.vue";
 import ScrutinView from "../ScrutinView.vue";
 import NotFoundView from "../NotFoundView.vue";
 import { useDataStore } from "../../stores/data.js";
@@ -25,6 +28,9 @@ const routes = [
   { path: "/comparer", name: "comparer", component: Dummy },
   { path: "/groupes", name: "groupes", component: Dummy },
   { path: "/methode", name: "methode", component: Dummy },
+  { path: "/mentions-legales", name: "mentions-legales", component: Dummy },
+  { path: "/confidentialite", name: "confidentialite", component: Dummy },
+  { path: "/cookies", name: "cookies", component: Dummy },
   { path: "/:pathMatch(.*)*", name: "notfound", component: Dummy },
 ];
 
@@ -240,6 +246,40 @@ describe("views (smoke)", () => {
     expect(wrapper.text()).toContain("1 janvier 2023");
   });
 
+  it("MentionsLegalesView présente l'éditeur, l'hébergeur et les licences", async () => {
+    const wrapper = await mountView(MentionsLegalesView, "/mentions-legales");
+    expect(wrapper.find("h1").text()).toBe("Mentions légales");
+    const texte = wrapper.text();
+    expect(texte).toContain("Jean-François Foissac");
+    expect(texte).toContain("jf.foissac@gmail.com");
+    expect(texte).toContain("Caen");
+    expect(texte).toContain("Vercel Inc.");
+    expect(texte).toContain("440 N Barranca Ave #4133");
+    expect(texte).toContain("À VENIR");
+    expect(texte).toContain("Licence Ouverte 2.0");
+  });
+
+  it("ConfidentialiteView dit qu'aucune donnée n'est collectée et cite la CNIL", async () => {
+    const wrapper = await mountView(ConfidentialiteView, "/confidentialite");
+    expect(wrapper.find("h1").text()).toBe("Confidentialité et données personnelles");
+    const texte = wrapper.text();
+    expect(texte).toContain("ne collecte aucune donnée personnelle");
+    expect(texte).toContain("30 jours");
+    expect(texte).toContain("CNIL");
+    expect(texte).toContain("jf.foissac@gmail.com");
+    expect(texte).toContain("Aucun outil de mesure d'audience");
+  });
+
+  it("CookiesView affiche l'absence de cookie et le stockage local", async () => {
+    const wrapper = await mountView(CookiesView, "/cookies");
+    expect(wrapper.find("h1").text()).toBe("Cookies et stockage local");
+    const texte = wrapper.text();
+    expect(texte).toContain("aucun cookie");
+    expect(texte).toContain("senatvote.prefs.v1");
+    expect(texte).toContain("senatvote.avis-cookies.v1");
+    expect(texte).toContain("J'ai compris");
+  });
+
   it("NotFoundView affiche le message d'erreur", async () => {
     const wrapper = await mountView(NotFoundView, "/inconnu");
     expect(wrapper.text()).toContain("Page introuvable");
@@ -279,6 +319,11 @@ describe("views (smoke)", () => {
     const wrapper = await mountView(App, "/");
     expect(wrapper.find(".siteheader").exists()).toBe(true);
     expect(wrapper.find(".footer").exists()).toBe(true);
+    const legal = wrapper.find(".footer__legal");
+    expect(legal.exists()).toBe(true);
+    expect(legal.text()).toContain("Mentions légales");
+    expect(legal.text()).toContain("Confidentialité");
+    expect(legal.text()).toContain("Cookies");
     expect(document.title).toContain("Sénat·Vote");
   });
 });
