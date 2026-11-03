@@ -375,7 +375,7 @@ main:focus, main:focus-visible { outline: none; }
 .gcard__profile { margin: 14px 0 6px; display: grid; gap: 7px; }
 .prow { display: grid; grid-template-columns: 110px 1fr 50px; align-items: center; gap: 8px; font-size: 0.74rem; color: var(--muted); font-weight: 600; }
 .prow__bar { height: 8px; border-radius: 999px; background: #edeef1; overflow: hidden; }
-.prow__fill { height: 100%; border-radius: 999px; background: var(--f, var(--ink)); }
+.prow__fill { display: block; height: 100%; border-radius: 999px; background: var(--f, var(--ink)); }
 .prow b { text-align: right; color: var(--ink); }
 .gcard details { margin-top: 10px; border-top: 1px solid var(--line); padding-top: 10px; }
 .gcard summary { cursor: pointer; font-size: 0.8rem; font-weight: 700; color: var(--muted); }
