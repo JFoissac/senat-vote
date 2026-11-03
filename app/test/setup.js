@@ -31,7 +31,7 @@ class MemoryStorage {
   }
 }
 
-if (!globalThis.localStorage) {
+if (!globalThis.localStorage || typeof globalThis.localStorage.clear !== "function") {
   Object.defineProperty(globalThis, "localStorage", {
     value: new MemoryStorage(),
     configurable: true,
