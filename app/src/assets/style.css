@@ -383,6 +383,7 @@ main:focus, main:focus-visible { outline: none; }
 .gmembers { list-style: none; margin: 10px 0 0; padding: 0; display: grid; gap: 5px; }
 .gmembers li { display: flex; justify-content: space-between; gap: 10px; font-size: 0.8rem; border-bottom: 1px dashed var(--line); padding-bottom: 4px; }
 .gmembers li span { color: var(--faint); font-size: 0.74rem; }
+.gmembers li a { display: inline-flex; align-items: center; min-height: 24px; }
 .anlist { display: grid; gap: 6px; }
 .anrow { display: grid; grid-template-columns: 12px 62px 1fr auto; gap: 10px; align-items: center; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 10px 12px; font-size: 0.85rem; }
 .anrow__dot { width: 12px; height: 12px; border-radius: 4px; }
@@ -682,14 +683,17 @@ main:focus, main:focus-visible { outline: none; }
   .home__card strong { font-size: 1.08rem; }
 
   .b { padding: 4px 8px; font-size: 0.74rem; gap: 4px; }
-  .btn { min-height: 40px; }
+  .btn { min-height: 44px; }
   .totals { gap: 5px; }
   .tot { font-size: 0.7rem; padding: 3px 8px; }
   .listbar { gap: 8px; }
   .listbar__sort { width: 100%; justify-content: space-between; }
-  .listbar__sort select { flex: 1; min-height: 36px; }
+  .listbar__sort select { flex: 1; min-height: 44px; }
+  .filters input[type="search"],
+  .filters select,
+  .compare__side select { min-height: 44px; }
 
-  .footer__col a { padding: 6px 0; }
+  .footer__col a { padding: 6px 0; min-height: 44px; }
   .gcard summary { padding: 6px 0; }
   .gmembers li { padding: 4px 0; }
 }

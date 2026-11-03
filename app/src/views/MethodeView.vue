@@ -75,7 +75,7 @@ const anSource = computed(() => (data.raw ? data.raw.anSource : null));
           <dt>Sénat</dt>
           <dd>
             Pages officielles des scrutins publics sur
-            <a href="https://www.senat.fr/scrutin-public/scr2025.html" target="_blank" rel="noopener">senat.fr ↗</a>
+            <a href="https://www.senat.fr/scrutin-public/scr2026.html" target="_blank" rel="noopener">senat.fr ↗</a>
             (résultats, décomptes par groupe et par sénateur). Données sous <b>Licence Ouverte 2.0</b> (Etalab).
           </dd>
         </div>
@@ -302,7 +302,7 @@ const anSource = computed(() => (data.raw ? data.raw.anSource : null));
         <div>
           <dt>Scrutins du Sénat</dt>
           <dd>
-            <a href="https://www.senat.fr/scrutin-public/scr2025.html" target="_blank" rel="noopener"
+            <a href="https://www.senat.fr/scrutin-public/scr2026.html" target="_blank" rel="noopener"
               >senat.fr/scrutin-public ↗</a
             >
           </dd>

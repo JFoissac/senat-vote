@@ -68,7 +68,7 @@ watch(
         </div>
         <div class="footer__col">
           <p class="footer__heading">Données</p>
-          <a href="https://www.senat.fr/scrutin-public/scr2025.html" target="_blank" rel="noopener">Scrutins du Sénat (senat.fr)</a>
+          <a href="https://www.senat.fr/scrutin-public/scr2026.html" target="_blank" rel="noopener">Scrutins du Sénat (senat.fr)</a>
           <a href="https://data.assemblee-nationale.fr/travaux-parlementaires/votes" target="_blank" rel="noopener">Scrutins de l'Assemblée (open data)</a>
           <a href="https://elabe.fr/rentree-2026/" target="_blank" rel="noopener">Baromètre Elabe (août 2026)</a>
         </div>
