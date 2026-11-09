@@ -667,6 +667,32 @@ for (const s of scrutins) {
   console.log(`  sénateurs : ${ajoutees} pages`);
 }
 
+/* --- page 404 réelle (dist/404.html) ---
+ * Sans ce fichier, l'hébergeur répondait 200 avec le contenu de l'accueil sur
+ * toute URL inconnue (réécriture fourre-tout) : Google voyait une page en double
+ * dont la canonique désigne une autre URL, d'où « Google n'a pas choisi la même
+ * URL canonique que l'utilisateur ». Vercel sert 404.html avec un vrai code 404. */
+{
+  const contenu = `
+    <main>
+      <h1>Page introuvable</h1>
+      <p>Le contenu demandé n'existe pas ou n'existe plus.</p>
+      <p><a href="/">Les sujets</a> · <a href="/votes">Tous les votes</a> ·
+      <a href="/groupes">Les groupes politiques</a></p>
+    </main>
+    ${pied}`;
+
+  let html = gabarit.replace(BALISES_A_REMPLACER, "");
+  html = html.replace(
+    "</head>",
+    `    <title>Page introuvable — Sénat·Vote</title>
+    <meta name="robots" content="noindex, follow">
+  </head>`,
+  );
+  html = html.replace('<div id="root"></div>', `<div id="root">${contenu}</div>`);
+  fs.writeFileSync(path.join(DIST, "404.html"), html, "utf8");
+}
+
 /* ------------------------------------------------------------- écriture */
 
 let ecrites = 0;
